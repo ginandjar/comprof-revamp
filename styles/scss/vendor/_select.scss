@@ -1,0 +1,61 @@
+@import 'react-select/dist/react-select.css';
+
+.Select-error {
+  .Select-control {
+    border: solid 1px #f44336;
+    color: #f44336;
+  }
+  .Select-placeholder,
+  .Select-input {
+    color: #f44336;
+  }
+  .Select-value-label {
+    // Too nested, important is necessary and cleaner
+    color: #f44336 !important;
+  }
+}
+
+.Select-control {
+  height: 50px;
+  border-radius: 2px;
+  border-color: #e2e6e8;
+  > :last-child {
+    padding-right: 15px;
+    padding-left: 15px;
+    border-left: solid 1px #e2e6e8;
+  }
+}
+
+.Select-placeholder,
+.Select-input {
+  top: 8px;
+  padding: 0 20px;
+  font-size: 14px;
+  font-weight: 500;
+  color: #949a9d;
+}
+
+.Select-input {
+  padding: 7px 20px;
+}
+
+.Select-clear-zone {
+  right: 5px;
+}
+
+.Select.has-value.Select--single > .Select-control .Select-value .Select-value-label,
+.Select.has-value.is-pseudo-focused.Select--single
+  > .Select-control
+  .Select-value
+  .Select-value-label {
+  padding: 10px;
+  top: 8px;
+  position: relative;
+  font-size: 14px;
+  font-weight: 500;
+  color: #949a9d;
+}
+
+.Select-menu-outer {
+  top: 50px;
+}

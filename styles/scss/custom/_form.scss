@@ -1,0 +1,78 @@
+.input {
+  border-radius: 2px;
+  background-color: #ffffff;
+  border: solid 1px #e2e6e8;
+  padding: 14px 20px;
+  height: 50px;
+  transition: all $speed ease;
+  box-shadow: 0 2px 4px 0 transparent;
+  font-size: 14px;
+  font-weight: 500;
+  color: $cool-grey;
+  line-height: 1.43;
+  text-align: left;
+  outline: none;
+  display: block;
+  width: 100%;
+  margin: 16px 0;
+  box-sizing: border-box;
+
+  &:hover {
+    border: solid 1px #2a90ff;
+  }
+  &:active,
+  &:focus {
+    border: solid 1px #2a90ff;
+    box-shadow: 0 2px 4px 0 rgba(0, 0, 0, 0.15);
+    color: $dark-grey;
+  }
+  &:disabled {
+    background-color: $pale-grey;
+    border: solid 1px #e2e6e8;
+  }
+
+  &__error {
+    border: solid 1px #f44336;
+    color: #f44336;
+    &::placeholder {
+      color: #f44336;
+    }
+  }
+}
+
+textarea.input {
+  resize: none;
+  min-height: 200px;
+}
+
+.error-message {
+  margin: 0 0 16px 0;
+  border-radius: 2px;
+  background-color: #fff;
+  display: flex;
+  width: 100%;
+  animation: fadeIn $speed ease;
+  &--icon {
+    border-radius: 2px 0 0 2px;
+    background-color: #f44336;
+    padding: 8px 8px 4px 8px;
+    position: relative;
+  }
+  &--text {
+    align-self: center;
+    padding: 8px;
+    font-size: 12px;
+    font-weight: 500;
+    line-height: 1.33;
+    text-align: left;
+    color: $charcoal-grey;
+    border-radius: 2px 2px 0 0;
+    border: solid 1px #e2e6e8;
+    border-left: none;
+    flex-grow: 1;
+  }
+}
+
+.form-error {
+  margin-top: 24px;
+}

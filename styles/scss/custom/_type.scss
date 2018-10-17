@@ -1,0 +1,188 @@
+h1 {
+  font-family: 'Museo Sans';
+  font-size: 40px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+
+  color: $dark-grey;
+}
+
+h2 {
+  font-family: 'Museo Sans';
+  font-size: 36px;
+  font-weight: 300;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.22;
+  letter-spacing: normal;
+
+  color: $dark-grey;
+}
+
+h3 {
+  font-family: 'Museo Sans';
+  font-size: 32px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+
+  color: $dark-grey;
+}
+
+h4 {
+  font-family: 'Museo Sans';
+  font-size: 28px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.21;
+  letter-spacing: normal;
+
+  color: $dark-grey;
+}
+
+h5 {
+  font-family: 'Museo Sans';
+  font-size: 24px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.25;
+  letter-spacing: normal;
+
+  color: $dark-grey;
+}
+
+h6 {
+  font-family: 'Museo Sans';
+  font-size: 20px;
+  font-weight: 500;
+  font-style: normal;
+  font-stretch: normal;
+  line-height: 1.4;
+  letter-spacing: normal;
+
+  color: $dark-grey;
+}
+
+.__body-hero {
+  font-family: 'Museo Sans';
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.78;
+
+  color: $really-light-blue;
+}
+
+.__body-text-1 {
+  font-family: 'Museo Sans';
+  font-size: 18px;
+  font-weight: 300;
+  line-height: 1.78;
+
+  color: $charcoal-grey;
+}
+
+.__testimonials {
+  font-family: 'Museo Sans';
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.63;
+  text-align: center;
+  color: $charcoal-grey;
+}
+
+.__body-text-2 {
+  font-family: 'Museo Sans';
+  font-size: 16px;
+  font-weight: 300;
+  line-height: 1.63;
+
+  color: $charcoal-grey;
+}
+
+.nav-menu {
+  font-family: 'Museo Sans';
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.43;
+
+  color: #ffffff;
+}
+
+.text-btn-black {
+  font-family: 'Museo Sans';
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.43;
+  text-align: center;
+  color: $dark-grey;
+}
+
+.text-field-default {
+  font-family: 'Museo Sans';
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.43;
+  text-align: center;
+  color: $cool-grey;
+}
+
+.text-btn {
+  font-family: 'Museo Sans';
+  font-size: 14px;
+  font-weight: 500;
+  line-height: 1.43;
+  text-align: center;
+  color: #ffffff;
+}
+
+.__snippet-text-big {
+  font-family: LeagueMono;
+  font-size: 14px;
+  line-height: 1.29;
+
+  color: $charcoal-grey;
+}
+
+.__body-text-3 {
+  font-family: 'Museo Sans';
+  font-size: 14px;
+  font-weight: 300;
+  line-height: 1.71;
+
+  color: $charcoal-grey;
+}
+
+.__small-text {
+  font-family: 'Museo Sans';
+  font-size: 12px;
+  font-weight: 500;
+  line-height: 1.33;
+
+  color: $charcoal-grey;
+}
+
+.__snippet-text {
+  font-family: LeagueMono;
+  font-size: 12px;
+
+  color: $charcoal-grey;
+}
+
+.__white {
+  color: white;
+}
+
+a {
+  color: $clear-blue;
+}
+
+p {
+  margin: 1em 0;
+}

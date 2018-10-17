@@ -1,0 +1,26 @@
+@import './variables';
+@import './type';
+@import './animation';
+@import './form';
+
+
+.divider {
+  margin: 0 24px;
+  color: #fff;
+  &__inherit {
+    color: inherit;
+  }
+  &__small {
+    margin: 0 8px;
+  }
+}
+
+.__body-colored {
+  background: #f8fcff;
+}
+
+.button,
+.button:hover,
+.button:active {
+  outline: none;
+}

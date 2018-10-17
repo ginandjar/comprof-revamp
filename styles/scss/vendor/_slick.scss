@@ -1,0 +1,12 @@
+@import 'slick-carousel/slick/slick.css';
+@import 'slick-carousel/slick/slick-theme.css';
+
+.slick-dots {
+  bottom: -60px;
+  li button::before {
+    font-size: 15px;
+  }
+  li.slick-active button::before {
+    color: #2a90ff;
+  }
+}
