@@ -1,0 +1,49 @@
+.navigation-bar{
+  position: fixed;
+  width: 100%;
+  background: transparent;
+  z-index: 100;
+  color: #fff;
+
+  &__inner {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+
+  &__logo {
+    margin-top:50px;
+    a {
+      text-decoration: none;
+    }
+    img {
+      height: 48px;
+
+      @media only screen and (min-width: $container-sm) {
+        height: 56px;
+      }
+    }
+  }
+
+  &__menu {
+    display:block;
+    margin-top: 68px;
+    >ul{
+      float: left;
+      margin: 0;
+      padding: 0;
+      >li{
+        position: relative;
+        float: left;
+        list-style: none;
+        >a{
+          padding: 7px 25px 0px 25px;
+          font-size: 16px;
+          color: $black;
+        }
+      }
+    }
+
+  }
+
+
+}

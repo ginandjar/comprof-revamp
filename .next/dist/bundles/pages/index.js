@@ -72,6 +72,201 @@ module.exports =
 /************************************************************************/
 /******/ ({
 
+/***/ "./components/layout/NavigationBar.tsx":
+/***/ (function(module, __webpack_exports__, __webpack_require__) {
+
+"use strict";
+/* harmony export (binding) */ __webpack_require__.d(__webpack_exports__, "a", function() { return NavigationBar; });
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react__ = __webpack_require__("react");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_0_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0_react__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_next_link__ = __webpack_require__("next/link");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_next_link___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_next_link__);
+
+
+var _jsxFileName = "/Users/adjiginandjar/Documents/personal/kata/workspace/new-kata/kata-ai-next-revamp/components/layout/NavigationBar.tsx";
+
+function _typeof(obj) { if (typeof Symbol === "function" && typeof Symbol.iterator === "symbol") { _typeof = function _typeof(obj) { return typeof obj; }; } else { _typeof = function _typeof(obj) { return obj && typeof Symbol === "function" && obj.constructor === Symbol && obj !== Symbol.prototype ? "symbol" : typeof obj; }; } return _typeof(obj); }
+
+function _classCallCheck(instance, Constructor) { if (!(instance instanceof Constructor)) { throw new TypeError("Cannot call a class as a function"); } }
+
+function _defineProperties(target, props) { for (var i = 0; i < props.length; i++) { var descriptor = props[i]; descriptor.enumerable = descriptor.enumerable || false; descriptor.configurable = true; if ("value" in descriptor) descriptor.writable = true; Object.defineProperty(target, descriptor.key, descriptor); } }
+
+function _createClass(Constructor, protoProps, staticProps) { if (protoProps) _defineProperties(Constructor.prototype, protoProps); if (staticProps) _defineProperties(Constructor, staticProps); return Constructor; }
+
+function _possibleConstructorReturn(self, call) { if (call && (_typeof(call) === "object" || typeof call === "function")) { return call; } return _assertThisInitialized(self); }
+
+function _assertThisInitialized(self) { if (self === void 0) { throw new ReferenceError("this hasn't been initialised - super() hasn't been called"); } return self; }
+
+function _inherits(subClass, superClass) { if (typeof superClass !== "function" && superClass !== null) { throw new TypeError("Super expression must either be null or a function"); } subClass.prototype = Object.create(superClass && superClass.prototype, { constructor: { value: subClass, enumerable: false, writable: true, configurable: true } }); if (superClass) Object.setPrototypeOf ? Object.setPrototypeOf(subClass, superClass) : subClass.__proto__ = superClass; }
+
+
+
+
+var NavigationBar =
+/*#__PURE__*/
+function (_React$Component) {
+  _inherits(NavigationBar, _React$Component);
+
+  function NavigationBar() {
+    _classCallCheck(this, NavigationBar);
+
+    return _possibleConstructorReturn(this, (NavigationBar.__proto__ || Object.getPrototypeOf(NavigationBar)).apply(this, arguments));
+  }
+
+  _createClass(NavigationBar, [{
+    key: "render",
+    value: function render() {
+      return __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("div", {
+        className: "navigation-bar",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 5
+        }
+      }, __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("div", {
+        className: "navigation-bar__inner",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 6
+        }
+      }, __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("div", {
+        className: "pull-left navigation-bar__logo",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 7
+        }
+      }, __WEBPACK_IMPORTED_MODULE_0_react__["createElement"](__WEBPACK_IMPORTED_MODULE_1_next_link___default.a, {
+        href: "/",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 8
+        }
+      }, __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("a", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 9
+        }
+      }, __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("img", {
+        src: "https://fakeimg.pl/98x56/?text=Logo",
+        alt: "",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 10
+        }
+      })))), __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("nav", {
+        className: "pull-right navigation-bar__menu",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 15
+        }
+      }, __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("ul", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 17
+        }
+      }, __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("li", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 18
+        }
+      }, __WEBPACK_IMPORTED_MODULE_0_react__["createElement"](__WEBPACK_IMPORTED_MODULE_1_next_link___default.a, {
+        href: "/",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 19
+        }
+      }, __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("a", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 20
+        }
+      }, "Solution"))), __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("li", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 25
+        }
+      }, __WEBPACK_IMPORTED_MODULE_0_react__["createElement"](__WEBPACK_IMPORTED_MODULE_1_next_link___default.a, {
+        href: "/enterprise",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 26
+        }
+      }, __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("a", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 27
+        }
+      }, "Feature & Tech", __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("img", {
+        src: "/static/images/icons/arrow-down-light.svg",
+        alt: "",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 29
+        }
+      })))), __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("li", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 34
+        }
+      }, __WEBPACK_IMPORTED_MODULE_0_react__["createElement"](__WEBPACK_IMPORTED_MODULE_1_next_link___default.a, {
+        href: "/partnership",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 35
+        }
+      }, __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("a", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 36
+        }
+      }, "Partnership "))), __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("li", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 40
+        }
+      }, __WEBPACK_IMPORTED_MODULE_0_react__["createElement"](__WEBPACK_IMPORTED_MODULE_1_next_link___default.a, {
+        href: "/resources",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 41
+        }
+      }, __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("a", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 42
+        }
+      }, "Resources"))), __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("li", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 45
+        }
+      }, __WEBPACK_IMPORTED_MODULE_0_react__["createElement"](__WEBPACK_IMPORTED_MODULE_1_next_link___default.a, {
+        href: "/company",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 46
+        }
+      }, __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("a", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 47
+        }
+      }, "Company")))), __WEBPACK_IMPORTED_MODULE_0_react__["createElement"]("div", {
+        className: "top-bar--menu-buttons",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 51
+        }
+      }))));
+    }
+  }]);
+
+  return NavigationBar;
+}(__WEBPACK_IMPORTED_MODULE_0_react__["Component"]);
+
+
+
+/***/ }),
+
 /***/ "./components/locale/LocaleSolver.ts":
 /***/ (function(module, __webpack_exports__, __webpack_require__) {
 
@@ -890,9 +1085,12 @@ Object.defineProperty(__webpack_exports__, "__esModule", { value: true });
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_0__babel_runtime_regenerator___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_0__babel_runtime_regenerator__);
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react__ = __webpack_require__("react");
 /* harmony import */ var __WEBPACK_IMPORTED_MODULE_1_react___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_1_react__);
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2__components_locale_LocaleSolver__ = __webpack_require__("./components/locale/LocaleSolver.ts");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_next_link__ = __webpack_require__("next/link");
-/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3_next_link___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_3_next_link__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_next_head__ = __webpack_require__("next/head");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_2_next_head___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_2_next_head__);
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_3__components_layout_NavigationBar__ = __webpack_require__("./components/layout/NavigationBar.tsx");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_4__components_locale_LocaleSolver__ = __webpack_require__("./components/locale/LocaleSolver.ts");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__styles_scss_App_scss__ = __webpack_require__("./styles/scss/App.scss");
+/* harmony import */ var __WEBPACK_IMPORTED_MODULE_5__styles_scss_App_scss___default = __webpack_require__.n(__WEBPACK_IMPORTED_MODULE_5__styles_scss_App_scss__);
 
 
 
@@ -918,6 +1116,8 @@ function _inherits(subClass, superClass) { if (typeof superClass !== "function" 
 
 
 
+
+
 var Home =
 /*#__PURE__*/
 function (_React$Component) {
@@ -938,25 +1138,60 @@ function (_React$Component) {
       return __WEBPACK_IMPORTED_MODULE_1_react__["createElement"]("div", {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 9
-        }
-      }, __WEBPACK_IMPORTED_MODULE_1_react__["createElement"]("h1", {
-        __source: {
-          fileName: _jsxFileName,
-          lineNumber: 10
-        }
-      }, "Hello Next.js \uD83D\uDC4B"), __WEBPACK_IMPORTED_MODULE_1_react__["createElement"](__WEBPACK_IMPORTED_MODULE_3_next_link___default.a, {
-        href: "/about",
-        __source: {
-          fileName: _jsxFileName,
           lineNumber: 11
         }
-      }, __WEBPACK_IMPORTED_MODULE_1_react__["createElement"]("a", {
+      }, __WEBPACK_IMPORTED_MODULE_1_react__["createElement"](__WEBPACK_IMPORTED_MODULE_2_next_head___default.a, {
         __source: {
           fileName: _jsxFileName,
-          lineNumber: 11
+          lineNumber: 12
         }
-      }, "About")));
+      }, __WEBPACK_IMPORTED_MODULE_1_react__["createElement"]("title", {
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 13
+        }
+      }, localeService.dictionary.meta.home.title), __WEBPACK_IMPORTED_MODULE_1_react__["createElement"]("meta", {
+        name: "description",
+        content: localeService.dictionary.meta.home.description,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 14
+        }
+      }), __WEBPACK_IMPORTED_MODULE_1_react__["createElement"]("meta", {
+        property: "og:type",
+        content: "website",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 15
+        }
+      }), __WEBPACK_IMPORTED_MODULE_1_react__["createElement"]("meta", {
+        property: "og:title",
+        content: localeService.dictionary.meta.home.title,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 16
+        }
+      }), __WEBPACK_IMPORTED_MODULE_1_react__["createElement"]("meta", {
+        property: "og:description",
+        content: localeService.dictionary.meta.home.description,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 17
+        }
+      }), __WEBPACK_IMPORTED_MODULE_1_react__["createElement"]("link", {
+        rel: "stylesheet",
+        href: "/_next/static/style.css",
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 18
+        }
+      })), __WEBPACK_IMPORTED_MODULE_1_react__["createElement"](__WEBPACK_IMPORTED_MODULE_3__components_layout_NavigationBar__["a" /* default */], {
+        localeService: this.props.localeService,
+        __source: {
+          fileName: _jsxFileName,
+          lineNumber: 20
+        }
+      }));
     }
   }], [{
     key: "getInitialProps",
@@ -984,7 +1219,14 @@ function (_React$Component) {
   return Home;
 }(__WEBPACK_IMPORTED_MODULE_1_react__["Component"]);
 
-/* harmony default export */ __webpack_exports__["default"] = (Object(__WEBPACK_IMPORTED_MODULE_2__components_locale_LocaleSolver__["a" /* withLocaleService */])(Home));
+/* harmony default export */ __webpack_exports__["default"] = (Object(__WEBPACK_IMPORTED_MODULE_4__components_locale_LocaleSolver__["a" /* withLocaleService */])(Home));
+
+/***/ }),
+
+/***/ "./styles/scss/App.scss":
+/***/ (function(module, exports) {
+
+
 
 /***/ }),
 
@@ -1007,6 +1249,13 @@ module.exports = require("@babel/runtime/regenerator");
 /***/ (function(module, exports) {
 
 module.exports = require("js-cookie");
+
+/***/ }),
+
+/***/ "next/head":
+/***/ (function(module, exports) {
+
+module.exports = require("next/head");
 
 /***/ }),
 
