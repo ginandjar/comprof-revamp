@@ -3,11 +3,15 @@ import classnames from 'classnames';
 
 interface ContainerProps {
   className?: string;
-  fluid?: boolean;
+  title?: string;
+
 }
 
-const Container: React.SFC<ContainerProps> = ({ children, fluid, className }) => (
-  <div className={classnames('site-container', fluid && 'site-container--fluid', className)}>
+const Container: React.SFC<ContainerProps> = ({ children, className, title }) => (
+  <div className={classnames('site-container', className)}>
+    <div>
+      <h1>{title}</h1>
+    </div>
     {children}
   </div>
 );

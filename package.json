@@ -37,7 +37,7 @@
     "postcss-loader": "^2.1.5",
     "postcss-url": "^7.3.2",
     "react": "^16.5.2",
-    "react-bootstrap": "^0.32.1",
+    "react-bootstrap": "^0.32.4",
     "react-dom": "^16.4.1",
     "react-emotion": "^9.2.4",
     "react-ga": "^2.5.3",

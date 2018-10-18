@@ -1,14 +1,13 @@
-// .site-container {
-//   margin: 0 auto;
-//   padding: 0;
-//   max-width: 960px;
-//   width: 100%;
 
-//   @media (min-width: 1200px) {
-//     max-width: 1170px;
-//   }
+.site-container{
+  padding-top: 130px;
+  background-color: $white;
+  text-align: center;
 
-//   &--fluid {
-//     max-width: 100%;
-//   }
-// }
+  &--grey{
+    background-color: $light-grey !important;
+  }
+
+}
+
+

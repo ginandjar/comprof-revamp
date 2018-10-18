@@ -1,0 +1,12 @@
+.text-image-card{
+
+  
+
+  &__image{
+    position: relative;
+    >img{
+      position: absolute;
+      height: 500px;
+    }
+  }
+}

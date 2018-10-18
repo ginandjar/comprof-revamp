@@ -1,7 +1,7 @@
 .navigation-bar{
   position: fixed;
   width: 100%;
-  background: transparent;
+  background: white;
   z-index: 100;
   color: #fff;
 
@@ -12,15 +12,12 @@
 
   &__logo {
     margin-top:50px;
+    margin-bottom: 20px;
     a {
       text-decoration: none;
     }
     img {
       height: 48px;
-
-      @media only screen and (min-width: $container-sm) {
-        height: 56px;
-      }
     }
   }
 

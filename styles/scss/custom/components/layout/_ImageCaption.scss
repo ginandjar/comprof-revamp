@@ -1,0 +1,12 @@
+.image-caption{
+  max-width: 358px;
+  display: inline-block;
+  
+  &__title{
+    padding: 10px 10px;
+
+  }
+  &__caption{
+    padding :10px 10px;
+  }
+}
