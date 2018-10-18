@@ -4,11 +4,11 @@
 !next.config.js
 !postcss.config.js
 node_modules/
-.next/
-.next/*
 out/
 .env
 .idea/
+.next/
+
 
 # Logs
 logs
