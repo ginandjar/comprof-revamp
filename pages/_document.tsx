@@ -38,7 +38,14 @@ export default class CustomDocument extends Document {
         <body>
           <Main />
 
-          <NextScript />
+          <NextScript>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/react/<react-version>/react.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/react/<react-version>/react-dom.min.js"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/react-bootstrap/<version>/react-bootstrap.min.js"></script>
+            <script>
+              var Alert = ReactBootstrap.Alert;
+            </script>
+          </NextScript>
         </body>
       </html>
     );
