@@ -1,5 +1,5 @@
 import * as React from 'react';
-import Container from './Container';
+import Section from './Section';
 import ImageCaption from './ImageCaption';
 import Link from 'next/link';
 
@@ -9,7 +9,7 @@ export default class Business extends React.Component {
 
   render() {
     return (
-      <Container className="site-container--grey">
+      <Section className="site-container--grey">
         <div>
           <h1>See what chatbots can do for your business</h1>
         </div>
@@ -27,7 +27,7 @@ export default class Business extends React.Component {
             title="Better conversion rate"
             caption="With better experience for your customer, it’s easier to convert their interest into leads or purchases." />
         </div>
-      </Container>
+      </Section>
     );
   }
 
