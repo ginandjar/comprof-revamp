@@ -16,3 +16,6 @@ logs
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+.next/build-manifest.json
+.next/bundles/pages/_app.js
+.next/bundles/pages/_app.js.map
