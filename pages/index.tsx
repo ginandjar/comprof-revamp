@@ -6,6 +6,7 @@ import LocaleSolver, { withLocaleService } from '../components/locale/LocaleSolv
 import 'styles/scss/App.scss';
 import Link from 'next/link';
 import Business from '../components/layout/Business';
+import Platform from '../components/layout/Platform';
 
 
 interface Props {
@@ -38,9 +39,11 @@ class Home extends React.Component<Props> {
 
         </Head>
         <NavigationBar localeService={this.props.localeService} />
-        <div className="site-container">
-          <Business />
-        </div>
+
+        <Business />
+        <Platform />
+
+
       </div>
 
     );

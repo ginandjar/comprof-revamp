@@ -1,5 +1,5 @@
 import * as React from 'react';
-import Container from './Container';
+import Container from './Section';
 import Link from 'next/link';
 
 export default class NavigationBar extends React.Component {
