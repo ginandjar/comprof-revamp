@@ -7,6 +7,9 @@ import 'styles/scss/App.scss';
 import Link from 'next/link';
 import Business from '../components/layout/Business';
 import Platform from '../components/layout/Platform';
+import ExplorePlatform from '../components/layout/ExplorePlatform';
+import WorkWithUs from '../components/layout/WorkWithUs';
+import CaseStudy from '../components/layout/CaseStudy';
 
 
 interface Props {
@@ -41,7 +44,10 @@ class Home extends React.Component<Props> {
         <NavigationBar localeService={this.props.localeService} />
 
         <Business />
+        <CaseStudy />
         <Platform />
+        <WorkWithUs />
+        <ExplorePlatform />
 
 
       </div>

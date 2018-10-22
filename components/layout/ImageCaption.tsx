@@ -6,7 +6,7 @@ import Link from 'next/link';
 
 interface ImageCaptionProps {
   title: string;
-  caption: string;
+  caption?: string;
   src?: string;
   md?: string
 

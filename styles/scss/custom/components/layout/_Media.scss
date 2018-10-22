@@ -1,0 +1,26 @@
+.media{
+
+  text-align: left;
+
+
+  >div>div{
+    display: inline-block;
+    vertical-align: middle;
+    float: none;
+  }
+
+  &--full-width{
+    width:100%;
+
+    h1{
+      margin-left: 135px;
+    }
+    p{
+      margin-left: 135px;
+    }
+    a{
+      margin-left: 135px;
+    }
+
+  }
+}

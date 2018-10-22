@@ -37,13 +37,13 @@ export default class Platform extends React.Component {
             <ImageCaption
               md="6"
               src="/static/png/group2111.svg"
-              title="Better conversion rate"
-              caption="With better experience for your customer, it’s easier to convert their interest into leads or purchases." />
+              title="Omni Channel Management"
+              caption="Easily manage and install your chatbots in any Messaging Channels you choose" />
             <ImageCaption
               md="6"
               src="/static/png/group2114.svg"
-              title="Better conversion rate"
-              caption="With better experience for your customer, it’s easier to convert their interest into leads or purchases." />
+              title="On Premise Solution"
+              caption="Need the security of your own IT infrastructure to run your chatbots? Just install it on your own system using our On-Premise solution" />
           </Row>
         </Grid>
       </Section>
