@@ -12,7 +12,29 @@ import CarouselItem from 'react-bootstrap/lib/CarouselItem';
 
 export default class CaseStudy extends React.Component {
 
+  constructor(props, context) {
+    super(props, context);
+
+    this.handleSelect = this.handleSelect.bind(this);
+
+    this.state = {
+      index: 0,
+      direction: null
+    };
+  }
+
+  handleSelect(selectedIndex, e) {
+
+    this.setState({
+      index: selectedIndex,
+      direction: e.direction
+    });
+  }
+
+
   render() {
+
+    const { index, direction } = this.state;
     return (
 
       <Section className="site-container--white case-study">
@@ -21,24 +43,27 @@ export default class CaseStudy extends React.Component {
             <h1>Meet our chatbots</h1>
           </Row>
           <Row className="case-study__nav-bar">
-            <Nav bsStyle="tabs" activeKey={1} >
-              <NavItem eventKey={1}>
+            <Nav bsStyle="tabs" activeKey={0} onSelect={this.handleSelect}>
+              <NavItem eventKey={0}>
                 Customer Service
-          </NavItem>
-              <NavItem eventKey={2} >
+             </NavItem>
+              <NavItem eventKey={1} >
                 Bank Assistant
-          </NavItem>
-              <NavItem eventKey={3} >
+              </NavItem>
+              <NavItem eventKey={2} >
                 Consumer Engagement
-          </NavItem>
-              <NavItem eventKey={4} >
+              </NavItem>
+              <NavItem eventKey={3} >
                 Costumer Loyality
-          </NavItem>
+              </NavItem>
             </Nav>
           </Row>
           <Row>
             <Carousel
               controls={false}
+              activeIndex={index}
+              direction={direction}
+              onSelect={this.handleSelect}
             >
               <Carousel.Item>
                 <Media
