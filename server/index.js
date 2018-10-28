@@ -54,9 +54,9 @@ app.prepare().then(() => {
   server.get('/', (req, res) => {
     renderAndCache(req, res, '/index');
   });
-  // server.get('/case-studies', (req, res) => {
-  //   renderAndCache(req, res, '/case-studies/jemma');
-  // });
+  server.get('/company', (req, res) => {
+    renderAndCache(req, res, '/company');
+  });
   // server.get('/case-studies/jemma', (req, res) => {
   //   renderAndCache(req, res, '/case-studies/jemma');
   // });
@@ -103,7 +103,7 @@ app.prepare().then(() => {
 
   console.log(
     `> kata.ai-next running at http://localhost:3000 as ${
-      dev ? 'development' : process.env.NODE_ENV
+    dev ? 'development' : process.env.NODE_ENV
     }`
   );
 });
