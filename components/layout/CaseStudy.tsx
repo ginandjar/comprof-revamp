@@ -2,9 +2,10 @@ import * as React from 'react';
 import Section from './Section';
 import Row from 'react-bootstrap/lib/Row';
 import Grid from 'react-bootstrap/lib/Grid';
-import ImageCaption from './ImageCaption';
+import Col from 'react-bootstrap/lib/Col';
 import Link from 'next/link';
 import Media from './Media';
+import ButtonLink from '../links/ButtonLink';
 import Nav from 'react-bootstrap/lib/Nav';
 import NavItem from 'react-bootstrap/lib/NavItem';
 import Carousel from 'react-bootstrap/lib/Carousel';
@@ -71,7 +72,22 @@ export default class CaseStudy extends React.Component {
                   title="Veronika"
                   description="Intelligent customer support for Telco"
                   image="/static/png/casestudy/group2105.svg"
-                />
+                >
+                  <Col md={6}>
+                    <h1>
+                      Veronika
+                    </h1>
+                    <p>
+                      Intelligent customer support for Telco
+                    </p>
+                    <ButtonLink modifier="light" href="/enterprise">
+                      Button
+                   </ButtonLink>
+                  </Col>
+                  <Col md={6}>
+                    <img src="/static/png/casestudy/group2105.svg" alt="" />
+                  </Col>
+                </Media>
               </Carousel.Item>
               <Carousel.Item>
                 <Media
@@ -79,7 +95,22 @@ export default class CaseStudy extends React.Component {
                   title="Sabrina"
                   description="Smart assistant for Banking"
                   image="/static/png/casestudy/group2105.svg"
-                />
+                >
+                  <Col md={6}>
+                    <h1>
+                      Sabrina
+                    </h1>
+                    <p>
+                      Smart assistant for Banking
+                    </p>
+                    <ButtonLink modifier="light" href="/enterprise">
+                      Button
+                   </ButtonLink>
+                  </Col>
+                  <Col md={6}>
+                    <img src="/static/png/casestudy/group2105.svg" alt="" />
+                  </Col>
+                </Media>
               </Carousel.Item>
               <Carousel.Item>
                 <Media
@@ -87,7 +118,22 @@ export default class CaseStudy extends React.Component {
                   title="Jemma"
                   description="Virtual friend for personalized consumer engagement"
                   image="/static/png/casestudy/group2105.svg"
-                />
+                >
+                  <Col md={6}>
+                    <h1>
+                      Jemma
+                    </h1>
+                    <p>
+                      Virtual friend for personalized consumer engagement
+                    </p>
+                    <ButtonLink modifier="light" href="/enterprise">
+                      Button
+                   </ButtonLink>
+                  </Col>
+                  <Col md={6}>
+                    <img src="/static/png/casestudy/group2105.svg" alt="" />
+                  </Col>
+                </Media>
               </Carousel.Item>
               <Carousel.Item>
                 <Media
@@ -95,12 +141,27 @@ export default class CaseStudy extends React.Component {
                   title="Shalma"
                   description="Virtual friends for personalized consumer engagement"
                   image="/static/png/casestudy/group2105.svg"
-                />
+                >
+                  <Col md={6}>
+                    <h1>
+                      Shalma
+                    </h1>
+                    <p>
+                      Virtual friend for personalized consumer engagement
+                    </p>
+                    <ButtonLink modifier="light" href="/enterprise">
+                      Button
+                   </ButtonLink>
+                  </Col>
+                  <Col md={6}>
+                    <img src="/static/png/casestudy/group2105.svg" alt="" />
+                  </Col>
+                </Media>
               </Carousel.Item>
             </Carousel>
           </Row>
         </Grid>
-      </Section>
+      </Section >
     );
   }
 

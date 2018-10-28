@@ -8,7 +8,7 @@ interface ImageCaptionProps {
   title: string;
   caption?: string;
   src?: string;
-  md?: string
+  md?: number;
 
 
 }

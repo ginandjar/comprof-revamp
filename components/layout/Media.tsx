@@ -9,37 +9,19 @@ import ButtonLink from '../links/ButtonLink';
 
 interface MediaProps {
   className: string;
-  title: string;
-  description: string;
-  image: string;
+  title?: string;
+  description?: string;
+  image?: string;
+
 
 }
 
+const Media: React.SFC<MediaProps> = ({ children, className, title }) => (
+  <Grid className={className} >
+    <Row>
+      {children}
+    </Row>
+  </Grid>
+);
 
-
-export default class Media extends React.Component<MediaProps> {
-
-  render() {
-    return (
-      <Grid className={this.props.className} >
-        <Row>
-          <Col md={6}>
-            <h1>
-              {this.props.title}
-            </h1>
-            <p>
-              {this.props.description}
-            </p>
-            <ButtonLink modifier="default" href="/enterprise">
-              Button
-            </ButtonLink>
-          </Col>
-          <Col md={6}>
-            <img src={this.props.image} alt="" />
-          </Col>
-        </Row>
-      </Grid>
-    );
-  }
-
-}
+export default Media;

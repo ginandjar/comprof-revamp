@@ -1,0 +1,31 @@
+.carrer{
+  background-image: url('/static/jpg/carrer.jpg');
+  height: 870px;
+  position: relative;
+
+  h1{
+    width:1000px;
+    color: white !important;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+  h2{
+    color: white !important;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+
+  a{
+    position: absolute;
+    top: 60%;
+    left: 50%;
+    -ms-transform: translate(-50%, -50%);
+    transform: translate(-50%, -50%);
+  }
+}

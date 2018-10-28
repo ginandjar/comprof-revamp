@@ -10,6 +10,9 @@ import Platform from '../components/layout/Platform';
 import ExplorePlatform from '../components/layout/ExplorePlatform';
 import WorkWithUs from '../components/layout/WorkWithUs';
 import CaseStudy from '../components/layout/CaseStudy';
+import Cover from '../components/layout/Cover';
+import Carrer from '../components/layout/Carrer';
+import BuildChatbot from '../components/layout/BuildChatbot';
 
 
 interface Props {
@@ -42,12 +45,14 @@ class Home extends React.Component<Props> {
 
         </Head>
         <NavigationBar localeService={this.props.localeService} />
-
+        <Cover />
         <Business />
         <CaseStudy />
         <Platform />
         <WorkWithUs />
         <ExplorePlatform />
+        <Carrer />
+        <BuildChatbot />
 
 
       </div>
