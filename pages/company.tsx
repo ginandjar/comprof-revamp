@@ -34,7 +34,6 @@ class Company extends React.Component<Props> {
             property="og:description"
             content={localeService.dictionary.meta.home.description}
           />
-          <link rel="stylesheet" href="/_next/static/style.css" />
           <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous" />
 
         </Head>
