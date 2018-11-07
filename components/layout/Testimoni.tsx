@@ -11,7 +11,7 @@ import NavItem from 'react-bootstrap/lib/NavItem';
 import Carousel from 'react-bootstrap/lib/Carousel';
 import CarouselItem from 'react-bootstrap/lib/CarouselItem';
 
-export default class Management extends React.Component {
+export default class Testimoni extends React.Component {
 
   constructor(props, context) {
     super(props, context);
@@ -38,33 +38,14 @@ export default class Management extends React.Component {
     const { index, direction } = this.state;
     return (
 
-      <Section className="site-container--white case-study">
+      <Section className="site-container--white testimoni">
         <Grid>
           <Row>
-            <h1>The Management</h1>
-          </Row>
-          <Row className="case-study__nav-bar">
-            <Nav bsStyle="tabs" activeKey={0} onSelect={this.handleSelect}>
-              <NavItem eventKey={0}>
-                CEO
-             </NavItem>
-              <NavItem eventKey={1} >
-                CTO
-              </NavItem>
-              <NavItem eventKey={2} >
-                CFO
-              </NavItem>
-              <NavItem eventKey={3} >
-                CMO
-              </NavItem>
-              <NavItem eventKey={4} >
-                VP of Product & Engineering
-              </NavItem>
-            </Nav>
+            <h1>What our team says about working for Kata.AI</h1>
           </Row>
           <Row>
             <Carousel
-              controls={false}
+              controls={true}
               activeIndex={index}
               direction={direction}
               onSelect={this.handleSelect}
@@ -74,14 +55,14 @@ export default class Management extends React.Component {
                 <Media className="media">
 
                   <Col md={6}>
-                    <img src="/static/png/management/icn.png" alt="" />
+                    <img src="/static/png/career/yodee.png" alt="" />
                   </Col>
                   <Col md={6}>
                     <h6>
-                      Irzan Raditya
+                      Yodee - Product Growth Manager
                     </h6>
                     <p>
-                      Born in 1988, he is a young entrepreneur with a deep exposure and passion in the digital and technology sphere. He acquired his Bachelor of Science degree in Computer Science from Hochschule für Technik und Wirtschaft (HTW) Berlin in 2012. Prior to returning to his home country in Indonesia, he worked as Feature Engineer at Zolando (subsdiary of Rocket Internet) and TakeAway.com. After exploring valuable experience in Germany for years, Irzan decided to come home to Indonesia and exercised his passion to build his own business. He founded several startup such as Amplitweet, Cape&Fly, Rumah Diaspora, before finally building YesBoss a company that offers virtual assistant service, which became Kata.ai now after the company pivot into B2B business that offers AI technology for corporations.
+                      “Working in an advanced technology company like Kata.ai really opens my eyes to the endless possibility of how technology can help to improve our lives. The culture and mentorship at Kata.ai from the founders help me grow to the direction where I want to be in the next few years.”
                     </p>
                   </Col>
                 </Media>

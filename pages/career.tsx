@@ -5,21 +5,15 @@ import NavigationBar from '../components/layout/NavigationBar';
 import LocaleSolver, { withLocaleService } from '../components/locale/LocaleSolver';
 import 'styles/scss/App.scss';
 import Link from 'next/link';
-import Business from '../components/layout/Business';
-import Platform from '../components/layout/Platform';
-import ExplorePlatform from '../components/layout/ExplorePlatform';
-import WorkWithUs from '../components/layout/WorkWithUs';
-import CaseStudy from '../components/layout/CaseStudy';
-import Cover from '../components/layout/Cover';
-import Career from '../components/layout/Career';
-import BuildChatbot from '../components/layout/BuildChatbot';
-
-
+import Testimoni from '../components/layout/Testimoni';
+import LifeKata from '../components/layout/LifeKata';
+import CoverCarrer from '../components/layout/CoverCareer';
+import Benefit from '../components/layout/Benefit';
 interface Props {
 
 }
 
-class Home extends React.Component<Props> {
+class Career extends React.Component<Props> {
   public static async getInitialProps(ctx: NextContext) {
 
   }
@@ -45,14 +39,12 @@ class Home extends React.Component<Props> {
 
         </Head>
         <NavigationBar localeService={this.props.localeService} />
-        <Cover />
-        <Business />
-        <CaseStudy />
-        <Platform />
-        <WorkWithUs />
-        <ExplorePlatform />
-        <Career />
-        <BuildChatbot />
+        <CoverCarrer />
+        <LifeKata />
+        <Testimoni />
+        <Benefit />
+
+
 
 
       </div>
@@ -61,5 +53,5 @@ class Home extends React.Component<Props> {
   }
 
 }
-export default withLocaleService(Home);
+export default withLocaleService(Career);
 

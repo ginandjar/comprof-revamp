@@ -57,9 +57,9 @@ app.prepare().then(() => {
   server.get('/company', (req, res) => {
     renderAndCache(req, res, '/company');
   });
-  // server.get('/case-studies/jemma', (req, res) => {
-  //   renderAndCache(req, res, '/case-studies/jemma');
-  // });
+  server.get('/career', (req, res) => {
+    renderAndCache(req, res, '/career');
+  });
   // server.get('/case-studies/veronika', (req, res) => {
   //   renderAndCache(req, res, '/case-studies/veronika');
   // });

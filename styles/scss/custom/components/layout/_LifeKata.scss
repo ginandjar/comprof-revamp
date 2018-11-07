@@ -1,0 +1,33 @@
+.lifekata{
+
+  h5{
+    width: 454px;
+    font-weight: normal;
+    margin-bottom: 30px
+  }
+
+  
+  &__image{
+    position: relative;
+    min-height: 736px;
+    img{
+      position: absolute;
+      height: 304px;
+    }
+    &--right{
+      left:280px;
+      top: 55px;
+    }
+
+    &--left{
+      top:125px;
+      left: -40px;
+    }
+
+    &--bottom{
+      top:435px;
+
+    }
+
+  }
+}

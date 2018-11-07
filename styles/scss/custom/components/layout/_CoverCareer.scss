@@ -1,0 +1,18 @@
+.cover-career{
+  background-image: url('/static/jpg/covercareer.jpg');
+  height: 870px;
+  position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
+
+  h2{
+    color: white !important;
+    position: absolute;
+    text-align: left;
+    line-height: 1.5em;
+    width: 420px;
+    top:130px;
+    left: 200px;
+  }
+
+}

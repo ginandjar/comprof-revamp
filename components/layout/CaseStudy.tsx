@@ -65,6 +65,7 @@ export default class CaseStudy extends React.Component {
               activeIndex={index}
               direction={direction}
               onSelect={this.handleSelect}
+              indicators={false}
             >
               <Carousel.Item>
                 <Media

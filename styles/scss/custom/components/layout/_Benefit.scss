@@ -1,0 +1,29 @@
+.benefit{
+  background-color: #006EE5 !important;
+  color: white !important;
+  h1{
+    color: white !important;
+  }
+  &__nav-bar{
+    margin: auto;
+    width: 930px;
+    img{
+      width:100px;
+    }
+    >ul{
+      >li{
+        a{
+          background-color: transparent !important;
+        }
+        
+        a:hover a:focus{
+          background-color: transparent;
+        }
+      }
+    }
+  }
+  &__nav-content{
+
+  }
+ 
+}

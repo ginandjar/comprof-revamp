@@ -6,15 +6,15 @@ import Media from './Media';
 
 
 
-export default class Carrer extends React.Component {
+export default class Career extends React.Component {
 
   render() {
     return (
-      <Section className="site-container--white carrer">
+      <Section className="site-container--white career">
 
 
         <h2>
-          Carrer
+          Career
         </h2>
         <h1>
           Challenge yourself to build the best AI technology.
