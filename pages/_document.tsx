@@ -32,7 +32,7 @@ export default class CustomDocument extends Document {
           <link rel="icon" href="/static/favicon.ico" />
           <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no" />
           <meta property="og:image" content="http://kata.ai/static/images/meta.jpg" />
-          <link rel="stylesheet" href="/_next/static/style.css" />
+          <link rel="stylesheet" href="/.next/static/style.css" />
           <style dangerouslySetInnerHTML={{ __html: this.props.css }} />
         </Head>
         <body>
