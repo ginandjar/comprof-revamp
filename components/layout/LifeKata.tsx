@@ -22,7 +22,7 @@ export default class LifeKata extends React.Component {
       <Section className="site-container--white lifekata">
 
         <Media
-          className="media" >
+          className="media-section" >
           <Col md={6}>
             <h1>
               Life at Kata.AI

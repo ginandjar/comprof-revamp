@@ -1,0 +1,9 @@
+.tab{
+  margin-top: 72px;
+    ul{
+      display: flex;
+      flex-direction: row;
+      border-bottom: 1px solid $light-grey;
+      list-style: none;
+    }
+}

@@ -71,7 +71,7 @@ export default class Management extends React.Component {
               indicators={false}
             >
               <Carousel.Item>
-                <Media className="media">
+                <Media className="media-section">
 
                   <Col md={6}>
                     <img src="/static/png/management/icn.png" alt="" />
@@ -89,7 +89,7 @@ export default class Management extends React.Component {
 
 
               <Carousel.Item>
-                <Media className="media">
+                <Media className="media-section">
 
                   <Col md={6}>
                     <img src="/static/png/management/rizki.png" alt="" />
@@ -108,7 +108,7 @@ export default class Management extends React.Component {
 
 
               <Carousel.Item>
-                <Media className="media">
+                <Media className="media-section">
 
                   <Col md={6}>
                     <img src="/static/png/management/wahyu.png" alt="" />
@@ -125,7 +125,7 @@ export default class Management extends React.Component {
               </Carousel.Item>
 
               <Carousel.Item>
-                <Media className="media">
+                <Media className="media-section">
 
                   <Col md={6}>
                     <img src="/static/png/management/rey.png" alt="" />
@@ -142,7 +142,7 @@ export default class Management extends React.Component {
               </Carousel.Item>
 
               <Carousel.Item>
-                <Media className="media">
+                <Media className="media-section">
 
                   <Col md={6}>
                     <img src="/static/png/management/pria.png" alt="" />

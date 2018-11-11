@@ -1,0 +1,17 @@
+.hero-card{
+  padding: 50px 0px; 
+  &__title{
+    padding: 10px 0px ;
+  }
+
+  &__content{
+    margin:auto;
+  }
+  &--blue{
+    background-color: $main-blue !important;
+    h1{
+      color: white !important;
+    }
+    
+  }
+}

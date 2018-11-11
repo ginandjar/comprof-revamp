@@ -8,10 +8,10 @@ interface SectionProps {
 }
 
 const Section: React.SFC<SectionProps> = ({ children, className, title }) => (
-  <div className={classnames('site-container', className)}>
+  <section className={classnames('section', className)}>
 
     {children}
-  </div>
+  </section>
 );
 
 export default Section;

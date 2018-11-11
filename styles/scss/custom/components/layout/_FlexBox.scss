@@ -1,0 +1,41 @@
+.flexbox{
+  display: flex;
+    width: auto;
+    height: auto;
+    justify-content: normal;
+    align-items: normal;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    order: 0;
+
+    
+}
+
+.flex-item{
+    
+  &__left{
+    width: auto;
+    height: 760px;
+    justify-content: normal;
+    -webkit-box-align: center;
+    align-items: center;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    order: 0;
+    display: flex;
+    flex: 1 1 0%;
+  }
+
+  &__right{
+    width: auto;
+    height: auto;
+    justify-content: normal;
+    align-items: normal;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    order: 0;
+    display: block;
+    flex: 1.4 1 0%;
+  }
+
+}

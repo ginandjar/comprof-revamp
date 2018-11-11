@@ -22,7 +22,7 @@ export default class Cover extends React.Component {
       <Section className="site-container--white cover">
 
         <Media
-          className="media" >
+          className="media-section" >
           <Col md={6}>
             <h1>
               AI & Chatbot solution for smarter

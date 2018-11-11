@@ -1,0 +1,42 @@
+.tab-item{
+    will-change: transform, animation, opacity;
+    text-align: center;
+    cursor: pointer;
+    flex: 1 1 0%;
+
+    &__block{
+      position: relative;
+      height: 44px;
+
+      ::before{
+        content: "";
+        display: block;
+        position: absolute;
+        right: 0px;
+        left: 0px;
+        bottom: -1px;
+        width: 100%;
+        height: 1px;
+        background-color:$grey;
+        transition: background 0.2s ease-in-out 0s;
+      }
+    }
+
+    &--selected{
+      color: $main-blue;
+
+      ::before{
+        content: "";
+        display: block;
+        position: absolute;
+        right: 0px;
+        left: 0px;
+        bottom: -1px;
+        width: 100%;
+        height: 1px;
+        background-color:$main-blue;
+        transition: background 0.2s ease-in-out 0s;
+      }
+    }
+
+}

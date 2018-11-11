@@ -10,7 +10,7 @@ export default class NavigationBar extends React.Component {
           <div className="pull-left navigation-bar__logo">
             <Link href="/">
               <a>
-                <img src="https://fakeimg.pl/98x56/?text=Logo" alt="" />
+                <img src="/static/images/icons/kata-logo-grads.svg" alt="" />
               </a>
             </Link>
           </div>

@@ -69,7 +69,7 @@ export default class CaseStudy extends React.Component {
             >
               <Carousel.Item>
                 <Media
-                  className="media"
+                  className="media-section"
                   title="Veronika"
                   description="Intelligent customer support for Telco"
                   image="/static/png/casestudy/group2105.svg"
@@ -92,7 +92,7 @@ export default class CaseStudy extends React.Component {
               </Carousel.Item>
               <Carousel.Item>
                 <Media
-                  className="media"
+                  className="media-section"
                   title="Sabrina"
                   description="Smart assistant for Banking"
                   image="/static/png/casestudy/group2105.svg"
@@ -115,7 +115,7 @@ export default class CaseStudy extends React.Component {
               </Carousel.Item>
               <Carousel.Item>
                 <Media
-                  className="media"
+                  className="media-section"
                   title="Jemma"
                   description="Virtual friend for personalized consumer engagement"
                   image="/static/png/casestudy/group2105.svg"
@@ -138,7 +138,7 @@ export default class CaseStudy extends React.Component {
               </Carousel.Item>
               <Carousel.Item>
                 <Media
-                  className="media"
+                  className="media-section"
                   title="Shalma"
                   description="Virtual friends for personalized consumer engagement"
                   image="/static/png/casestudy/group2105.svg"

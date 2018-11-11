@@ -1,0 +1,17 @@
+.hero{
+  position: relative;
+  z-index: 30;
+  margin: auto;
+  
+
+  &__full-width{
+    width: 100%;
+    
+  }
+
+  &__center-container{
+    max-width: 1280px;
+    padding: 0px 23px;
+  }
+
+}

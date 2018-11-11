@@ -1,0 +1,16 @@
+.section{
+  position: relative;
+  z-index: 20;
+  width: 100%;
+  background-color: white;
+  text-align: center;
+
+  &--blue{
+    background-color: $main-blue !important;
+  }
+
+  &--grey{
+    background-color: $light-grey !important;
+  }
+  
+}

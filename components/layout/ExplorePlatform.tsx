@@ -12,7 +12,7 @@ export default class ExplorePlatform extends React.Component {
     return (
       <Section className="site-container--white explore-platform">
         <Media
-          className="media media--full-width"
+          className="media-section media-section--full-width"
           title="Kata Platform The Technology Behind The Chatbots"
           description="An integrated platform to build the best chatbot for any chat / messaging apps (even inside your own apps/website!)"
           image="/static/png/group2122.png"
