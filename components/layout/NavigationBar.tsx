@@ -27,14 +27,14 @@ export default class NavigationBar extends React.Component {
 
             <ul>
               <li>
-                <Link href="/">
+                <Link href="/enterprise">
                   <a >
                     Solution
                     </a>
                 </Link>
               </li>
               <li>
-                <Link href="/enterprise">
+                <Link href="/platform">
                   <a >
                     Feature & Tech
                       <img src="/static/images/icons/arrow-down-light.svg" alt="" />

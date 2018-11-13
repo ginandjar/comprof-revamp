@@ -52,6 +52,9 @@ app.prepare().then(() => {
   // });
 
   server.get('/', (req, res) => {
+    renderAndCache(req, res, '/newindex');
+  });
+  server.get('/index', (req, res) => {
     renderAndCache(req, res, '/index');
   });
   server.get('/company', (req, res) => {

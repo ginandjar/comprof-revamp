@@ -1,0 +1,188 @@
+.landing{
+  height: 848px;
+
+  &__hero{
+    &__text{
+      display: inline-block;
+      width: 50%;
+      text-align: left !important;
+      h1{
+        margin: 0px;
+      }
+      vertical-align: middle;
+    }
+    &__image{
+      display: inline-block;
+      margin-right: -28px;
+      width: 50%;
+      vertical-align: middle;
+      
+    }
+    &__button{
+      margin: auto;
+      width: 235px;
+      padding-top: 40px;
+    }
+  }
+  
+
+  &__intro{
+    padding-top: 130px;
+
+    &__text{
+      color: white !important;
+      padding-bottom: 460px;
+      width: 450px;
+      text-align: left;
+      h1{
+        color: white !important;
+       
+      }
+    }
+
+    &__image{
+      position: relative;
+      min-height: 625px;
+
+      img{
+        position: absolute;
+        height: 500px;
+      }
+      &--simpati{
+        top:40px;
+        right:300px;
+      }
+  
+      &--alfa{
+        top:370px;
+        right:550px;
+      }
+  
+      &--bri{
+        top:480px;
+        right:300px;
+      }
+      &--uni{
+        top: 150px;
+        right: 50px;
+      }
+      &--white{
+        width: 1440px;
+        height: 1636px !important;
+        right: -103px;
+        top: -245px;
+      }
+
+      
+    }
+  }
+
+  &__list-image{
+    max-width: 1440px;
+    margin-top: 70px;
+    
+
+    &__item{
+      width: 300px;
+      display: inline-block;
+      margin: 0 20px;
+      vertical-align: top;
+
+      img{
+        width: 120px;
+        vertical-align: middle; 
+      }
+      h5{
+        padding: 10px;
+        min-height: 80px;
+        width: 255px;
+        margin: auto;      width: 255px;
+        margin: auto;
+      }
+      p{
+        padding: 10px;
+      }
+
+      &--list-image-only{
+        display: inline-block;
+        margin: 0 20px;
+        img{
+        width: 200px;
+        }
+      }
+
+    }
+
+  }
+
+  &__tab{
+    text-align: left;
+    max-width: 1234px;
+    margin: auto;
+    &__logo{
+      width: 150px;
+    }
+
+    
+
+    &__button-large{
+      width: 360px;
+      padding-bottom: 20px;
+    }
+
+    &__image{
+      position: relative;
+      img{
+        position: absolute;
+      }
+      &--veronika{
+        &--phone{
+          top: 30px;
+          left: 90px;
+        }
+        &--avatar{
+          top: 150px;
+          left: 80px;
+          z-index: 10;
+        }
+        &--chat{
+          left: 410px;
+          top: 190px;
+        }
+        &--menu{
+          left: 500px;
+          top: 260px;
+        }
+      }
+      
+    }
+
+    
+  }
+
+  &__how-to{
+    ul{
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+      li{
+        will-change: transform, animation, opacity;
+        text-align: center;
+        cursor: pointer;
+        flex: 1 1 0%;
+        padding: 0px 20px;
+      }
+    }
+
+    &__content{
+      padding-top: 20px;
+      margin: auto;
+      max-width: 811px;
+      h6{
+        color: white!important;
+      }
+    }
+  }
+  
+  
+}

@@ -1,0 +1,176 @@
+.company{
+  height: 1040px;
+
+  &__hero{
+    &__text{
+      display: inline-block;
+      width: 50%;
+      text-align: left !important;
+      h1{
+        margin: 0px;
+      }
+      vertical-align: middle;
+      &__history{
+        position: relative;
+
+        height: 647px;
+        &__title{
+          position: absolute;
+          color: $main-blue;
+          z-index: 1000;
+          top: 20px;
+          right: 290px;
+          width: 210px;
+        }
+        &__des{
+          position: absolute;
+          text-align: left;
+          color:white;
+          background-color: $main-blue;
+          padding-left: 400px;
+          padding-top: 120px;
+          width: 1190px;
+          height: 557px;
+          z-index: 1;
+          right: -720px;
+        }
+        &__dot{
+          position: absolute;
+          right: -100px;
+          top: -25px;
+      
+        }
+        &__cover{
+          position: absolute;
+          right: -320px;
+          top: 16px;
+          z-index: 100;
+        }
+      }
+    }
+    &__image{
+      display: inline-block;
+      margin-right: -28px;
+      width: 50%;
+      vertical-align: middle;
+      
+    }
+    &__button{
+      margin: auto;
+      width: 235px;
+      padding-top: 40px;
+    }
+    >p{
+      max-width: 865px;
+      margin: auto;
+    }
+  }
+  
+
+  &__intro{
+    padding-top: 10px;
+    margin: auto;
+    &__text{
+      color: white !important;
+      text-align: center;
+      max-width: 600px;
+      margin: auto;
+    }
+
+    &__image{
+      position: relative;
+      min-height: 625px;
+      img{
+        width: 1134px;
+      }
+    }
+  }
+
+  &__list-image{
+    max-width: 1440px;
+    margin-top: 70px;
+    
+
+    &__item{
+      width: 360px;
+      display: inline-block;
+      margin: 0 20px;
+      vertical-align: top;
+
+      img{
+        width: 360px;
+        vertical-align: middle; 
+      }
+      h5{
+        padding: 10px;
+        min-height: 80px;
+        width: 255px;
+        margin: auto;      width: 255px;
+        margin: auto;
+      }
+      p{
+        padding: 10px;
+      }
+
+      &--list-image-only{
+        display: inline-block;
+        margin: 0 20px;
+        img{
+        width: 200px;
+        }
+      }
+
+    }
+
+  }
+
+  &__tabbed{
+
+  }
+  &__tab{
+    text-align: left;
+    display: block;
+    
+    &__image{
+      display: inline-block;
+      width: 50%;
+    }
+
+    &__text{
+      h6{
+        color: $main-blue !important;
+      }
+      display: inline-block;
+      width: 50%;
+      vertical-align: middle;
+    }
+
+    
+  }
+
+  &__how-to{
+    ul{
+      display: flex;
+      flex-direction: row;
+      list-style: none;
+      li{
+        will-change: transform, animation, opacity;
+        text-align: center;
+        cursor: pointer;
+        flex: 1 1 0%;
+        padding: 0px 20px;
+      }
+    }
+
+    &__content{
+      padding-top: 20px;
+      margin: auto;
+      max-width: 811px;
+      h6{
+        color: white!important;
+      }
+    }
+  }
+  
+  
+}
