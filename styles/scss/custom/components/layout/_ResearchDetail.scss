@@ -1,0 +1,64 @@
+.researchdetail{
+  max-width: 1010px;
+  margin: 0 auto;
+  
+  img{
+    max-width: 100%;
+  }
+
+  &__header{
+    margin-bottom:47px;
+  }
+
+  &__title{
+    font-size: 32px;
+    font-weight: 700;
+    max-width: 50%;
+  }
+
+  &__descr{
+    hr{
+      width:10%;
+      border-top: 4px solid #00CCE9;
+      height:2px;
+      float:left;
+    }
+    p{
+      font-size: 18px;
+    }
+  }
+
+  &__abstract{
+    text-align: left;
+    position: static;
+    border-bottom: 1px solid #FFFFFF;
+    margin-bottom: 50px;
+
+    &__detail{
+      margin-bottom: 50px;
+    }
+
+  }
+
+  &__related-content{
+    text-align: left;
+
+    h1{
+      color:#006EE5;
+    }
+  }
+
+  &__related-content-list{
+    width: 45%;
+    display: inline-block;
+    border-bottom: 1px solid #E0E0E0;
+    padding: 10px;
+    margin: 10px;
+
+    &__title{
+      font-weight: 500;
+      font-size: 32px;
+    }
+
+  }
+}
