@@ -64,7 +64,7 @@ class Company extends React.Component<Props> {
                 </h1>
             </div>
             <div className="company__intro__image">
-              <img src="/static/png/company/intro.svg" />
+              <img src="/static/png/company/intro.png" />
 
             </div>
           </div>

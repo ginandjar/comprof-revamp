@@ -39,9 +39,9 @@ class DetailStory extends React.Component<Props> {
         <Intro className="detailstory">
           <div className="flex-item__left detailstory__intro__content">
             <div className="detailstory__intro__text">
-              <h2>
+              <h1>
                 Jemma
-              </h2>
+              </h1>
               <h2>
                 Virtual friend for personalized consumer engagement
               </h2>
@@ -49,7 +49,7 @@ class DetailStory extends React.Component<Props> {
 
           </div>
           <div className="flex-item__right detailstory__intro__content__right">
-            <img src="/static/png/enterprise/coverphone.png" alt="" />
+            <img src="/static/png/detailstory/jemma/jemma.png" alt="" />
           </div>
 
         </Intro>
@@ -65,7 +65,7 @@ class DetailStory extends React.Component<Props> {
           </div>
           <div className="detailstory__approach">
             <div className="detailstory__approach__content__left">
-              <img src="/static/png/enterprise/coverphone.png" alt="" />
+              <img src="/static/png/detailstory/jemma/approach.png" alt="" />
             </div>
             <div className="detailstory__approach__content__right">
               <h1>Our Approach</h1>
@@ -82,7 +82,7 @@ class DetailStory extends React.Component<Props> {
           </div>
           <div className="detailstory__result">
             <div className="detailstory__result__image">
-              <img src="/static/png/enterprise/coverphone.png" alt="" />
+              <img src="/static/png/detailstory/jemma/result.png" alt="" />
             </div>
             <div className="detailstory__result__text">
               <h1>The Results</h1>
