@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 164 175">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2 {
+        fill: #006ee5;
+      }
+
+      .cls-3 {
+        fill: none;
+      }
+
+      .cls-4 {
+        filter: url(#Rectangle_63);
+      }
+    </style>
+    <filter id="Rectangle_63" x="9.945" y="23.974" width="145" height="141" filterUnits="userSpaceOnUse">
+      <feOffset dy="6" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_3360" data-name="Group 3360" transform="translate(-250 -2721)">
+    <g id="Group_1047" data-name="Group 1047" transform="translate(282.945 2761.368)">
+      <g id="Group_1041" data-name="Group 1041" transform="translate(-14 -13.394)">
+        <g id="Group_749" data-name="Group 749" transform="translate(0)">
+          <g class="cls-4" transform="matrix(1, 0, 0, 1, -18.95, -26.97)">
+            <rect id="Rectangle_63-2" data-name="Rectangle 63" class="cls-1" width="127" height="123" rx="61.5" transform="translate(18.95 26.97)"/>
+          </g>
+        </g>
+      </g>
+      <g id="profit" transform="translate(11.882 -35.032)">
+        <path id="Path_2401" data-name="Path 2401" class="cls-2" d="M68.974,265.543a6.24,6.24,0,0,0-5.209,9.692l-8.85,8.851a6.209,6.209,0,0,0-9.376,3.328L33.906,286.19a6.233,6.233,0,1,0-11.489,3.875L10.058,301.692a6.357,6.357,0,1,0,1.708,1.826l12.358-11.625a6.2,6.2,0,0,0,9.522-3.218L45.279,289.9a6.234,6.234,0,1,0,11.4-4.045L65.528,277a6.25,6.25,0,1,0,3.446-11.458Zm-62.5,45a3.75,3.75,0,1,1,3.75-3.75A3.75,3.75,0,0,1,6.471,310.545Zm21.251-20a3.75,3.75,0,1,1,3.75-3.75A3.75,3.75,0,0,1,27.722,290.544Zm23.751,2.5a3.75,3.75,0,1,1,3.75-3.75A3.75,3.75,0,0,1,51.473,293.044Zm17.5-17.5a3.75,3.75,0,1,1,3.75-3.75A3.75,3.75,0,0,1,68.974,275.543Zm0,0" transform="translate(0 -206.202)"/>
+      </g>
+    </g>
+    <rect id="Rectangle_228" data-name="Rectangle 228" class="cls-3" width="164" height="175" transform="translate(250 2721)"/>
+  </g>
+</svg>
