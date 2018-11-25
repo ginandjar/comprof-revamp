@@ -1,0 +1,72 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 164 175">
+  <defs>
+    <style>
+      .cls-1 {
+        fill: #fff;
+      }
+
+      .cls-2, .cls-3 {
+        fill: none;
+      }
+
+      .cls-2 {
+        stroke: #006ee5;
+        stroke-linecap: round;
+        stroke-linejoin: round;
+        stroke-miterlimit: 10;
+        stroke-width: 2px;
+      }
+
+      .cls-4 {
+        filter: url(#Rectangle_63);
+      }
+    </style>
+    <filter id="Rectangle_63" x="9.406" y="22.845" width="145" height="141" filterUnits="userSpaceOnUse">
+      <feOffset dy="6" input="SourceAlpha"/>
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feFlood flood-opacity="0.161"/>
+      <feComposite operator="in" in2="blur"/>
+      <feComposite in="SourceGraphic"/>
+    </filter>
+  </defs>
+  <g id="Group_2106" data-name="Group 2106" transform="translate(-250 -2721)">
+    <g id="Group_1047" data-name="Group 1047" transform="translate(282.406 2760.845)">
+      <g id="Group_1041" data-name="Group 1041" transform="translate(-14 -14)">
+        <g id="Group_749" data-name="Group 749" transform="translate(0)">
+          <g class="cls-4" transform="matrix(1, 0, 0, 1, -18.41, -25.84)">
+            <rect id="Rectangle_63-2" data-name="Rectangle 63" class="cls-1" width="127" height="123" rx="61.5" transform="translate(18.41 25.84)"/>
+          </g>
+        </g>
+      </g>
+      <g id="Group_3289" data-name="Group 3289" transform="translate(21.068 18.629)">
+        <rect id="Rectangle_435" data-name="Rectangle 435" class="cls-2" width="28.988" height="28.988" transform="translate(14.338 14.427)"/>
+        <path id="Path_2362" data-name="Path 2362" class="cls-2" d="M47.524,50.914H11.779A3.377,3.377,0,0,1,8.4,47.535V11.879A3.377,3.377,0,0,1,11.779,8.5H47.524A3.377,3.377,0,0,1,50.9,11.879V47.624A3.36,3.36,0,0,1,47.524,50.914Z" transform="translate(-0.82 -0.831)"/>
+        <line id="Line_30" data-name="Line 30" class="cls-2" y2="6.669" transform="translate(14.338 1)"/>
+        <line id="Line_31" data-name="Line 31" class="cls-2" y1="6.669" transform="translate(14.338 50.083)"/>
+        <line id="Line_32" data-name="Line 32" class="cls-2" y2="6.669" transform="translate(20.206 1)"/>
+        <line id="Line_33" data-name="Line 33" class="cls-2" y1="6.669" transform="translate(20.206 50.083)"/>
+        <line id="Line_34" data-name="Line 34" class="cls-2" y2="6.669" transform="translate(25.986 1)"/>
+        <line id="Line_35" data-name="Line 35" class="cls-2" y1="6.669" transform="translate(25.986 50.083)"/>
+        <line id="Line_36" data-name="Line 36" class="cls-2" y2="6.669" transform="translate(31.766 1)"/>
+        <line id="Line_37" data-name="Line 37" class="cls-2" y1="6.669" transform="translate(31.766 50.083)"/>
+        <line id="Line_38" data-name="Line 38" class="cls-2" y2="6.669" transform="translate(37.546 1)"/>
+        <line id="Line_39" data-name="Line 39" class="cls-2" y1="6.669" transform="translate(37.546 50.083)"/>
+        <line id="Line_40" data-name="Line 40" class="cls-2" y2="6.669" transform="translate(43.414 1)"/>
+        <line id="Line_41" data-name="Line 41" class="cls-2" y1="6.669" transform="translate(43.414 50.083)"/>
+        <line id="Line_42" data-name="Line 42" class="cls-2" x1="6.669" transform="translate(50.083 14.338)"/>
+        <line id="Line_43" data-name="Line 43" class="cls-2" x2="6.669" transform="translate(1 14.338)"/>
+        <line id="Line_44" data-name="Line 44" class="cls-2" x1="6.669" transform="translate(50.083 20.206)"/>
+        <line id="Line_45" data-name="Line 45" class="cls-2" x2="6.669" transform="translate(1 20.206)"/>
+        <line id="Line_46" data-name="Line 46" class="cls-2" x1="6.669" transform="translate(50.083 25.986)"/>
+        <line id="Line_47" data-name="Line 47" class="cls-2" x2="6.669" transform="translate(1 25.986)"/>
+        <line id="Line_48" data-name="Line 48" class="cls-2" x1="6.669" transform="translate(50.083 31.766)"/>
+        <line id="Line_49" data-name="Line 49" class="cls-2" x2="6.669" transform="translate(1 31.766)"/>
+        <line id="Line_50" data-name="Line 50" class="cls-2" x1="6.669" transform="translate(50.083 37.546)"/>
+        <line id="Line_51" data-name="Line 51" class="cls-2" x2="6.669" transform="translate(1 37.546)"/>
+        <line id="Line_52" data-name="Line 52" class="cls-2" x1="6.669" transform="translate(50.083 43.414)"/>
+        <line id="Line_53" data-name="Line 53" class="cls-2" x2="6.669" transform="translate(1 43.414)"/>
+      </g>
+    </g>
+    <rect id="Rectangle_228" data-name="Rectangle 228" class="cls-3" width="164" height="175" transform="translate(250 2721)"/>
+  </g>
+</svg>
