@@ -58,95 +58,35 @@ class Research extends React.Component<Props> {
         </Intro>
         <div className="research__research-container">
           <HeroCard title="Recent Publication">
-            <input type="text" name="name" placeholder="Search by keyword" className="research__input-search" />
-            <div>
-              <ButtonLink modifier="light" href="/enterprise">
-                Research Area
-                <img src="/static/images/icons/platform-circle.svg" />
-              </ButtonLink>
-            </div>
 
           </HeroCard>
+
           <div className="research__research-content">
-            <div className="research__research-content__image">
-              <img src="/static/jpg/career.jpg" />
-            </div>
             <div className="research__research-content__descr">
               <div className="research__research-content__title">
                 <div className="research__research-content__title">
-                  Lorem Ipsum is simply dummy text of the printing and typesetting
-                </div>
-                <div className="research__research-content__research-area">
-                  Research area : Machine Learning
+                  <h3>Lorem Ipsum is simply dummy text of the printing and typesetting</h3>
                 </div>
                 <div className="research__research-content__writen-by">
-                  Writen by : Kemal Maulana
-                </div>
-              </div>
-              <div className="research__research-content__read-more" href="/researchdetail">
-                Read more
-              </div>
-            </div>
-          </div>
-          <div className="research__research-content">
-            <div className="research__research-content__image">
-              <img src="/static/jpg/career.jpg" />
-            </div>
-            <div className="research__research-content__descr">
-              <div className="research__research-content__title">
-                <div className="research__research-content__title">
-                  Lorem Ipsum is simply dummy text of the printing and typesetting
-                </div>
-                <div className="research__research-content__research-area">
-                  Research area : Machine Learning
-                </div>
-                <div className="research__research-content__writen-by">
-                  Writen by : Kemal Maulana
+                  <h5>Writen by : Kemal Maulana</h5>
                 </div>
                 <div className="research__research-content__read-more" href="/researchdetail">
-                  Read more
+                  <h5>Read more</h5>
                 </div>
               </div>
             </div>
           </div>
           <div className="research__research-content">
-            <div className="research__research-content__image">
-              <img src="/static/jpg/career.jpg" />
-            </div>
             <div className="research__research-content__descr">
               <div className="research__research-content__title">
                 <div className="research__research-content__title">
-                  Lorem Ipsum is simply dummy text of the printing and typesetting
-                </div>
-                <div className="research__research-content__research-area">
-                  Research area : Machine Learning
+                  <h3>Lorem Ipsum is simply dummy text of the printing and typesetting</h3>
                 </div>
                 <div className="research__research-content__writen-by">
-                  Writen by : Kemal Maulana
+                  <h5>Writen by : Kemal Maulana</h5>
                 </div>
                 <div className="research__research-content__read-more" href="/researchdetail">
-                  Read more
-                </div>
-              </div>
-            </div>
-          </div>
-          <div className="research__research-content">
-            <div className="research__research-content__image">
-              <img src="/static/jpg/career.jpg" />
-            </div>
-            <div className="research__research-content__descr">
-              <div className="research__research-content__title">
-                <div className="research__research-content__title">
-                  Lorem Ipsum is simply dummy text of the printing and typesetting
-                </div>
-                <div className="research__research-content__research-area">
-                  Research area : Machine Learning
-                </div>
-                <div className="research__research-content__writen-by">
-                  Writen by : Kemal Maulana
-                </div>
-                <div className="research__research-content__read-more" href="/researchdetail">
-                  Read more
+                  <h5>Read more</h5>
                 </div>
               </div>
             </div>

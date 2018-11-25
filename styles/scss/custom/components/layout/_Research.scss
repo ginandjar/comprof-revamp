@@ -1,4 +1,5 @@
 .research{
+  font-family: 'Museo Sans' !important;
 
   &__intro{
     &__img{
@@ -12,7 +13,7 @@
           
           img{  
             position:relative;
-            top:-40px;
+            top:10px;
             max-width: 100%;
           }
           
@@ -25,7 +26,7 @@
           
           img{
             position:relative;
-            top:40px;
+            top:80px;
             max-width: 100%;
           }
           
@@ -37,7 +38,7 @@
 
   &__research-container{
     max-width: 1100px;
-    margin: 0 auto;
+    margin: 80px auto;
   }
 
   &__input-search{
@@ -62,8 +63,8 @@
     width: 44%;
     display: inline-block;
     border-radius: 10px;
-    box-shadow: 1px 2px 4px rgba(0, 0, 0, .5);
-    margin: 80px 30px;
+    box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
+    margin: 10px 30px;
 
     &__descr{
       padding:10px;
@@ -86,10 +87,12 @@
     }
 
     &__read-more{
+      h5{
       text-align: right;
       color:#006EE5;
       font-weight: 500;
-      font-size:24px;
+
+      }
     }
 
     &__writen-by{

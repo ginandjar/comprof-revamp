@@ -39,14 +39,10 @@ class ResearchDetail extends React.Component<Props> {
         </Head>
         <NavigationBar localeService={this.props.localeService} />
         <div className="researchdetail">
-          <div className="researchdetail__header">
-            <img src="/static/jpg/career.jpg" />
-          </div>
           <div className="researchdetail__title">
             Lorem Ipsum is simply dummy text of the printing and typesetting
           </div>
           <div className="researchdetail__descr">
-            <p>Research area: Machine Learning</p>
             <p>Publication year: 2018</p>
             <p>Writen by: Kemal Maulana</p>
             <hr />
@@ -66,7 +62,6 @@ class ResearchDetail extends React.Component<Props> {
                 Lorem Ipsum is simply dummy text of the printing and typesetting
               </div>
               <div>
-                <p>Research area: Machine Learning</p>
                 <p>Publication year: 2018</p>
                 <p>Writen by: Kemal Maulana</p>
               </div>
@@ -76,27 +71,6 @@ class ResearchDetail extends React.Component<Props> {
                 Lorem Ipsum is simply dummy text of the printing and typesetting
               </div>
               <div>
-                <p>Research area: Machine Learning</p>
-                <p>Publication year: 2018</p>
-                <p>Writen by: Kemal Maulana</p>
-              </div>
-            </div>
-            <div className="researchdetail__related-content-list">
-              <div className="researchdetail__related-content-list__title">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-              </div>
-              <div>
-                <p>Research area: Machine Learning</p>
-                <p>Publication year: 2018</p>
-                <p>Writen by: Kemal Maulana</p>
-              </div>
-            </div>
-            <div className="researchdetail__related-content-list">
-              <div className="researchdetail__related-content-list__title">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-              </div>
-              <div>
-                <p>Research area: Machine Learning</p>
                 <p>Publication year: 2018</p>
                 <p>Writen by: Kemal Maulana</p>
               </div>
