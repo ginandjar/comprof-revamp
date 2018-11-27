@@ -60,9 +60,7 @@ app.prepare().then(() => {
   server.get('/career', (req, res) => {
     renderAndCache(req, res, '/career');
   });
-  server.get('/platfrom', (req, res) => {
-    renderAndCache(req, res, '/platfrom');
-  });
+
   server.get('/enterprise', (req, res) => {
     renderAndCache(req, res, '/enterprise');
   });
@@ -71,9 +69,6 @@ app.prepare().then(() => {
   });
   server.get('/research', (req, res) => {
     renderAndCache(req, res, '/research');
-  });
-  server.get('/research/detail', (req, res) => {
-    renderAndCache(req, res, '/researchdetail');
   });
 
   server.get('/research/detail', (req, res) => {

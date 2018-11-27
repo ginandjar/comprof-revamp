@@ -65,11 +65,15 @@ class Home extends React.Component<Props> {
           <div className="flex-item__left">
             <div className="landing__intro__text">
               <h1>
-                AI & Chatbot solution for smarter
-                </h1>
+                AI & Chatbot solution for smarter <span>Customer Support</span>
+              </h1>
+
               <p>
                 Create an intelligent assistant to serve your customer better
                 </p>
+              <ButtonLink modifier="light" href="#">
+                Build your chatbot now
+                </ButtonLink>
             </div>
 
           </div>
@@ -114,7 +118,7 @@ class Home extends React.Component<Props> {
               <img src="/static/png/landing/chart.svg" />
 
               <h5>
-                Better conversion rate
+                Integration Flexibility
               </h5>
               <p>
                 With better experience for your customer, it’s easier to convert their interest into leads or purchases.
@@ -153,7 +157,7 @@ class Home extends React.Component<Props> {
                                 Intelligent customer support for Telco
                               </p>
 
-                              <ButtonLink modifier="light" block="true" href="/enterprise">
+                              <ButtonLink modifier="light" href="/enterprise">
                                 Meet Veronika
                                 </ButtonLink>
                             </div>
@@ -178,7 +182,7 @@ class Home extends React.Component<Props> {
                         <FlexBox className="flex">
                           <div className="flex-item__left">
                             <div>
-                              <img className="landing__tab__logo" src="/static/png/landing/veronika/logo.png" />
+                              <img className="landing__tab__logo" src="/static/png/landing/sabrina/logo.png" />
                               <h1>
                                 Sabrina
                               </h1>
@@ -186,16 +190,16 @@ class Home extends React.Component<Props> {
                                 Smart assistant for Banking
                               </p>
 
-                              <ButtonLink modifier="light" block="true" href="/enterprise">
+                              <ButtonLink modifier="light" href="/enterprise">
                                 Meet Sabrina
                                 </ButtonLink>
                             </div>
                           </div>
                           <div className="flex-item__right landing__tab__image">
-                            <img className="landing__tab__image--veronika--avatar" src="/static/png/landing/veronika/avatar.png"></img>
-                            <img className="landing__tab__image--veronika--phone" src="/static/png/landing/veronika/phone.png"></img>
-                            <img className="landing__tab__image--veronika--chat" src="/static/png/landing/veronika/chat.png"></img>
-                            <img className="landing__tab__image--veronika--menu" src="/static/png/landing/veronika/menu.png"></img>
+                            <img className="landing__tab__image--veronika--avatar" src="/static/png/landing/sabrina/avatar.png"></img>
+                            <img className="landing__tab__image--veronika--phone" src="/static/png/landing/sabrina/phone.png"></img>
+                            <img className="landing__tab__image--veronika--chat" src="/static/png/landing/sabrina/chat.png"></img>
+                            <img className="landing__tab__image--veronika--menu" src="/static/png/landing/sabrina/menu.png"></img>
 
                           </div>
                         </FlexBox>
@@ -211,7 +215,7 @@ class Home extends React.Component<Props> {
                         <FlexBox className="flex">
                           <div className="flex-item__left">
                             <div>
-                              <img className="landing__tab__logo" src="/static/png/landing/veronika/logo.png" />
+                              <img className="landing__tab__logo" src="/static/png/landing/jemma/logo.png" />
                               <h1>
                                 Jemma
                               </h1>
@@ -219,16 +223,16 @@ class Home extends React.Component<Props> {
                                 Virtual friend for personalized consumer engagement
                               </p>
 
-                              <ButtonLink modifier="light" block="true" href="/enterprise">
+                              <ButtonLink modifier="light" href="/enterprise">
                                 Meet Jemma
                                 </ButtonLink>
                             </div>
                           </div>
                           <div className="flex-item__right landing__tab__image">
-                            <img className="landing__tab__image--veronika--avatar" src="/static/png/landing/veronika/avatar.png"></img>
-                            <img className="landing__tab__image--veronika--phone" src="/static/png/landing/veronika/phone.png"></img>
-                            <img className="landing__tab__image--veronika--chat" src="/static/png/landing/veronika/chat.png"></img>
-                            <img className="landing__tab__image--veronika--menu" src="/static/png/landing/veronika/menu.png"></img>
+                            <img className="landing__tab__image--veronika--avatar" src="/static/png/landing/jemma/avatar.png"></img>
+                            <img className="landing__tab__image--veronika--phone" src="/static/png/landing/jemma/phone.png"></img>
+                            <img className="landing__tab__image--veronika--chat" src="/static/png/landing/jemma/chat.png"></img>
+                            <img className="landing__tab__image--veronika--menu" src="/static/png/landing/jemma/menu.png"></img>
 
                           </div>
                         </FlexBox>
@@ -244,24 +248,24 @@ class Home extends React.Component<Props> {
                         <FlexBox className="flex">
                           <div className="flex-item__left">
                             <div>
-                              <img className="landing__tab__logo" src="/static/png/landing/veronika/logo.png" />
+                              <img className="landing__tab__logo" src="/static/png/landing/shalma/logo.png" />
                               <h1>
                                 Shalma
                               </h1>
                               <p>
-                                Virtual friend for personalized consumer engagement
+                                Interactive assistant for customer loyalty
                               </p>
 
-                              <ButtonLink modifier="light" block="true" href="/enterprise">
+                              <ButtonLink modifier="light" href="/enterprise">
                                 Meet Shalma
                                 </ButtonLink>
                             </div>
                           </div>
                           <div className="flex-item__right landing__tab__image">
-                            <img className="landing__tab__image--veronika--avatar" src="/static/png/landing/veronika/avatar.png"></img>
-                            <img className="landing__tab__image--veronika--phone" src="/static/png/landing/veronika/phone.png"></img>
-                            <img className="landing__tab__image--veronika--chat" src="/static/png/landing/veronika/chat.png"></img>
-                            <img className="landing__tab__image--veronika--menu" src="/static/png/landing/veronika/menu.png"></img>
+                            <img className="landing__tab__image--veronika--avatar" src="/static/png/landing/shalma/avatar.png"></img>
+                            <img className="landing__tab__image--veronika--phone" src="/static/png/landing/shalma/phone.png"></img>
+                            <img className="landing__tab__image--veronika--chat" src="/static/png/landing/shalma/chat.png"></img>
+                            <img className="landing__tab__image--veronika--menu" src="/static/png/landing/shalma/menu.png"></img>
 
                           </div>
                         </FlexBox>
@@ -279,7 +283,7 @@ class Home extends React.Component<Props> {
 
         </TabbedHero>
 
-        <HeroCard title="Create the best chatbots with our platform" className="hero-card--grey landing__hero">
+        <HeroCard title="Create the best chatbots with our platform" className="hero-card landing__hero">
           <div className="landing__list-image">
             <div className="landing__list-image__item">
               <img src="/static/png/landing/brain.svg" />
@@ -358,18 +362,22 @@ class Home extends React.Component<Props> {
             <div className="landing__list-image__item--list-image-only">
               <img src="/static/png/landing/comunicationblue.svg" />
             </div>
+            <div className="landing__list-image__item__line">
+              <img src="/static/png/landing/line.svg" />
+            </div>
 
           </div>
+
           <div className="landing__hero__button">
-            <ButtonLink modifier="default" block="true" href="/career">
-              Work With Us
-          </ButtonLink>
+            <ButtonLink modifier="default" href="/career">
+              &nbsp;&nbsp;&nbsp;Work With Us&nbsp;&nbsp;&nbsp;
+            </ButtonLink>
           </div>
         </HeroCard>
 
 
         <HeroCard className="hero-card">
-          <div className="landing__hero">
+          <div className="landing__hero landing__hero--full-width">
             <div className="landing__hero__text">
 
               <h1>
@@ -381,8 +389,8 @@ class Home extends React.Component<Props> {
                         </p>
 
               <ButtonLink modifier="light" href="/enterprise">
-                Explore more
-                      </ButtonLink>
+                &nbsp;&nbsp;&nbsp;Explore more&nbsp;&nbsp;&nbsp;
+              </ButtonLink>
 
             </div>
             <div className="landing__hero__image">
