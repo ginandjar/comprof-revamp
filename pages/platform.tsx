@@ -40,10 +40,10 @@ class Platform extends React.Component<Props> {
         </Head>
         <NavigationBar localeService={this.props.localeService} />
         <Intro>
-          <HeroCard title="The Ultimate Chatbot Platform" >
-            <p>
+          <HeroCard title="The Ultimate Chatbot Platform" className="platform__intro">
+            <h2>
               An integrated platform to create, launch, and manage enterprise-grade chatbot without compromise
-            </p>
+            </h2>
             <div className="platform__intro-image">
               <div className="platform__intro-image--left">
                 <img src="/static/png/platform/laptopleft.png" />
@@ -69,43 +69,43 @@ class Platform extends React.Component<Props> {
               The new Kata Platform 3.0 is our awesome platform to build great conversation interface. It allows you to quickly and simply build incredible chatbot for any product or service. It comes with great features, has the smartest AI with the best NLP in Bahasa Indonesia & English. So you can make a chatbot that understands users better. You can even deploy it into any chat apps that you want, and get insights about users behavior with our analytics tools.
           </p>
           </HeroCard>
-          <HeroCard title="Our Features">
-            <div className="platform__features">
+          <HeroCard title="Our Features" className="platform__features">
+            <div className="platform__features__item">
               <div className="platform__features__image"><img src="/static/png/platform/group2106.svg" /></div>
               <div className="platform__features__title">NL Studio</div>
               <div className="platform__features__descr"> Create your own Natural Language model or use our pre-trained model to enhance your chatbot.</div>
             </div>
-            <div className="platform__features">
+            <div className="platform__features__item">
               <div className="platform__features__image"><img src="/static/png/platform/group2107.svg" /></div>
               <div className="platform__features__title">Bot Studio</div>
               <div className="platform__features__descr">Develop chatbot using visual interface or YAML-based Markup Language. You can also embed javascript code for more powerful scripting capability.</div>
             </div>
-            <div className="platform__features">
+            <div className="platform__features__item">
               <div className="platform__features__image"><img src="/static/png/platform/group2109.svg" /></div>
               <div className="platform__features__title">CMS Studio</div>
               <div className="platform__features__descr"> Build custom CMS for your chatbot to allow easier content updates for non developers.</div>
             </div>
-            <div className="platform__features">
+            <div className="platform__features__item">
               <div className="platform__features__image"><img src="/static/png/platform/group2114.svg" /></div>
               <div className="platform__features__title">Module</div>
               <div className="platform__features__descr">Integrate our prebuilt module to your existing project for faster & better bot development.</div>
             </div>
-            <div className="platform__features">
+            <div className="platform__features__item">
               <div className="platform__features__image"><img src="/static/png/platform/group2778.svg" /></div>
               <div className="platform__features__title">Analytic Dashboard</div>
               <div className="platform__features__descr"> Monitor how your chatbot performs & gather actionable insight for future improvements.</div>
             </div>
-            <div className="platform__features">
+            <div className="platform__features__item">
               <div className="platform__features__image"><img src="/static/png/platform/group3359.svg" /></div>
               <div className="platform__features__title">Deployment Manager</div>
               <div className="platform__features__descr">Set up multiple environments for different purpose. Rollback when you need to. Create one, chat anywhere.</div>
             </div>
-            <div className="platform__features">
+            <div className="platform__features__item">
               <div className="platform__features__image"><img src="/static/png/platform/group3360.svg" /></div>
               <div className="platform__features__title">CRM Integrations</div>
               <div className="platform__features__descr">Integrate your favorite CRM tools. Now supports Salesforce & Zendesk.</div>
             </div>
-            <div className="platform__features">
+            <div className="platform__features__item">
               <div className="platform__features__image"><img src="/static/png/platform/group3361.svg" /></div>
               <div className="platform__features__title">API Integrations</div>
               <div className="platform__features__descr">Flexible third-party API integrations to your chatbot.</div>

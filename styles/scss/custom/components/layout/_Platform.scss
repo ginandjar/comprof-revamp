@@ -4,10 +4,33 @@
 
     h3{
       padding-bottom:30px;
+      font-size: 40px;
+      font-weight: 500;
     }
 
     p{
-      font-size:20px;
+      font-size:24px;
+    }
+
+    h1{
+      font-size: 48px;
+      font-weight: 500;
+    }
+
+    &__intro{
+
+      h1{
+        font-size: 48px;
+        font-weight: 500;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
+      h2{
+        font-size: 40px;
+        font-weight: 300;
+        max-width: 1200px;
+        margin: 0 auto;
+      }
     }
 
     &__intro-image{
@@ -49,43 +72,61 @@
 
     &__features{
 
-      width: 33.3%;
-      display: inline-block;
-      padding-left: 50px;
-      padding-right: 50px;
+      h1{
+        font-size: 40px;
+        font-weight: 500;
+      }
+
+      &__item{
+
+        width: 33.3%;
+        display: inline-block;
+        padding-left: 30px;
+        padding-right: 30px;
+        margin-bottom:40px;
+
+      }
       
       &__image{
         img{
-          max-width: 60%;
+          max-width: 50%;
         }
       }
 
       &__title{
         font-weight: 700;
         color: #333333;
-        font-size: 22px;
+        font-size: 24px;
       }
 
       &__descr{
         font-weight: 300;
         color: #535353;
         float:left;
-        font-size: 18px;
+        font-size: 16px;
       }
     }
 
     &__buildchatbot{
       text-align: center;
+      position: relative;
+
       img{
         width:100%;
         position: relative;
-        top:-70px;
         z-index: -1;
       }
 
       a{
         position:relative;
-        top: -150px;
+        top: -180px;
+      }
+
+      h1{
+        font-size: 44px;
+        font-weight: 500;
+        position: relative;
+        bottom:-110px;
       }
     }
     &__engineering-blog{
@@ -104,7 +145,7 @@
 
       &__detail{
         text-align: left;
-        padding: 100px 10px 20px 10px;
+        padding: 130px 10px 20px 10px;
         border-radius: 10px;
         background-color: #F5F5F5;
 
@@ -114,8 +155,8 @@
       }
 
       &__item{
-        width:40%;
-        padding: 0 15px;
+        width:43%;
+        padding: 0 25px;
         margin: 0 30px;
         display: inline-block;
       }
@@ -133,17 +174,21 @@
 
       &__category{
         color:#006EE5;
+        font-size:21px;
       }
 
       &__title{
         font-weight: 700;
+        font-size:24px;
       }
 
       &__descr{
+        font-size:16px;
       }
 
       &__read-more{
         color:#006EE5;
+        font-size:16px;
       }
 
       &__written-by{
@@ -152,17 +197,28 @@
           border-radius: 100%;
           width:50px;
           height:50px;
+          font-size:20px;
+          margin-right:10px;
         }
         p{
           display: inline-block;
+          font-size: 9px;
         }
         
       }
     }
     &__help{
-    h5{
-        margin-bottom:30px;
+      max-width: 1010px;
+      margin:0 auto;
+      h1{
+        font-weight: 500;
       }
+
+      h5{
+          margin:50px 0px 70px;
+          font-size: 32px;
+          font-weight: 300;
+        }
     }
 
     &__partner-workshop{
@@ -176,7 +232,7 @@
 
       &__item{
         max-width: 33.3%;
-        padding: 10px 20px;
+        padding: 30px 20px;
         display: inline-block;
 
         img{
@@ -194,6 +250,8 @@
 
       h1{
         color: white;
+        margin-bottom:80px;
+        font-weight: 500;
       }
 
       a{
@@ -201,7 +259,6 @@
       }
 
       &__content{
-        padding:50px;
       }
     }
   

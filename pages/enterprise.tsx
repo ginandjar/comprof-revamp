@@ -299,7 +299,7 @@ class Enterprise extends React.Component<Props> {
               <div className="swiper-wrapper">
                 <div className="swiper-slide enterprise__success-story">
                   <div className="enterprise__success-story__item">
-                    <div>
+                    <div className="enterprise__success-story__item__img">
                       <img src="/static/png/enterprise/veronika.png"></img>
                     </div>
                     <ButtonLink modifier="light" href="/enterprise">
@@ -313,7 +313,7 @@ class Enterprise extends React.Component<Props> {
                       <img src="/static/png/enterprise/jemma.png"></img>
                     </div>
                     <ButtonLink modifier="light" href="/enterprise">
-                      Read About Veronika
+                      Read About Jemma
                     </ButtonLink>
                   </div>
                 </div>
@@ -357,7 +357,7 @@ class Enterprise extends React.Component<Props> {
               <div className="swiper-wrapper">
                 <div className="swiper-slide">
                   <h6>
-                    1. get in touch
+                    Get in touch
                   </h6>
                   <h6>
                     Say hi to us and let’s discuss. We start everything by listening to your story and your objectives. This step allows us to learn about your business needs.
@@ -366,64 +366,64 @@ class Enterprise extends React.Component<Props> {
 
                 <div className="swiper-slide">
                   <h6>
-                    2. get in touch
+                    Concept Plan
                   </h6>
                   <h6>
-                    Say hi to us and let’s discuss. We start everything by listening to your story and your objectives. This step allows us to learn about your business needs.
-                  </h6>
-                </div>
-
-                <div className="swiper-slide">
-                  <h6>
-                    3. get in touch
-                  </h6>
-                  <h6>
-                    Say hi to us and let’s discuss. We start everything by listening to your story and your objectives. This step allows us to learn about your business needs.
+                    We begin to gather information, then formulate the best strategy that will act as the blueprint of the project.
                   </h6>
                 </div>
 
                 <div className="swiper-slide">
                   <h6>
-                    4. get in touch
+                    Try POC
                   </h6>
                   <h6>
-                    Say hi to us and let’s discuss. We start everything by listening to your story and your objectives. This step allows us to learn about your business needs.
-                  </h6>
-                </div>
-
-                <div className="swiper-slide">
-                  <h6>
-                    5. get in touch
-                  </h6>
-                  <h6>
-                    Say hi to us and let’s discuss. We start everything by listening to your story and your objectives. This step allows us to learn about your business needs.
+                    We'll develop a custom proof of concept with our chatbot platform for you. So, you can try how far the capabilities is, values, and benefits of our chatbot solutions for your business.
                   </h6>
                 </div>
 
                 <div className="swiper-slide">
                   <h6>
-                    6. get in touch
+                    Kick-off
                   </h6>
                   <h6>
-                    Say hi to us and let’s discuss. We start everything by listening to your story and your objectives. This step allows us to learn about your business needs.
-                  </h6>
-                </div>
-
-                <div className="swiper-slide">
-                  <h6>
-                    7. get in touch
-                  </h6>
-                  <h6>
-                    Say hi to us and let’s discuss. We start everything by listening to your story and your objectives. This step allows us to learn about your business needs.
+                    After present project plans and objectives, the next phase is kickoff meeting. It'll take place after contracts have been signed and there's agreement on the statement of work, costs, and timeline.
                   </h6>
                 </div>
 
                 <div className="swiper-slide">
                   <h6>
-                    8. get in touch
+                    Chatbot development
                   </h6>
                   <h6>
-                    Say hi to us and let’s discuss. We start everything by listening to your story and your objectives. This step allows us to learn about your business needs.
+                    After understanding all the aspects of the project, we start designing and develop your chatbot. Starting with interior functionality, and then delving into chatbot personality, the bot scripts are coded and developed cumulatively.
+                  </h6>
+                </div>
+
+                <div className="swiper-slide">
+                  <h6>
+                    Testing and Review
+                  </h6>
+                  <h6>
+                    Test the bot and provide feedback as to where the bot got confused or stuck. This step also includes the final QA of the bot, to ensure your bot saying the right thing at the right time.
+                  </h6>
+                </div>
+
+                <div className="swiper-slide">
+                  <h6>
+                    Launch
+                  </h6>
+                  <h6>
+                    Once the bot is tested and deployed, we'll orchestrate the smooth launch of your an intelligent assistant.
+                  </h6>
+                </div>
+
+                <div className="swiper-slide">
+                  <h6>
+                    Continuous Support
+                  </h6>
+                  <h6>
+                    Whether you're having additional features, planning on retention campaign, or simply need to discuss about chatbot best practices, we will always be there every step of the way
                   </h6>
                 </div>
               </div>
@@ -431,7 +431,7 @@ class Enterprise extends React.Component<Props> {
           </div>
         </HeroCard>
 
-        <HeroCard className="hero-card" title="Technology Behind Our Solutions">
+        <HeroCard className="hero-card enterprise__platform" title="Technology Behind Our Solutions">
           <div>
             <h6>
               Kata Platform gives enterprises the rich features needed to create high-value chatbots without development complexity

@@ -74,10 +74,8 @@ class DetailStory extends React.Component<Props> {
                 <li>We decided to name the chatbot ‘Jemma’, a chatbot with a bubbly personality that everybody loves to talk to.</li>
                 <li>Jemma is capable of handling various conversations topics, from simple greetings to specific conversation cases such as relationship, food recommendation, and beauty tips.</li>
                 <li>Aside from handling everyday conversations, the key features that Jemma offers are weekly zodiac, lifehack, and latest entertainment news.</li>
+                <li>Jemma is available on LINE. Those chat apps is the most appropriate channel for this project and it fits really well with Unilever’s customer demographics.</li>
               </ul>
-              <p>
-                Jemma is available on LINE. Those chat apps is the most appropriate channel for this project and it fits really well with Unilever’s customer demographics.
-            </p>
             </div>
           </div>
           <div className="detailstory__result">

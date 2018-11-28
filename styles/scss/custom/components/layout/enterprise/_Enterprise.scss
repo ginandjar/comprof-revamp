@@ -34,8 +34,8 @@
 
   &__success-story{
     &__item{
-      img{
-        display: inline-block;
+      &__img{
+        
       }
     }
   }
@@ -76,7 +76,14 @@
       max-width: 811px;
       h6{
         color: white!important;
+        font-size: 22px;
       }
+    }
+  }
+  &__platform{
+    h6{
+      font-size: 22px !important;
+      margin: 20px 100px;
     }
   }
   
