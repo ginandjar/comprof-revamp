@@ -41,12 +41,21 @@ class Enterprise extends React.Component<Props> {
     });
 
     storySwiper = new Swiper('#story-swiper', {
-      slidesPerView: 3,
-      spaceBetween: 0,
+      slidesPerView: 1,
+      effect: 'coverflow',
+      centeredSlides: true,
+      spaceBetween: -200,
       freeMode: false,
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
+      },
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 1500,
+        modifier: 1,
+        slideShadows: false,
       },
     });
   }
@@ -108,7 +117,7 @@ class Enterprise extends React.Component<Props> {
                       <Hero className="hero__center-container">
                         <FlexBox className="flex">
                           <div className="flex-item__right">
-                            <img src="/static/png/enterprise/crphone.png"></img>
+                            <img src="/static/png/enterprise/cephone.png"></img>
                           </div>
                           <div className="flex-item__left">
                             <div>
@@ -132,12 +141,12 @@ class Enterprise extends React.Component<Props> {
 
                 <div className="swiper-slide">
                   <div className="enterprise__tab">
-                    <h5>FMCG - Customer Engagement Customer engagement has always been at the forefront of brand marketing plans, and now employing digital channels to turn casual users into shoppers is quickly becoming a viable path to faster and simpler interaction. Our chatbot solution allows your FMCG brand to create brilliantly effective campaign plans, simply by defining your goals.</h5>
+                    <h5>Whether your business line is banking, financial services, or FinTech, bots are a great strategy to sustain profitability and win over customers. It offers real-time financial services / data at the engagement point, supply 24 hour self-service, and transform ordinary transactions, policy updates, payments, and more into simple text through the channel of customers choice. </h5>
                     <div>
                       <Hero className="hero__center-container">
                         <FlexBox className="flex">
                           <div className="flex-item__right">
-                            <img src="/static/png/enterprise/crphone.png"></img>
+                            <img src="/static/png/enterprise/baphone.png"></img>
                           </div>
                           <div className="flex-item__left">
                             <div>
@@ -161,12 +170,12 @@ class Enterprise extends React.Component<Props> {
 
                 <div className="swiper-slide">
                   <div className="enterprise__tab">
-                    <h5>FMCG - Customer Engagement Customer engagement has always been at the forefront of brand marketing plans, and now employing digital channels to turn casual users into shoppers is quickly becoming a viable path to faster and simpler interaction. Our chatbot solution allows your FMCG brand to create brilliantly effective campaign plans, simply by defining your goals.</h5>
+                    <h5>Your most important assets are your employees. Imagine how happy they would be and how productive they are, if they were given the answer right away. This kind of chatbot will simplify Human Resource experience. Employee can ask or message a bot like their fellow to resolve issues, ask questions, schedule meetings, and more. </h5>
                     <div>
                       <Hero className="hero__center-container">
                         <FlexBox className="flex">
                           <div className="flex-item__right">
-                            <img src="/static/png/enterprise/crphone.png"></img>
+                            <img src="/static/png/enterprise/hrphone.png"></img>
                           </div>
                           <div className="flex-item__left">
                             <div>
@@ -190,12 +199,12 @@ class Enterprise extends React.Component<Props> {
 
                 <div className="swiper-slide">
                   <div className="enterprise__tab">
-                    <h5>FMCG - Customer Engagement Customer engagement has always been at the forefront of brand marketing plans, and now employing digital channels to turn casual users into shoppers is quickly becoming a viable path to faster and simpler interaction. Our chatbot solution allows your FMCG brand to create brilliantly effective campaign plans, simply by defining your goals.</h5>
+                    <h5>Today’s digital-savvy customer expect answers at the click of a button. They desire a personalized, proactive conversation with a brand that they love. Customer service bots interact with the customer on behalf of your business, enabling customer to self-service online by drawing on specific business rules to answer common questions and requests. </h5>
                     <div>
                       <Hero className="hero__center-container">
                         <FlexBox className="flex">
                           <div className="flex-item__right">
-                            <img src="/static/png/enterprise/crphone.png"></img>
+                            <img src="/static/png/enterprise/csphone.png"></img>
                           </div>
                           <div className="flex-item__left">
                             <div>
@@ -219,12 +228,12 @@ class Enterprise extends React.Component<Props> {
 
                 <div className="swiper-slide">
                   <div className="enterprise__tab">
-                    <h5>FMCG - Customer Engagement Customer engagement has always been at the forefront of brand marketing plans, and now employing digital channels to turn casual users into shoppers is quickly becoming a viable path to faster and simpler interaction. Our chatbot solution allows your FMCG brand to create brilliantly effective campaign plans, simply by defining your goals.</h5>
+                    <h5>Bots offer a way to change the shopping experience through ‘conversational commerce’ that is a two-way interaction between customers and business that feels more like an interaction between a seller and buyer.  </h5>
                     <div>
                       <Hero className="hero__center-container">
                         <FlexBox className="flex">
                           <div className="flex-item__right">
-                            <img src="/static/png/enterprise/crphone.png"></img>
+                            <img src="/static/png/enterprise/ecphone.png"></img>
                           </div>
                           <div className="flex-item__left">
                             <div>
@@ -249,12 +258,12 @@ class Enterprise extends React.Component<Props> {
 
                 <div className="swiper-slide">
                   <div className="enterprise__tab">
-                    <h5>FMCG - Customer Engagement Customer engagement has always been at the forefront of brand marketing plans, and now employing digital channels to turn casual users into shoppers is quickly becoming a viable path to faster and simpler interaction. Our chatbot solution allows your FMCG brand to create brilliantly effective campaign plans, simply by defining your goals.</h5>
+                    <h5>As chatbot technology advances, more use cases are surfacing across nearly every sector imaginable. Recently, bots have begun being implemented in education to assist in a variety of automates tasks, and the foreseeable advantages are far-reaching.</h5>
                     <div>
                       <Hero className="hero__center-container">
                         <FlexBox className="flex">
                           <div className="flex-item__right">
-                            <img src="/static/png/enterprise/crphone.png"></img>
+                            <img src="/static/png/enterprise/eduphone.png"></img>
                           </div>
                           <div className="flex-item__left">
                             <div>
@@ -288,19 +297,44 @@ class Enterprise extends React.Component<Props> {
             <div className="swiper-container" id="story-swiper">
 
               <div className="swiper-wrapper">
-                <div className="swiper-slide">
-                  <div>
-                    <img src="/static/png/enterprise/veronika.png"></img>
+                <div className="swiper-slide enterprise__success-story">
+                  <div className="enterprise__success-story__item">
+                    <div>
+                      <img src="/static/png/enterprise/veronika.png"></img>
+                    </div>
+                    <ButtonLink modifier="light" href="/enterprise">
+                      Read About Veronika
+                    </ButtonLink>
                   </div>
                 </div>
                 <div className="swiper-slide">
                   <div>
-                    <img src="/static/png/enterprise/jemma.png"></img>
+                    <div>
+                      <img src="/static/png/enterprise/jemma.png"></img>
+                    </div>
+                    <ButtonLink modifier="light" href="/enterprise">
+                      Read About Veronika
+                    </ButtonLink>
                   </div>
                 </div>
                 <div className="swiper-slide">
                   <div>
-                    <img src="/static/png/enterprise/shalma.png"></img>
+                    <div>
+                      <img src="/static/png/enterprise/shalma.png"></img>
+                    </div>
+                    <ButtonLink modifier="light" href="/enterprise">
+                      Read About Shalma
+                    </ButtonLink>
+                  </div>
+                </div>
+                <div className="swiper-slide">
+                  <div>
+                    <div>
+                      <img src="/static/png/enterprise/sabrina.png"></img>
+                    </div>
+                    <ButtonLink modifier="light" href="/enterprise">
+                      Read About Sabrina
+                    </ButtonLink>
                   </div>
                 </div>
               </div>
