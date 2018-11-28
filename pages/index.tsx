@@ -148,7 +148,7 @@ class Home extends React.Component<Props> {
                       <Hero className="hero__center-container">
                         <FlexBox className="flex">
                           <div className="flex-item__left">
-                            <div>
+                            <div className="landing__tab__chatbot">
                               <img className="landing__tab__logo" src="/static/png/landing/veronika/logo.png" />
                               <h1>
                                 Veronika
@@ -181,7 +181,7 @@ class Home extends React.Component<Props> {
                       <Hero className="hero__center-container">
                         <FlexBox className="flex">
                           <div className="flex-item__left">
-                            <div>
+                            <div className="landing__tab__chatbot">
                               <img className="landing__tab__logo" src="/static/png/landing/sabrina/logo.png" />
                               <h1>
                                 Sabrina
@@ -214,8 +214,8 @@ class Home extends React.Component<Props> {
                       <Hero className="hero__center-container">
                         <FlexBox className="flex">
                           <div className="flex-item__left">
-                            <div>
-                              <img className="landing__tab__logo" src="/static/png/landing/jemma/logo.png" />
+                            <div className="landing__tab__chatbot">
+                              <img className="landing__tab__logo--square" src="/static/png/landing/jemma/logo.png" />
                               <h1>
                                 Jemma
                               </h1>
@@ -229,10 +229,10 @@ class Home extends React.Component<Props> {
                             </div>
                           </div>
                           <div className="flex-item__right landing__tab__image">
-                            <img className="landing__tab__image--veronika--avatar" src="/static/png/landing/jemma/avatar.png"></img>
-                            <img className="landing__tab__image--veronika--phone" src="/static/png/landing/jemma/phone.png"></img>
-                            <img className="landing__tab__image--veronika--chat" src="/static/png/landing/jemma/chat.png"></img>
-                            <img className="landing__tab__image--veronika--menu" src="/static/png/landing/jemma/menu.png"></img>
+                            <img className="landing__tab__image--jemma--avatar" src="/static/png/landing/jemma/avatar.png"></img>
+                            <img className="landing__tab__image--jemma--phone" src="/static/png/landing/jemma/phone.png"></img>
+                            <img className="landing__tab__image--jemma--chat" src="/static/png/landing/jemma/chat.png"></img>
+                            <img className="landing__tab__image--jemma--menu" src="/static/png/landing/jemma/menu.png"></img>
 
                           </div>
                         </FlexBox>
@@ -247,7 +247,7 @@ class Home extends React.Component<Props> {
                       <Hero className="hero__center-container">
                         <FlexBox className="flex">
                           <div className="flex-item__left">
-                            <div>
+                            <div className="landing__tab__chatbot">
                               <img className="landing__tab__logo" src="/static/png/landing/shalma/logo.png" />
                               <h1>
                                 Shalma
@@ -262,10 +262,10 @@ class Home extends React.Component<Props> {
                             </div>
                           </div>
                           <div className="flex-item__right landing__tab__image">
-                            <img className="landing__tab__image--veronika--avatar" src="/static/png/landing/shalma/avatar.png"></img>
-                            <img className="landing__tab__image--veronika--phone" src="/static/png/landing/shalma/phone.png"></img>
-                            <img className="landing__tab__image--veronika--chat" src="/static/png/landing/shalma/chat.png"></img>
-                            <img className="landing__tab__image--veronika--menu" src="/static/png/landing/shalma/menu.png"></img>
+                            <img className="landing__tab__image--shalma--avatar" src="/static/png/landing/shalma/avatar.png"></img>
+                            <img className="landing__tab__image--shalma--phone" src="/static/png/landing/shalma/phone.png"></img>
+                            <img className="landing__tab__image--shalma--chat" src="/static/png/landing/shalma/chat.png"></img>
+                            <img className="landing__tab__image--shalma--menu" src="/static/png/landing/shalma/menu.png"></img>
 
                           </div>
                         </FlexBox>
@@ -311,7 +311,7 @@ class Home extends React.Component<Props> {
               <img src="/static/png/landing/gear.svg" />
 
               <h5>
-                Better conversion rate
+                Integration flexibility
               </h5>
               <p>
                 Works with any other technology and tools you use to meet your business needs.
@@ -349,18 +349,30 @@ class Home extends React.Component<Props> {
           <div className="landing__list-image">
             <div className="landing__list-image__item--list-image-only">
               <img src="/static/png/landing/laptopblue.svg" />
+              <p>
+                Define your needs
+                </p>
             </div>
 
             <div className="landing__list-image__item--list-image-only">
               <img src="/static/png/landing/searchkatablue.svg" />
+              <p>
+                View your solution
+                </p>
             </div>
 
             <div className="landing__list-image__item--list-image-only">
               <img src="/static/png/landing/phoneblue.svg" />
+              <p>
+                Drop us a line
+                </p>
             </div>
 
             <div className="landing__list-image__item--list-image-only">
               <img src="/static/png/landing/comunicationblue.svg" />
+              <p>
+                Schedule mode
+                </p>
             </div>
             <div className="landing__list-image__item__line">
               <img src="/static/png/landing/line.svg" />
@@ -413,8 +425,8 @@ class Home extends React.Component<Props> {
       <Tab>
         <TabItem item="Customer Service" modifier="tab-item--selected" onClick={this.tabSwipeClick(0)} />
         <TabItem item="Banking Assistant" onClick={this.tabSwipeClick(1)} />
-        <TabItem item="Costomer Engagement" onClick={this.tabSwipeClick(2)} />
-        <TabItem item="Costomer Loyalti" onClick={this.tabSwipeClick(3)} />
+        <TabItem item="Customer Engagement" onClick={this.tabSwipeClick(2)} />
+        <TabItem item="Customer Loyalty" onClick={this.tabSwipeClick(3)} />
       </Tab>
     );
   }
