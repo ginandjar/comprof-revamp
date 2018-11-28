@@ -72,7 +72,7 @@ class Company extends React.Component<Props> {
         </Intro>
 
         <HeroCard title="About The Company" className="company__hero">
-          <p className="__testimonials">
+          <p>
             We are Kata.ai, an Indonesian conversational Artificial Intelligence company, focused on  understanding human conversation so we can improve the way humans collaborate with technology to be more productive and empowered. Kata.ai’s Natural Language Processing (NLP) technology powers multi-purpose chatbots for major corporations in Indonesia across different industries, including FMCG, Telecommunication, Banking & Financial Service, and Retail.
           </p>
           <div className="company__list-image">
@@ -114,7 +114,7 @@ class Company extends React.Component<Props> {
               <h1 className="company__hero__text__history__title">
                 The History
               </h1>
-              <p className="company__hero__text__history__des __testimonials" >
+              <p className="company__hero__text__history__des " >
                 Established in 2015, we started our journey as YesBoss, offering virtual assistant service through SMS and a mobile app. Along the way, we learned that we wanted a business that was more impactful and scaleable. With the man-power heavy B2C service provided by, so in 2016 YesBoss is no longer active and we have to pivot our business into the B2B segment with the launch of Kata.ai <br /><br />Our goal in Kata.ai is to offers natural language dialogue engine that enables brands and enterprises to build their own chatbots to perform conversational activities ranged from product marketing, commerce, to behavioral data gathering via commonly-used social and chatp apps like LINE, Facebook, Twitter, Telegram, Slack, BBM, and WhatsApp. Helping business to understand the behavior of their customers and build better relationship. <br /><br />Our journey hasn’t always been easy, but we embrace it to learn and get better. Our team is aligned and working hard to make great product and solutions.
               </p>
               <img src="/static/png/company/dot.png" className="company__hero__text__history__dot" />

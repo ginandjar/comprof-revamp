@@ -1,7 +1,10 @@
 .company{
-  height: 1130px;
+  height: 990px;
 
   &__hero{
+    p{
+      font-size: 24px;
+    }
     &__text{
       display: inline-block;
       width: 50%;
@@ -9,6 +12,7 @@
       h1{
         margin: 0px;
       }
+      
       vertical-align: middle;
       &__history{
         position: relative;
@@ -33,6 +37,7 @@
           height: 557px;
           z-index: 1;
           right: -720px;
+          font-size: 16px !important;
         }
         &__dot{
           position: absolute;
@@ -82,7 +87,7 @@
       min-height: 625px;
       padding-top:30px;
       img{
-        width: 938px;
+        width: 750px;
       }
     }
   }
