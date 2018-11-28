@@ -2,12 +2,20 @@
     margin: 0 auto;
     max-width:1010px;
 
+    h3{
+      padding-bottom:30px;
+    }
+
+    p{
+      font-size:20px;
+    }
+
     &__intro-image{
 
       margin-bottom: 20px;
 
       img{
-        max-width: 100%;
+        max-width: 120%;
       }
 
       &--left{
@@ -17,7 +25,7 @@
 
         img{
           position: relative;
-          right: -90px;
+          right: -60px;
         }
       }
       &--center{
@@ -33,7 +41,7 @@
 
         img{
           position: relative;
-          left:-90px;
+          left:-60px;
         }
 
       }
@@ -48,19 +56,21 @@
       
       &__image{
         img{
-          max-width: 80%;
+          max-width: 60%;
         }
       }
 
       &__title{
-        font-weight: 500;
+        font-weight: 700;
         color: #333333;
+        font-size: 22px;
       }
 
       &__descr{
         font-weight: 300;
         color: #535353;
         float:left;
+        font-size: 18px;
       }
     }
 
@@ -68,11 +78,14 @@
       text-align: center;
       img{
         width:100%;
+        position: relative;
+        top:-70px;
+        z-index: -1;
       }
 
       a{
         position:relative;
-        top: -100px;
+        top: -150px;
       }
     }
     &__engineering-blog{
@@ -103,7 +116,7 @@
       &__item{
         width:40%;
         padding: 0 15px;
-        margin: 0 15px;
+        margin: 0 30px;
         display: inline-block;
       }
 
@@ -146,15 +159,24 @@
         
       }
     }
+    &__help{
+    h5{
+        margin-bottom:30px;
+      }
+    }
 
     &__partner-workshop{
       max-width: 1010px;
-      margin: 0 auto;
+      margin: 30px auto;
+
+      h1{
+        padding-bottom:30px;
+      }
 
 
       &__item{
         max-width: 33.3%;
-        padding: 5px 10px;
+        padding: 10px 20px;
         display: inline-block;
 
         img{
@@ -165,9 +187,10 @@
 
     &__try-platform{
       background-image: url('/static/png/platform/pattern.png');
-      background-position: center center;
+      background-position: 100%;
       background-repeat: no-repeat;
       background-size: cover;
+      height:476px;
 
       h1{
         color: white;
@@ -175,6 +198,10 @@
 
       a{
         color:#006EE5;
+      }
+
+      &__content{
+        padding:50px;
       }
     }
   
