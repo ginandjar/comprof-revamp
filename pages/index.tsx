@@ -382,7 +382,7 @@ class Home extends React.Component<Props> {
 
           <div className="landing__hero__button">
             <ButtonLink modifier="default" href="/career">
-              &nbsp;&nbsp;&nbsp;Work With Us&nbsp;&nbsp;&nbsp;
+              Work With Us
             </ButtonLink>
           </div>
         </HeroCard>
@@ -401,7 +401,7 @@ class Home extends React.Component<Props> {
                         </p>
 
               <ButtonLink modifier="light" href="/enterprise">
-                &nbsp;&nbsp;&nbsp;Explore more&nbsp;&nbsp;&nbsp;
+                Explore more
               </ButtonLink>
 
             </div>
@@ -411,6 +411,105 @@ class Home extends React.Component<Props> {
           </div>
 
         </HeroCard>
+
+        <div className="landing__engineering-blog">
+          <h1>Keep up with Kata insights</h1>
+          <div className="landing__engineering-blog__blog-content">
+            <div className="landing__engineering-blog__list">
+              <div className="landing__engineering-blog__item">
+                <div className="landing__engineering-blog__image">
+                  <img src="/static/png/platform/chatbotlist.jpg" />
+                </div>
+                <div className="landing__engineering-blog__detail">
+                  <div className="landing__engineering-blog__category">Business</div>
+                  <div className="landing__engineering-blog__title">
+                    Kata landing 2.5 : Better landing for Better Chatbots
+                  </div>
+                  <div className="landing__engineering-blog__descr">
+                    After releasing Kata Bot landing publicly in December 2017, we had agreat time working with the developer community by
+                  </div>
+                  <div className="landing__engineering-blog__read-more">Read more</div>
+                  <div className="landing__engineering-blog__written-by">
+                    <img src="" />
+                    <p>Aria Nurfikryon August 3, 2018</p>
+                  </div>
+                </div>
+              </div>
+              <div className="landing__engineering-blog__item">
+                <div className="landing__engineering-blog__image">
+                  <img src="/static/png/platform/chatbotlist.jpg" />
+                </div>
+                <div className="landing__engineering-blog__detail">
+                  <div className="landing__engineering-blog__category">Business</div>
+                  <div className="landing__engineering-blog__title">
+                    Kata landing 2.5 : Better landing for Better Chatbots
+                  </div>
+                  <div className="landing__engineering-blog__descr">
+                    After releasing Kata Bot landing publicly in December 2017, we had agreat time working with the developer community by
+                  </div>
+                  <div className="landing__engineering-blog__read-more">Read more</div>
+                  <div className="landing__engineering-blog__written-by">
+                    <img src="" />
+                    <p>Aria Nurfikryon August 3, 2018</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+
+          </div>
+          <div className="landing__engineering-blog__button">
+            <ButtonLink modifier="default" block="true" href="#">
+              view all
+                </ButtonLink>
+          </div>
+          <div className="landing__engineering-blog__blog-content">
+            <div className="landing__engineering-blog__list">
+              <div className="landing__engineering-blog__item">
+                <div className="landing__engineering-blog__image">
+                  <img src="/static/png/platform/chatbotlist.jpg" />
+                </div>
+                <div className="landing__engineering-blog__detail">
+                  <div className="landing__engineering-blog__category">Business</div>
+                  <div className="landing__engineering-blog__title">
+                    Kata landing 2.5 : Better landing for Better Chatbots
+                  </div>
+                  <div className="landing__engineering-blog__descr">
+                    After releasing Kata Bot landing publicly in December 2017, we had agreat time working with the developer community by
+                  </div>
+                  <div className="landing__engineering-blog__read-more">Read more</div>
+                  <div className="landing__engineering-blog__written-by">
+                    <img src="" />
+                    <p>Aria Nurfikryon August 3, 2018</p>
+                  </div>
+                </div>
+              </div>
+              <div className="landing__engineering-blog__item">
+                <div className="landing__engineering-blog__image">
+                  <img src="/static/png/platform/chatbotlist.jpg" />
+                </div>
+                <div className="landing__engineering-blog__detail">
+                  <div className="landing__engineering-blog__category">Business</div>
+                  <div className="landing__engineering-blog__title">
+                    Kata landing 2.5 : Better landing for Better Chatbots
+                  </div>
+                  <div className="landing__engineering-blog__descr">
+                    After releasing Kata Bot landing publicly in December 2017, we had agreat time working with the developer community by
+                  </div>
+                  <div className="landing__engineering-blog__read-more">Read more</div>
+                  <div className="landing__engineering-blog__written-by">
+                    <img src="" />
+                    <p>Aria Nurfikryon August 3, 2018</p>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div className="landing__engineering-blog__button">
+            <ButtonLink modifier="default" block="true" href="#">
+              view all
+                </ButtonLink>
+          </div>
+        </div>
 
         <Career />
         <BuildChatbot />

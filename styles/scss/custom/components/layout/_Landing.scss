@@ -134,6 +134,9 @@
         width: 200px;
         
         }
+        p{
+          font-size: 22px;
+        }
       }
       &__line{
         img{
@@ -267,6 +270,96 @@
       }
     }
   }
+
+  &__engineering-blog{
+    text-align: center;
+    margin-left: 150px;
+    h1{
+      text-align: left !important;
+    }
+
+    &__blog-content{
+      background: linear-gradient(180deg,#006ee5 70%,#fff 10%);
+      width: 100%;
+      margin:50px 0px;
+    }
+
+    &__list{
+      max-width: 1010px;
+      margin: 0 auto;
+    }
+
+    &__detail{
+      text-align: left;
+      padding: 130px 10px 20px 10px;
+      border-radius: 10px;
+      background-color: #F5F5F5;
+
+      div{
+        margin-bottom: 10px;
+      }
+    }
+
+    &__item{
+      width:43%;
+      padding: 0 25px;
+      margin: 0 30px;
+      display: inline-block;
+    }
+
+    &__image{
+      padding: 0 5px;
+      position: relative;
+      top: 100px;
+
+      img{
+        max-width: 100%;
+        padding: 0px 10px;
+      }
+    }
+
+    &__category{
+      color:#006EE5;
+      font-size:21px;
+    }
+
+    &__title{
+      font-weight: 700;
+      font-size:24px;
+    }
+
+    &__descr{
+      font-size:16px;
+    }
+
+    &__read-more{
+      color:#006EE5;
+      font-size:16px;
+    }
+
+    &__written-by{
+      img{
+        background-color:#D1D1D1;
+        border-radius: 100%;
+        width:50px;
+        height:50px;
+        font-size:20px;
+        margin-right:10px;
+      }
+      p{
+        display: inline-block;
+        font-size: 9px;
+      }
+      
+    }
+
+    &__button{
+      margin: 80px auto;
+      width: 230px;
+    }
+  }
+  
+
   
   
 }

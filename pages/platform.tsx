@@ -165,7 +165,6 @@ class Platform extends React.Component<Props> {
               </div>
             </div>
           </div>
-
         </div>
         <HeroCard title="Help & Advice" className="platform__help">
           <h5>Got question? Feel free to reach our support or join our developer community on Slack to get help from fellow Kata Platform users & partners</h5>
