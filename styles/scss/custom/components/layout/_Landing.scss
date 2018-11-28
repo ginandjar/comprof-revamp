@@ -7,10 +7,11 @@
   &__hero{
     &__text{
       display: inline-block;
-    width: 75%;
-    text-align: left!important;
-    vertical-align: middle;
-    margin-left: -150px;
+      width: 72%;
+      text-align: left!important;
+      margin-left: -113px;
+      vertical-align: middle;
+  
       h1{
         margin: 0px;
       }
@@ -84,6 +85,7 @@
       }
       &--uni{
         top: 80px;
+        right: -20px;
       }
       &--white{
         width: 1440px;
@@ -98,7 +100,7 @@
 
   &__list-image{
     max-width: 1440px;
-    margin-top: 70px;
+    margin-top: 50px;
     
 
     &__item{
@@ -151,14 +153,21 @@
     text-align: left;
     max-width: 1234px;
     margin: auto;
+    &__chatbot{
+      margin-left: 20px
+    }
     &__logo{
       width: 150px;
+      &--square{
+        width: 67px;
+      }
     }
     h1{
       font-size: 48px;
     }
     p{
       font-size: 22px;
+      max-width: 300px;
     }
     
 
@@ -188,6 +197,44 @@
         }
         &--menu{
           left: 500px;
+          top: 260px;
+        }
+      }
+      &--shalma{
+        &--phone{
+          top: 30px;
+          left: 90px;
+        }
+        &--avatar{
+          top: 150px;
+          left: 0px;
+          z-index: 10;
+        }
+        &--chat{
+          left: 480px;
+          top: 150px;
+        }
+        &--menu{
+          left: 480px;
+          top: 380px;
+        }
+      }
+      &--jemma{
+        &--phone{
+          top: 30px;
+          left: 90px;
+        }
+        &--avatar{
+          top: 310px;
+          left: 0px;
+          z-index: 10;
+        }
+        &--chat{
+          left: 410px;
+          top: 190px;
+        }
+        &--menu{
+          left: 470px;
           top: 260px;
         }
       }
