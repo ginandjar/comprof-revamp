@@ -62,9 +62,9 @@ class Platform extends React.Component<Props> {
         </Intro>
         <div className="platform">
           <HeroCard title="Kata Platform 3.0">
-            <h2>
+            <h3>
               Our biggest update yet to the powerful Kata Platform
-          </h2>
+            </h3>
             <p>
               The new Kata Platform 3.0 is our awesome platform to build great conversation interface. It allows you to quickly and simply build incredible chatbot for any product or service. It comes with great features, has the smartest AI with the best NLP in Bahasa Indonesia & English. So you can make a chatbot that understands users better. You can even deploy it into any chat apps that you want, and get insights about users behavior with our analytics tools.
           </p>
@@ -167,8 +167,8 @@ class Platform extends React.Component<Props> {
           </div>
 
         </div>
-        <HeroCard title="Help & Advice">
-          <h2>Got question? Feel free to reach our support or join our developer community on Slack to get help from fellow Kata Platform users & partners</h2>
+        <HeroCard title="Help & Advice" className="platform__help">
+          <h5>Got question? Feel free to reach our support or join our developer community on Slack to get help from fellow Kata Platform users & partners</h5>
           <ButtonLink modifier="default" href="/">
             Contact our support
           </ButtonLink>
@@ -204,10 +204,13 @@ class Platform extends React.Component<Props> {
             </div>
           </div>
         </HeroCard>
-        <HeroCard title="Start free and Scale as You Grow" className="platform__try-platform">
-          <ButtonLink modifier="light" href="/">
-            Try Kata Platform
-          </ButtonLink>
+        <HeroCard className="platform__try-platform">
+          <div className="platform__try-platform__content">
+            <h1>Start free and Scale as You Grow</h1>
+            <ButtonLink modifier="light" href="/">
+              Try Kata Platform
+            </ButtonLink>
+          </div>
 
         </HeroCard>
       </div>

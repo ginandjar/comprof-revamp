@@ -78,10 +78,6 @@ class Company extends React.Component<Props> {
           <div className="company__list-image">
             <div className="company__list-image__item">
               <img src="/static/png/company/brain.svg" />
-
-              <h5>
-                Cost-efficient customer support
-              </h5>
               <p>
                 Create a chatbot that can automate your customer support process, reducing the cost of your call-center operation
               </p>
@@ -91,10 +87,6 @@ class Company extends React.Component<Props> {
 
             <div className="company__list-image__item">
               <img src="/static/png/company/phone.svg" />
-
-              <h5>
-                Interactive customer experience
-              </h5>
               <p>
                 The chatbot can also offer an instant and interactive way for customers to interact with your brands. Offering transaction capability or even product recommendation.
               </p>
@@ -104,10 +96,6 @@ class Company extends React.Component<Props> {
 
             <div className="company__list-image__item">
               <img src="/static/png/company/chart.svg" />
-
-              <h5>
-                Better conversion rate
-              </h5>
               <p>
                 With better experience for your customer, it’s easier to convert their interest into leads or purchases.
               </p>
