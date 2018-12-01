@@ -40,7 +40,7 @@ class Platform extends React.Component<Props> {
         </Head>
         <NavigationBar localeService={this.props.localeService} />
         <Intro>
-          <HeroCard title="The Ultimate Chatbot Platform" className="platform__intro">
+          <HeroCard title="The Ultimate Chatbot Platform" caption="" className="platform__intro">
             <h2>
               An integrated platform to create, launch, and manage enterprise-grade chatbot without compromise
             </h2>
@@ -56,7 +56,7 @@ class Platform extends React.Component<Props> {
               </div>
             </div>
             <ButtonLink modifier="default" href="/">
-              Sign Up For Free
+              Sign Up for Free
             </ButtonLink>
           </HeroCard>
         </Intro>
@@ -169,7 +169,7 @@ class Platform extends React.Component<Props> {
         <HeroCard title="Help & Advice" className="platform__help">
           <h5>Got question? Feel free to reach our support or join our developer community on Slack to get help from fellow Kata Platform users & partners</h5>
           <ButtonLink modifier="default" href="/">
-            Contact our support
+            Contact Our Support
           </ButtonLink>
         </HeroCard>
         <HeroCard title="Partner Workshop">

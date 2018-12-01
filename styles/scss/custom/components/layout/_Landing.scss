@@ -274,9 +274,6 @@
   &__engineering-blog{
     text-align: center;
     margin-left: 150px;
-    h1{
-      text-align: left !important;
-    }
 
     &__blog-content{
       background: linear-gradient(180deg,#006ee5 70%,#fff 10%);
@@ -311,10 +308,11 @@
       padding: 0 5px;
       position: relative;
       top: 100px;
-
+      
       img{
-        max-width: 100%;
-        padding: 0px 10px;
+        max-width: 95%;
+
+        border-radius: 10px;
       }
     }
 
@@ -356,6 +354,13 @@
     &__button{
       margin: 80px auto;
       width: 230px;
+    }
+  }
+
+  &__build-chat-bot{
+
+    &__content{
+
     }
   }
   

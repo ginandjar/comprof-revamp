@@ -5,7 +5,7 @@
     "dev": "node server/index.js",
     "devc": "npm run dev",
     "build": "next build",
-    "start": "NODE_ENV=production node server/index.js",
+    "start": "NODE_ENV=production npode server/index.js",
     "format": "prettier --write \"{pages,components,types}/**/*.{ts,tsx}\" && npm run lint:fix",
     "lint": "tslint '{pages,components,types}/**/*.{ts,tsx}'",
     "lint:fix": "tslint --fix '{pages,components,types}/**/*.{ts,tsx}'"

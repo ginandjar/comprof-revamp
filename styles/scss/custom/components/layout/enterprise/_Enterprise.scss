@@ -51,7 +51,7 @@
     margin: auto;
 
     &__button-large{
-      width: 360px;
+      width: 310px;
       padding-bottom: 20px;
     }
   }
@@ -67,6 +67,23 @@
         cursor: pointer;
         flex: 1 1 0%;
         padding: 0px 20px;
+        &:after{
+          content: '';
+          width: 0; 
+          height: 0; 
+          position: absolute;
+          border-top: 10px solid transparent;
+          border-bottom: 10px solid transparent;
+          top: 40%;
+          right: 5%;
+          border-left: 10px solid white;
+
+        }
+        &:last-child {
+          &:after{
+            display: none;
+          }
+        }
       }
     }
 

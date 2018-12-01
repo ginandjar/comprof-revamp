@@ -39,8 +39,8 @@ class Research extends React.Component<Props> {
         </Head>
         <NavigationBar localeService={this.props.localeService} />
         <Intro className="research">
-          <div className="flex-item__left detailstory__intro__content">
-            <div className="detailstory__intro__text">
+          <div className="flex-item__left research__intro__content">
+            <div className="research__intro__text">
               <h1>
                 Kata.ai’s research team aims to push the development of AI technology in the region. Discovering new ways to bring more impact.
               </h1>

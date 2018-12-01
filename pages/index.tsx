@@ -311,7 +311,7 @@ class Home extends React.Component<Props> {
               <img src="/static/png/landing/gear.svg" />
 
               <h5>
-                Integration flexibility
+                Integration Flexibility
               </h5>
               <p>
                 Works with any other technology and tools you use to meet your business needs.
@@ -357,7 +357,7 @@ class Home extends React.Component<Props> {
             <div className="landing__list-image__item--list-image-only">
               <img src="/static/png/landing/searchkatablue.svg" />
               <p>
-                View your solution
+                View our solution
                 </p>
             </div>
 
@@ -371,7 +371,7 @@ class Home extends React.Component<Props> {
             <div className="landing__list-image__item--list-image-only">
               <img src="/static/png/landing/comunicationblue.svg" />
               <p>
-                Schedule mode
+                Schedule demo
                 </p>
             </div>
             <div className="landing__list-image__item__line">
@@ -421,7 +421,7 @@ class Home extends React.Component<Props> {
                   <img src="/static/png/platform/chatbotlist.jpg" />
                 </div>
                 <div className="landing__engineering-blog__detail">
-                  <div className="landing__engineering-blog__category">Business</div>
+
                   <div className="landing__engineering-blog__title">
                     Kata landing 2.5 : Better landing for Better Chatbots
                   </div>
@@ -440,7 +440,7 @@ class Home extends React.Component<Props> {
                   <img src="/static/png/platform/chatbotlist.jpg" />
                 </div>
                 <div className="landing__engineering-blog__detail">
-                  <div className="landing__engineering-blog__category">Business</div>
+
                   <div className="landing__engineering-blog__title">
                     Kata landing 2.5 : Better landing for Better Chatbots
                   </div>
@@ -469,7 +469,7 @@ class Home extends React.Component<Props> {
                   <img src="/static/png/platform/chatbotlist.jpg" />
                 </div>
                 <div className="landing__engineering-blog__detail">
-                  <div className="landing__engineering-blog__category">Business</div>
+
                   <div className="landing__engineering-blog__title">
                     Kata landing 2.5 : Better landing for Better Chatbots
                   </div>
@@ -488,7 +488,7 @@ class Home extends React.Component<Props> {
                   <img src="/static/png/platform/chatbotlist.jpg" />
                 </div>
                 <div className="landing__engineering-blog__detail">
-                  <div className="landing__engineering-blog__category">Business</div>
+
                   <div className="landing__engineering-blog__title">
                     Kata landing 2.5 : Better landing for Better Chatbots
                   </div>
@@ -503,17 +503,18 @@ class Home extends React.Component<Props> {
                 </div>
               </div>
             </div>
+
           </div>
           <div className="landing__engineering-blog__button">
             <ButtonLink modifier="default" block="true" href="#">
-              view all
+              View All
                 </ButtonLink>
           </div>
         </div>
 
         <Career />
-        <BuildChatbot />
 
+        <BuildChatbot />
 
       </div >
     );

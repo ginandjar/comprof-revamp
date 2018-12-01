@@ -4,29 +4,29 @@
 
     h3{
       padding-bottom:30px;
-      font-size: 40px;
+
       font-weight: 500;
     }
 
     p{
-      font-size:24px;
+      font-size:16px;
     }
 
     h1{
-      font-size: 48px;
+
       font-weight: 500;
     }
 
     &__intro{
 
       h1{
-        font-size: 48px;
+        font-size: 40px;
         font-weight: 500;
         max-width: 1200px;
         margin: 0 auto;
       }
       h2{
-        font-size: 40px;
+        font-size: 32px;
         font-weight: 300;
         max-width: 1200px;
         margin: 0 auto;
@@ -36,6 +36,7 @@
     &__intro-image{
 
       margin-bottom: 20px;
+      margin-left: -50px;
 
       img{
         max-width: 120%;
@@ -123,7 +124,7 @@
       }
 
       h1{
-        font-size: 44px;
+        font-size: 40px;
         font-weight: 500;
         position: relative;
         bottom:-110px;
@@ -167,8 +168,10 @@
         top: 100px;
 
         img{
-          max-width: 100%;
-          padding: 0px 10px;
+          max-width: 95%;
+
+        border-radius: 10px;
+
         }
       }
 
@@ -216,7 +219,7 @@
 
       h5{
           margin:50px 0px 70px;
-          font-size: 32px;
+          font-size: 24px;
           font-weight: 300;
         }
     }

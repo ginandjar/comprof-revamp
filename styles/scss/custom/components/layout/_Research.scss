@@ -6,6 +6,7 @@
       position:relative;
 
       &__content{
+        height: auto;
         &--left{
           width:50%;
           display: inline-block;
@@ -33,6 +34,17 @@
         }
       }
 
+    }
+    &__text{
+      text-align:left;
+      position: relative;
+      top: -40px;
+
+      h1{
+        font-weight: 500;
+        font-size: 40px;
+        margin-bottom:30px;
+      }
     }
   }
 
@@ -75,8 +87,11 @@
     }
     
     &__title{
-      font-size:32px;
+      h3{
+      font-size:24px !important;
       font-weight: 500;
+    }
+      
       color:#333333;
     }
     &__research-area{
@@ -88,15 +103,20 @@
 
     &__read-more{
       h5{
-      text-align: right;
+        font-size: 16px;
+        text-align: right;
       color:#006EE5;
       font-weight: 500;
-
       }
+      
+      
+      
     }
 
     &__writen-by{
-      font-size:24px;
+      h5{
+      font-size:16px;
+    }
       margin-bottom:24px;
       font-weight: 500; 
       color:#333333;

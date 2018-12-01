@@ -46,6 +46,7 @@ class Enterprise extends React.Component<Props> {
       centeredSlides: true,
       spaceBetween: -200,
       freeMode: false,
+      loop: true,
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
@@ -66,8 +67,11 @@ class Enterprise extends React.Component<Props> {
     const { localeService, posts } = this.props;
 
     var divStyle = {
-      width: '1234px;'
+      width: '100%;'
     };
+    var buttonStyle = {
+      'margin-top': '-25px;'
+    }
 
     return (
       <div>
@@ -302,9 +306,11 @@ class Enterprise extends React.Component<Props> {
                     <div className="enterprise__success-story__item__img">
                       <img src="/static/png/enterprise/veronika.png"></img>
                     </div>
-                    <ButtonLink modifier="light" href="/enterprise">
-                      Read About Veronika
+                    <div style={buttonStyle}>
+                      <ButtonLink modifier="light" href="/enterprise">
+                        Read About Veronika
                     </ButtonLink>
+                    </div>
                   </div>
                 </div>
                 <div className="swiper-slide">

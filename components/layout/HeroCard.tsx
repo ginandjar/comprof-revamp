@@ -27,13 +27,13 @@ export default class HeroCard extends React.Component<HeroCardProps> {
               {this.props.caption}
             </p>
           </div>
-          <FlexBox className="flex">
 
-            <div className="hero-card__content">
-              {this.props.children}
-            </div>
 
-          </FlexBox>
+          <div className="hero-card__content">
+            {this.props.children}
+          </div>
+
+
         </Hero>
       </Section >
     );

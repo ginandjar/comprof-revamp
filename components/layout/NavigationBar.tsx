@@ -37,7 +37,6 @@ export default class NavigationBar extends React.Component {
                 <Link href="/platform">
                   <a >
                     Feature & Tech
-                      <img src="/static/images/icons/arrow-down-light.svg" alt="" />
                   </a>
                 </Link>
                 {/* <ul>
@@ -70,9 +69,7 @@ export default class NavigationBar extends React.Component {
                 </Link>
               </li>
             </ul>
-            <div className="top-bar--menu-buttons">
 
-            </div>
             {/* <div className="top-bar--menu-locale">
                 <a href="/set-locale?locale=uk" target="_self">
                   <img src="/static/images/icons/uk-flag.svg" alt="" />
