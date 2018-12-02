@@ -16,7 +16,7 @@ import ButtonLink from '../components/links/ButtonLink';
 import HeroCard from '../components/layout/HeroCard';
 import Career from '../components/layout/Career';
 import BuildChatbot from '../components/layout/BuildChatbot';
-
+import Fade from 'react-reveal/Fade';
 
 interface Props {
 
@@ -78,54 +78,66 @@ class Home extends React.Component<Props> {
 
           </div>
           <div className="flex-item__right landing__intro__image">
-            <img src="/static/png/landing/simpati.png" className="landing__intro__image--simpati" alt="" />
-            <img src="/static/png/landing/uni.png" className="landing__intro__image--uni" alt="" />
-            <img src="/static/png/landing/alfa.png" className="landing__intro__image--alfa" alt="" />
-            <img src="/static/png/landing/bri.png" className="landing__intro__image--bri" alt="" />
+            <Fade top>
+              <img src="/static/png/landing/simpati.png" className="landing__intro__image--simpati" alt="" />
+            </Fade>
+            <Fade right>
+              <img src="/static/png/landing/uni.png" className="landing__intro__image--uni" alt="" />
+            </Fade>
+            <Fade left>
+              <img src="/static/png/landing/alfa.png" className="landing__intro__image--alfa" alt="" />
+            </Fade>
+            <Fade bottom>
+              <img src="/static/png/landing/bri.png" className="landing__intro__image--bri" alt="" />
+            </Fade>
             <img src="/static/png/landing/white.png" className="landing__intro__image--white" alt="" />
           </div>
         </Intro>
 
         <HeroCard title="See what chatbots can do for your business" className="landing__hero">
           <div className="landing__list-image">
-            <div className="landing__list-image__item">
-              <img src="/static/png/landing/wallet.svg" />
+            <Fade>
+              <div className="landing__list-image__item">
+                <img src="/static/png/landing/wallet.svg" />
 
-              <h5>
-                Cost-efficient customer support
+                <h5>
+                  Cost-efficient customer support
               </h5>
-              <p>
-                Create a chatbot that can automate your customer support process, reducing the cost of your call-center operation
+                <p>
+                  Create a chatbot that can automate your customer support process, reducing the cost of your call-center operation
               </p>
 
 
-            </div>
+              </div>
+            </Fade>
+            <Fade>
+              <div className="landing__list-image__item">
+                <img src="/static/png/landing/phonechat.svg" />
 
-            <div className="landing__list-image__item">
-              <img src="/static/png/landing/phonechat.svg" />
-
-              <h5>
-                Interactive customer experience
+                <h5>
+                  Interactive customer experience
               </h5>
-              <p>
-                The chatbot can also offer an instant and interactive way for customers to interact with your brands. Offering transaction capability or even product recommendation.
+                <p>
+                  The chatbot can also offer an instant and interactive way for customers to interact with your brands. Offering transaction capability or even product recommendation.
               </p>
 
 
-            </div>
+              </div>
+            </Fade>
+            <Fade>
+              <div className="landing__list-image__item">
+                <img src="/static/png/landing/chart.svg" />
 
-            <div className="landing__list-image__item">
-              <img src="/static/png/landing/chart.svg" />
-
-              <h5>
-                Integration Flexibility
+                <h5>
+                  Integration Flexibility
               </h5>
-              <p>
-                With better experience for your customer, it’s easier to convert their interest into leads or purchases.
+                <p>
+                  With better experience for your customer, it’s easier to convert their interest into leads or purchases.
               </p>
 
 
-            </div>
+              </div>
+            </Fade>
 
           </div>
 
@@ -148,26 +160,35 @@ class Home extends React.Component<Props> {
                       <Hero className="hero__center-container">
                         <FlexBox className="flex">
                           <div className="flex-item__left">
-                            <div className="landing__tab__chatbot">
-                              <img className="landing__tab__logo" src="/static/png/landing/veronika/logo.png" />
-                              <h1>
-                                Veronika
+                            <Fade>
+                              <div className="landing__tab__chatbot">
+                                <img className="landing__tab__logo" src="/static/png/landing/veronika/logo.png" />
+                                <h1>
+                                  Veronika
                               </h1>
-                              <p>
-                                Intelligent customer support for Telco
+                                <p>
+                                  Intelligent customer support for Telco
                               </p>
 
-                              <ButtonLink modifier="light" href="/enterprise">
-                                Meet Veronika
+                                <ButtonLink modifier="light" href="/enterprise">
+                                  Meet Veronika
                                 </ButtonLink>
-                            </div>
+                              </div>
+                            </Fade>
                           </div>
                           <div className="flex-item__right landing__tab__image">
-                            <img className="landing__tab__image--veronika--avatar" src="/static/png/landing/veronika/avatar.png"></img>
-                            <img className="landing__tab__image--veronika--phone" src="/static/png/landing/veronika/phone.png"></img>
-                            <img className="landing__tab__image--veronika--chat" src="/static/png/landing/veronika/chat.png"></img>
-                            <img className="landing__tab__image--veronika--menu" src="/static/png/landing/veronika/menu.png"></img>
-
+                            <Fade top>
+                              <img className="landing__tab__image--veronika--avatar" src="/static/png/landing/veronika/avatar.png"></img>
+                            </Fade>
+                            <Fade>
+                              <img className="landing__tab__image--veronika--phone" src="/static/png/landing/veronika/phone.png"></img>
+                            </Fade>
+                            <Fade left>
+                              <img className="landing__tab__image--veronika--chat" src="/static/png/landing/veronika/chat.png"></img>
+                            </Fade>
+                            <Fade bottom>
+                              <img className="landing__tab__image--veronika--menu" src="/static/png/landing/veronika/menu.png"></img>
+                            </Fade>
                           </div>
                         </FlexBox>
                       </Hero>
