@@ -37,7 +37,8 @@ class DetailStory extends React.Component<Props> {
         </Head>
         <NavigationBar localeService={this.props.localeService} />
         <Intro className="detailstory">
-          <div className="flex-item__left detailstory__intro__content">
+
+          <div className="flex-item__left detailstory__intro__content ">
             <div className="detailstory__intro__text">
               <h1>
                 Jemma

@@ -53,7 +53,7 @@ class ResearchDetail extends React.Component<Props> {
             </p>
             <ButtonLink modifier="default" href="/enterprise">
               Download Full Paper
-                <img src="/static/images/icons/arrow-down-light.svg" />
+                {/* <img src="/static/images/icons/arrow-down-light.svg" /> */}
             </ButtonLink>
           </HeroCard>
           <HeroCard title="Related Content" className="researchdetail__related-content">

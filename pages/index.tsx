@@ -459,7 +459,7 @@ class Home extends React.Component<Props> {
           </div>
           <div className="landing__engineering-blog__button">
             <ButtonLink modifier="default" block="true" href="#">
-              view all
+              View all
                 </ButtonLink>
           </div>
           <div className="landing__engineering-blog__blog-content">

@@ -14,6 +14,7 @@ import Hero from '../components/layout/Hero';
 import FlexBox from '../components/layout/FlexBox';
 import ButtonLink from '../components/links/ButtonLink';
 import HeroCard from '../components/layout/HeroCard';
+import { Grid, Row, Col, Image } from 'react-bootstrap';
 
 
 interface Props {
@@ -115,32 +116,28 @@ class Enterprise extends React.Component<Props> {
               <div className="swiper-wrapper">
 
                 <div className="swiper-slide">
-                  <div className="enterprise__tab">
+                  <Grid className="enterprise__tab">
                     <h5>FMCG - Customer Engagement Customer engagement has always been at the forefront of brand marketing plans, and now employing digital channels to turn casual users into shoppers is quickly becoming a viable path to faster and simpler interaction. Our chatbot solution allows your FMCG brand to create brilliantly effective campaign plans, simply by defining your goals.</h5>
-                    <div>
-                      <Hero className="hero__center-container">
-                        <FlexBox className="flex">
-                          <div className="flex-item__right">
-                            <img src="/static/png/enterprise/cephone.png"></img>
-                          </div>
-                          <div className="flex-item__left">
-                            <div>
-                              <div className="enterprise__tab__button-large">
-                                <ButtonLink modifier="light" block="true" href="/enterprise">
-                                  Features you can offer
+                    <Row>
+                      <Col md={6}>
+                        <img src="/static/png/enterprise/cephone.png"></img>
+                      </Col>
+                      <Col md={6}>
+                        <div className="enterprise__tab__button">
+                          <div className="enterprise__tab__button--large">
+                            <ButtonLink modifier="light" block="true" href="/enterprise">
+                              Features you can offer
                           </ButtonLink>
-                              </div>
-                              <div className="enterprise__tab__button-large">
-                                <ButtonLink modifier="light" block="true" href="/enterprise">
-                                  Benefits
-                          </ButtonLink>
-                              </div>
-                            </div>
                           </div>
-                        </FlexBox>
-                      </Hero>
-                    </div>
-                  </div>
+                          <div className="enterprise__tab__button--large">
+                            <ButtonLink modifier="light" block="true" href="/enterprise">
+                              Benefits
+                          </ButtonLink>
+                          </div>
+                        </div>
+                      </Col>
+                    </Row>
+                  </Grid>
                 </div>
 
                 <div className="swiper-slide">
@@ -451,6 +448,29 @@ class Enterprise extends React.Component<Props> {
           </ButtonLink>
 
         </HeroCard>
+
+        <Grid className="enterprise__get-in-touch" fluid>
+          <Row>
+            <Col md={6} className="enterprise__get-in-touch__col enterprise__get-in-touch__background-blue" >
+              <Image src="/static/png/enterprise/star.svg" />
+              <h5>
+                Design your smart assistant today. Grow your business more further
+            </h5>
+              <ButtonLink modifier="light" href="/enterprise">
+                Get in touch
+          </ButtonLink>
+            </Col>
+            <Col md={6} className="enterprise__get-in-touch__col enterprise__get-in-touch__background-dark-blue">
+              <Image src="/static/png/enterprise/connect.svg" />
+              <h5>
+                Expand your offering. Create the best AI solutions for your clients
+            </h5>
+              <ButtonLink modifier="light" href="/enterprise">
+                Become a partner
+          </ButtonLink>
+            </Col>
+          </Row>
+        </Grid>
 
 
       </div >
