@@ -6,7 +6,7 @@ import LocaleSolver, { withLocaleService } from '../components/locale/LocaleSolv
 import 'styles/scss/App.scss';
 import Link from 'next/link';
 import Intro from '../components/layout/Intro';
-
+import Fade from 'react-reveal/Fade';
 interface Props {
 
 }
@@ -40,17 +40,21 @@ class DetailStory extends React.Component<Props> {
 
           <div className="flex-item__left detailstory__intro__content ">
             <div className="detailstory__intro__text">
+
               <h1>
                 Jemma
               </h1>
               <h2>
                 Virtual friend for personalized consumer engagement
               </h2>
+
             </div>
 
           </div>
           <div className="flex-item__right detailstory__intro__content__right">
+
             <img src="/static/png/detailstory/jemma/jemma.png" alt="" />
+
           </div>
 
         </Intro>
@@ -66,35 +70,44 @@ class DetailStory extends React.Component<Props> {
           </div>
           <div className="detailstory__approach">
             <div className="detailstory__approach__content__left">
-              <img src="/static/png/detailstory/jemma/approach.png" alt="" />
+              <Fade>
+                <img src="/static/png/detailstory/jemma/approach.png" alt="" />
+              </Fade>
             </div>
             <div className="detailstory__approach__content__right">
-              <h1>Our Approach</h1>
-              <ul>
-                <li>We proposed a female chatbot persona that is relatable to the key audience, emulating witty, and trustworthy best friend. It is designed to entertain and build relationship through everyday conversations.</li>
-                <li>We decided to name the chatbot ‘Jemma’, a chatbot with a bubbly personality that everybody loves to talk to.</li>
-                <li>Jemma is capable of handling various conversations topics, from simple greetings to specific conversation cases such as relationship, food recommendation, and beauty tips.</li>
-                <li>Aside from handling everyday conversations, the key features that Jemma offers are weekly zodiac, lifehack, and latest entertainment news.</li>
-                <li>Jemma is available on LINE. Those chat apps is the most appropriate channel for this project and it fits really well with Unilever’s customer demographics.</li>
-              </ul>
+              <Fade>
+                <h1>Our Approach</h1>
+                <ul>
+                  <li>We proposed a female chatbot persona that is relatable to the key audience, emulating witty, and trustworthy best friend. It is designed to entertain and build relationship through everyday conversations.</li>
+                  <li>We decided to name the chatbot ‘Jemma’, a chatbot with a bubbly personality that everybody loves to talk to.</li>
+                  <li>Jemma is capable of handling various conversations topics, from simple greetings to specific conversation cases such as relationship, food recommendation, and beauty tips.</li>
+                  <li>Aside from handling everyday conversations, the key features that Jemma offers are weekly zodiac, lifehack, and latest entertainment news.</li>
+                  <li>Jemma is available on LINE. Those chat apps is the most appropriate channel for this project and it fits really well with Unilever’s customer demographics.</li>
+                </ul>
+              </Fade>
             </div>
+
           </div>
           <div className="detailstory__result">
             <div className="detailstory__result__image">
-              <img src="/static/png/detailstory/jemma/result.png" alt="" />
+              <Fade>
+                <img src="/static/png/detailstory/jemma/result.png" alt="" />
+              </Fade>
             </div>
             <div className="detailstory__result__text">
-              <h1>The Results</h1>
-              <ul>
-                <li>Jemma is highly effective as one of Unilever’s alternative digital marketing channels to promote Unilever’s products and events.</li>
-                <li>Ramadhan feature on chatbot Jemma has been successfully increasing active users up to 45%, within 30 days.</li>
-                <li>In every week, Jemma active users has increased with an average growth : 11%, from each campaign.</li>
-                <li>Special campaign Eid Al-Adha has been successfully increasing Jemma active users up to 11%.</li>
-                <li>Engagement users has increased up to 30%, because of Chef Pan Pan feature on Jemma.</li>
-                <li>Jemma managed to get conversions rates 39% in every month.</li>
-                <li>On October 2017, Jemma won “The Most Interactive Brand Chatbot” award by LINE.</li>
-                <li>Through Jemma, Unilever can unlock marketable consumer insights and personalized cross-selling opportunities to a massive audience.</li>
-              </ul>
+              <Fade>
+                <h1>The Results</h1>
+                <ul>
+                  <li>Jemma is highly effective as one of Unilever’s alternative digital marketing channels to promote Unilever’s products and events.</li>
+                  <li>Ramadhan feature on chatbot Jemma has been successfully increasing active users up to 45%, within 30 days.</li>
+                  <li>In every week, Jemma active users has increased with an average growth : 11%, from each campaign.</li>
+                  <li>Special campaign Eid Al-Adha has been successfully increasing Jemma active users up to 11%.</li>
+                  <li>Engagement users has increased up to 30%, because of Chef Pan Pan feature on Jemma.</li>
+                  <li>Jemma managed to get conversions rates 39% in every month.</li>
+                  <li>On October 2017, Jemma won “The Most Interactive Brand Chatbot” award by LINE.</li>
+                  <li>Through Jemma, Unilever can unlock marketable consumer insights and personalized cross-selling opportunities to a massive audience.</li>
+                </ul>
+              </Fade>
             </div>
           </div>
 

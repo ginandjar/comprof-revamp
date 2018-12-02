@@ -43,6 +43,7 @@
     "react-ga": "^2.5.3",
     "react-helmet": "^5.2.0",
     "react-responsive-carousel": "^3.1.43",
+    "react-reveal": "^1.2.2",
     "react-scroll-to-component": "^1.0.2",
     "react-select": "^1.2.1",
     "react-slick": "^0.23.1",
