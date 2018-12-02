@@ -15,10 +15,16 @@ import FlexBox from '../components/layout/FlexBox';
 import ButtonLink from '../components/links/ButtonLink';
 import HeroCard from '../components/layout/HeroCard';
 import { Grid, Row, Col, Image } from 'react-bootstrap';
+import Fade from 'react-reveal/Fade';
 
 
 interface Props {
 
+}
+interface States {
+
+  currentIndexGrowth: number;
+  currentIndexHowto: number;
 }
 
 let tabSwiper: any = null;
@@ -26,10 +32,14 @@ let chatBotSwiper: any = null;
 let storySwiper: any = null;
 
 
-class Enterprise extends React.Component<Props> {
+class Enterprise extends React.Component<Props, States> {
   public static async getInitialProps(ctx: NextContext) {
 
   }
+  state = {
+    currentIndexGrowth: 0,
+    currentIndexHowto: 0
+  };
   componentDidMount() {
     tabSwiper = new Swiper('#tab-swiper', {
       speed: 400,
@@ -59,6 +69,11 @@ class Enterprise extends React.Component<Props> {
         modifier: 1,
         slideShadows: false,
       },
+    });
+
+    this.setState({
+      currentIndexGrowth: 0,
+      currentIndexHowto: 0
     });
   }
 
@@ -92,16 +107,22 @@ class Enterprise extends React.Component<Props> {
 
         <Intro className="enterprise">
           <div className="flex-item__left">
-            <div className="enterprise__intro__text">
-              <h1>
-                Start engaging and serving your customers automatically
+            <Fade>
+              <div className="enterprise__intro__text">
+                <h1>
+                  Start engaging and serving your customers automatically
               </h1>
-            </div>
+              </div>
+            </Fade>
 
           </div>
           <div className="flex-item__right enterprise__intro__image">
-            <img src="/static/png/enterprise/coverphone.png" className="enterprise__intro__image--phone" alt="" />
-            <img src="/static/png/enterprise/coverchat.png" className="enterprise__intro__image--chat" alt="" />
+            <Fade>
+              <img src="/static/png/enterprise/coverphone.png" className="enterprise__intro__image--phone" alt="" />
+            </Fade>
+            <Fade right>
+              <img src="/static/png/enterprise/coverchat.png" className="enterprise__intro__image--chat" alt="" />
+            </Fade>
           </div>
         </Intro>
         <TabbedHero
@@ -116,24 +137,33 @@ class Enterprise extends React.Component<Props> {
               <div className="swiper-wrapper">
 
                 <div className="swiper-slide">
+
                   <Grid className="enterprise__tab">
-                    <h5>FMCG - Customer Engagement Customer engagement has always been at the forefront of brand marketing plans, and now employing digital channels to turn casual users into shoppers is quickly becoming a viable path to faster and simpler interaction. Our chatbot solution allows your FMCG brand to create brilliantly effective campaign plans, simply by defining your goals.</h5>
+                    <Fade>
+                      <h5>FMCG - Customer Engagement Customer engagement has always been at the forefront of brand marketing plans, and now employing digital channels to turn casual users into shoppers is quickly becoming a viable path to faster and simpler interaction. Our chatbot solution allows your FMCG brand to create brilliantly effective campaign plans, simply by defining your goals.</h5>
+                    </Fade>
                     <Row>
                       <Col md={6}>
-                        <img src="/static/png/enterprise/cephone.png"></img>
+                        <Fade>
+                          <img src="/static/png/enterprise/cephone.png" />
+                        </Fade>
                       </Col>
                       <Col md={6}>
                         <div className="enterprise__tab__button">
-                          <div className="enterprise__tab__button--large">
-                            <ButtonLink modifier="light" block="true" href="/enterprise">
-                              Features you can offer
+                          <Fade bottom>
+                            <div className="enterprise__tab__button--large">
+                              <ButtonLink modifier="light" block="true" href="/enterprise">
+                                Features you can offer
                           </ButtonLink>
-                          </div>
-                          <div className="enterprise__tab__button--large">
-                            <ButtonLink modifier="light" block="true" href="/enterprise">
-                              Benefits
+                            </div>
+                          </Fade>
+                          <Fade bottom>
+                            <div className="enterprise__tab__button--large">
+                              <ButtonLink modifier="light" block="true" href="/enterprise">
+                                Benefits
                           </ButtonLink>
-                          </div>
+                            </div>
+                          </Fade>
                         </div>
                       </Col>
                     </Row>
@@ -141,149 +171,173 @@ class Enterprise extends React.Component<Props> {
                 </div>
 
                 <div className="swiper-slide">
-                  <div className="enterprise__tab">
-                    <h5>Whether your business line is banking, financial services, or FinTech, bots are a great strategy to sustain profitability and win over customers. It offers real-time financial services / data at the engagement point, supply 24 hour self-service, and transform ordinary transactions, policy updates, payments, and more into simple text through the channel of customers choice. </h5>
-                    <div>
-                      <Hero className="hero__center-container">
-                        <FlexBox className="flex">
-                          <div className="flex-item__right">
-                            <img src="/static/png/enterprise/baphone.png"></img>
-                          </div>
-                          <div className="flex-item__left">
-                            <div>
-                              <div className="enterprise__tab__button-large">
-                                <ButtonLink modifier="light" block="true" href="/enterprise">
-                                  Features you can offer
+
+                  <Grid className="enterprise__tab">
+                    <Fade>
+                      <h5>Whether your business line is banking, financial services, or FinTech, bots are a great strategy to sustain profitability and win over customers. It offers real-time financial services / data at the engagement point, supply 24 hour self-service, and transform ordinary transactions, policy updates, payments, and more into simple text through the channel of customers choice.</h5>
+                    </Fade>
+                    <Row>
+                      <Col md={6}>
+                        <Fade>
+                          <img src="/static/png/enterprise/baphone.png" />
+                        </Fade>
+                      </Col>
+                      <Col md={6}>
+                        <div className="enterprise__tab__button">
+                          <Fade bottom>
+                            <div className="enterprise__tab__button--large">
+                              <ButtonLink modifier="light" block="true" href="/enterprise">
+                                Features you can offer
                           </ButtonLink>
-                              </div>
-                              <div className="enterprise__tab__button-large">
-                                <ButtonLink modifier="light" block="true" href="/enterprise">
-                                  Benefits
-                          </ButtonLink>
-                              </div>
                             </div>
-                          </div>
-                        </FlexBox>
-                      </Hero>
-                    </div>
-                  </div>
+                          </Fade>
+                          <Fade bottom>
+                            <div className="enterprise__tab__button--large">
+                              <ButtonLink modifier="light" block="true" href="/enterprise">
+                                Benefits
+                          </ButtonLink>
+                            </div>
+                          </Fade>
+                        </div>
+                      </Col>
+                    </Row>
+                  </Grid>
                 </div>
 
                 <div className="swiper-slide">
-                  <div className="enterprise__tab">
-                    <h5>Your most important assets are your employees. Imagine how happy they would be and how productive they are, if they were given the answer right away. This kind of chatbot will simplify Human Resource experience. Employee can ask or message a bot like their fellow to resolve issues, ask questions, schedule meetings, and more. </h5>
-                    <div>
-                      <Hero className="hero__center-container">
-                        <FlexBox className="flex">
-                          <div className="flex-item__right">
-                            <img src="/static/png/enterprise/hrphone.png"></img>
-                          </div>
-                          <div className="flex-item__left">
-                            <div>
-                              <div className="enterprise__tab__button-large">
-                                <ButtonLink modifier="light" block="true" href="/enterprise">
-                                  Features you can offer
+                  <Grid className="enterprise__tab">
+                    <Fade>
+                      <h5>Your most important assets are your employees. Imagine how happy they would be and how productive they are, if they were given the answer right away. This kind of chatbot will simplify Human Resource experience. Employee can ask or message a bot like their fellow to resolve issues, ask questions, schedule meetings, and more. </h5>
+                    </Fade>
+                    <Row>
+                      <Col md={6}>
+                        <Fade>
+                          <img src="/static/png/enterprise/hrphone.png" />
+                        </Fade>
+                      </Col>
+                      <Col md={6}>
+                        <div className="enterprise__tab__button">
+                          <Fade bottom>
+                            <div className="enterprise__tab__button--large">
+                              <ButtonLink modifier="light" block="true" href="/enterprise">
+                                Features you can offer
                           </ButtonLink>
-                              </div>
-                              <div className="enterprise__tab__button-large">
-                                <ButtonLink modifier="light" block="true" href="/enterprise">
-                                  Benefits
-                          </ButtonLink>
-                              </div>
                             </div>
-                          </div>
-                        </FlexBox>
-                      </Hero>
-                    </div>
-                  </div>
+                          </Fade>
+                          <Fade bottom>
+                            <div className="enterprise__tab__button--large">
+                              <ButtonLink modifier="light" block="true" href="/enterprise">
+                                Benefits
+                          </ButtonLink>
+                            </div>
+                          </Fade>
+                        </div>
+                      </Col>
+                    </Row>
+                  </Grid>
                 </div>
 
                 <div className="swiper-slide">
-                  <div className="enterprise__tab">
-                    <h5>Today’s digital-savvy customer expect answers at the click of a button. They desire a personalized, proactive conversation with a brand that they love. Customer service bots interact with the customer on behalf of your business, enabling customer to self-service online by drawing on specific business rules to answer common questions and requests. </h5>
-                    <div>
-                      <Hero className="hero__center-container">
-                        <FlexBox className="flex">
-                          <div className="flex-item__right">
-                            <img src="/static/png/enterprise/csphone.png"></img>
-                          </div>
-                          <div className="flex-item__left">
-                            <div>
-                              <div className="enterprise__tab__button-large">
-                                <ButtonLink modifier="light" block="true" href="/enterprise">
-                                  Features you can offer
+                  <Grid className="enterprise__tab">
+                    <Fade>
+                      <h5>Today’s digital-savvy customer expect answers at the click of a button. They desire a personalized, proactive conversation with a brand that they love. Customer service bots interact with the customer on behalf of your business, enabling customer to self-service online by drawing on specific business rules to answer common questions and requests. </h5>
+                    </Fade>
+                    <Row>
+                      <Col md={6}>
+                        <Fade>
+                          <img src="/static/png/enterprise/csphone.png" />
+                        </Fade>
+                      </Col>
+                      <Col md={6}>
+                        <div className="enterprise__tab__button">
+                          <Fade bottom>
+                            <div className="enterprise__tab__button--large">
+                              <ButtonLink modifier="light" block="true" href="/enterprise">
+                                Features you can offer
                           </ButtonLink>
-                              </div>
-                              <div className="enterprise__tab__button-large">
-                                <ButtonLink modifier="light" block="true" href="/enterprise">
-                                  Benefits
-                          </ButtonLink>
-                              </div>
                             </div>
-                          </div>
-                        </FlexBox>
-                      </Hero>
-                    </div>
-                  </div>
+                          </Fade>
+                          <Fade bottom>
+                            <div className="enterprise__tab__button--large">
+                              <ButtonLink modifier="light" block="true" href="/enterprise">
+                                Benefits
+                          </ButtonLink>
+                            </div>
+                          </Fade>
+                        </div>
+                      </Col>
+                    </Row>
+                  </Grid>
+
                 </div>
 
                 <div className="swiper-slide">
-                  <div className="enterprise__tab">
-                    <h5>Bots offer a way to change the shopping experience through ‘conversational commerce’ that is a two-way interaction between customers and business that feels more like an interaction between a seller and buyer.  </h5>
-                    <div>
-                      <Hero className="hero__center-container">
-                        <FlexBox className="flex">
-                          <div className="flex-item__right">
-                            <img src="/static/png/enterprise/ecphone.png"></img>
-                          </div>
-                          <div className="flex-item__left">
-                            <div>
-                              <div className="enterprise__tab__button-large">
-                                <ButtonLink modifier="light" block="true" href="/enterprise">
-                                  Features you can offer
+                  <Grid className="enterprise__tab">
+                    <Fade>
+                      <h5>Bots offer a way to change the shopping experience through ‘conversational commerce’ that is a two-way interaction between customers and business that feels more like an interaction between a seller and buyer.  </h5>
+                    </Fade>
+                    <Row>
+                      <Col md={6}>
+                        <Fade>
+                          <img src="/static/png/enterprise/ecphone.png" />
+                        </Fade>
+                      </Col>
+                      <Col md={6}>
+                        <div className="enterprise__tab__button">
+                          <Fade bottom>
+                            <div className="enterprise__tab__button--large">
+                              <ButtonLink modifier="light" block="true" href="/enterprise">
+                                Features you can offer
                           </ButtonLink>
-                              </div>
-                              <div className="enterprise__tab__button-large">
-                                <ButtonLink modifier="light" block="true" href="/enterprise">
-                                  Benefits
-                          </ButtonLink>
-                              </div>
                             </div>
-                          </div>
-                        </FlexBox>
-                      </Hero>
-                    </div>
-                  </div>
+                          </Fade>
+                          <Fade bottom>
+                            <div className="enterprise__tab__button--large">
+                              <ButtonLink modifier="light" block="true" href="/enterprise">
+                                Benefits
+                          </ButtonLink>
+                            </div>
+                          </Fade>
+                        </div>
+                      </Col>
+                    </Row>
+                  </Grid>
+
                 </div>
 
 
                 <div className="swiper-slide">
-                  <div className="enterprise__tab">
-                    <h5>As chatbot technology advances, more use cases are surfacing across nearly every sector imaginable. Recently, bots have begun being implemented in education to assist in a variety of automates tasks, and the foreseeable advantages are far-reaching.</h5>
-                    <div>
-                      <Hero className="hero__center-container">
-                        <FlexBox className="flex">
-                          <div className="flex-item__right">
-                            <img src="/static/png/enterprise/eduphone.png"></img>
-                          </div>
-                          <div className="flex-item__left">
-                            <div>
-                              <div className="enterprise__tab__button-large">
-                                <ButtonLink modifier="light" block="true" href="/enterprise">
-                                  Features you can offer
+                  <Grid className="enterprise__tab">
+                    <Fade>
+                      <h5>As chatbot technology advances, more use cases are surfacing across nearly every sector imaginable. Recently, bots have begun being implemented in education to assist in a variety of automates tasks, and the foreseeable advantages are far-reaching.</h5>
+                    </Fade>
+                    <Row>
+                      <Col md={6}>
+                        <Fade>
+                          <img src="/static/png/enterprise/ecphone.png" />
+                        </Fade>
+                      </Col>
+                      <Col md={6}>
+                        <div className="enterprise__tab__button">
+                          <Fade bottom>
+                            <div className="enterprise__tab__button--large">
+                              <ButtonLink modifier="light" block="true" href="/enterprise">
+                                Features you can offer
                           </ButtonLink>
-                              </div>
-                              <div className="enterprise__tab__button-large">
-                                <ButtonLink modifier="light" block="true" href="/enterprise">
-                                  Benefits
-                          </ButtonLink>
-                              </div>
                             </div>
-                          </div>
-                        </FlexBox>
-                      </Hero>
-                    </div>
-                  </div>
+                          </Fade>
+                          <Fade bottom>
+                            <div className="enterprise__tab__button--large">
+                              <ButtonLink modifier="light" block="true" href="/enterprise">
+                                Benefits
+                          </ButtonLink>
+                            </div>
+                          </Fade>
+                        </div>
+                      </Col>
+                    </Row>
+                  </Grid>
+
                 </div>
 
               </div>
@@ -300,6 +354,7 @@ class Enterprise extends React.Component<Props> {
               <div className="swiper-wrapper">
                 <div className="swiper-slide enterprise__success-story">
                   <div className="enterprise__success-story__item">
+                    <img src="/static/png/enterprise/telkomsel.png" className="enterprise__success-story__item__icon" />
                     <div className="enterprise__success-story__item__img">
                       <img src="/static/png/enterprise/veronika.png"></img>
                     </div>
@@ -311,7 +366,8 @@ class Enterprise extends React.Component<Props> {
                   </div>
                 </div>
                 <div className="swiper-slide">
-                  <div>
+                  <div className="enterprise__success-story__item">
+                    <img src="/static/png/enterprise/uni.png" className="enterprise__success-story__item__icon" />
                     <div>
                       <img src="/static/png/enterprise/jemma.png"></img>
                     </div>
@@ -321,7 +377,8 @@ class Enterprise extends React.Component<Props> {
                   </div>
                 </div>
                 <div className="swiper-slide">
-                  <div>
+                  <div className="enterprise__success-story__item">
+                    <img src="/static/png/enterprise/alfa.png" className="enterprise__success-story__item__icon" />
                     <div>
                       <img src="/static/png/enterprise/shalma.png"></img>
                     </div>
@@ -331,7 +388,8 @@ class Enterprise extends React.Component<Props> {
                   </div>
                 </div>
                 <div className="swiper-slide">
-                  <div>
+                  <div className="enterprise__success-story__item">
+                    <img src="/static/png/enterprise/bri.png" className="enterprise__success-story__item__icon" />
                     <div>
                       <img src="/static/png/enterprise/sabrina.png"></img>
                     </div>
@@ -480,12 +538,12 @@ class Enterprise extends React.Component<Props> {
   renderTabMenu() {
     return (
       <Tab>
-        <TabItem item="Consumer Engagement" modifier="tab-item--selected" onClick={this.tabSwipeClick(0)} />
-        <TabItem item="Banking Assistant" onClick={this.tabSwipeClick(1)} />
-        <TabItem item="HR Bot" onClick={this.tabSwipeClick(2)} />
-        <TabItem item="Costumer Service" onClick={this.tabSwipeClick(3)} />
-        <TabItem item="E-Commerce Bot" onClick={this.tabSwipeClick(4)} />
-        <TabItem item="Educational" onClick={this.tabSwipeClick(5)} />
+        <TabItem item="Consumer Engagement" modifier={this.state.currentIndexGrowth == 0 ? "tab-item--selected" : undefined} onClick={this.tabSwipeClick(0)} />
+        <TabItem item="Banking Assistant" modifier={this.state.currentIndexGrowth == 1 ? "tab-item--selected" : undefined} onClick={this.tabSwipeClick(1)} />
+        <TabItem item="HR Bot" modifier={this.state.currentIndexGrowth == 2 ? "tab-item--selected" : undefined} onClick={this.tabSwipeClick(2)} />
+        <TabItem item="Costumer Service" modifier={this.state.currentIndexGrowth == 3 ? "tab-item--selected" : undefined} onClick={this.tabSwipeClick(3)} />
+        <TabItem item="E-Commerce Bot" modifier={this.state.currentIndexGrowth == 4 ? "tab-item--selected" : undefined} onClick={this.tabSwipeClick(4)} />
+        <TabItem item="Educational" modifier={this.state.currentIndexGrowth == 5 ? "tab-item--selected" : undefined} onClick={this.tabSwipeClick(5)} />
       </Tab>
     );
   }
@@ -493,28 +551,28 @@ class Enterprise extends React.Component<Props> {
   renderTabChatBot() {
     return (
       <ul>
-        <li onClick={this.botSwipeClick(0)}>
+        <li className={this.state.currentIndexHowto == 0 ? "enterprise__how-to__list-selected" : undefined} onClick={this.botSwipeClick(0)}>
           <img src="/static/png/enterprise/icochat.svg" width="90px" />
         </li>
-        <li onClick={this.botSwipeClick(1)}>
+        <li className={this.state.currentIndexHowto == 1 ? "enterprise__how-to__list-selected" : undefined} onClick={this.botSwipeClick(1)}>
           <img src="/static/png/enterprise/icoconn.svg" width="90px" />
         </li>
-        <li onClick={this.botSwipeClick(2)}>
+        <li className={this.state.currentIndexHowto == 2 ? "enterprise__how-to__list-selected" : undefined} onClick={this.botSwipeClick(2)}>
           <img src="/static/png/enterprise/icocode.svg" width="90px" />
         </li>
-        <li onClick={this.botSwipeClick(3)}>
+        <li className={this.state.currentIndexHowto == 3 ? "enterprise__how-to__list-selected" : undefined} onClick={this.botSwipeClick(3)}>
           <img src="/static/png/enterprise/icohand.svg" width="90px" />
         </li>
-        <li onClick={this.botSwipeClick(4)}>
+        <li className={this.state.currentIndexHowto == 4 ? "enterprise__how-to__list-selected" : undefined} onClick={this.botSwipeClick(4)}>
           <img src="/static/png/enterprise/icobrain.svg" width="90px" />
         </li>
-        <li onClick={this.botSwipeClick(5)}>
+        <li className={this.state.currentIndexHowto == 5 ? "enterprise__how-to__list-selected" : undefined} onClick={this.botSwipeClick(5)}>
           <img src="/static/png/enterprise/icophone.svg" width="90px" />
         </li>
-        <li onClick={this.botSwipeClick(6)}>
+        <li className={this.state.currentIndexHowto == 6 ? "enterprise__how-to__list-selected" : undefined} onClick={this.botSwipeClick(6)}>
           <img src="/static/png/enterprise/icorocket.svg" width="90px" />
         </li>
-        <li onClick={this.botSwipeClick(7)}>
+        <li className={this.state.currentIndexHowto == 7 ? "enterprise__how-to__list-selected" : undefined} onClick={this.botSwipeClick(7)}>
           <img src="/static/png/enterprise/icotools.svg" width="90px" />
         </li>
       </ul>
@@ -523,10 +581,12 @@ class Enterprise extends React.Component<Props> {
 
   tabSwipeClick = (e: number) => () => {
     tabSwiper.slideTo(e, 400);
+    this.setState({ currentIndexGrowth: e });
   }
 
   botSwipeClick = (e: number) => () => {
     chatBotSwiper.slideTo(e, 400);
+    this.setState({ currentIndexHowto: e });
   };
 
   storySwiperClick = (e: number) => () => {

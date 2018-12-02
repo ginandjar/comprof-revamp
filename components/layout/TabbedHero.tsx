@@ -3,6 +3,7 @@ import Section from './Section';
 import Hero from './Hero';
 import FlexBox from './FlexBox';
 import classnames from 'classnames';
+import Fade from 'react-reveal/Fade';
 
 interface IntroProps {
   children: any;
@@ -20,10 +21,13 @@ export default class TabbedHero extends React.Component<IntroProps> {
         <Hero className="hero__center-container">
           <div>
             <div className="tabbed-hero__title">
-              <h2>
-                {this.props.title}
-              </h2>
+              <Fade>
+                <h2>
+                  {this.props.title}
+                </h2>
+              </Fade>
             </div>
+
 
             {this.props.children}
           </div>

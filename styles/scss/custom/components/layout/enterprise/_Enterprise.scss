@@ -35,8 +35,14 @@
 
   &__success-story{
     &__item{
+      display: inline-block;
       &__img{
         
+      }
+
+      &__icon{
+        position: relative;
+        left:-130px
       }
     }
   }
@@ -76,7 +82,17 @@
         cursor: pointer;
         flex: 1 1 0%;
         padding: 0px 20px;
-        &:first-child{
+        
+        }
+        
+        &:last-child {
+          &:after{
+            display: none;
+          }
+        }
+      }
+      &__list-selected{
+
           &:after{
             content: '';
             width: 0; 
@@ -88,13 +104,11 @@
             right: 5%;
             border-left: 10px solid white;
   
-          }
-        }
-        
-        &:last-child {
-          &:after{
-            display: none;
-          }
+
+      }
+      &:last-child {
+        &:after{
+          display: none;
         }
       }
     }

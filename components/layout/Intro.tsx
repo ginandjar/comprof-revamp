@@ -3,6 +3,7 @@ import Section from './Section';
 import Hero from './Hero';
 import FlexBox from './FlexBox';
 import classnames from 'classnames';
+import Fade from 'react-reveal/Fade';
 
 interface IntroProps {
   children: any;
@@ -17,10 +18,12 @@ export default class Intro extends React.Component<IntroProps> {
 
       <Section className={classnames('intro', this.props.className)}>
         <Hero className="hero__center-container">
-          <FlexBox className="flex">
-            {this.props.children}
+          <Fade>
+            <FlexBox className="flex">
+              {this.props.children}
 
-          </FlexBox>
+            </FlexBox>
+          </Fade>
         </Hero>
       </Section >
     );

@@ -16,7 +16,7 @@ export default class Tab extends React.Component<TabProps> {
   render() {
     return (
       <div className="tab">
-        <ul>
+        <ul className="tab__ul">
           {this.props.children}
         </ul>
       </div>

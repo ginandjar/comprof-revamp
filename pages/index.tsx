@@ -17,22 +17,38 @@ import HeroCard from '../components/layout/HeroCard';
 import Career from '../components/layout/Career';
 import BuildChatbot from '../components/layout/BuildChatbot';
 import Fade from 'react-reveal/Fade';
+import { Image } from 'react-bootstrap';
+import TextLoop from 'react-text-loop';
 
 interface Props {
 
 }
 
+interface States {
+  isShow: boolean;
+  currentIndex: number;
+}
+
 let tabSwiper: any = null;
 
 
-class Home extends React.Component<Props> {
+class Home extends React.Component<Props, States> {
   public static async getInitialProps(ctx: NextContext) {
 
   }
+  state = {
+    isShow: true,
+    currentIndex: 0
+  };
+
   componentDidMount() {
     tabSwiper = new Swiper('#tab-swiper', {
       speed: 400,
       spaceBetween: 100
+    });
+    this.setState({
+      isShow: true,
+      currentIndex: 0
     });
   }
 
@@ -65,14 +81,22 @@ class Home extends React.Component<Props> {
           <div className="flex-item__left">
             <div className="landing__intro__text">
               <h1>
-                AI & Chatbot solution for smarter <span>Customer Support</span>
+                AI & Chatbot solution for smarter&nbsp;
+                <TextLoop speed={800}>
+                  <span>customer support</span>
+                  <span>CRM</span>
+                  <span>marketing</span>
+                  <span>commerce</span>
+
+
+                </TextLoop>
               </h1>
 
               <p>
                 Create an intelligent assistant to serve your customer better
                 </p>
               <ButtonLink modifier="light" href="#">
-                Build your chatbot now
+                Build Your Chatbot Now
                 </ButtonLink>
             </div>
 
@@ -177,16 +201,16 @@ class Home extends React.Component<Props> {
                             </Fade>
                           </div>
                           <div className="flex-item__right landing__tab__image">
-                            <Fade top>
+                            <Fade right >
                               <img className="landing__tab__image--veronika--avatar" src="/static/png/landing/veronika/avatar.png"></img>
                             </Fade>
-                            <Fade>
+                            <Fade top >
                               <img className="landing__tab__image--veronika--phone" src="/static/png/landing/veronika/phone.png"></img>
                             </Fade>
-                            <Fade left>
+                            <Fade left >
                               <img className="landing__tab__image--veronika--chat" src="/static/png/landing/veronika/chat.png"></img>
                             </Fade>
-                            <Fade bottom>
+                            <Fade bottom >
                               <img className="landing__tab__image--veronika--menu" src="/static/png/landing/veronika/menu.png"></img>
                             </Fade>
                           </div>
@@ -217,10 +241,18 @@ class Home extends React.Component<Props> {
                             </div>
                           </div>
                           <div className="flex-item__right landing__tab__image">
-                            <img className="landing__tab__image--veronika--avatar" src="/static/png/landing/sabrina/avatar.png"></img>
-                            <img className="landing__tab__image--veronika--phone" src="/static/png/landing/sabrina/phone.png"></img>
-                            <img className="landing__tab__image--veronika--chat" src="/static/png/landing/sabrina/chat.png"></img>
-                            <img className="landing__tab__image--veronika--menu" src="/static/png/landing/sabrina/menu.png"></img>
+                            <Fade right >
+                              <img className="landing__tab__image--veronika--avatar" src="/static/png/landing/sabrina/avatar.png"></img>
+                            </Fade>
+                            <Fade top >
+                              <img className="landing__tab__image--veronika--phone" src="/static/png/landing/sabrina/phone.png"></img>
+                            </Fade>
+                            <Fade left >
+                              <img className="landing__tab__image--veronika--chat" src="/static/png/landing/sabrina/chat.png"></img>
+                            </Fade>
+                            <Fade bottom >
+                              <img className="landing__tab__image--veronika--menu" src="/static/png/landing/sabrina/menu.png"></img>
+                            </Fade>
 
                           </div>
                         </FlexBox>
@@ -250,11 +282,18 @@ class Home extends React.Component<Props> {
                             </div>
                           </div>
                           <div className="flex-item__right landing__tab__image">
-                            <img className="landing__tab__image--jemma--avatar" src="/static/png/landing/jemma/avatar.png"></img>
-                            <img className="landing__tab__image--jemma--phone" src="/static/png/landing/jemma/phone.png"></img>
-                            <img className="landing__tab__image--jemma--chat" src="/static/png/landing/jemma/chat.png"></img>
-                            <img className="landing__tab__image--jemma--menu" src="/static/png/landing/jemma/menu.png"></img>
-
+                            <Fade right >
+                              <img className="landing__tab__image--veronika--avatar" src="/static/png/landing/jemma/avatar.png"></img>
+                            </Fade>
+                            <Fade top >
+                              <img className="landing__tab__image--veronika--phone" src="/static/png/landing/jemma/phone.png"></img>
+                            </Fade>
+                            <Fade left >
+                              <img className="landing__tab__image--veronika--chat" src="/static/png/landing/jemma/chat.png"></img>
+                            </Fade>
+                            <Fade bottom >
+                              <img className="landing__tab__image--veronika--menu" src="/static/png/landing/jemma/menu.png"></img>
+                            </Fade>
                           </div>
                         </FlexBox>
                       </Hero>
@@ -283,11 +322,18 @@ class Home extends React.Component<Props> {
                             </div>
                           </div>
                           <div className="flex-item__right landing__tab__image">
-                            <img className="landing__tab__image--shalma--avatar" src="/static/png/landing/shalma/avatar.png"></img>
-                            <img className="landing__tab__image--shalma--phone" src="/static/png/landing/shalma/phone.png"></img>
-                            <img className="landing__tab__image--shalma--chat" src="/static/png/landing/shalma/chat.png"></img>
-                            <img className="landing__tab__image--shalma--menu" src="/static/png/landing/shalma/menu.png"></img>
-
+                            <Fade right >
+                              <img className="landing__tab__image--veronika--avatar" src="/static/png/landing/shalma/avatar.png"></img>
+                            </Fade>
+                            <Fade top >
+                              <img className="landing__tab__image--veronika--phone" src="/static/png/landing/shalma/phone.png"></img>
+                            </Fade>
+                            <Fade left >
+                              <img className="landing__tab__image--veronika--chat" src="/static/png/landing/shalma/chat.png"></img>
+                            </Fade>
+                            <Fade bottom >
+                              <img className="landing__tab__image--veronika--menu" src="/static/png/landing/shalma/menu.png"></img>
+                            </Fade>
                           </div>
                         </FlexBox>
                       </Hero>
@@ -306,60 +352,67 @@ class Home extends React.Component<Props> {
 
         <HeroCard title="Create the best chatbots with our platform" className="hero-card landing__hero">
           <div className="landing__list-image">
-            <div className="landing__list-image__item">
-              <img src="/static/png/landing/brain.svg" />
+            <Fade>
+              <div className="landing__list-image__item">
+                <img src="/static/png/landing/brain.svg" />
 
-              <h5>
-                The Best NLP
+                <h5>
+                  The Best NLP
               </h5>
-              <p>
-                Create chatbots that has the best understanding for what the users are saying in Bahasa Indonesia and English.
+                <p>
+                  Create chatbots that has the best understanding for what the users are saying in Bahasa Indonesia and English.
               </p>
-            </div>
+              </div>
+            </Fade>
+            <Fade>
+              <div className="landing__list-image__item">
+                <img src="/static/png/landing/laptop.svg" />
 
-            <div className="landing__list-image__item">
-              <img src="/static/png/landing/laptop.svg" />
-
-              <h5>
-                Bot Studio
+                <h5>
+                  Bot Studio
               </h5>
-              <p>
-                Visual Conversation Designer Easily design engaging conversation flows for your chatbots.
+                <p>
+                  Visual Conversation Designer Easily design engaging conversation flows for your chatbots.
               </p>
-            </div>
+              </div>
+            </Fade>
+            <Fade>
 
-            <div className="landing__list-image__item">
-              <img src="/static/png/landing/gear.svg" />
+              <div className="landing__list-image__item">
+                <img src="/static/png/landing/gear.svg" />
 
-              <h5>
-                Integration Flexibility
+                <h5>
+                  Integration Flexibility
               </h5>
-              <p>
-                Works with any other technology and tools you use to meet your business needs.
+                <p>
+                  Works with any other technology and tools you use to meet your business needs.
               </p>
-            </div>
+              </div>
+            </Fade>
+            <Fade>
+              <div className="landing__list-image__item">
+                <img src="/static/png/landing/chat.svg" />
 
-            <div className="landing__list-image__item">
-              <img src="/static/png/landing/chat.svg" />
-
-              <h5>
-                Omni Channel Management
+                <h5>
+                  Omni Channel Management
               </h5>
-              <p>
-                Easily manage and install your chatbots in any Messaging Channels you choose.
+                <p>
+                  Easily manage and install your chatbots in any Messaging Channels you choose.
               </p>
-            </div>
+              </div>
+            </Fade>
+            <Fade>
+              <div className="landing__list-image__item">
+                <img src="/static/png/landing/lock.svg" />
 
-            <div className="landing__list-image__item">
-              <img src="/static/png/landing/lock.svg" />
-
-              <h5>
-                On Premise Solution
+                <h5>
+                  On Premise Solution
               </h5>
-              <p>
-                Need the security of your own IT infrastructure to run your chatbots? Just install it on your own system using our On-Premise solution.
+                <p>
+                  Need the security of your own IT infrastructure to run your chatbots? Just install it on your own system using our On-Premise solution.
               </p>
-            </div>
+              </div>
+            </Fade>
 
           </div>
 
@@ -367,37 +420,45 @@ class Home extends React.Component<Props> {
 
 
         <HeroCard title="Work with us to build the best chatbots for any industry" className="landing__hero">
+
           <div className="landing__list-image">
-            <div className="landing__list-image__item--list-image-only">
-              <img src="/static/png/landing/laptopblue.svg" />
-              <p>
-                Define your needs
+            <Fade>
+              <div className="landing__list-image__item--list-image-only">
+                <img src="/static/png/landing/laptopblue.svg" />
+                <p>
+                  Define your needs
                 </p>
-            </div>
+              </div>
+            </Fade>
+            <Fade>
+              <div className="landing__list-image__item--list-image-only">
+                <img src="/static/png/landing/searchkatablue.svg" />
+                <p>
+                  View our solution
+                </p>
+              </div>
+            </Fade>
+            <Fade>
+              <div className="landing__list-image__item--list-image-only">
+                <img src="/static/png/landing/phoneblue.svg" />
+                <p>
+                  Drop us a line
+                </p>
+              </div>
+            </Fade>
+            <Fade>
+              <div className="landing__list-image__item--list-image-only">
+                <img src="/static/png/landing/comunicationblue.svg" />
+                <p>
+                  Schedule demo
+                </p>
+              </div>
+            </Fade>
 
-            <div className="landing__list-image__item--list-image-only">
-              <img src="/static/png/landing/searchkatablue.svg" />
-              <p>
-                View our solution
-                </p>
-            </div>
-
-            <div className="landing__list-image__item--list-image-only">
-              <img src="/static/png/landing/phoneblue.svg" />
-              <p>
-                Drop us a line
-                </p>
-            </div>
-
-            <div className="landing__list-image__item--list-image-only">
-              <img src="/static/png/landing/comunicationblue.svg" />
-              <p>
-                Schedule demo
-                </p>
-            </div>
             <div className="landing__list-image__item__line">
               <img src="/static/png/landing/line.svg" />
             </div>
+
 
           </div>
 
@@ -406,29 +467,34 @@ class Home extends React.Component<Props> {
               Work With Us
             </ButtonLink>
           </div>
+
         </HeroCard>
 
 
         <HeroCard className="hero-card">
           <div className="landing__hero landing__hero--full-width">
-            <div className="landing__hero__text">
+            <Fade left>
+              <div className="landing__hero__text">
 
-              <h1>
-                Kata Platform
+                <h1>
+                  Kata Platform
               </h1>
-              <h1>The Technology Behind The Chatbots</h1>
-              <p>
-                An integrated platform to build the best chatbot for any chat / messaging apps (even inside your own apps/website!)
+                <h1>The Technology Behind The Chatbots</h1>
+                <p>
+                  An integrated platform to build the best chatbot for any chat / messaging apps (even inside your own apps/website!)
                         </p>
 
-              <ButtonLink modifier="light" href="/enterprise">
-                Explore more
+                <ButtonLink modifier="light" href="/enterprise">
+                  Explore More
               </ButtonLink>
 
-            </div>
-            <div className="landing__hero__image">
-              <img src="/static/png/landing/laptop.png" />
-            </div>
+              </div>
+            </Fade>
+            <Fade right>
+              <div className="landing__hero__image">
+                <img src="/static/png/landing/laptop.png" />
+              </div>
+            </Fade>
           </div>
 
         </HeroCard>
@@ -436,6 +502,9 @@ class Home extends React.Component<Props> {
         <div className="landing__engineering-blog">
           <h1>Keep up with Kata insights</h1>
           <div className="landing__engineering-blog__blog-content">
+            <div className="landing__engineering-blog__blog-image">
+              <Image src="/static/png/landing/blog.png" />
+            </div>
             <div className="landing__engineering-blog__list">
               <div className="landing__engineering-blog__item">
                 <div className="landing__engineering-blog__image">
@@ -480,10 +549,13 @@ class Home extends React.Component<Props> {
           </div>
           <div className="landing__engineering-blog__button">
             <ButtonLink modifier="default" block="true" href="#">
-              View all
+              View All
                 </ButtonLink>
           </div>
           <div className="landing__engineering-blog__blog-content">
+            <div className="landing__engineering-blog__blog-image">
+              <Image src="/static/png/landing/medium.png" />
+            </div>
             <div className="landing__engineering-blog__list">
               <div className="landing__engineering-blog__item">
                 <div className="landing__engineering-blog__image">
@@ -532,11 +604,12 @@ class Home extends React.Component<Props> {
                 </ButtonLink>
           </div>
         </div>
-
-        <Career />
-
-        <BuildChatbot />
-
+        <Fade>
+          <Career />
+        </Fade>
+        <Fade>
+          <BuildChatbot />
+        </Fade>
       </div >
     );
   }
@@ -544,17 +617,21 @@ class Home extends React.Component<Props> {
   renderTabMenu() {
     return (
       <Tab>
-        <TabItem item="Customer Service" modifier="tab-item--selected" onClick={this.tabSwipeClick(0)} />
-        <TabItem item="Banking Assistant" onClick={this.tabSwipeClick(1)} />
-        <TabItem item="Customer Engagement" onClick={this.tabSwipeClick(2)} />
-        <TabItem item="Customer Loyalty" onClick={this.tabSwipeClick(3)} />
+        <TabItem key={0} item="Customer Service" modifier={this.state.currentIndex == 0 ? "tab-item--selected" : undefined} onClick={this.tabSwipeClick(0)} />
+        <TabItem key={1} item="Banking Assistant" modifier={this.state.currentIndex == 1 ? "tab-item--selected" : undefined} onClick={this.tabSwipeClick(1)} />
+        <TabItem key={2} item="Customer Engagement" modifier={this.state.currentIndex == 2 ? "tab-item--selected" : undefined} onClick={this.tabSwipeClick(2)} />
+        <TabItem key={3} item="Customer Loyalty" modifier={this.state.currentIndex == 3 ? "tab-item--selected" : undefined} onClick={this.tabSwipeClick(3)} />
       </Tab>
     );
   }
 
 
   tabSwipeClick = (e: number) => () => {
+
     tabSwiper.slideTo(e, 400);
+
+    this.setState({ currentIndex: e });
+
   }
 
 

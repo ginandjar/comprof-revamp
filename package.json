@@ -47,6 +47,7 @@
     "react-scroll-to-component": "^1.0.2",
     "react-select": "^1.2.1",
     "react-slick": "^0.23.1",
+    "react-text-loop": "^1.1.0",
     "remarkable": "^1.7.1",
     "scrollreveal": "^3.4.0",
     "slick-carousel": "^1.8.1",

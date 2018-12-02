@@ -3,6 +3,7 @@ import Section from './Section';
 import Hero from './Hero';
 import FlexBox from './FlexBox';
 import classnames from 'classnames';
+import Fade from 'react-reveal/Fade';
 
 interface HeroCardProps {
   children: any;
@@ -20,18 +21,23 @@ export default class HeroCard extends React.Component<HeroCardProps> {
       <Section className={classnames('hero-card', this.props.className)}>
         <Hero className="hero__center-container">
           <div className="hero-card__title">
-            <h1>
-              {this.props.title}
-            </h1>
-            <p>
-              {this.props.caption}
-            </p>
+            <Fade>
+              <h1>
+                {this.props.title}
+              </h1>
+            </Fade>
+            <Fade>
+              <p>
+                {this.props.caption}
+              </p>
+            </Fade>
           </div>
 
-
-          <div className="hero-card__content">
-            {this.props.children}
-          </div>
+          <Fade>
+            <div className="hero-card__content">
+              {this.props.children}
+            </div>
+          </Fade>
 
 
         </Hero>
