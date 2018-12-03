@@ -65,14 +65,14 @@ class Research extends React.Component<Props> {
             <div className="research__research-content__descr">
               <div className="research__research-content__title">
                 <div className="research__research-content__title">
-                  <h3>Lorem Ipsum is simply dummy text of the printing and typesetting</h3>
+                  <h3>Empirical Evaluation of Character-Based Model on Neural Named-Entity Recognition in Indonesian Conversational Texts</h3>
                 </div>
                 <div className="research__research-content__writen-by">
-                  <h5>Writen by : Kemal Maulana</h5>
+                  <h5>Writen by :  Kemal Kurniawan & Samuel Louvan</h5>
                 </div>
-                <div className="research__research-content__read-more" href="/researchdetail">
+                <a className="research__research-content__read-more" href="/research/NER">
                   <h5>Read more</h5>
-                </div>
+                </a>
               </div>
             </div>
           </div>
@@ -80,14 +80,44 @@ class Research extends React.Component<Props> {
             <div className="research__research-content__descr">
               <div className="research__research-content__title">
                 <div className="research__research-content__title">
-                  <h3>Lorem Ipsum is simply dummy text of the printing and typesetting</h3>
+                  <h3>Multi-Task Active Learning for Neural Semantic Role Labeling on Low Resource Conversational Corpus</h3>
                 </div>
                 <div className="research__research-content__writen-by">
-                  <h5>Writen by : Kemal Maulana</h5>
+                  <h5>Writen by : Fariz Ikhwantri & Samuel Louvan & Kemal Kurniawan & Bagas Abisena & Valdi Rachman & Alfan Farizki Wicaksono & Rahmad Mahendra</h5>
                 </div>
-                <div className="research__research-content__read-more" href="/researchdetail">
+                <a className="research__research-content__read-more" href="/research/SRL">
                   <h5>Read more</h5>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="research__research-content">
+            <div className="research__research-content__descr">
+              <div className="research__research-content__title">
+                <div className="research__research-content__title">
+                  <h3>IndoSum: A New Benchmark Dataset for Indonesian Text Summarization</h3>
                 </div>
+                <div className="research__research-content__writen-by">
+                  <h5>Writen by : Kemal Kurniawan & Samuel Louvan</h5>
+                </div>
+                <a className="research__research-content__read-more" href="/research/IndoSum">
+                  <h5>Read more</h5>
+                </a>
+              </div>
+            </div>
+          </div>
+          <div className="research__research-content">
+            <div className="research__research-content__descr">
+              <div className="research__research-content__title">
+                <div className="research__research-content__title">
+                  <h3>LToward a Standardized and More Accurate Indonesian Part-of-Speech Tagging</h3>
+                </div>
+                <div className="research__research-content__writen-by">
+                  <h5>Writen by : Kemal Kurniawan & Samuel Louvan</h5>
+                </div>
+                <a className="research__research-content__read-more" href="/research/POS">
+                  <h5>Read more</h5>
+                </a>
               </div>
             </div>
           </div>

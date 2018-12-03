@@ -60,27 +60,6 @@ class ResearchDetail extends React.Component<Props> {
             </ButtonLink>
           </HeroCard>
 
-          <HeroCard title="Related Content" className="researchdetail__related-content">
-            <div className="researchdetail__related-content-list">
-              <div className="researchdetail__related-content-list__title">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-              </div>
-              <div>
-                <p>Publication year: 2018</p>
-                <p>Writen by: Kemal Maulana</p>
-              </div>
-            </div>
-            <div className="researchdetail__related-content-list">
-              <div className="researchdetail__related-content-list__title">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-              </div>
-              <div>
-                <p>Publication year: 2018</p>
-                <p>Writen by: Kemal Maulana</p>
-              </div>
-            </div>
-
-          </HeroCard>
         </div>
 
 

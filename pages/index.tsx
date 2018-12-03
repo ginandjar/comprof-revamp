@@ -194,7 +194,7 @@ class Home extends React.Component<Props, States> {
                                   Intelligent customer support for Telco
                               </p>
 
-                                <ButtonLink modifier="light" href="/enterprise">
+                                <ButtonLink modifier="light" href="/story/veronika">
                                   Meet Veronika
                                 </ButtonLink>
                               </div>
@@ -235,7 +235,7 @@ class Home extends React.Component<Props, States> {
                                 Smart assistant for Banking
                               </p>
 
-                              <ButtonLink modifier="light" href="/enterprise">
+                              <ButtonLink modifier="light" href="/story/sabrina">
                                 Meet Sabrina
                                 </ButtonLink>
                             </div>
@@ -276,7 +276,7 @@ class Home extends React.Component<Props, States> {
                                 Virtual friend for personalized consumer engagement
                               </p>
 
-                              <ButtonLink modifier="light" href="/enterprise">
+                              <ButtonLink modifier="light" href="/story/jemma">
                                 Meet Jemma
                                 </ButtonLink>
                             </div>
@@ -316,7 +316,7 @@ class Home extends React.Component<Props, States> {
                                 Interactive assistant for customer loyalty
                               </p>
 
-                              <ButtonLink modifier="light" href="/enterprise">
+                              <ButtonLink modifier="light" href="/story/shalma">
                                 Meet Shalma
                                 </ButtonLink>
                             </div>

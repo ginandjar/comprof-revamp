@@ -64,15 +64,37 @@ app.prepare().then(() => {
   server.get('/enterprise', (req, res) => {
     renderAndCache(req, res, '/enterprise');
   });
-  server.get('/partner', (req, res) => {
+  server.get('/partnership', (req, res) => {
     renderAndCache(req, res, '/partner');
   });
   server.get('/research', (req, res) => {
     renderAndCache(req, res, '/research');
   });
 
-  server.get('/research/detail', (req, res) => {
-    renderAndCache(req, res, '/researchdetail');
+  server.get('/research/NER', (req, res) => {
+    renderAndCache(req, res, '/researchner');
+  });
+  server.get('/research/SRL', (req, res) => {
+    renderAndCache(req, res, '/researchsrl');
+  });
+  server.get('/research/IndoSum', (req, res) => {
+    renderAndCache(req, res, '/researchindosum');
+  });
+  server.get('/research/pos', (req, res) => {
+    renderAndCache(req, res, '/researchpos');
+  });
+
+  server.get('/story/jemma', (req, res) => {
+    renderAndCache(req, res, '/jemmastory');
+  });
+  server.get('/story/sabrina', (req, res) => {
+    renderAndCache(req, res, '/sabrinastory');
+  });
+  server.get('/story/shalma', (req, res) => {
+    renderAndCache(req, res, '/shalmastory');
+  });
+  server.get('/story/veronika', (req, res) => {
+    renderAndCache(req, res, '/veronikastory');
   });
   // server.get('/pricing', (req, res) => {
   //   renderAndCache(req, res, '/pricing');

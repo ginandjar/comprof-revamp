@@ -359,7 +359,7 @@ class Enterprise extends React.Component<Props, States> {
                       <img src="/static/png/enterprise/veronika.png"></img>
                     </div>
                     <div style={buttonStyle}>
-                      <ButtonLink modifier="light" href="/enterprise">
+                      <ButtonLink modifier="light" href="/story/veronika">
                         Read About Veronika
                     </ButtonLink>
                     </div>
@@ -371,7 +371,7 @@ class Enterprise extends React.Component<Props, States> {
                     <div>
                       <img src="/static/png/enterprise/jemma.png"></img>
                     </div>
-                    <ButtonLink modifier="light" href="/enterprise">
+                    <ButtonLink modifier="light" href="/story/jemma">
                       Read About Jemma
                     </ButtonLink>
                   </div>
@@ -382,7 +382,7 @@ class Enterprise extends React.Component<Props, States> {
                     <div>
                       <img src="/static/png/enterprise/shalma.png"></img>
                     </div>
-                    <ButtonLink modifier="light" href="/enterprise">
+                    <ButtonLink modifier="light" href="/story/shalma">
                       Read About Shalma
                     </ButtonLink>
                   </div>
@@ -393,7 +393,7 @@ class Enterprise extends React.Component<Props, States> {
                     <div>
                       <img src="/static/png/enterprise/sabrina.png"></img>
                     </div>
-                    <ButtonLink modifier="light" href="/enterprise">
+                    <ButtonLink modifier="light" href="/story/sabrina">
                       Read About Sabrina
                     </ButtonLink>
                   </div>
@@ -541,7 +541,7 @@ class Enterprise extends React.Component<Props, States> {
         <TabItem item="Consumer Engagement" modifier={this.state.currentIndexGrowth == 0 ? "tab-item--selected" : undefined} onClick={this.tabSwipeClick(0)} />
         <TabItem item="Banking Assistant" modifier={this.state.currentIndexGrowth == 1 ? "tab-item--selected" : undefined} onClick={this.tabSwipeClick(1)} />
         <TabItem item="HR Bot" modifier={this.state.currentIndexGrowth == 2 ? "tab-item--selected" : undefined} onClick={this.tabSwipeClick(2)} />
-        <TabItem item="Costumer Service" modifier={this.state.currentIndexGrowth == 3 ? "tab-item--selected" : undefined} onClick={this.tabSwipeClick(3)} />
+        <TabItem item="Custumer Service" modifier={this.state.currentIndexGrowth == 3 ? "tab-item--selected" : undefined} onClick={this.tabSwipeClick(3)} />
         <TabItem item="E-Commerce Bot" modifier={this.state.currentIndexGrowth == 4 ? "tab-item--selected" : undefined} onClick={this.tabSwipeClick(4)} />
         <TabItem item="Educational" modifier={this.state.currentIndexGrowth == 5 ? "tab-item--selected" : undefined} onClick={this.tabSwipeClick(5)} />
       </Tab>

@@ -41,7 +41,7 @@ class ResearchDetail extends React.Component<Props> {
         <div className="researchdetail">
 
           <div className="researchdetail__title">
-            Empirical Evaluation of Character-Based Model on Neural Named-Entity Recognition in Indonesian Conversational Texts
+            IndoSum: A New Benchmark Dataset for Indonesian Text Summarization
           </div>
           <div className="researchdetail__descr">
             <Fade>
@@ -52,34 +52,12 @@ class ResearchDetail extends React.Component<Props> {
           </div>
           <HeroCard title="Abstract" className="researchdetail__abstract">
             <p className="researchdetail__abstract__detail">
-              Despite the long history of named-entity recognition (NER) task in the natural language processing community, previous work rarely studied the task on conversational texts. Such texts are challenging because they contain a lot of word variations which increase the number of out-of-vocabulary (OOV) words. The high number of OOV words poses a difficulty for word-based neural models. Meanwhile, there is plenty of evidence to the effectiveness of character-based neural models in mitigating this OOV problem. We report an empirical evaluation of neural sequence labeling models with character embedding to tackle NER task in Indonesian conversational texts. Our experiments show that (1) character models outperform word embedding-only models by up to 4 $F_1$ points, (2) character models perform better in OOV cases with an improvement of as high as 15 $F_1$ points, and (3) character models are robust against a very high OOV rate.
+              Automatic text summarization is generally considered as a challenging task in the NLP community. One of the challenges is the publicly available and large dataset that is relatively rare and difficult to construct. The problem is even worse for low-resource languages such as Indonesian. In this paper, we present IndoSum, a new benchmark dataset for Indonesian text summarization. The dataset consists of news articles and manually constructed summaries. Notably, the dataset is almost 200x larger than the previous Indonesian summarization dataset of the same domain. We evaluated various extractive summarization approaches and obtained encouraging results which demonstrate the usefulness of the dataset and provide baselines for future research. The code and the dataset are available online under permissive licenses.
             </p>
-            <ButtonLink modifier="default" href="https://noisy-text.github.io/2018/pdf/W-NUT201812.pdf ">
+            <ButtonLink modifier="default" href="https://arxiv.org/abs/1810.05334">
               Download Full Paper
                 {/* <img src="/static/images/icons/arrow-down-light.svg" /> */}
             </ButtonLink>
-          </HeroCard>
-
-          <HeroCard title="Related Content" className="researchdetail__related-content">
-            <div className="researchdetail__related-content-list">
-              <div className="researchdetail__related-content-list__title">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-              </div>
-              <div>
-                <p>Publication year: 2018</p>
-                <p>Writen by: Kemal Maulana</p>
-              </div>
-            </div>
-            <div className="researchdetail__related-content-list">
-              <div className="researchdetail__related-content-list__title">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-              </div>
-              <div>
-                <p>Publication year: 2018</p>
-                <p>Writen by: Kemal Maulana</p>
-              </div>
-            </div>
-
           </HeroCard>
         </div>
 

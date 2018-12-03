@@ -41,45 +41,23 @@ class ResearchDetail extends React.Component<Props> {
         <div className="researchdetail">
 
           <div className="researchdetail__title">
-            Empirical Evaluation of Character-Based Model on Neural Named-Entity Recognition in Indonesian Conversational Texts
+            Multi-Task Active Learning for Neural Semantic Role Labeling on Low Resource Conversational Corpus
           </div>
           <div className="researchdetail__descr">
             <Fade>
               <p>Publication year: 2018</p>
-              <p>Written by : Kemal Kurniawan & Samuel Louvan</p>
+              <p>Written by : Fariz Ikhwantri & Samuel Louvan & Kemal Kurniawan & Bagas Abisena & Valdi Rachman & Alfan Farizki Wicaksono & Rahmad Mahendra</p>
             </Fade>
             <hr />
           </div>
           <HeroCard title="Abstract" className="researchdetail__abstract">
             <p className="researchdetail__abstract__detail">
-              Despite the long history of named-entity recognition (NER) task in the natural language processing community, previous work rarely studied the task on conversational texts. Such texts are challenging because they contain a lot of word variations which increase the number of out-of-vocabulary (OOV) words. The high number of OOV words poses a difficulty for word-based neural models. Meanwhile, there is plenty of evidence to the effectiveness of character-based neural models in mitigating this OOV problem. We report an empirical evaluation of neural sequence labeling models with character embedding to tackle NER task in Indonesian conversational texts. Our experiments show that (1) character models outperform word embedding-only models by up to 4 $F_1$ points, (2) character models perform better in OOV cases with an improvement of as high as 15 $F_1$ points, and (3) character models are robust against a very high OOV rate.
+              Most Semantic Role Labeling (SRL) approaches are supervised methods which require a significant amount of annotated corpus, and the annotation requires linguistic expertise. In this paper, we propose a Multi-Task Active Learning framework for Semantic Role Labeling with Entity Recognition (ER) as the auxiliary task to alleviate the need for extensive data and use additional information from ER to help SRL. We evaluate our approach on Indonesian conversational dataset. Our experiments show that multi-task active learning can outperform single-task active learning method and standard multi-task learning. According to our results, active learning is more efficient by using 12% less of training data compared to passive learning in both single-task and multi-task setting. We also introduce a new dataset for SRL in Indonesian conversational domain to encourage further research in this area.
             </p>
-            <ButtonLink modifier="default" href="https://noisy-text.github.io/2018/pdf/W-NUT201812.pdf ">
+            <ButtonLink modifier="default" href="http://aclweb.org/anthology/W18-3406">
               Download Full Paper
                 {/* <img src="/static/images/icons/arrow-down-light.svg" /> */}
             </ButtonLink>
-          </HeroCard>
-
-          <HeroCard title="Related Content" className="researchdetail__related-content">
-            <div className="researchdetail__related-content-list">
-              <div className="researchdetail__related-content-list__title">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-              </div>
-              <div>
-                <p>Publication year: 2018</p>
-                <p>Writen by: Kemal Maulana</p>
-              </div>
-            </div>
-            <div className="researchdetail__related-content-list">
-              <div className="researchdetail__related-content-list__title">
-                Lorem Ipsum is simply dummy text of the printing and typesetting
-              </div>
-              <div>
-                <p>Publication year: 2018</p>
-                <p>Writen by: Kemal Maulana</p>
-              </div>
-            </div>
-
           </HeroCard>
         </div>
 
