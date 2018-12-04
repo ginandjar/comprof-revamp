@@ -17,8 +17,9 @@ import HeroCard from '../components/layout/HeroCard';
 import Career from '../components/layout/Career';
 import BuildChatbot from '../components/layout/BuildChatbot';
 import Fade from 'react-reveal/Fade';
-import { Image } from 'react-bootstrap';
+import { Image, Modal, Button } from 'react-bootstrap';
 import TextLoop from 'react-text-loop';
+import SimpleForm from '../components/layout/Formly';
 
 interface Props {
 
@@ -26,6 +27,7 @@ interface Props {
 
 interface States {
   isShow: boolean;
+  showModal: boolean;
   currentIndex: number;
 }
 
@@ -38,6 +40,7 @@ class Home extends React.Component<Props, States> {
   }
   state = {
     isShow: true,
+    showModal: false,
     currentIndex: 0
   };
 
@@ -48,8 +51,17 @@ class Home extends React.Component<Props, States> {
     });
     this.setState({
       isShow: true,
+      showModal: false,
       currentIndex: 0
     });
+  }
+
+  handleClose() {
+    this.setState({ showModal: false });
+  }
+
+  handleShow() {
+    this.setState({ showModal: true });
   }
 
 
@@ -57,9 +69,6 @@ class Home extends React.Component<Props, States> {
   render() {
     const { localeService, posts } = this.props;
 
-    var divStyle = {
-      width: '1234px;'
-    };
 
     return (
       <div>
@@ -98,6 +107,7 @@ class Home extends React.Component<Props, States> {
               <ButtonLink modifier="light" href="#">
                 Build Your Chatbot Now
                 </ButtonLink>
+
             </div>
 
           </div>

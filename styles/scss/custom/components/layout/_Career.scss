@@ -1,4 +1,11 @@
 .career{
+  &__see-jobs{
+    text-align: center;
+
+    margin-top: 50px;
+    margin-bottom: 50px;
+
+  }
   background-image: url('/static/jpg/career.jpg');
   height: 870px;
   position: relative;
@@ -36,3 +43,4 @@
     }
   }
 }
+

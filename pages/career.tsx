@@ -9,6 +9,8 @@ import Testimoni from '../components/layout/Testimoni';
 import LifeKata from '../components/layout/LifeKata';
 import CoverCarrer from '../components/layout/CoverCareer';
 import Benefit from '../components/layout/Benefit';
+import { Col, Grid, Row } from 'react-bootstrap';
+import ButtonLink from '../components/links/ButtonLink';
 interface Props {
 
 }
@@ -42,6 +44,21 @@ class Career extends React.Component<Props> {
         <LifeKata />
         <Testimoni />
         <Benefit />
+        <Grid>
+          <Row className="career__see-jobs">
+            <Col>
+              <h1>
+                Open Positions
+                </h1>
+              <p>
+                Are you great product-builder or a passionate hustler? We have all types of opportunities and career paths for you. If you think you want to create remarkable legacy in Southeast Asia’s technology industry, then it’s your chance to be a part of our family.
+                </p>
+              <ButtonLink modifier="default" href="https://careers.smartrecruiters.com/Kataai">
+                See Jobs
+                </ButtonLink>
+            </Col>
+          </Row>
+        </Grid>
 
 
 
