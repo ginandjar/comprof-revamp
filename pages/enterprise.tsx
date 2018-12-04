@@ -314,7 +314,7 @@ class Enterprise extends React.Component<Props, States> {
                     <Row>
                       <Col md={6}>
                         <Fade>
-                          <img src="/static/png/enterprise/ecphone.png" />
+                          <img src="/static/png/enterprise/eduphone.png" />
                         </Fade>
                       </Col>
                       <Col md={6}>
@@ -541,7 +541,7 @@ class Enterprise extends React.Component<Props, States> {
         <TabItem item="Consumer Engagement" modifier={this.state.currentIndexGrowth == 0 ? "tab-item--selected" : undefined} onClick={this.tabSwipeClick(0)} />
         <TabItem item="Banking Assistant" modifier={this.state.currentIndexGrowth == 1 ? "tab-item--selected" : undefined} onClick={this.tabSwipeClick(1)} />
         <TabItem item="HR Bot" modifier={this.state.currentIndexGrowth == 2 ? "tab-item--selected" : undefined} onClick={this.tabSwipeClick(2)} />
-        <TabItem item="Custumer Service" modifier={this.state.currentIndexGrowth == 3 ? "tab-item--selected" : undefined} onClick={this.tabSwipeClick(3)} />
+        <TabItem item="Customer Service" modifier={this.state.currentIndexGrowth == 3 ? "tab-item--selected" : undefined} onClick={this.tabSwipeClick(3)} />
         <TabItem item="E-Commerce Bot" modifier={this.state.currentIndexGrowth == 4 ? "tab-item--selected" : undefined} onClick={this.tabSwipeClick(4)} />
         <TabItem item="Educational" modifier={this.state.currentIndexGrowth == 5 ? "tab-item--selected" : undefined} onClick={this.tabSwipeClick(5)} />
       </Tab>

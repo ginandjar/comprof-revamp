@@ -55,7 +55,7 @@ export default class CaseStudy extends React.Component {
                 Consumer Engagement
               </NavItem>
               <NavItem eventKey={3} >
-                Costumer Loyality
+                Customer Loyality
               </NavItem>
             </Nav>
           </Row>
