@@ -25,6 +25,18 @@ interface States {
 
   currentIndexGrowth: number;
   currentIndexHowto: number;
+  showFeatCE: boolean;
+  showBeneCE: boolean;
+  showFeatBA: boolean;
+  showBeneBA: boolean;
+  showFeatHR: boolean;
+  showBeneHR: boolean;
+  showFeatCS: boolean;
+  showBeneCS: boolean;
+  showFeatEC: boolean;
+  showBeneEC: boolean;
+  showFeatED: boolean;
+  showBeneED: boolean;
 }
 
 let tabSwiper: any = null;
@@ -38,7 +50,19 @@ class Enterprise extends React.Component<Props, States> {
   }
   state = {
     currentIndexGrowth: 0,
-    currentIndexHowto: 0
+    currentIndexHowto: 0,
+    showFeatCE: false,
+    showBeneCE: false,
+    showFeatBA: false,
+    showBeneBA: false,
+    showFeatHR: false,
+    showBeneHR: false,
+    showFeatCS: false,
+    showBeneCS: false,
+    showFeatEC: false,
+    showBeneEC: false,
+    showFeatED: false,
+    showBeneED: false,
   };
   componentDidMount() {
     tabSwiper = new Swiper('#tab-swiper', {
@@ -68,6 +92,10 @@ class Enterprise extends React.Component<Props, States> {
         depth: 1500,
         modifier: 1,
         slideShadows: false,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
       },
     });
 
@@ -152,16 +180,62 @@ class Enterprise extends React.Component<Props, States> {
                         <div className="enterprise__tab__button">
                           <Fade bottom>
                             <div className="enterprise__tab__button--large">
-                              <ButtonLink modifier="light" block="true" href="/enterprise">
-                                Features you can offer
-                          </ButtonLink>
+                              <a className="button button__light button__block" onClick={this.stateFeatCe()}>Features you can offer</a>
+                              <Fade bottom collapse when={this.state.showFeatCE}>
+                                <ul>
+                                  <li>
+                                    Small talk and assistance
+                                </li>
+                                  <li>
+                                    Personalized offers
+                                </li>
+                                  <li>
+                                    Advertise special promotions
+                                </li>
+                                  <li>
+                                    FAQs
+                                </li>
+                                  <li>
+                                    Quote management
+                                </li>
+                                  <li>
+                                    Lead and contact management
+                                </li>
+                                  <li>
+                                    Loyalty program
+                                </li>
+                                </ul>
+                              </Fade>
                             </div>
                           </Fade>
                           <Fade bottom>
                             <div className="enterprise__tab__button--large">
-                              <ButtonLink modifier="light" block="true" href="/enterprise">
-                                Benefits
-                          </ButtonLink>
+                              <a className="button button__light button__block" onClick={this.stateBeneCe()}>Benefits</a>
+                              <Fade bottom collapse when={this.state.showBeneCE}>
+                                <ul>
+                                  <li>
+                                    Create campaigns that aligns with your goals
+                                </li>
+                                  <li>
+                                    Achieve relevant messages for personalization at scale
+                                </li>
+                                  <li>
+                                    Outperform your campaign revenue targets
+                                </li>
+                                  <li>
+                                    Increase customer experience & loyalty
+                                </li>
+                                  <li>
+                                    Reactivate customers in your database
+                                </li>
+                                  <li>
+                                    Boost omni-channel ROI
+                                </li>
+                                  <li>
+                                    Loyalty program
+                                </li>
+                                </ul>
+                              </Fade>
                             </div>
                           </Fade>
                         </div>
@@ -186,16 +260,62 @@ class Enterprise extends React.Component<Props, States> {
                         <div className="enterprise__tab__button">
                           <Fade bottom>
                             <div className="enterprise__tab__button--large">
-                              <ButtonLink modifier="light" block="true" href="/enterprise">
-                                Features you can offer
-                          </ButtonLink>
+                              <a className="button button__light button__block" onClick={this.stateFeatBa()}>Features you can offer</a>
+                              <Fade bottom collapse when={this.state.showFeatBA}>
+                                <ul>
+                                  <li>
+                                    User and account registration
+                                </li>
+                                  <li>
+                                    Branch and ATM locator
+                                </li>
+                                  <li>
+                                    Spending analysiss
+                                </li>
+                                  <li>
+                                    Apply for new services and request checkbook
+                                </li>
+                                  <li>
+                                    Report lost or stolen card
+                                </li>
+                                  <li>
+                                    Transfer money to own account / third party
+                                </li>
+                                  <li>
+                                    Bill payment
+                                </li>
+                                  <li>
+                                    Real-time financial market data
+                                </li>
+                                </ul>
+                              </Fade>
                             </div>
                           </Fade>
                           <Fade bottom>
                             <div className="enterprise__tab__button--large">
-                              <ButtonLink modifier="light" block="true" href="/enterprise">
-                                Benefits
-                          </ButtonLink>
+                              <a className="button button__light button__block" onClick={this.stateBeneBa()}>Benefits</a>
+                              <Fade bottom collapse when={this.state.showBeneBA}>
+                                <ul>
+                                  <li>
+                                    Remove friction points for immediate support and resolution
+                                </li>
+                                  <li>
+                                    Provide personal banking and investment advice
+                                </li>
+                                  <li>
+                                    Uncover right-time / right-fit loyalty program promotions
+                                </li>
+                                  <li>
+                                    Deliver actionable response options to urgent activity notifications
+                                </li>
+                                  <li>
+                                    Offer guidance for simpler loan applications and more submissions
+                                </li>
+                                  <li>
+                                    Drive digital adoption to long-term relationships and capture real-time opportunities
+                                </li>
+                                </ul>
+                              </Fade>
                             </div>
                           </Fade>
                         </div>
@@ -219,16 +339,59 @@ class Enterprise extends React.Component<Props, States> {
                         <div className="enterprise__tab__button">
                           <Fade bottom>
                             <div className="enterprise__tab__button--large">
-                              <ButtonLink modifier="light" block="true" href="/enterprise">
-                                Features you can offer
-                          </ButtonLink>
+                              <a className="button button__light button__block" onClick={this.stateFeatHr()}>Features you can offer</a>
+                              <Fade bottom collapse when={this.state.showFeatHR}>
+                                <ul>
+                                  <li>
+                                    Employer branding
+                                </li>
+                                  <li>
+                                    Sourcing & recruitment
+                                </li>
+                                  <li>
+                                    On boarding process
+                                </li>
+                                  <li>
+                                    FAQ & Company policy
+                                </li>
+                                  <li>
+                                    Schedule meetings and send a notification
+                                </li>
+                                  <li>
+                                    Benefits enrollment
+                                </li>
+                                  <li>
+                                    Centralize documentation
+                                </li>
+                                </ul>
+                              </Fade>
                             </div>
                           </Fade>
                           <Fade bottom>
                             <div className="enterprise__tab__button--large">
-                              <ButtonLink modifier="light" block="true" href="/enterprise">
-                                Benefits
-                          </ButtonLink>
+                              <a className="button button__light button__block" onClick={this.stateBeneHr()}>Benefits</a>
+                              <Fade bottom collapse when={this.state.showBeneHR}>
+                                <ul>
+                                  <li>
+                                    Easily converge siloed systems
+                                </li>
+                                  <li>
+                                    Increase productivity across all departments
+                                </li>
+                                  <li>
+                                    Enhance and increase employee engagement
+                                </li>
+                                  <li>
+                                    Automate common data entry tasks to offset a busy HR team’s workload
+                                </li>
+                                  <li>
+                                    Innovate the recruiting process
+                                </li>
+                                  <li>
+                                    Gather meaningful data & provide it in a customized way
+                                </li>
+                                </ul>
+                              </Fade>
                             </div>
                           </Fade>
                         </div>
@@ -252,16 +415,56 @@ class Enterprise extends React.Component<Props, States> {
                         <div className="enterprise__tab__button">
                           <Fade bottom>
                             <div className="enterprise__tab__button--large">
-                              <ButtonLink modifier="light" block="true" href="/enterprise">
-                                Features you can offer
-                          </ButtonLink>
+                              <a className="button button__light button__block" onClick={this.stateFeatCs()}>Features you can offer</a>
+                              <Fade bottom collapse when={this.state.showFeatCS}>
+                                <ul>
+                                  <li>
+                                    Always on, 24/7 availability
+                                </li>
+                                  <li>
+                                    Simpler & personalized interactions
+                                </li>
+                                  <li>
+                                    Easier problem resolution with self-service
+                                </li>
+                                  <li>
+                                    Increase customer engagement
+                                </li>
+                                  <li>
+                                    Provide news or information updates
+                                </li>
+                                  <li>
+                                    Provide products / services recommendations
+                                </li>
+                                  <li>
+                                    Ease online transactions and facilitate sales
+                                </li>
+                                </ul>
+                              </Fade>
                             </div>
                           </Fade>
                           <Fade bottom>
                             <div className="enterprise__tab__button--large">
-                              <ButtonLink modifier="light" block="true" href="/enterprise">
-                                Benefits
-                          </ButtonLink>
+                              <a className="button button__light button__block" onClick={this.stateBeneCs()}>Benefits</a>
+                              <Fade bottom collapse when={this.state.showBeneCS}>
+                                <ul>
+                                  <li>
+                                    Customers can always get assistance when and where they need it
+                                </li>
+                                  <li>
+                                    Get real insight into what your customers prefer
+                                </li>
+                                  <li>
+                                    Customer service improvement through analytics and data collections
+                                </li>
+                                  <li>
+                                    Enables business to save operational costs on Call Center
+                                </li>
+                                  <li>
+                                    Help business save time in responding to customers’ FAQ
+                                </li>
+                                </ul>
+                              </Fade>
                             </div>
                           </Fade>
                         </div>
@@ -286,16 +489,56 @@ class Enterprise extends React.Component<Props, States> {
                         <div className="enterprise__tab__button">
                           <Fade bottom>
                             <div className="enterprise__tab__button--large">
-                              <ButtonLink modifier="light" block="true" href="/enterprise">
-                                Features you can offer
-                          </ButtonLink>
+                              <a className="button button__light button__block" onClick={this.stateFeatEc()}>Features you can offer</a>
+                              <Fade bottom collapse when={this.state.showFeatEC}>
+                                <ul>
+                                  <li>
+                                    Greeting and help
+                                </li>
+                                  <li>
+                                    Search for products by price, color, and more
+                                </li>
+                                  <li>
+                                    Purchase product (checkout)
+                                </li>
+                                  <li>
+                                    Track order status and shipping
+                                </li>
+                                  <li>
+                                    View order history
+                                </li>
+                                  <li>
+                                    Personalized offers & advertise special promotions
+                                </li>
+                                  <li>
+                                    Ask questions (FAQs)
+                                </li>
+                                </ul>
+                              </Fade>
                             </div>
                           </Fade>
                           <Fade bottom>
                             <div className="enterprise__tab__button--large">
-                              <ButtonLink modifier="light" block="true" href="/enterprise">
-                                Benefits
-                          </ButtonLink>
+                              <a className="button button__light button__block" onClick={this.stateBeneEc()}>Benefits</a>
+                              <Fade bottom collapse when={this.state.showBeneEC}>
+                                <ul>
+                                  <li>
+                                    Offer instant, real-time shopping experience across multiple channels
+                                </li>
+                                  <li>
+                                    Allows simple and convenient purchases via message-based interactions
+                                </li>
+                                  <li>
+                                    Provide relevant, actionable offers in real time, and personalized to a customer’s trends
+                                </li>
+                                  <li>
+                                    Able to deliver alerts and updates regarding available inventory
+                                </li>
+                                  <li>
+                                    Provide real-time, relevant offers and advice from a virtual ‘personal shopper’
+                                </li>
+                                </ul>
+                              </Fade>
                             </div>
                           </Fade>
                         </div>
@@ -321,16 +564,45 @@ class Enterprise extends React.Component<Props, States> {
                         <div className="enterprise__tab__button">
                           <Fade bottom>
                             <div className="enterprise__tab__button--large">
-                              <ButtonLink modifier="light" block="true" href="/enterprise">
-                                Features you can offer
-                          </ButtonLink>
+                              <a className="button button__light button__block" onClick={this.stateFeatEd()}>Features you can offer</a>
+                              <Fade bottom collapse when={this.state.showFeatED}>
+                                <ul>
+                                  <li>
+                                    Assist with the filling of applications
+                                </li>
+                                  <li>
+                                    Accept tuition payments
+                                </li>
+                                  <li>
+                                    Assign course schedules
+                                </li>
+                                  <li>
+                                    Provide answer to commonly-asked questions
+                                </li>
+                                  <li>
+                                    Schedule meetings or phone calls
+                                </li>
+                                </ul>
+                              </Fade>
                             </div>
                           </Fade>
                           <Fade bottom>
                             <div className="enterprise__tab__button--large">
-                              <ButtonLink modifier="light" block="true" href="/enterprise">
-                                Benefits
-                          </ButtonLink>
+                              <a className="button button__light button__block" onClick={this.stateBeneEd()}>Benefits</a>
+                              <Fade bottom collapse when={this.state.showBeneED}>
+                                <ul>
+                                  <li>
+                                    Provide information about deadlines, lesson plans, and curriculum
+
+                                </li>
+                                  <li>
+                                    Able to issue educator evaluations and streamline the data analysis process
+                                </li>
+                                  <li>
+                                    Help student understand difficult concepts in a way that feels as if they are being taught by another person
+                                </li>
+                                </ul>
+                              </Fade>
                             </div>
                           </Fade>
                         </div>
@@ -589,8 +861,44 @@ class Enterprise extends React.Component<Props, States> {
     this.setState({ currentIndexHowto: e });
   };
 
-  storySwiperClick = (e: number) => () => {
+  storySwiper = (e: number) => () => {
     storySwiper.slideTo(e, 400)
+  }
+  stateFeatCe = () => () => {
+    this.setState({ showFeatCE: !this.state.showFeatCE });
+  }
+  stateBeneCe = () => () => {
+    this.setState({ showBeneCE: !this.state.showBeneCE });
+  }
+  stateFeatBa = () => () => {
+    this.setState({ showFeatBA: !this.state.showFeatBA });
+  }
+  stateBeneBa = () => () => {
+    this.setState({ showBeneBA: !this.state.showBeneBA });
+  }
+  stateFeatHr = () => () => {
+    this.setState({ showFeatHR: !this.state.showFeatHR });
+  }
+  stateBeneHr = () => () => {
+    this.setState({ showBeneHR: !this.state.showBeneHR });
+  }
+  stateFeatCs = () => () => {
+    this.setState({ showFeatCS: !this.state.showFeatCS });
+  }
+  stateBeneCs = () => () => {
+    this.setState({ showBeneCS: !this.state.showBeneCS });
+  }
+  stateFeatEc = () => () => {
+    this.setState({ showFeatEC: !this.state.showFeatEC });
+  }
+  stateBeneEc = () => () => {
+    this.setState({ showBeneEC: !this.state.showBeneEC });
+  }
+  stateFeatEd = () => () => {
+    this.setState({ showFeatED: !this.state.showFeatED });
+  }
+  stateBeneEd = () => () => {
+    this.setState({ showBeneED: !this.state.showBeneED });
   }
 
 }

@@ -52,16 +52,31 @@ export default class NavigationBar extends React.Component {
                     </li>
                   </ul> */}
               </li>
-              <li>
+              {/* <li>
                 <Link href="/partnership">
                   <a>Partnership </a>
                 </Link>
 
-              </li>
+              </li> */}
               <li>
-                <Link href="/resources">
-                  <a>Resources</a>
-                </Link>
+                Resources
+                <ul>
+                  <li>
+                    <Link href="https://blog.kata.ai">
+                      <a>Blog</a>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/research">
+                      <a>Research</a>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="https://docs.kata.ai">
+                      <a>Docs</a>
+                    </Link>
+                  </li>
+                </ul>
               </li>
               <li>
                 <Link href="/company">
@@ -70,15 +85,18 @@ export default class NavigationBar extends React.Component {
               </li>
             </ul>
 
-            {/* <div className="top-bar--menu-locale">
-                <a href="/set-locale?locale=uk" target="_self">
-                  <img src="/static/images/icons/uk-flag.svg" alt="" />
-                </a>
-                <span className="divider">|</span>
-                <a href="/set-locale?locale=id" target="_self">
-                  <img src="/static/images/icons/id-flag.svg" alt="" />
-                </a>
-              </div> */}
+
+
+            <div className="navigation-bar__locale">
+
+              <a href="/set-locale?locale=uk">
+                CONTACT
+              </a>
+              <span className="divider">|</span>
+              <a href="https://platform.kata.ai">
+                LOGIN
+              </a>
+            </div>
 
           </nav>
         </div>

@@ -55,7 +55,7 @@ class Platform extends React.Component<Props> {
                 <img src="/static/png/platform/laptopright.png" />
               </div>
             </div>
-            <ButtonLink modifier="default" href="/">
+            <ButtonLink modifier="default" href="https://platform.kata.ai">
               Sign Up for Free
             </ButtonLink>
           </HeroCard>
@@ -117,11 +117,11 @@ class Platform extends React.Component<Props> {
             Learn How to Build Chatbot with Kata Platform
           </h1>
           <img src="/static/png/platform/buildchatbot.jpg" />
-          <ButtonLink modifier="default" href="/">
+          <ButtonLink modifier="default" href="https://platform.kata.ai">
             See Documentations
           </ButtonLink>
         </div>
-        <div className="platform__engineering-blog">
+        {/* <div className="platform__engineering-blog">
           <h1>Kata Engineering Blog</h1>
           <div className="platform__engineering-blog__blog-content">
             <div className="platform__engineering-blog__list">
@@ -165,10 +165,10 @@ class Platform extends React.Component<Props> {
               </div>
             </div>
           </div>
-        </div>
+        </div> */}
         <HeroCard title="Help & Advice" className="platform__help">
           <h5>Got question? Feel free to reach our support or join our developer community on Slack to get help from fellow Kata Platform users & partners</h5>
-          <ButtonLink modifier="default" href="/">
+          <ButtonLink modifier="default" href="mailto:support@kata.ai">
             Contact Our Support
           </ButtonLink>
         </HeroCard>
@@ -206,7 +206,7 @@ class Platform extends React.Component<Props> {
         <HeroCard className="platform__try-platform">
           <div className="platform__try-platform__content">
             <h1>Start free and Scale as You Grow</h1>
-            <ButtonLink modifier="light" href="/">
+            <ButtonLink modifier="light" href="https://platform.kata.ai">
               Try Kata Platform
             </ButtonLink>
           </div>
