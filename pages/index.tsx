@@ -429,7 +429,7 @@ class Home extends React.Component<Props, States> {
         </HeroCard>
 
 
-        {/* <HeroCard title="Work with us to build the best chatbots for any industry" className="landing__hero">
+         <HeroCard title="Work with us to build the best chatbots for any industry" className="landing__hero">
 
           <div className="landing__list-image">
             <Fade>
@@ -473,12 +473,12 @@ class Home extends React.Component<Props, States> {
           </div>
 
           <div className="landing__hero__button">
-            <ButtonLink modifier="default" href="/career">
+            <ButtonLink modifier="default" href="/enterprise">
               Work With Us
             </ButtonLink>
           </div>
 
-        </HeroCard> */}
+        </HeroCard>
 
 
         <HeroCard className="hero-card">
