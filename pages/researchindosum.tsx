@@ -9,7 +9,6 @@ import Intro from '../components/layout/Intro';
 import HeroCard from '../components/layout/HeroCard';
 import ButtonLink from '../components/links/ButtonLink';
 import Fade from 'react-reveal/Fade';
-import Footer from 'components/layout/Footer';
 import Footer from '../components/layout/Footer';
 interface Props {
 
