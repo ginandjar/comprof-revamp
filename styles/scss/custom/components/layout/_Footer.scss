@@ -1,0 +1,217 @@
+.footer {
+  background: $white;
+  text-align: center;
+  padding: 80px 24px;
+  border-top: solid 1px $light-blue-grey;
+
+  &__company{
+    float:left;
+    text-align: left;
+  }
+  &__sitemap{
+    display: flex;
+    min-width: 964px;
+    float:right;
+  }
+
+  @media only screen and (min-width: 744) {
+    display: flex;
+    padding: 80px 24px;
+    text-align: left;
+  }
+
+  @media only screen and (min-width: 964) {
+    padding: 80px 135px;
+  }
+
+  &__inner {
+    @media only screen and (min-width: 744) {
+      display: flex;
+    }
+  }
+
+  .company-info {
+    font-size: 14px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.71;
+    letter-spacing: normal;
+    text-align: center;
+    color: $charcoal-grey;
+
+    @media only screen and (min-width: 744) {
+      text-align: left;
+    }
+
+    &--logo {
+      margin-bottom: 16px;
+    }
+    &--address {
+      margin: 0;
+      line-height: 1.71;
+      font-style: normal;
+    }
+    &--contacts {
+      margin: 4px auto;
+      a {
+    color: #006EE5;
+        text-decoration: none;
+      }
+    }
+    &--socials {
+      display: block;
+      text-align: center;
+      @media only screen and (min-width: 744) {
+        text-align: left;
+        display: block;
+        margin-top: 16px;
+      }
+      img {
+        margin-right: 8px;
+      }
+    }
+  }
+
+  .footer-menu {
+    margin: 24px 0 24px auto;
+
+    &--title {
+      @extend h6;
+      margin: 0;
+      padding: 0;
+      position: relative;
+      border-bottom: solid 1px $light-blue-grey;
+      padding-bottom: 8px;
+      text-align: left;
+    }
+    &--arrow {
+      position: absolute;
+      right: 0;
+      top: 6px;
+      width: 12px;
+
+      @media only screen and (min-width: 744) {
+        display: none;
+      }
+    }
+    &--nav {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+      text-align: left;
+      li {
+        margin: 0;
+        padding: 0;
+        &:first-child {
+          margin: 8px 0 0 0;
+        }
+        a {
+          font-size: 14px;
+          font-weight: 500;
+          font-style: normal;
+          font-stretch: normal;
+          line-height: 2;
+          letter-spacing: normal;
+          text-align: left;
+          color: $charcoal-grey;
+          text-decoration: none;
+        }
+      }
+    }
+  }
+
+  &__compact {
+    padding: 24px;
+    @media only screen and (min-width: 744) {
+      display: flex;
+      padding: 24px;
+      text-align: left;
+    }
+
+    @media only screen and (min-width: 964) {
+      padding: 24px 135px;
+    }
+    .company-info--logo {
+      margin-bottom: 0;
+    }
+  }
+
+  &__copyright {
+    padding: 24px;
+
+    border-top: solid 1px $light-blue-grey;
+
+    font-size: 12px;
+    font-weight: 500;
+    font-style: normal;
+    font-stretch: normal;
+    line-height: 1.67;
+    letter-spacing: normal;
+    text-align: left;
+    color: $charcoal-grey;
+
+    @media only screen and (min-width: 964) {
+      padding: 24px 135px;
+    }
+  }
+
+  &__copyright-compact {
+    padding: 0 0 0 0;
+    text-align: center;
+    color: $charcoal-grey;
+    font-size: 12px;
+    font-weight: 500;
+    border: none;
+    line-height: 1.67;
+    align-self: center;
+    // TODO Remove when content ready
+    display: none;
+
+    @media only screen and (min-width: 744) {
+      margin-left: auto;
+      text-align: right;
+    }
+  }
+  &--copyright-links {
+    // TODO Remove when content ready
+    display: none;
+    &__compact {
+      display: block;
+    }
+    @media only screen and (min-width: 744) {
+      margin-left: 24px;
+    }
+    * {
+      margin-right: 8px;
+      &:last-child {
+        margin-right: 0;
+      }
+    }
+  }
+
+  &--compact-menu {
+    display: none;
+    @media only screen and (min-width: 964) {
+      display: block;
+      list-style: none;
+      margin: 0 auto;
+      padding: 0;
+      flex: 1 1 0;
+      text-align: center;
+      align-self: center;
+      li {
+        display: inline-block;
+        margin-right: 16px;
+        &:last-child {
+          margin-right: 0;
+        }
+        a {
+          font-size: 14px;
+          font-weight: 500;
+          color: $charcoal-grey;
+        }
+      }
+    }
+  }
+}

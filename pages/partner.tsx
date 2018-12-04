@@ -14,6 +14,7 @@ import Tab from '../components/layout/Tab';
 import FlexBox from '../components/layout/FlexBox';
 import ButtonLink from '../components/links/ButtonLink';
 import TabItem from '../components/layout/TabItem';
+import Footer from '../components/layout/Footer';
 
 interface Props {
 
@@ -176,7 +177,7 @@ class Partner extends React.Component<Props> {
           </div>
 
         </HeroCard>
-
+        <Footer localeService={this.props.localeService} />
       </div>
 
     );

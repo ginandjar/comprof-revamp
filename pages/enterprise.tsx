@@ -16,6 +16,7 @@ import ButtonLink from '../components/links/ButtonLink';
 import HeroCard from '../components/layout/HeroCard';
 import { Grid, Row, Col, Image } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
+import Footer from '../components/layout/Footer';
 
 
 interface Props {
@@ -802,7 +803,7 @@ class Enterprise extends React.Component<Props, States> {
           </Row>
         </Grid>
 
-
+        <Footer localeService={this.props.localeService} />
       </div >
     );
   }

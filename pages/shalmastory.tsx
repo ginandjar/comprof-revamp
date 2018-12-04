@@ -7,6 +7,7 @@ import 'styles/scss/App.scss';
 import Link from 'next/link';
 import Intro from '../components/layout/Intro';
 import Fade from 'react-reveal/Fade';
+import Footer from '../components/layout/Footer';
 interface Props {
 
 }
@@ -109,7 +110,7 @@ class DetailStory extends React.Component<Props> {
 
 
         </div>
-
+        <Footer localeService={this.props.localeService} />
       </div >
 
     );

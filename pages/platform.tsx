@@ -9,6 +9,7 @@ import Intro from '../components/layout/Intro';
 import HeroCard from '../components/layout/HeroCard';
 import ButtonLink from '../components/links/ButtonLink';
 import Hero from 'components/layout/Hero';
+import Footer from '../components/layout/Footer';
 
 interface Props {
 
@@ -212,6 +213,7 @@ class Platform extends React.Component<Props> {
           </div>
 
         </HeroCard>
+        <Footer localeService={this.props.localeService} />
       </div>
 
     );

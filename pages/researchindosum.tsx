@@ -9,6 +9,8 @@ import Intro from '../components/layout/Intro';
 import HeroCard from '../components/layout/HeroCard';
 import ButtonLink from '../components/links/ButtonLink';
 import Fade from 'react-reveal/Fade';
+import Footer from 'components/layout/Footer';
+import Footer from '../components/layout/Footer';
 interface Props {
 
 }
@@ -60,7 +62,7 @@ class ResearchDetail extends React.Component<Props> {
             </ButtonLink>
           </HeroCard>
         </div>
-
+        <Footer localeService={this.props.localeService} />
 
 
       </div >

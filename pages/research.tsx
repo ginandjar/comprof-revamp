@@ -8,6 +8,7 @@ import Link from 'next/link';
 import Intro from '../components/layout/Intro';
 import HeroCard from '../components/layout/HeroCard';
 import ButtonLink from '../components/links/ButtonLink';
+import Footer from '../components/layout/Footer';
 
 interface Props {
 
@@ -124,7 +125,7 @@ class Research extends React.Component<Props> {
         </div>
 
 
-
+        <Footer localeService={this.props.localeService} />
       </div>
 
     );

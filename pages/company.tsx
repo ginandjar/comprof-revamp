@@ -15,6 +15,7 @@ import FlexBox from '../components/layout/FlexBox';
 import ButtonLink from '../components/links/ButtonLink';
 import TabItem from '../components/layout/TabItem';
 import { Image } from 'react-bootstrap';
+import Footer from '../components/layout/Footer';
 
 interface Props {
 
@@ -260,6 +261,7 @@ class Company extends React.Component<Props> {
           </div>
 
         </TabbedHero>
+        <Footer localeService={this.props.localeService} />
       </div>
 
     );

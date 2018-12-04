@@ -11,6 +11,7 @@ import CoverCarrer from '../components/layout/CoverCareer';
 import Benefit from '../components/layout/Benefit';
 import { Col, Grid, Row } from 'react-bootstrap';
 import ButtonLink from '../components/links/ButtonLink';
+import Footer from '../components/layout/Footer';
 interface Props {
 
 }
@@ -59,7 +60,7 @@ class Career extends React.Component<Props> {
             </Col>
           </Row>
         </Grid>
-
+        <Footer localeService={this.props.localeService} />
 
 
 

@@ -58,7 +58,7 @@ export default class NavigationBar extends React.Component {
                 </Link>
 
               </li> */}
-              <li>
+              <li className="navigation-bar__have-child">
                 Resources
                 <ul>
                   <li>

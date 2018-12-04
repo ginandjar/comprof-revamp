@@ -20,6 +20,7 @@ import Fade from 'react-reveal/Fade';
 import { Image, Modal, Button } from 'react-bootstrap';
 import TextLoop from 'react-text-loop';
 import SimpleForm from '../components/layout/Formly';
+import Footer from '../components/layout/Footer';
 
 interface Props {
 
@@ -477,7 +478,7 @@ class Home extends React.Component<Props, States> {
             </ButtonLink>
           </div>
 
-        </HeroCard>
+        </HeroCard> */}
 
 
         <HeroCard className="hero-card">
@@ -493,7 +494,7 @@ class Home extends React.Component<Props, States> {
                   An integrated platform to build the best chatbot for any chat / messaging apps (even inside your own apps/website!)
                         </p>
 
-                <ButtonLink modifier="light" href="/enterprise">
+                <ButtonLink modifier="light" href="/platform">
                   Explore More
               </ButtonLink>
 
@@ -508,7 +509,7 @@ class Home extends React.Component<Props, States> {
 
         </HeroCard>
 
-        <div className="landing__engineering-blog">
+        {/* <div className="landing__engineering-blog">
           <h1>Keep up with Kata insights</h1>
           <div className="landing__engineering-blog__blog-content">
             <div className="landing__engineering-blog__blog-image">
@@ -613,13 +614,16 @@ class Home extends React.Component<Props, States> {
                 </ButtonLink>
           </div>
         </div> */}
-        <Fade>
+        {/* <Fade>
           <Career />
-        </Fade>
+        </Fade> */}
         <Fade>
           <BuildChatbot />
         </Fade>
+        <Footer localeService={this.props.localeService} />
       </div >
+
+
     );
   }
 
