@@ -5,6 +5,17 @@
   background-repeat: no-repeat;
   background-position: center;
 
+  @media only screen and (max-width: 768px) {
+    background-size: contain;
+  }
+  @media only screen and (max-width: 425px) {
+    height: 440px;
+  }
+  @media only screen and (max-width: 375px) {
+    height: 410px;
+  }
+
+
   h2{
     color: white !important;
     position: absolute;
@@ -13,6 +24,26 @@
     width: 420px;
     top:130px;
     left: 200px;
+    @media only screen and (max-width: 1024px) {
+      left: 50px;
+    }
+    @media only screen and (max-width: 768px) {
+      width: 300px;
+      top:230px;
+    }
+    @media only screen and (max-width: 425px) {
+      font-size: 16px;
+      top:100px;
+      left: 20px;
+      width: 180px;
+    }
+    @media only screen and (max-width: 375px) {
+      left: 10px;
+    }
+    @media only screen and (max-width: 320px) {
+
+    }
+
   }
 
 }

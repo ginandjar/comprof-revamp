@@ -10,10 +10,20 @@
   &__nav-bar{
     margin: auto;
     width: 930px;
+    @media only screen and (max-width: 768px) {
+      width: 720px
+    }
+    @media only screen and (max-width: 425px) {
+      width: 300px
+    }
     img{
       width:100px;
     }
     >ul{
+      display: flex;
+      overflow-x: scroll;
+      overflow-y: hidden;
+      white-space: nowrap;
       >li{
         a{
           background-color: transparent !important;

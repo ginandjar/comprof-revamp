@@ -23,7 +23,7 @@ export default class LifeKata extends React.Component {
 
         <Media
           className="media-section" >
-          <Col md={6}>
+          <Col md={6} sm={12}>
             <h1>
               Life at Kata.AI
                 </h1>
@@ -38,7 +38,7 @@ export default class LifeKata extends React.Component {
             </h5>
 
           </Col>
-          <Col md={6} className="lifekata__image">
+          <Col md={6} sm={12} className="lifekata__image">
             <img src="/static/png/career/4.png" className="lifekata__image--right" alt="" />
             <img src="/static/png/career/7.png" className="lifekata__image--left" alt="" />
             <img src="/static/png/career/5.png" className="lifekata__image--bottom" alt="" />

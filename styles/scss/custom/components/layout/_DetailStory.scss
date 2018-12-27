@@ -8,6 +8,10 @@
       text-align:left;
       position: relative;
       top: -40px;
+
+      @media only screen and (max-width: 425px) {
+        margin-left: 15px;
+      }
       
       h1{
         font-weight: 500;
@@ -64,6 +68,7 @@
   &__approach{
     text-align: left;
     margin: 100px auto;
+    display: inline-block;
     
     &__content{
 
@@ -73,11 +78,9 @@
         float:left;
         margin:10px;
         @media only screen and (max-width: 768px) {
-          width: 100%;
-          display: block;
-          max-width: 650px;
-          margin-left: 230px;
+          width: 90%;
           float:none;
+          text-align: center;
         }
         @media only screen and (max-width: 320px) {
           margin-left: 10px;
@@ -93,9 +96,9 @@
         @media only screen and (max-width: 768px) {
           width: 100%;
           display: block;
+          float: none;
+          margin: 0 auto;
           max-width: 650px;
-          margin-left: 60px;
-          float:none;
         }
         @media only screen and (max-width: 320px) {
           margin-left: 10px;

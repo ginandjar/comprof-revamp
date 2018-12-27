@@ -8,7 +8,10 @@
    margin-bottom: 70px;
  }
  &__slider{
-   margin-bottom: 20px
+   margin-bottom: 20px;
+   @media only screen and (max-width: 768px) {
+     text-align: center;
+  }
    img{
      width: 70%;
    }

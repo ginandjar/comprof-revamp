@@ -1,10 +1,26 @@
 .lifekata{
 
+  h1{
+    @media only screen and (max-width: 768px) {
+      text-align: center;
+    }
+  }
+
   h5{
-    width: 454px;
+    max-width: 440px;
     font-weight: 300;
     margin-bottom: 30px;
     margin-top : 20px;
+    @media only screen and (max-width: 768px) {
+      max-width: unset;
+      text-align: center;
+    }
+    @media only screen and (max-width: 425px) {
+    }
+    @media only screen and (max-width: 375px) {
+    }
+    @media only screen and (max-width: 320px) {
+    }
 
   }
 
@@ -29,6 +45,61 @@
     &--bottom{
       top:435px;
 
+    }
+    @media only screen and (max-width: 768px) {
+
+      &--right{
+        left:420px;
+      }
+  
+      &--left{
+        left: 80px;
+      }
+  
+      &--bottom{
+        left: 120px;
+  
+      }
+    }
+    @media only screen and (max-width: 425px) {
+      min-height: 445px;
+      img{
+        height: 180px;
+      }
+      &--right{
+        left:220px;
+      }
+  
+      &--left{
+        left: 30px;
+        top:95px
+      }
+  
+      &--bottom{
+        top: 285px;
+        left: 60px;
+  
+      }
+    }
+    @media only screen and (max-width: 375px) {
+    }
+    @media only screen and (max-width: 320px) {
+      img{
+        height: 150px;
+      }
+      &--right{
+        left:180px;
+      }
+  
+      &--left{
+        left: 30px;
+      }
+  
+      &--bottom{
+        top: 285px;
+        left: 60px;
+  
+      }
     }
 
   }
