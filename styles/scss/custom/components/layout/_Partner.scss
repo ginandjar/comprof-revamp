@@ -1,9 +1,9 @@
 .partner{
-  height: 1130px;
+  height: auto;
 
   &__hero{
     p{
-      width: 590px;
+      width: 100%;
       padding: 0 10px;
       margin: auto;
       font-size: 22px ;
@@ -23,10 +23,25 @@
         height: 647px;
         &__title{
           position: absolute;
-          color: $main-blue;
+          color: #006ee5;
           z-index: 1000;
           width: 210px;
           text-align: left;
+          left: 70px;
+          top: -80px;
+
+          line-height: 1.55 !important;
+          @media only screen and (max-width: 1024px) {
+            left: 20px;
+          }
+          @media only screen and (max-width: 768px) {
+            width: 150px;
+          }
+          @media only screen and (max-width: 425px) {
+            width: 200px;
+            top:-70px
+          }
+  
         }
         &__des{
           position: absolute;
@@ -35,16 +50,30 @@
           background-color: $main-blue;
           padding: 20px 20px 20px 40px !important;
           z-index: 1;
-          left: 0px;
+          left: 360px;
           top: -45px;
           width: 720px !important;
           font-size: 24px !important;
+          @media only screen and (max-width: 1024px) {
+            left: 260px;
+          }
+          @media only screen and (max-width: 768px) {
+            width: 550px !important;
+            left: 200px;
+          }
+
+          @media only screen and (max-width: 425px) {
+            width: 320px!important;
+    left: 60px;
+    font-size: 16px!important;
+    top: 50px;
+          }
           
           position: absolute;
         }
         &__dot{
           position: absolute;
-          left: -450px;
+          left: 0px;
         }
         &__cover{
           position: absolute;
@@ -70,6 +99,32 @@
       max-width: 865px;
       margin: auto;
     }
+
+    &__table{
+
+      table {
+        border-collapse: collapse;
+        width: 80%;
+        margin: 50px auto;
+        
+      }
+      
+      td, th {
+        border: 1px solid #006EE5;
+        text-align: center;
+        padding: 8px;
+        max-width: 100px;
+      }
+
+      th{
+        background-color: $main-blue;
+        color: white;
+      }
+      
+      tr:nth-child(even) {
+        background-color: #f5f5f5;
+      }
+    }
   }
   
 
@@ -77,10 +132,40 @@
     padding-top: 10px;
     margin: auto;
     &__text{
-      color: white !important;
-      text-align: center;
-      max-width: 600px;
+      text-align: left;
+      max-width: 320px;
       margin: auto;
+      position: absolute;
+      z-index: 1;
+      left: 190px;
+      top: 60px;
+      @media only screen and (max-width: 1024px) {
+        left: 80px;
+      }
+      @media only screen and (max-width: 768px) {
+        max-width: 190px;
+        top:30px;
+        left:60px;
+      }
+      @media only screen and (max-width: 425px) {
+        max-width: 100px;
+      top: 30px;
+      left: 40px;
+       
+      }
+      @media only screen and (max-width: 425px) {
+      left: 45px;
+       
+      }
+       
+      h1{
+        color: white;
+        font-weight: 500;
+        @media only screen and (max-width: 425px) {
+          font-size: 14px !important;
+        }  
+        
+      }
     }
 
     &__image{
@@ -89,7 +174,24 @@
       padding-top:30px;
       img{
         width: 938px;
+        @media only screen and (max-width: 768px) {
+          width: 660px;
+        }
+        @media only screen and (max-width: 425px) {
+          width: 375px;
+          min-height: 245px;
+        }
+        @media only screen and (max-width: 375px) {
+          min-height: 150px;
+          width: 300px;
+        }
       }
+      @media only screen and (max-width: 425px) {
+        min-height: 245px;
+      }
+
+     
+      
     }
   }
 
@@ -103,6 +205,11 @@
       display: inline-block;
       margin: 0 20px;
       vertical-align: top;
+
+      @media only screen and (max-width: 768px) {
+        margin: 0px;
+      }
+
 
       img{
         width: 160px;

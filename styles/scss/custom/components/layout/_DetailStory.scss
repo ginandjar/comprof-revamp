@@ -8,7 +8,7 @@
       text-align:left;
       position: relative;
       top: -40px;
-
+      
       h1{
         font-weight: 500;
         font-size: 48px;
@@ -56,6 +56,9 @@
     &__text{
       font-size: 16px;
       font-weight: 300;
+      @media only screen and (max-width: 1024px) {
+        margin: 0 20px;
+      }
     }
   }
   &__approach{
@@ -69,6 +72,16 @@
         display: inline-block;
         float:left;
         margin:10px;
+        @media only screen and (max-width: 768px) {
+          width: 100%;
+          display: block;
+          max-width: 650px;
+          margin-left: 230px;
+          float:none;
+        }
+        @media only screen and (max-width: 320px) {
+          margin-left: 10px;
+        }
       }
       &__right{
         width:40%;
@@ -77,6 +90,16 @@
         margin-top:10px;
         margin-left:10px;
         margin-bottom:70px;
+        @media only screen and (max-width: 768px) {
+          width: 100%;
+          display: block;
+          max-width: 650px;
+          margin-left: 60px;
+          float:none;
+        }
+        @media only screen and (max-width: 320px) {
+          margin-left: 10px;
+        }
       }
     }
 
@@ -84,6 +107,10 @@
       margin-bottom:40px;
       font-size: 32px;
       font-weight: 500;
+      @media only screen and (max-width: 768px) {
+        text-align: center;
+
+      }
     }
     ul{
       padding-inline-start: 20px;
@@ -96,12 +123,22 @@
 
     img{
       max-width: 60%;
+      @media only screen and (max-width: 1024px) {
+        max-width: 80%;
+      }
+      @media only screen and (max-width: 768px) {
+        max-width: 50%;
+      }
+
     }
 
 
   }
 
   &__result{
+    @media only screen and (max-width: 1024px) {
+      margin: 0 20px;
+    }
 
     img{
       max-width: 50%;

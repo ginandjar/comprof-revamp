@@ -15,6 +15,7 @@ import FlexBox from '../components/layout/FlexBox';
 import ButtonLink from '../components/links/ButtonLink';
 import TabItem from '../components/layout/TabItem';
 import Footer from '../components/layout/Footer';
+import Fade from 'react-reveal/Fade';
 
 interface Props {
 
@@ -61,7 +62,7 @@ class Partner extends React.Component<Props> {
           <div className="partner__intro">
             <div className="partner__intro__text">
               <h1>
-                We are making AI technology accessible to everyone
+                Open new opportunities and increase revenue
                 </h1>
             </div>
             <div className="partner__intro__image">
@@ -177,8 +178,161 @@ class Partner extends React.Component<Props> {
           </div>
 
         </HeroCard>
+
+        <HeroCard title="Benefits & Requirements" className="partner__hero">
+          <div className="partner__hero__table">
+            <table>
+              <tr>
+                <th>Core Benefit</th>
+                <th>Regular</th>
+                <th>Trusted Partner</th>
+              </tr>
+              <tr>
+                <td>Kata.ai Platform for Demo Tenant</td>
+                <td>Yes</td>
+                <td>Yes</td>
+              </tr>
+              <tr>
+                <td>Product Support</td>
+                <td>Yes</td>
+                <td>Yes</td>
+              </tr>
+              <tr>
+                <td>Technical Presales & Development Support</td>
+                <td>No</td>
+                <td>15 Hours</td>
+              </tr>
+              <tr>
+                <td>Kata Platfrom Training</td>
+                <td>Yes</td>
+                <td>Yes</td>
+              </tr>
+              <tr>
+                <td>Community Access</td>
+                <td>Yes</td>
+                <td>Yes</td>
+              </tr>
+              <tr>
+                <td>Code Sharing</td>
+                <td>Yes</td>
+                <td>Yes</td>
+              </tr>
+            </table>
+
+
+            <table>
+              <tr>
+                <th>Marketing Benefit</th>
+                <th>Regular</th>
+                <th>Trusted Partner</th>
+              </tr>
+              <tr>
+                <td>Kata Logo for Partner</td>
+                <td>No</td>
+                <td>Trusted Partner Logo</td>
+              </tr>
+              <tr>
+                <td>Kata Priority Lead/ Opportunity Reference</td>
+                <td>No</td>
+                <td>Yes</td>
+              </tr>
+              <tr>
+                <td>Support Letter if needed</td>
+                <td>No</td>
+                <td>15 Hours</td>
+              </tr>
+
+            </table>
+
+
+            <table>
+              <tr>
+                <th>IncentiveBenefit</th>
+                <th>Regular</th>
+                <th>Trusted Partner</th>
+              </tr>
+              <tr>
+                <td>Ad Hoc Incentive Campaign</td>
+                <td>No</td>
+                <td>Eligible</td>
+              </tr>
+              <tr>
+                <td>Core Incentive Benefit</td>
+                <td>No</td>
+                <td>Yes</td>
+              </tr>
+
+            </table>
+
+            <table>
+              <tr>
+                <th>Resources</th>
+                <th>Regular</th>
+                <th>Trusted Partner</th>
+              </tr>
+              <tr>
+                <td>Managed by SALES BD Team</td>
+                <td>No</td>
+                <td>Eligible</td>
+              </tr>
+              <tr>
+                <td>Sales & Business Training</td>
+                <td>No</td>
+                <td>Yes</td>
+              </tr>
+
+            </table>
+          </div>
+
+        </HeroCard>
+
+        <HeroCard title="Work with us to build the best chatbots for any industry" className="landing__hero">
+
+          <div className="landing__list-image landing__list-image--no-wrap">
+            <Fade>
+              <div className="landing__list-image__item--list-image-only">
+                <img src="/static/png/partner/apply.svg" />
+                <p>
+                  Apply
+                </p>
+              </div>
+            </Fade>
+            <Fade>
+              <div className="landing__list-image__item--list-image-only">
+                <img src="/static/png/partner/qualify.svg" />
+                <p>
+                  Qualify
+                </p>
+              </div>
+            </Fade>
+            <Fade>
+              <div className="landing__list-image__item--list-image-only">
+                <img src="/static/png/partner/engage.svg" />
+                <p>
+                  Engage
+                </p>
+              </div>
+            </Fade>
+            <div className="landing__list-image__item__line">
+              <img src="/static/png/landing/line.svg" />
+            </div>
+          </div>
+
+        </HeroCard>
+
+        <HeroCard className="platform__try-platform">
+          <div className="platform__try-platform__content">
+            <h1>Get Started Ready to join Kata.ai Partnership Program?</h1>
+            <h1></h1>
+            <ButtonLink modifier="light" href="https://kata-ai-partner.secure.force.com/portal/">
+              Apply Now
+            </ButtonLink>
+          </div>
+
+        </HeroCard>
+
         <Footer localeService={this.props.localeService} />
-      </div>
+      </div >
 
     );
   }
