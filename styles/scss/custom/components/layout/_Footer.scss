@@ -4,9 +4,19 @@
   padding: 80px 24px;
   border-top: solid 1px $light-blue-grey;
 
+  @media only screen and (max-width: 768px) {
+    padding: 50px 24px;
+  }
+
   &__company{
     float:left;
     text-align: left;
+
+    @media only screen and (max-width: 768px) {
+      float:none;
+      text-align: center;
+    }
+
   }
   &__sitemap{
     display: flex;
@@ -15,6 +25,12 @@
     @media only screen and (max-width: 1024px) {
       min-width: 785px;
     }
+    @media only screen and (max-width: 768px) {
+      min-width: auto;
+      float:none;
+      display: block;  
+    }
+    
   }
 
   @media only screen and (min-width: 744) {
@@ -78,6 +94,14 @@
 
   .footer-menu {
     margin: 24px 0 24px auto;
+    @media only screen and (max-width: 768px) {
+      width: 50%;
+      float: left;
+    }
+
+    &__item{
+      margin: 24px 0 24px auto;
+    }
 
     &--title {
       @extend h6;
