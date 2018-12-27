@@ -65,7 +65,7 @@ export default class Footer extends React.Component<Props> {
                 <div className="footer__sitemap">
                   <div className="footer-menu">
                     <h6 className="footer-menu--title">
-                      Solution
+                      Solutions
                     </h6>
 
                     <ul className="footer-menu--nav">
@@ -73,7 +73,6 @@ export default class Footer extends React.Component<Props> {
                       <li>
                         <a>Chatbot Solutions</a>
                       </li>
-                      <li><a>Success Story</a></li>
 
                     </ul>
 
@@ -105,7 +104,10 @@ export default class Footer extends React.Component<Props> {
                         <a href="https://blog.kata.ai">Blog</a>
                       </li>
                       <li>
-                        <a href="https://docs.kata.ai">Documentation</a>
+                        <a href="https://medium.com/kata-engineering">Kata Engineering</a>
+                      </li>
+                      <li>
+                        <a href="https://docs.kata.ai">Documentations</a>
                       </li>
                       <li>
                         <a href="/research">Research</a>

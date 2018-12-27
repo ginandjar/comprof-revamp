@@ -19,7 +19,7 @@ export default class Career extends React.Component {
           <h3>
             Challenge yourself to build the best AI technology
         </h3>
-          <ButtonLink modifier="default" href="/enterprise">
+          <ButtonLink modifier="default" href="/career">
             Discover Career Opportunities
         </ButtonLink>
         </div>

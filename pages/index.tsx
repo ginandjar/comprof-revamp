@@ -17,7 +17,7 @@ import HeroCard from '../components/layout/HeroCard';
 import Career from '../components/layout/Career';
 import BuildChatbot from '../components/layout/BuildChatbot';
 import Fade from 'react-reveal/Fade';
-import { Image, Modal, Button } from 'react-bootstrap';
+import { Image, Modal, Button, PanelGroup, Panel } from 'react-bootstrap';
 import TextLoop from 'react-text-loop';
 import SimpleForm from '../components/layout/Formly';
 import Footer from '../components/layout/Footer';
@@ -83,7 +83,7 @@ class Home extends React.Component<Props, States> {
             <div className="landing__intro__text">
               <h1>
                 AI & Chatbot solution for smarter&nbsp;
-                <TextLoop speed={800}>
+                <TextLoop speed={1000}>
                   <span>customer support</span>
                   <span>CRM</span>
                   <span>marketing</span>
@@ -96,7 +96,7 @@ class Home extends React.Component<Props, States> {
               <p>
                 Create an intelligent assistant to serve your customer better
                 </p>
-              <a className="button button__light" onClick={this.handleShow()}>Build Your Chatbot Now</a>
+              <a className="button button__light landing__intro__button" onClick={this.handleShow()}>Build Your Chatbot Now</a>
               <Modal className="landing__modal" show={this.state.showModal} onHide={this.handleClose()}>
 
                 <Modal.Body>
@@ -124,10 +124,10 @@ class Home extends React.Component<Props, States> {
             <Fade bottom>
               <img src="/static/png/landing/bri.png" className="landing__intro__image--bri" alt="" />
             </Fade>
-            <img src="/static/png/landing/white.png" className="landing__intro__image--white" alt="" />
+
           </div>
         </Intro>
-
+        <img src="/static/png/landing/white.png" className="landing__intro__image--white" alt="" />
         <HeroCard title="See what chatbots can do for your business" className="landing__hero">
           <div className="landing__list-image">
             <Fade>
@@ -293,16 +293,16 @@ class Home extends React.Component<Props, States> {
                           </div>
                           <div className="flex-item__right landing__tab__image">
                             <Fade right >
-                              <img className="landing__tab__image--veronika--avatar" src="/static/png/landing/jemma/avatar.png"></img>
+                              <img className="landing__tab__image--jemma--avatar" src="/static/png/landing/jemma/avatar.png"></img>
                             </Fade>
                             <Fade top >
-                              <img className="landing__tab__image--veronika--phone" src="/static/png/landing/jemma/phone.png"></img>
+                              <img className="landing__tab__image--jemma--phone" src="/static/png/landing/jemma/phone.png"></img>
                             </Fade>
                             <Fade left >
-                              <img className="landing__tab__image--veronika--chat" src="/static/png/landing/jemma/chat.png"></img>
+                              <img className="landing__tab__image--jemma--chat" src="/static/png/landing/jemma/chat.png"></img>
                             </Fade>
                             <Fade bottom >
-                              <img className="landing__tab__image--veronika--menu" src="/static/png/landing/jemma/menu.png"></img>
+                              <img className="landing__tab__image--jemma--menu" src="/static/png/landing/jemma/menu.png"></img>
                             </Fade>
                           </div>
                         </FlexBox>
@@ -333,16 +333,16 @@ class Home extends React.Component<Props, States> {
                           </div>
                           <div className="flex-item__right landing__tab__image">
                             <Fade right >
-                              <img className="landing__tab__image--veronika--avatar" src="/static/png/landing/shalma/avatar.png"></img>
+                              <img className="landing__tab__image--shalma--avatar" src="/static/png/landing/shalma/avatar.png"></img>
                             </Fade>
                             <Fade top >
-                              <img className="landing__tab__image--veronika--phone" src="/static/png/landing/shalma/phone.png"></img>
+                              <img className="landing__tab__image--shalma--phone" src="/static/png/landing/shalma/phone.png"></img>
                             </Fade>
                             <Fade left >
-                              <img className="landing__tab__image--veronika--chat" src="/static/png/landing/shalma/chat.png"></img>
+                              <img className="landing__tab__image--shalma--chat" src="/static/png/landing/shalma/chat.png"></img>
                             </Fade>
                             <Fade bottom >
-                              <img className="landing__tab__image--veronika--menu" src="/static/png/landing/shalma/menu.png"></img>
+                              <img className="landing__tab__image--shalma--menu" src="/static/png/landing/shalma/menu.png"></img>
                             </Fade>
                           </div>
                         </FlexBox>
@@ -429,9 +429,9 @@ class Home extends React.Component<Props, States> {
         </HeroCard>
 
 
-         <HeroCard title="Work with us to build the best chatbots for any industry" className="landing__hero">
+        <HeroCard title="Work with us to build the best chatbots for any industry" className="landing__hero">
 
-          <div className="landing__list-image">
+          <div className="landing__list-image landing__list-image--no-wrap">
             <Fade>
               <div className="landing__list-image__item--list-image-only">
                 <img src="/static/png/landing/laptopblue.svg" />
@@ -502,14 +502,14 @@ class Home extends React.Component<Props, States> {
             </Fade>
             <Fade right>
               <div className="landing__hero__image">
-                <img src="/static/png/landing/laptop.png" />
+                <img src="/static/png/enterprise/laptop.png" />
               </div>
             </Fade>
           </div>
 
         </HeroCard>
 
-        {/* <div className="landing__engineering-blog">
+        <div className="landing__engineering-blog">
           <h1>Keep up with Kata insights</h1>
           <div className="landing__engineering-blog__blog-content">
             <div className="landing__engineering-blog__blog-image">
@@ -535,7 +535,7 @@ class Home extends React.Component<Props, States> {
                   </div>
                 </div>
               </div>
-              <div className="landing__engineering-blog__item">
+              <div className="landing__engineering-blog__item landing__engineering-blog__item--hidden">
                 <div className="landing__engineering-blog__image">
                   <img src="/static/png/platform/chatbotlist.jpg" />
                 </div>
@@ -586,7 +586,7 @@ class Home extends React.Component<Props, States> {
                   </div>
                 </div>
               </div>
-              <div className="landing__engineering-blog__item">
+              <div className="landing__engineering-blog__item landing__engineering-blog__item--hidden">
                 <div className="landing__engineering-blog__image">
                   <img src="/static/png/platform/chatbotlist.jpg" />
                 </div>
@@ -613,10 +613,10 @@ class Home extends React.Component<Props, States> {
               View All
                 </ButtonLink>
           </div>
-        </div> */}
-        {/* <Fade>
+        </div>
+        <Fade>
           <Career />
-        </Fade> */}
+        </Fade>
         <Fade>
           <BuildChatbot />
         </Fade>
@@ -629,12 +629,178 @@ class Home extends React.Component<Props, States> {
 
   renderTabMenu() {
     return (
-      <Tab>
-        <TabItem key={0} item="Customer Service" modifier={this.state.currentIndex == 0 ? "tab-item--selected" : undefined} onClick={this.tabSwipeClick(0)} />
-        <TabItem key={1} item="Banking Assistant" modifier={this.state.currentIndex == 1 ? "tab-item--selected" : undefined} onClick={this.tabSwipeClick(1)} />
-        <TabItem key={2} item="Customer Engagement" modifier={this.state.currentIndex == 2 ? "tab-item--selected" : undefined} onClick={this.tabSwipeClick(2)} />
-        <TabItem key={3} item="Customer Loyalty" modifier={this.state.currentIndex == 3 ? "tab-item--selected" : undefined} onClick={this.tabSwipeClick(3)} />
-      </Tab>
+      <div>
+        <Tab>
+          <TabItem key={0} item="Customer Service" modifier={this.state.currentIndex == 0 ? "tab-item--selected" : undefined} onClick={this.tabSwipeClick(0)} />
+          <TabItem key={1} item="Banking Assistant" modifier={this.state.currentIndex == 1 ? "tab-item--selected" : undefined} onClick={this.tabSwipeClick(1)} />
+          <TabItem key={2} item="Customer Engagement" modifier={this.state.currentIndex == 2 ? "tab-item--selected" : undefined} onClick={this.tabSwipeClick(2)} />
+          <TabItem key={3} item="Customer Loyalty" modifier={this.state.currentIndex == 3 ? "tab-item--selected" : undefined} onClick={this.tabSwipeClick(3)} />
+        </Tab>
+
+        <PanelGroup accordion id="accordion-example" className="landing__tab__accordion">
+          <Panel eventKey="1" className="landing__tab__accordion__panel">
+            <Panel.Heading className="landing__tab__accordion__panel__heading">
+              <Panel.Title toggle className="landing__tab__accordion__panel__heading__title">Customer Service</Panel.Title>
+            </Panel.Heading>
+            <Panel.Body collapsible>
+              <div>
+                <div className="">
+                  <div className="landing__tab__chatbot">
+                    <img className="landing__tab__logo" src="/static/png/landing/veronika/logo.png" />
+                    <h1>
+                      Veronika
+                              </h1>
+                    <p>
+                      Intelligent customer support for Telco
+                              </p>
+
+                    <ButtonLink modifier="light" href="/story/veronika">
+                      Meet Veronika
+                                </ButtonLink>
+
+                  </div>
+
+                </div>
+                <div className=" landing__tab__image">
+
+                  <img className="landing__tab__image--veronika--avatar" src="/static/png/landing/veronika/avatar.png"></img>
+
+                  <img className="landing__tab__image--veronika--phone" src="/static/png/landing/veronika/phone.png"></img>
+
+                  <img className="landing__tab__image--veronika--chat" src="/static/png/landing/veronika/chat.png"></img>
+
+                  <img className="landing__tab__image--veronika--menu" src="/static/png/landing/veronika/menu.png"></img>
+
+                </div>
+
+              </div>
+            </Panel.Body>
+          </Panel>
+          <Panel eventKey="2" className="landing__tab__accordion__panel">
+            <Panel.Heading className="landing__tab__accordion__panel__heading">
+              <Panel.Title toggle className="landing__tab__accordion__panel__heading__title">Banking Assistant</Panel.Title>
+            </Panel.Heading>
+            <Panel.Body collapsible>
+
+
+              <div>
+                <div className="">
+                  <div className="landing__tab__chatbot">
+                    <img className="landing__tab__logo" src="/static/png/landing/sabrina/logo.png" />
+                    <h1>
+                      Sabrina
+                              </h1>
+                    <p>
+                      Smart assistant for Banking
+                              </p>
+
+                    <ButtonLink modifier="light" href="/story/sabrina">
+                      Meet Sabrina
+                                </ButtonLink>
+
+                  </div>
+
+                </div>
+                <div className=" landing__tab__image">
+
+                  <img className="landing__tab__image--veronika--avatar" src="/static/png/landing/sabrina/avatar.png"></img>
+
+                  <img className="landing__tab__image--veronika--phone" src="/static/png/landing/sabrina/phone.png"></img>
+
+                  <img className="landing__tab__image--veronika--chat" src="/static/png/landing/sabrina/chat.png"></img>
+
+                  <img className="landing__tab__image--veronika--menu" src="/static/png/landing/sabrina/menu.png"></img>
+
+
+                </div>
+
+              </div>
+            </Panel.Body>
+          </Panel>
+          <Panel eventKey="3" className="landing__tab__accordion__panel">
+            <Panel.Heading className="landing__tab__accordion__panel__heading">
+              <Panel.Title toggle className="landing__tab__accordion__panel__heading__title">Customer Engagement</Panel.Title>
+            </Panel.Heading>
+            <Panel.Body collapsible>
+
+              <div>
+                <div className="">
+                  <div className="landing__tab__chatbot">
+                    <img className="landing__tab__logo" src="/static/png/landing/jemma/logo.png" />
+                    <h1>
+                      Jemma
+                              </h1>
+                    <p>
+                      Virtual friend for personalized consumer engagement
+                              </p>
+
+                    <ButtonLink modifier="light" href="/story/jemma">
+                      Meet Jemma
+                                </ButtonLink>
+
+                  </div>
+
+                </div>
+                <div className=" landing__tab__image">
+
+                  <img className="landing__tab__image--jemma--avatar" src="/static/png/landing/jemma/avatar.png"></img>
+
+                  <img className="landing__tab__image--jemma--phone" src="/static/png/landing/jemma/phone.png"></img>
+
+                  <img className="landing__tab__image--jemma--chat" src="/static/png/landing/jemma/chat.png"></img>
+
+                  <img className="landing__tab__image--jemma--menu" src="/static/png/landing/jemma/menu.png"></img>
+
+
+                </div>
+
+              </div>
+            </Panel.Body>
+          </Panel>
+          <Panel eventKey="4" className="landing__tab__accordion__panel">
+            <Panel.Heading className="landing__tab__accordion__panel__heading">
+              <Panel.Title toggle className="landing__tab__accordion__panel__heading__title">Customer Loyalty</Panel.Title>
+            </Panel.Heading>
+            <Panel.Body collapsible>
+
+
+              <div>
+                <div className="">
+                  <div className="landing__tab__chatbot">
+                    <img className="landing__tab__logo" src="/static/png/landing/shalma/logo.png" />
+                    <h1>
+                      Shalma
+                              </h1>
+                    <p>
+                      Interactive assistant for customer loyalty
+                              </p>
+
+                    <ButtonLink modifier="light" href="/story/shalma">
+                      Meet Shalma
+                                </ButtonLink>
+
+                  </div>
+
+                </div>
+                <div className=" landing__tab__image">
+
+                  <img className="landing__tab__image--shalma--avatar" src="/static/png/landing/shalma/avatar.png"></img>
+
+                  <img className="landing__tab__image--shalma--phone" src="/static/png/landing/shalma/phone.png"></img>
+
+                  <img className="landing__tab__image--shalma--chat" src="/static/png/landing/shalma/chat.png"></img>
+
+                  <img className="landing__tab__image--shalma--menu" src="/static/png/landing/shalma/menu.png"></img>
+
+
+                </div>
+
+              </div>
+
+            </Panel.Body>
+          </Panel>
+        </PanelGroup>
+      </div>
     );
   }
   renderFormly() {

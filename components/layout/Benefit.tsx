@@ -70,7 +70,7 @@ export default class Benefit extends React.Component {
 
             </Nav>
           </Row>
-          <Row className="benefit__nav-content">
+          <Row className="benefit__nav__content">
             <Carousel
               controls={false}
               activeIndex={index}
@@ -78,7 +78,7 @@ export default class Benefit extends React.Component {
               onSelect={this.handleSelect}
               indicators={false}
             >
-              <Carousel.Item>
+              <Carousel.Item className="benefit__nav__content__slider">
                 <p>
                   Working remotely / Work from Home (WFH)
                 </p>

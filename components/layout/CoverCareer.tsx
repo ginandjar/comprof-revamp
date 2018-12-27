@@ -14,7 +14,7 @@ export default class CoverCarrer extends React.Component {
 
 
         <h2>
-          Innovation is about elevating human potential, and great things happen when best talent cross path with opportunity
+          Innovation is about elevating human potential, and great things happen when best talents cross path with opportunity
         </h2>
 
       </Section >

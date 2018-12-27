@@ -30,6 +30,34 @@
         left: 190px;
         height: 400px!important;
       }
+      @media only screen and (max-width: 1366px) {
+        &--phone{
+          left: -50px;
+        }
+        &--chat{
+          left: 60px;
+        }
+      }
+      @media only screen and (max-width: 1024px) {
+        &--phone{
+          left: -100px;
+    max-height: 440px;
+    top: 110px;
+        }
+        &--chat{
+          left: 0px;
+    top: 150px;
+    max-height: 320px;
+        }
+      }
+      @media only screen and (max-width: 768px) {
+      }
+      @media only screen and (max-width: 425px) {
+      }
+      @media only screen and (max-width: 375px) {
+      }
+      @media only screen and (max-width: 325px) {
+      }
     }
   }
 
@@ -87,6 +115,7 @@
       display: flex;
       flex-direction: row;
       list-style: none;
+      overflow-x: scroll;
       li{
         will-change: transform, animation, opacity;
         text-align: center;

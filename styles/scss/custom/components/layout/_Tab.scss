@@ -1,5 +1,9 @@
 .tab{
   margin-top: 72px;
+  @media only screen and (max-width: 768px) {
+    visibility: collapse;
+    margin-top: 0px;
+  }
     ul{
       display: flex;
       flex-direction: row;

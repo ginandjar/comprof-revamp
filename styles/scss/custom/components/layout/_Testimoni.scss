@@ -3,4 +3,17 @@
     background-image:none !important;
     filter:none !important;
  }
+ h1{
+   margin-top: 30px;
+   margin-bottom: 70px;
+ }
+ &__slider{
+   margin-bottom: 20px
+   img{
+     width: 70%;
+   }
+   p{
+     font-size: 22px;
+   }
+ }
 }

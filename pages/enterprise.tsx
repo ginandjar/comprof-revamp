@@ -169,7 +169,7 @@ class Enterprise extends React.Component<Props, States> {
 
                   <Grid className="enterprise__tab">
                     <Fade>
-                      <h5>FMCG - Customer Engagement Customer engagement has always been at the forefront of brand marketing plans, and now employing digital channels to turn casual users into shoppers is quickly becoming a viable path to faster and simpler interaction. Our chatbot solution allows your FMCG brand to create brilliantly effective campaign plans, simply by defining your goals.</h5>
+                      <h5>FMCG - Customer engagement has always been at the forefront of brand marketing plans, and now employing digital channels to turn casual users into shoppers is quickly becoming a viable path to faster and simpler interaction. Our chatbot solution allows your FMCG brand to create brilliantly effective campaign plans, simply by defining your goals.</h5>
                     </Fade>
                     <Row>
                       <Col md={6}>
@@ -774,7 +774,7 @@ class Enterprise extends React.Component<Props, States> {
           <div>
             <img src="/static/png/enterprise/laptop.png" />
           </div>
-          <ButtonLink modifier="default" href="/enterprise">
+          <ButtonLink modifier="default" href="/platform">
             See Our Technology
           </ButtonLink>
 
@@ -787,7 +787,7 @@ class Enterprise extends React.Component<Props, States> {
               <h5>
                 Design your smart assistant today. Grow your business more further
             </h5>
-              <ButtonLink modifier="light" href="/enterprise">
+              <ButtonLink modifier="light" href="/contact-us">
                 Get in touch
           </ButtonLink>
             </Col>
@@ -796,7 +796,7 @@ class Enterprise extends React.Component<Props, States> {
               <h5>
                 Expand your offering. Create the best AI solutions for your clients
             </h5>
-              <ButtonLink modifier="light" href="/enterprise">
+              <ButtonLink modifier="light" href="/partnership">
                 Become a partner
           </ButtonLink>
             </Col>

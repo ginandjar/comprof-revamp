@@ -10,6 +10,7 @@ import HeroCard from '../components/layout/HeroCard';
 import ButtonLink from '../components/links/ButtonLink';
 import Hero from 'components/layout/Hero';
 import Footer from '../components/layout/Footer';
+import Fade from 'react-reveal/Fade';
 
 interface Props {
 
@@ -46,15 +47,21 @@ class Platform extends React.Component<Props> {
               An integrated platform to create, launch, and manage enterprise-grade chatbot without compromise
             </h2>
             <div className="platform__intro-image">
-              <div className="platform__intro-image--left">
-                <img src="/static/png/platform/laptopleft.png" />
-              </div>
-              <div className="platform__intro-image--center">
-                <img src="/static/png/platform/laptopmiddle.png" />
-              </div>
-              <div className="platform__intro-image--right">
-                <img src="/static/png/platform/laptopright.png" />
-              </div>
+              <Fade left>
+                <div className="platform__intro-image--left">
+                  <img src="/static/png/platform/laptopleft.png" />
+                </div>
+              </Fade>
+              <Fade bottom>
+                <div className="platform__intro-image--center">
+                  <img src="/static/png/platform/laptopmiddle.png" />
+                </div>
+              </Fade>
+              <Fade right>
+                <div className="platform__intro-image--right">
+                  <img src="/static/png/platform/laptopright.png" />
+                </div>
+              </Fade>
             </div>
             <ButtonLink modifier="default" href="https://platform.kata.ai">
               Sign Up for Free
@@ -118,11 +125,11 @@ class Platform extends React.Component<Props> {
             Learn How to Build Chatbot with Kata Platform
           </h1>
           <img src="/static/png/platform/buildchatbot.jpg" />
-          <ButtonLink modifier="default" href="https://platform.kata.ai">
+          <ButtonLink modifier="default" href="https://docs.kata.ai">
             See Documentations
           </ButtonLink>
         </div>
-        {/* <div className="platform__engineering-blog">
+        <div className="platform__engineering-blog">
           <h1>Kata Engineering Blog</h1>
           <div className="platform__engineering-blog__blog-content">
             <div className="platform__engineering-blog__list">
@@ -166,7 +173,7 @@ class Platform extends React.Component<Props> {
               </div>
             </div>
           </div>
-        </div> */}
+        </div>
         <HeroCard title="Help & Advice" className="platform__help">
           <h5>Got question? Feel free to reach our support or join our developer community on Slack to get help from fellow Kata Platform users & partners</h5>
           <ButtonLink modifier="default" href="mailto:support@kata.ai">
@@ -206,7 +213,7 @@ class Platform extends React.Component<Props> {
         </HeroCard>
         <HeroCard className="platform__try-platform">
           <div className="platform__try-platform__content">
-            <h1>Start free and Scale as You Grow</h1>
+            <h1>Start free and scale as you grow</h1>
             <ButtonLink modifier="light" href="https://platform.kata.ai">
               Try Kata Platform
             </ButtonLink>

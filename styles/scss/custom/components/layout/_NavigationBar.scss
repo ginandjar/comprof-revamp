@@ -9,11 +9,22 @@
   &__inner {
     
     margin: 0 150px;
+    @media only screen and (max-width: 1024px) {
+      margin: 0px 80px;
+    }
+    
   }
 
   &__logo {
     margin-top:20px;
     margin-bottom: 20px;
+    @media only screen and (max-width: 1024px) {
+      margin-top:30px;
+    }
+    @media only screen and (max-width: 768px) {
+      margin-top:20px;
+      margin-bottom: 0px;
+    }
     a {
       text-decoration: none;
     }
@@ -25,6 +36,10 @@
   &__menu {
     display:block;
     margin-top: 50px;
+    @media only screen and (max-width: 768px) {
+      visibility: hidden;
+      margin-top: 0px;
+    }
     >ul{
       float: left;
       margin: 0;
@@ -44,6 +59,9 @@
           font-weight: 500;
           padding: 7px 25px 0px 25px;
           font-size: 16px;
+          @media only screen and (max-width: 1024px) {
+            padding: 7px 10px 0px 10px;
+          }
         >ul{
           visibility: hidden;
           opacity: 0;
@@ -75,6 +93,9 @@
           font-weight: 500;
           padding: 7px 25px 0px 25px;
           font-size: 16px;
+          @media only screen and (max-width: 1024px) {
+            padding: 7px 10px 0px 10px;
+          }
         }
       }
     }

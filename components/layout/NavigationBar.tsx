@@ -29,7 +29,7 @@ export default class NavigationBar extends React.Component {
               <li>
                 <Link href="/enterprise">
                   <a >
-                    Solution
+                    Solutions
                     </a>
                 </Link>
               </li>
@@ -52,12 +52,12 @@ export default class NavigationBar extends React.Component {
                     </li>
                   </ul> */}
               </li>
-              {/* <li>
+              <li>
                 <Link href="/partnership">
                   <a>Partnership </a>
                 </Link>
 
-              </li> */}
+              </li>
               <li className="navigation-bar__have-child">
                 Resources
                 <ul>
@@ -67,21 +67,37 @@ export default class NavigationBar extends React.Component {
                     </Link>
                   </li>
                   <li>
+                    <Link href="https://medium.com/kata-engineering">
+                      <a>Kata Engineering</a>
+                    </Link>
+                  </li>
+                  <li>
                     <Link href="/research">
                       <a>Research</a>
                     </Link>
                   </li>
                   <li>
                     <Link href="https://docs.kata.ai">
-                      <a>Docs</a>
+                      <a>Documentations</a>
                     </Link>
                   </li>
+
                 </ul>
               </li>
               <li>
-                <Link href="/company">
-                  <a>Company</a>
-                </Link>
+                Company
+                  <ul>
+                  <li>
+                    <Link href="https://blog.kata.ai">
+                      <a>About Us</a>
+                    </Link>
+                  </li>
+                  <li>
+                    <Link href="/career">
+                      <a>Careers</a>
+                    </Link>
+                  </li>
+                </ul>
               </li>
             </ul>
 

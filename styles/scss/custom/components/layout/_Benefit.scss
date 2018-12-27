@@ -4,6 +4,9 @@
   h1{
     color: white !important;
   }
+  p{
+    font-size: 22px;
+  }
   &__nav-bar{
     margin: auto;
     width: 930px;
@@ -22,7 +25,17 @@
       }
     }
   }
-  &__nav-content{
+  &__nav__content{
+
+    &__slider{
+
+    }
+
+    p{
+      font-size: 22px;
+      max-width: 500px;
+      margin:  20px auto;
+    }
 
   }
  

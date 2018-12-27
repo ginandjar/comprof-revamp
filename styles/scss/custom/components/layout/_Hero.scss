@@ -6,12 +6,16 @@
 
   &__full-width{
     width: 100%;
+    overflow: hidden;
     
   }
 
   &__center-container{
     max-width: 1280px;
     padding: 0px 23px;
+    @media only screen and (max-width: 425px) {
+      padding: 0px 0px;
+    }
   }
 
 }

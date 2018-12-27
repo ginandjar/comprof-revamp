@@ -109,9 +109,9 @@ class DetailStory extends React.Component<Props> {
           </div>
 
 
-
+          <Footer localeService={this.props.localeService} />
         </div>
-        <Footer localeService={this.props.localeService} />
+
       </div >
 
     );

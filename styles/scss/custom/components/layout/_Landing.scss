@@ -1,5 +1,6 @@
 .landing{
-  height: 865px;
+  overflow: hidden;
+  height: 100%;
   p{
     font-family: Museo Sans !important;
   }
@@ -16,6 +17,11 @@
       text-align: left!important;
       margin-left: -113px;
       vertical-align: middle;
+      @media only screen and (max-width: 768px) {
+        width: 100%;
+      text-align: center!important;
+      margin-left: 0px;
+      }
   
       h1{
         margin: 0px;
@@ -25,6 +31,9 @@
 
         max-width: 400px;
         font-size: 22px;
+        @media only screen and (max-width: 768px) {
+          max-width: unset;
+        }
       }
     }
     &__image{
@@ -32,6 +41,15 @@
       margin-right: -290px;
       width: 40%;
       vertical-align: middle;
+      @media only screen and (max-width: 768px) {
+        width: unset;
+        img{
+          width: 100%; 
+        }
+        
+        margin-right: unset;
+
+      }
       
     }
     &__button{
@@ -41,13 +59,32 @@
     }
 
     &--full-width{
-      width: 970px!important
+      width: 970px!important;
+      @media only screen and (max-width: 1366px) {
+        width: 910px!important;
+      }
+      @media only screen and (max-width: 1024px) {
+        width: 460px!important;
+      }
+
+      @media only screen and (max-width: 768px) {
+        width: 100% !important;
+      }
+      
     }
+      
   }
   
 
   &__intro{
     padding-top: 130px;
+
+    &__button{
+      @media only screen and (max-width: 425px) {
+        font-size: 16px !important;
+
+      }
+    }
 
     &__text{
       color: #fff!important;
@@ -56,48 +93,172 @@
       text-align: left;
       margin-left: 50px;
       margin-top: 100px;
+      @media only screen and (max-width: 768px) {
+        text-align: center;
+        margin-left: 80px;
+      }
+      @media only screen and (max-width: 425px) {
+        margin-left: 0px;
+
+      }
+      
       h1{
         font-family: Museo Sans !important;
         color: white !important;
+        @media only screen and (max-width: 425px) {
+          font-size: 32px;
+    max-width: 400px;
+    margin: auto;
+        }
+
+        @media only screen and (max-width: 320px) {
+
+          max-width: 300px;
+
+        }
        
       }
       p{
         font-family: Museo Sans !important;
         font-size: 22px;
+        @media only screen and (min-width: 1025px) {
+          min-width: 600px !important;
+        }
+        @media only screen and (max-width: 1024px) {
+          max-width: 400px !important;
+        }
+        @media only screen and (max-width: 768px) {
+          margin: 30px auto;
+        }
+        @media only screen and (max-width: 425px) {
+          font-size: 16px
+        }
+        @media only screen and (max-width: 320px) {
+          max-width: 300px !important;
+        }
+
+        
+
       }
     }
 
     &__image{
       position: relative;
       min-height: 625px;
+      @media only screen and (max-width: 2560px) {
+        img{
+          position: absolute;
+          height: 500px;
+        }
+        &--simpati{
+          right:230px;
+        }
+    
+        &--alfa{
+          top: 350px;
+          right: 490px;
+        }
+    
+        &--bri{
+          top: 440px;
+        right: 230px;
+        }
+        &--uni{
+          top: 80px;
+          right: -20px;
+        }
+        &--white{
+          width: 100%;
+          top: -120px;
+          position: absolute;
+          z-index: 20;
+        }
+      }
+      @media only screen and (max-width: 1024px) {
+        &--simpati{
+          right:180px;
+        }
+    
+        &--alfa{
 
-      img{
-        position: absolute;
-        height: 500px;
+          right: 420px;
+        }
+    
+        &--bri{
+
+        right: 180px;
+        }
+        &--uni{
+
+          right: -70px;
+        }
+        &--white{
+          top: 180px;
+        }
       }
-      &--simpati{
-        right:230px;
+      @media only screen and (max-width: 768px) {
+        img{
+          height: 350px;
+        }
+        &--simpati{
+          right: 170px;
+          top: 380px;
+        }
+    
+        &--alfa{
+          right: 340px;
+          top: 380px;
+        }
+    
+        &--bri{
+          right: 520px;
+          top: 350px;
+        }
+        &--uni{
+
+          right: 0px;
+          top:350px
+        }
+        &--white{
+          top: 270px;
+        }
       }
-  
-      &--alfa{
-        top: 350px;
-        right: 490px;
+
+      @media only screen and (max-width: 425px) {
+        img{
+          height: 220px;
+        }
+        &--simpati{
+          right: 180px;
+          top: 380px;
+        }
+    
+        &--alfa{
+          right: 290px;
+    top: 380px;
+        }
+    
+        &--bri{
+          right: 400px;
+          top: 350px;
+        }
+        &--uni{
+
+          right: 70px;
+          top:350px
+        }
+        &--white{
+          top:400px;
+        }
       }
-  
-      &--bri{
-        top: 440px;
-      right: 230px;
+
+      @media only screen and (max-width: 320px) {
+        &--white{
+          top:480px;
+        }
       }
-      &--uni{
-        top: 80px;
-        right: -20px;
-      }
-      &--white{
-        width: 1440px;
-        height: 1630px!important;
-        right: -103px;
-        top: -245px;
-      }
+      
+      
 
       
     }
@@ -106,13 +267,33 @@
   &__list-image{
     max-width: 1440px;
     margin-top: 50px;
+
+    
+
+    &--no-wrap{
+      @media only screen and (max-width: 768px) {
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+      }
+
+    }
     
 
     &__item{
-      width: 300px;
+      
       display: inline-block;
       margin: 0 20px;
       vertical-align: top;
+      @media only screen and (max-width: 2560px) {
+      width: 300px;
+      }
+
+      @media only screen and (max-width: 768px) {
+        display: block;
+      margin: 0 auto;
+      width: 100%;
+      }
 
       img{
         width: 120px;
@@ -122,14 +303,23 @@
         padding: 10px;
         min-height: 80px;
         width: 255px;
-        margin: auto;      
-        width: 255px;
         margin: auto;
+        @media only screen and (max-width: 768px) {
+          width: 100%;
+          min-height: 0px;
+        }      
       }
       p{
         font-family: Museo Sans !important;
         font-size: 16px;
         padding: 10px;
+        @media only screen and (max-width: 768px) {
+          padding: 5px;
+        } 
+
+        @media only screen and (max-width: 425px) {
+          padding: 10px;
+        } 
       }
 
       &--list-image-only{
@@ -145,6 +335,26 @@
       }
       &__line{
         img{
+          @media only screen and (max-width: 1024px) {
+            top: 300px;
+            width: 75%;
+            right: 150px;
+          }
+          
+          @media only screen and (max-width: 768px) {
+            top: 310px;
+    width: 80%;
+    right: 0;
+          }
+          @media only screen and (max-width: 425px) {
+            top: 350px;
+       
+          }
+          @media only screen and (max-width: 375px) {
+            top: 400px;
+       
+          }
+          
           z-index: -8;
           position: absolute;
           top: 260px;
@@ -161,8 +371,38 @@
     text-align: left;
     max-width: 1234px;
     margin: auto;
+    display: block;
+    @media only screen and (max-width: 1024px) {
+      max-width: 630px;
+      margin: 0 !important;
+    }
+    @media only screen and (max-width: 768px) {
+      display: none;
+    }
+    &__accordion{
+      display: none;
+      @media only screen and (max-width: 768px) {
+        display: block;
+      }
+      &__panel{
+        background-color: #fff;
+        border: none;
+        padding: 10px 20px !important;
+        &__heading{
+          background-color: #fff !important;
+          border: none !important;
+          &__title{
+            font-size: 24px;
+          }
+        }
+      }
+    }
+
     &__chatbot{
-      margin-left: 20px
+      margin-left: 20px;
+      @media only screen and (max-width: 768px) {
+        margin: auto;
+      }
     }
     &__logo{
       width: 150px;
@@ -189,6 +429,254 @@
       img{
         position: absolute;
       }
+      @media only screen and (max-width: 768px) {
+        min-height: 700px;
+        &--veronika{
+          &--phone{
+            left: 50px !important;
+          }
+          &--avatar{
+            left: 20px !important;
+          }
+          &--chat{
+            left: 370px !important;
+          }
+          &--menu{
+            left: 460px !important;
+          }
+        }
+        &--shalma{
+          &--phone{
+            left: 70px !important;
+          }
+          &--avatar{
+            left: -20px;
+          }
+          &--chat{
+            left: 460px !important;
+          }
+          &--menu{
+            left: 460px !important;
+          }
+        }
+        &--jemma{
+          &--phone{
+            left: 70px !important;
+          }
+          &--avatar{
+            left: -20px !important;
+          }
+          &--chat{
+            left: 390px !important;
+          }
+          &--menu{
+            left: 450px !important;
+          }
+        }
+      }
+
+      @media only screen and (max-width: 425px) {
+        min-height: 400px;
+        img{
+
+        }
+        &--veronika{
+          &--phone{
+            top: 15px !important;
+            left: 10px !important;
+            max-height: 400px !important
+          }
+          &--avatar{
+            top : 80px !important;
+            left: 0px !important;
+            max-height: 300px !important
+          }
+          &--chat{
+            left: 210px!important;
+            max-width: 160px!important;
+            top: 110px!important;
+          }
+          &--menu{
+            left: 250px!important;
+            max-width: 120px!important;
+            top: 160px !important;
+          }
+        }
+        &--shalma{
+          &--phone{
+            left: 10px !important;
+            max-height: 400px !important
+          }
+          &--avatar{
+            left: -40px!important;
+            max-height: 300px!important;
+            top: 110px !important;
+          }
+          &--chat{
+            left: 250px!important;
+            max-width: 120px!important;
+            top:250px !important
+          }
+          &--menu{
+            left: 250px!important;
+            max-width: 120px!important;
+            top:110px !important
+          }
+        }
+        &--jemma{
+          &--phone{
+            left: 0px !important;
+            max-height: 400px !important
+          }
+          &--avatar{
+            top: 200px!important;
+            left: -20px!important;
+            max-height: 210px!important;
+          }
+          &--chat{
+            left: 200px!important;
+            max-width: 160px!important;
+            top: 150px !important;
+          }
+          &--menu{
+            left: 240px!important;
+            top: 190px!important;
+            max-width: 120px!important;
+
+          }
+        }
+      }
+
+      @media only screen and (max-width: 375px) {
+        min-height: 400px;
+        img{
+
+        }
+        &--veronika{
+          &--phone{
+
+            left: -10px !important;
+
+          }
+          &--avatar{
+
+            left: -20px !important;
+
+          }
+          &--chat{
+            left: 180px!important;
+          }
+          &--menu{
+            left: 220px!important;
+          }
+        }
+        &--shalma{
+          &--phone{
+            left: -10px !important;
+          }
+          &--avatar{
+            left: -60px!important;
+          }
+          &--chat{
+            left: 220px!important;
+          }
+          &--menu{
+            left: 220px!important;
+          }
+        }
+        &--jemma{
+          &--phone{
+            left: -10px !important;
+
+          }
+          &--avatar{
+            left: -40px!important;
+          }
+          &--chat{
+            left: 180px!important;
+          }
+          &--menu{
+            left: 220px!important;
+
+          }
+        }
+      }
+
+      @media only screen and (max-width: 325px) {
+        min-height: 300px;
+        img{
+
+        }
+        &--veronika{
+          &--phone{
+            top: 15px !important;
+            left: 10px !important;
+            max-height: 300px !important
+          }
+          &--avatar{
+            top : 80px !important;
+            left: 0px !important;
+            max-height: 200px !important
+          }
+          &--chat{
+            left: 160px!important;
+            max-width: 120px!important;
+            top: 100px!important;
+          }
+          &--menu{
+            left: 190px!important;
+            max-width: 80px!important;
+            top: 130px!important;
+          }
+        }
+        &--shalma{
+          &--phone{
+            left: 10px !important;
+            max-height: 300px !important
+          }
+          &--avatar{
+            left: -20px!important;
+            max-height: 200px!important;
+            top: 110px !important;
+          }
+          &--chat{
+            left: 190px!important;
+            max-width: 80px!important;
+            top:220px !important
+          }
+          &--menu{
+            left: 190px!important;
+            max-width: 80px!important;
+            top: 130px!important;
+          }
+        }
+        &--jemma{
+          &--phone{
+            left: 0px !important;
+            max-height: 300px !important
+          }
+          &--avatar{
+            top: 140px!important;
+    left: -30px!important;
+    max-height: 180px!important;
+          }
+          &--chat{
+            left: 150px!important;
+            max-width: 120px!important;
+            top: 120px!important;
+          }
+          &--menu{
+            left: 180px!important;
+            max-width: 80px!important;
+            top: 150px!important;
+
+          }
+        }
+      }
+
+      
+
+      
       &--veronika{
         &--phone{
           top: 30px;
@@ -279,6 +767,12 @@
   &__engineering-blog{
     text-align: center;
     margin-left: 150px;
+    @media only screen and (max-width: 425px) {
+      margin-left: 50px !important;
+    }
+    @media only screen and (max-width: 375px) {
+      margin-left: 20px !important;
+    }
 
     &__blog-content{
       background: linear-gradient(180deg,#006ee5 70%,#fff 10%);
@@ -315,6 +809,19 @@
       padding: 0 25px;
       margin: 0 30px;
       display: inline-block;
+      @media only screen and (max-width: 768px) {
+        width: 83%
+      }
+      @media only screen and (max-width: 425px) {
+        padding: 0 15px !important;
+      }
+      &--hidden{
+        @media only screen and (max-width: 768px) {
+          display: none;
+        }
+      }
+
+      
     }
 
     &__image{
