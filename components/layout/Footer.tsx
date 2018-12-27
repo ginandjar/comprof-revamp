@@ -18,11 +18,6 @@ export default class Footer extends React.Component<Props> {
             <Row>
               <Col>
                 <div className="footer__company">
-                  <img
-                    className="company-info--logo"
-                    src="/static/images/icons/kata-logo-grads.svg"
-                    alt="Kata Logo"
-                  />
                   <div className="company-info--name">PT. YesBoss Group Indonesia</div>
                   <address className="company-info--address">
                     Graha Tirtadi<br />
@@ -64,79 +59,102 @@ export default class Footer extends React.Component<Props> {
               <Col>
                 <div className="footer__sitemap">
                   <div className="footer-menu">
-                    <h6 className="footer-menu--title">
-                      Solutions
-                    </h6>
+                    <div className="footer-menu__item">
+                      <h6 className="footer-menu--title">
+                        Solutions
+                      </h6>
 
-                    <ul className="footer-menu--nav">
+                      <ul className="footer-menu--nav">
 
-                      <li>
-                        <a>Chatbot Solutions</a>
-                      </li>
+                        <li>
+                          <a>Chatbot Solutions</a>
+                        </li>
+                        <li>
+                          <a>Success Story</a>
+                        </li>
 
-                    </ul>
+                      </ul>
 
+                    </div>
+                    <div className="footer-menu__item">
+                      <h6 className="footer-menu--title">
+                        Technology
+                      </h6>
+
+                      <ul className="footer-menu--nav">
+
+                        <li>
+                          <a href="https://platform.kata.ai">Kata Platform</a>
+                        </li>
+
+                      </ul>
+
+                    </div>
+                    <div className="footer-menu__item">
+                      <h6 className="footer-menu--title">
+                        Partnership
+                      </h6>
+
+                      <ul className="footer-menu--nav">
+
+                        <li>
+                          <a href="">Kata Partner</a>
+                        </li>
+                        <li>
+                          <a href="">Become a Partner</a>
+                        </li>
+
+                      </ul>
+
+                    </div>
                   </div>
                   <div className="footer-menu">
-                    <h6 className="footer-menu--title">
-                      Technology
-                    </h6>
-
-                    <ul className="footer-menu--nav">
-
-                      <li>
-                        <a href="https://platform.kata.ai">Kata Platform</a>
-                      </li>
-
-                    </ul>
-
-                  </div>
-                  <div className="footer-menu">
-                    <h6 className="footer-menu--title">
-                      Resources
+                    <div className="footer-menu__item">
+                      <h6 className="footer-menu--title">
+                        Resources
 
 
-                    </h6>
+                      </h6>
 
-                    <ul className="footer-menu--nav">
+                      <ul className="footer-menu--nav">
 
-                      <li>
-                        <a href="https://blog.kata.ai">Blog</a>
-                      </li>
-                      <li>
-                        <a href="https://medium.com/kata-engineering">Kata Engineering</a>
-                      </li>
-                      <li>
-                        <a href="https://docs.kata.ai">Documentations</a>
-                      </li>
-                      <li>
-                        <a href="/research">Research</a>
-                      </li>
+                        <li>
+                          <a href="https://blog.kata.ai">Blog</a>
+                        </li>
+                        <li>
+                          <a href="https://medium.com/kata-engineering">Kata Engineering</a>
+                        </li>
+                        <li>
+                          <a href="https://docs.kata.ai">Documentations</a>
+                        </li>
+                        <li>
+                          <a href="/research">Research</a>
+                        </li>
 
-                    </ul>
+                      </ul>
 
-                  </div>
+                    </div>
+                    <div className="footer-menu__item">
+                      <h6 className="footer-menu--title">
+                        Company
 
-                  <div className="footer-menu">
-                    <h6 className="footer-menu--title">
-                      Company
+                      </h6>
 
-                    </h6>
+                      <ul className="footer-menu--nav">
 
-                    <ul className="footer-menu--nav">
+                        <li>
+                          <a href="">About Us</a>
+                        </li>
+                        <li>
+                          <a href="#">Careers</a>
+                        </li>
+                        <li>
+                          <a href="/research">Get in Touch</a>
+                        </li>
 
-                      <li>
-                        <a href="">About Us</a>
-                      </li>
-                      <li>
-                        <a href="#">Careers</a>
-                      </li>
-                      <li>
-                        <a href="/research">Get in Touch</a>
-                      </li>
+                      </ul>
 
-                    </ul>
-
+                    </div>
                   </div>
 
                 </div>

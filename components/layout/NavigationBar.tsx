@@ -23,6 +23,9 @@ export default class NavigationBar extends React.Component {
               ID
               </a>
           </div> */}
+          <nav className="pull-right navigation-bar__burger">
+          <img src="/static/images/icons/menu-icn-light.svg" className=""/>
+          </nav>
           <nav className="pull-right navigation-bar__menu">
 
             <ul>
