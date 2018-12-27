@@ -14,7 +14,7 @@ import Hero from '../components/layout/Hero';
 import FlexBox from '../components/layout/FlexBox';
 import ButtonLink from '../components/links/ButtonLink';
 import HeroCard from '../components/layout/HeroCard';
-import { Grid, Row, Col, Image } from 'react-bootstrap';
+import { Grid, Row, Col, Image, Panel, PanelGroup } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
 import Footer from '../components/layout/Footer';
 
@@ -161,7 +161,7 @@ class Enterprise extends React.Component<Props, States> {
           <div>
             {this.renderTabMenu()}
           </div>
-          <div>
+          <div className="enterprise__tab--desktop">
             <div className="swiper-container" id="tab-swiper">
               <div className="swiper-wrapper">
 
@@ -771,7 +771,7 @@ class Enterprise extends React.Component<Props, States> {
               Kata Platform gives enterprises the rich features needed to create high-value chatbots without development complexity
             </h6>
           </div>
-          <div>
+          <div className="enterprise__platform__image">
             <img src="/static/png/enterprise/laptop.png" />
           </div>
           <ButtonLink modifier="default" href="/platform">
@@ -810,14 +810,496 @@ class Enterprise extends React.Component<Props, States> {
 
   renderTabMenu() {
     return (
-      <Tab>
-        <TabItem item="Consumer Engagement" modifier={this.state.currentIndexGrowth == 0 ? "tab-item--selected" : undefined} onClick={this.tabSwipeClick(0)} />
-        <TabItem item="Banking Assistant" modifier={this.state.currentIndexGrowth == 1 ? "tab-item--selected" : undefined} onClick={this.tabSwipeClick(1)} />
-        <TabItem item="HR Bot" modifier={this.state.currentIndexGrowth == 2 ? "tab-item--selected" : undefined} onClick={this.tabSwipeClick(2)} />
-        <TabItem item="Customer Service" modifier={this.state.currentIndexGrowth == 3 ? "tab-item--selected" : undefined} onClick={this.tabSwipeClick(3)} />
-        <TabItem item="E-Commerce Bot" modifier={this.state.currentIndexGrowth == 4 ? "tab-item--selected" : undefined} onClick={this.tabSwipeClick(4)} />
-        <TabItem item="Educational" modifier={this.state.currentIndexGrowth == 5 ? "tab-item--selected" : undefined} onClick={this.tabSwipeClick(5)} />
-      </Tab>
+      <div>
+        <Tab>
+          <TabItem item="Consumer Engagement" modifier={this.state.currentIndexGrowth == 0 ? "tab-item--selected" : undefined} onClick={this.tabSwipeClick(0)} />
+          <TabItem item="Banking Assistant" modifier={this.state.currentIndexGrowth == 1 ? "tab-item--selected" : undefined} onClick={this.tabSwipeClick(1)} />
+          <TabItem item="HR Bot" modifier={this.state.currentIndexGrowth == 2 ? "tab-item--selected" : undefined} onClick={this.tabSwipeClick(2)} />
+          <TabItem item="Customer Service" modifier={this.state.currentIndexGrowth == 3 ? "tab-item--selected" : undefined} onClick={this.tabSwipeClick(3)} />
+          <TabItem item="E-Commerce Bot" modifier={this.state.currentIndexGrowth == 4 ? "tab-item--selected" : undefined} onClick={this.tabSwipeClick(4)} />
+          <TabItem item="Educational" modifier={this.state.currentIndexGrowth == 5 ? "tab-item--selected" : undefined} onClick={this.tabSwipeClick(5)} />
+        </Tab>
+
+        <PanelGroup accordion id="accordion-example" className="landing__tab__accordion">
+          <Panel eventKey="1" className="landing__tab__accordion__panel">
+            <Panel.Heading className="landing__tab__accordion__panel__heading">
+              <Panel.Title toggle className="landing__tab__accordion__panel__heading__title">Consumer Engagement</Panel.Title>
+            </Panel.Heading>
+            <Panel.Body collapsible>
+              <Grid className="enterprise__tab">
+                <Fade>
+                  <h5>FMCG - Customer engagement has always been at the forefront of brand marketing plans, and now employing digital channels to turn casual users into shoppers is quickly becoming a viable path to faster and simpler interaction. Our chatbot solution allows your FMCG brand to create brilliantly effective campaign plans, simply by defining your goals.</h5>
+                </Fade>
+                <Row>
+                  <Col md={6}>
+                    <Fade>
+                      <img src="/static/png/enterprise/cephone.png" />
+                    </Fade>
+                  </Col>
+                  <Col md={6}>
+                    <div className="enterprise__tab__button">
+                      <Fade bottom>
+                        <div className="enterprise__tab__button--large">
+                          <a className="button button__light button__block" onClick={this.stateFeatCe()}>Features you can offer</a>
+                          <Fade bottom collapse when={this.state.showFeatCE}>
+                            <ul>
+                              <li>
+                                Small talk and assistance
+                                </li>
+                              <li>
+                                Personalized offers
+                                </li>
+                              <li>
+                                Advertise special promotions
+                                </li>
+                              <li>
+                                FAQs
+                                </li>
+                              <li>
+                                Quote management
+                                </li>
+                              <li>
+                                Lead and contact management
+                                </li>
+                              <li>
+                                Loyalty program
+                                </li>
+                            </ul>
+                          </Fade>
+                        </div>
+                      </Fade>
+                      <Fade bottom>
+                        <div className="enterprise__tab__button--large">
+                          <a className="button button__light button__block" onClick={this.stateBeneCe()}>Benefits</a>
+                          <Fade bottom collapse when={this.state.showBeneCE}>
+                            <ul>
+                              <li>
+                                Create campaigns that aligns with your goals
+                                </li>
+                              <li>
+                                Achieve relevant messages for personalization at scale
+                                </li>
+                              <li>
+                                Outperform your campaign revenue targets
+                                </li>
+                              <li>
+                                Increase customer experience & loyalty
+                                </li>
+                              <li>
+                                Reactivate customers in your database
+                                </li>
+                              <li>
+                                Boost omni-channel ROI
+                                </li>
+                              <li>
+                                Loyalty program
+                                </li>
+                            </ul>
+                          </Fade>
+                        </div>
+                      </Fade>
+                    </div>
+                  </Col>
+                </Row>
+              </Grid>
+            </Panel.Body>
+          </Panel>
+          <Panel eventKey="2" className="landing__tab__accordion__panel">
+            <Panel.Heading className="landing__tab__accordion__panel__heading">
+              <Panel.Title toggle className="landing__tab__accordion__panel__heading__title">Banking Assistant</Panel.Title>
+            </Panel.Heading>
+            <Panel.Body collapsible>
+
+              <Grid className="enterprise__tab">
+                <Fade>
+                  <h5>Whether your business line is banking, financial services, or FinTech, bots are a great strategy to sustain profitability and win over customers. It offers real-time financial services / data at the engagement point, supply 24 hour self-service, and transform ordinary transactions, policy updates, payments, and more into simple text through the channel of customers choice.</h5>
+                </Fade>
+                <Row>
+                  <Col md={6}>
+                    <Fade>
+                      <img src="/static/png/enterprise/baphone.png" />
+                    </Fade>
+                  </Col>
+                  <Col md={6}>
+                    <div className="enterprise__tab__button">
+                      <Fade bottom>
+                        <div className="enterprise__tab__button--large">
+                          <a className="button button__light button__block" onClick={this.stateFeatBa()}>Features you can offer</a>
+                          <Fade bottom collapse when={this.state.showFeatBA}>
+                            <ul>
+                              <li>
+                                User and account registration
+                                </li>
+                              <li>
+                                Branch and ATM locator
+                                </li>
+                              <li>
+                                Spending analysiss
+                                </li>
+                              <li>
+                                Apply for new services and request checkbook
+                                </li>
+                              <li>
+                                Report lost or stolen card
+                                </li>
+                              <li>
+                                Transfer money to own account / third party
+                                </li>
+                              <li>
+                                Bill payment
+                                </li>
+                              <li>
+                                Real-time financial market data
+                                </li>
+                            </ul>
+                          </Fade>
+                        </div>
+                      </Fade>
+                      <Fade bottom>
+                        <div className="enterprise__tab__button--large">
+                          <a className="button button__light button__block" onClick={this.stateBeneBa()}>Benefits</a>
+                          <Fade bottom collapse when={this.state.showBeneBA}>
+                            <ul>
+                              <li>
+                                Remove friction points for immediate support and resolution
+                                </li>
+                              <li>
+                                Provide personal banking and investment advice
+                                </li>
+                              <li>
+                                Uncover right-time / right-fit loyalty program promotions
+                                </li>
+                              <li>
+                                Deliver actionable response options to urgent activity notifications
+                                </li>
+                              <li>
+                                Offer guidance for simpler loan applications and more submissions
+                                </li>
+                              <li>
+                                Drive digital adoption to long-term relationships and capture real-time opportunities
+                                </li>
+                            </ul>
+                          </Fade>
+                        </div>
+                      </Fade>
+                    </div>
+                  </Col>
+                </Row>
+              </Grid>
+
+            </Panel.Body>
+          </Panel>
+          <Panel eventKey="3" className="landing__tab__accordion__panel">
+            <Panel.Heading className="landing__tab__accordion__panel__heading">
+              <Panel.Title toggle className="landing__tab__accordion__panel__heading__title">HR Bot</Panel.Title>
+            </Panel.Heading>
+            <Panel.Body collapsible>
+
+              <Grid className="enterprise__tab">
+                <Fade>
+                  <h5>Your most important assets are your employees. Imagine how happy they would be and how productive they are, if they were given the answer right away. This kind of chatbot will simplify Human Resource experience. Employee can ask or message a bot like their fellow to resolve issues, ask questions, schedule meetings, and more. </h5>
+                </Fade>
+                <Row>
+                  <Col md={6}>
+                    <Fade>
+                      <img src="/static/png/enterprise/hrphone.png" />
+                    </Fade>
+                  </Col>
+                  <Col md={6}>
+                    <div className="enterprise__tab__button">
+                      <Fade bottom>
+                        <div className="enterprise__tab__button--large">
+                          <a className="button button__light button__block" onClick={this.stateFeatHr()}>Features you can offer</a>
+                          <Fade bottom collapse when={this.state.showFeatHR}>
+                            <ul>
+                              <li>
+                                Employer branding
+                                </li>
+                              <li>
+                                Sourcing & recruitment
+                                </li>
+                              <li>
+                                On boarding process
+                                </li>
+                              <li>
+                                FAQ & Company policy
+                                </li>
+                              <li>
+                                Schedule meetings and send a notification
+                                </li>
+                              <li>
+                                Benefits enrollment
+                                </li>
+                              <li>
+                                Centralize documentation
+                                </li>
+                            </ul>
+                          </Fade>
+                        </div>
+                      </Fade>
+                      <Fade bottom>
+                        <div className="enterprise__tab__button--large">
+                          <a className="button button__light button__block" onClick={this.stateBeneHr()}>Benefits</a>
+                          <Fade bottom collapse when={this.state.showBeneHR}>
+                            <ul>
+                              <li>
+                                Easily converge siloed systems
+                                </li>
+                              <li>
+                                Increase productivity across all departments
+                                </li>
+                              <li>
+                                Enhance and increase employee engagement
+                                </li>
+                              <li>
+                                Automate common data entry tasks to offset a busy HR team’s workload
+                                </li>
+                              <li>
+                                Innovate the recruiting process
+                                </li>
+                              <li>
+                                Gather meaningful data & provide it in a customized way
+                                </li>
+                            </ul>
+                          </Fade>
+                        </div>
+                      </Fade>
+                    </div>
+                  </Col>
+                </Row>
+              </Grid>
+
+            </Panel.Body>
+          </Panel>
+          <Panel eventKey="4" className="landing__tab__accordion__panel">
+            <Panel.Heading className="landing__tab__accordion__panel__heading">
+              <Panel.Title toggle className="landing__tab__accordion__panel__heading__title">Customer Service</Panel.Title>
+            </Panel.Heading>
+            <Panel.Body collapsible>
+              <Grid className="enterprise__tab">
+                    <Fade>
+                      <h5>Today’s digital-savvy customer expect answers at the click of a button. They desire a personalized, proactive conversation with a brand that they love. Customer service bots interact with the customer on behalf of your business, enabling customer to self-service online by drawing on specific business rules to answer common questions and requests. </h5>
+                    </Fade>
+                    <Row>
+                      <Col md={6}>
+                        <Fade>
+                          <img src="/static/png/enterprise/csphone.png" />
+                        </Fade>
+                      </Col>
+                      <Col md={6}>
+                        <div className="enterprise__tab__button">
+                          <Fade bottom>
+                            <div className="enterprise__tab__button--large">
+                              <a className="button button__light button__block" onClick={this.stateFeatCs()}>Features you can offer</a>
+                              <Fade bottom collapse when={this.state.showFeatCS}>
+                                <ul>
+                                  <li>
+                                    Always on, 24/7 availability
+                                </li>
+                                  <li>
+                                    Simpler & personalized interactions
+                                </li>
+                                  <li>
+                                    Easier problem resolution with self-service
+                                </li>
+                                  <li>
+                                    Increase customer engagement
+                                </li>
+                                  <li>
+                                    Provide news or information updates
+                                </li>
+                                  <li>
+                                    Provide products / services recommendations
+                                </li>
+                                  <li>
+                                    Ease online transactions and facilitate sales
+                                </li>
+                                </ul>
+                              </Fade>
+                            </div>
+                          </Fade>
+                          <Fade bottom>
+                            <div className="enterprise__tab__button--large">
+                              <a className="button button__light button__block" onClick={this.stateBeneCs()}>Benefits</a>
+                              <Fade bottom collapse when={this.state.showBeneCS}>
+                                <ul>
+                                  <li>
+                                    Customers can always get assistance when and where they need it
+                                </li>
+                                  <li>
+                                    Get real insight into what your customers prefer
+                                </li>
+                                  <li>
+                                    Customer service improvement through analytics and data collections
+                                </li>
+                                  <li>
+                                    Enables business to save operational costs on Call Center
+                                </li>
+                                  <li>
+                                    Help business save time in responding to customers’ FAQ
+                                </li>
+                                </ul>
+                              </Fade>
+                            </div>
+                          </Fade>
+                        </div>
+                      </Col>
+                    </Row>
+                  </Grid>
+            </Panel.Body>
+          </Panel>
+
+          <Panel eventKey="5" className="landing__tab__accordion__panel">
+            <Panel.Heading className="landing__tab__accordion__panel__heading">
+              <Panel.Title toggle className="landing__tab__accordion__panel__heading__title">E-Commerce Bot</Panel.Title>
+            </Panel.Heading>
+            <Panel.Body collapsible>
+
+            <Grid className="enterprise__tab">
+                    <Fade>
+                      <h5>Bots offer a way to change the shopping experience through ‘conversational commerce’ that is a two-way interaction between customers and business that feels more like an interaction between a seller and buyer.  </h5>
+                    </Fade>
+                    <Row>
+                      <Col md={6}>
+                        <Fade>
+                          <img src="/static/png/enterprise/ecphone.png" />
+                        </Fade>
+                      </Col>
+                      <Col md={6}>
+                        <div className="enterprise__tab__button">
+                          <Fade bottom>
+                            <div className="enterprise__tab__button--large">
+                              <a className="button button__light button__block" onClick={this.stateFeatEc()}>Features you can offer</a>
+                              <Fade bottom collapse when={this.state.showFeatEC}>
+                                <ul>
+                                  <li>
+                                    Greeting and help
+                                </li>
+                                  <li>
+                                    Search for products by price, color, and more
+                                </li>
+                                  <li>
+                                    Purchase product (checkout)
+                                </li>
+                                  <li>
+                                    Track order status and shipping
+                                </li>
+                                  <li>
+                                    View order history
+                                </li>
+                                  <li>
+                                    Personalized offers & advertise special promotions
+                                </li>
+                                  <li>
+                                    Ask questions (FAQs)
+                                </li>
+                                </ul>
+                              </Fade>
+                            </div>
+                          </Fade>
+                          <Fade bottom>
+                            <div className="enterprise__tab__button--large">
+                              <a className="button button__light button__block" onClick={this.stateBeneEc()}>Benefits</a>
+                              <Fade bottom collapse when={this.state.showBeneEC}>
+                                <ul>
+                                  <li>
+                                    Offer instant, real-time shopping experience across multiple channels
+                                </li>
+                                  <li>
+                                    Allows simple and convenient purchases via message-based interactions
+                                </li>
+                                  <li>
+                                    Provide relevant, actionable offers in real time, and personalized to a customer’s trends
+                                </li>
+                                  <li>
+                                    Able to deliver alerts and updates regarding available inventory
+                                </li>
+                                  <li>
+                                    Provide real-time, relevant offers and advice from a virtual ‘personal shopper’
+                                </li>
+                                </ul>
+                              </Fade>
+                            </div>
+                          </Fade>
+                        </div>
+                      </Col>
+                    </Row>
+                  </Grid>
+
+            </Panel.Body>
+          </Panel>
+
+          <Panel eventKey="6" className="landing__tab__accordion__panel">
+            <Panel.Heading className="landing__tab__accordion__panel__heading">
+              <Panel.Title toggle className="landing__tab__accordion__panel__heading__title">Educational</Panel.Title>
+            </Panel.Heading>
+            <Panel.Body collapsible>
+
+            <Grid className="enterprise__tab">
+                    <Fade>
+                      <h5>As chatbot technology advances, more use cases are surfacing across nearly every sector imaginable. Recently, bots have begun being implemented in education to assist in a variety of automates tasks, and the foreseeable advantages are far-reaching.</h5>
+                    </Fade>
+                    <Row>
+                      <Col md={6}>
+                        <Fade>
+                          <img src="/static/png/enterprise/eduphone.png" />
+                        </Fade>
+                      </Col>
+                      <Col md={6}>
+                        <div className="enterprise__tab__button">
+                          <Fade bottom>
+                            <div className="enterprise__tab__button--large">
+                              <a className="button button__light button__block" onClick={this.stateFeatEd()}>Features you can offer</a>
+                              <Fade bottom collapse when={this.state.showFeatED}>
+                                <ul>
+                                  <li>
+                                    Assist with the filling of applications
+                                </li>
+                                  <li>
+                                    Accept tuition payments
+                                </li>
+                                  <li>
+                                    Assign course schedules
+                                </li>
+                                  <li>
+                                    Provide answer to commonly-asked questions
+                                </li>
+                                  <li>
+                                    Schedule meetings or phone calls
+                                </li>
+                                </ul>
+                              </Fade>
+                            </div>
+                          </Fade>
+                          <Fade bottom>
+                            <div className="enterprise__tab__button--large">
+                              <a className="button button__light button__block" onClick={this.stateBeneEd()}>Benefits</a>
+                              <Fade bottom collapse when={this.state.showBeneED}>
+                                <ul>
+                                  <li>
+                                    Provide information about deadlines, lesson plans, and curriculum
+
+                                </li>
+                                  <li>
+                                    Able to issue educator evaluations and streamline the data analysis process
+                                </li>
+                                  <li>
+                                    Help student understand difficult concepts in a way that feels as if they are being taught by another person
+                                </li>
+                                </ul>
+                              </Fade>
+                            </div>
+                          </Fade>
+                        </div>
+                      </Col>
+                    </Row>
+                  </Grid>
+
+            </Panel.Body>
+          </Panel>
+        </PanelGroup>
+
+      </div>
     );
   }
 

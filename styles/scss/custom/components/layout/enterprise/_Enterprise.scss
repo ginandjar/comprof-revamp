@@ -1,4 +1,5 @@
 .enterprise{
+  overflow: hidden;
 
   &__intro{
     padding-top: 130px;
@@ -8,6 +9,30 @@
       width: 450px;
       text-align: left;
       margin-left: 80px;
+      @media only screen and (max-width: 768px){
+        text-align: center;
+        margin-left: 160px;
+        padding-bottom: 400px;
+      }
+      @media only screen and (max-width: 425px){
+        text-align: center;
+        margin-left: 0px;
+        padding-bottom: 400px;
+        h1{
+          font-size: 32px;
+          max-width: 400px;
+          margin: auto;          
+        }
+      }
+
+      @media only screen and (max-width: 375px){
+
+        h1{
+
+          max-width: 300px;
+     
+        }
+      }
     }
 
     &__image{
@@ -51,36 +76,91 @@
         }
       }
       @media only screen and (max-width: 768px) {
+        &--phone{
+          left: -450px;
+          top: 300px;
+          max-height: 440px;
+        }
+        &--chat{
+          left: -370px;
+          top: 330px;
+          max-height: 320px;
+
+        }
       }
       @media only screen and (max-width: 425px) {
+        &--phone{
+          left: -450px;
+          top: 240px;
+          max-height: 400px;
+        }
+        &--chat{
+          left: -370px;
+          top: 270px;
+          max-height: 280px;
+
+        }
       }
-      @media only screen and (max-width: 375px) {
-      }
-      @media only screen and (max-width: 325px) {
+     
+      @media only screen and (max-width: 320px) {
+        &--phone{
+          left: -410px;
+          max-height: 350px;
+        }
+        &--chat{
+          left: -340px;
+          max-height: 230px;
+
+        }
       }
     }
   }
 
   &__success-story{
+    
     &__item{
       display: inline-block;
       &__img{
-        
+        @media only screen and (max-width: 425px) {
+          img{
+            width: 130px;
+          }
+        }
       }
 
       &__icon{
         position: relative;
-        left:-130px
+        left:-130px;
+        @media only screen and (max-width: 425px) {
+          left : 0px;
+        }
       }
     }
   }
 
   &__tab{
+    &--desktop{
+      @media only screen and (max-width: 768px) {
+        display: none;
+      }
+
+    }
+    @media only screen and (max-width: 768px) {
+      max-width: 600px;
+    }
     h5{
       padding-top: 50px;
     padding-bottom: 20px;
     font-weight: normal;
     font-size: 20px;
+    @media only screen and (max-width: 768px) {
+      padding-top: 25px;
+    padding-bottom: 10px;
+
+    }
+    @media only screen and (max-width: 425px) {
+      font-size: 16px;
+    }
     }
     img{
       width: 70%;
@@ -94,6 +174,15 @@
       &--large{
         width: 310px;
         padding-bottom: 20px;
+        @media only screen and (max-width: 768px) {
+          margin: auto;
+        }
+        @media only screen and (max-width: 475px) {
+          a{
+          font-size: 16px;
+          }
+          width: 100%;
+        }
 
       }
       ul{
@@ -160,13 +249,27 @@
       h6{
         color: white!important;
         font-size: 22px;
+        @media only screen and (max-width: 425px) {
+          font-size: 14px;
+          margin: 0 10px;
+        }
       }
     }
   }
   &__platform{
+    &__image{
+      @media only screen and (max-width: 1024px) {
+        img{
+          width: 100%;
+        }
+      }
+    }
     h6{
       font-size: 22px !important;
       margin: 20px 100px;
+      @media only screen and (max-width: 425px) {
+        margin: 10px;
+      }
     }
   }
   &__get-in-touch{
@@ -176,10 +279,16 @@
     text-align: center;
     &__col{
       padding: 70px;
+      @media only screen and (max-width: 425px) {
+        padding: 30px
+      }
     }
     h5{
       color: white;
       padding: 20px 30px;
+      @media only screen and (max-width: 425px) {
+        padding: 10px;
+      }
     }
     img{
       max-width: 100px;
@@ -199,4 +308,17 @@
   }
   
   
+}
+
+.swiper-slide {
+  @media only screen and (max-width: 425px) {
+    display: none;
+  }
+
+}
+.swiper-slide-active {
+  @media only screen and (max-width: 425px) {
+    display: block;
+  }
+
 }
