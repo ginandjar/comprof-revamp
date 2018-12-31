@@ -15,7 +15,7 @@ export default class BuildChatbot extends React.Component {
         <h1>
           Ready to build your chatbot
         </h1>
-        <ButtonLink modifier="light" href="https://platform.kata.ai">
+        <ButtonLink modifier="light" href="/contact-us">
           Get Started
         </ButtonLink>
       </Section >

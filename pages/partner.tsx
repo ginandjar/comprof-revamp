@@ -292,37 +292,43 @@ class Partner extends React.Component<Props> {
             <Fade>
               <div className="landing__list-image__item--list-image-only">
                 <img src="/static/png/partner/apply.svg" />
-                <p>
+                <h5>
                   Apply
+                </h5>
+                <p>
+                  First, complete the application form in this website
                 </p>
               </div>
             </Fade>
             <Fade>
               <div className="landing__list-image__item--list-image-only">
                 <img src="/static/png/partner/qualify.svg" />
-                <p>
+                <h5>
                   Qualify
+                </h5>
+                <p>
+                  Our team will process your application and let you know if you’re eligible
                 </p>
               </div>
             </Fade>
             <Fade>
               <div className="landing__list-image__item--list-image-only">
                 <img src="/static/png/partner/engage.svg" />
-                <p>
+                <h5>
                   Engage
+                </h5>
+                <p>
+                  Display your Kata.ai partner badge and offer Kata.ai solutions for your clients
                 </p>
               </div>
             </Fade>
-            <div className="landing__list-image__item__line">
-              <img src="/static/png/landing/line.svg" />
-            </div>
           </div>
 
         </HeroCard>
 
         <HeroCard className="platform__try-platform">
           <div className="platform__try-platform__content">
-            <h1>Get Started Ready to join Kata.ai Partnership Program?</h1>
+            <h1>Get Started<br /> Ready to join Kata.ai Partnership Program?</h1>
             <h1></h1>
             <ButtonLink modifier="light" href="https://kata-ai-partner.secure.force.com/portal/">
               Apply Now

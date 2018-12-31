@@ -96,6 +96,9 @@ app.prepare().then(() => {
   server.get('/story/veronika', (req, res) => {
     renderAndCache(req, res, '/veronikastory');
   });
+  server.get('/contact-us', (req, res) => {
+    renderAndCache(req, res, '/contact');
+  });
   // server.get('/pricing', (req, res) => {
   //   renderAndCache(req, res, '/pricing');
   // });

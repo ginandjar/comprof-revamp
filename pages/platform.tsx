@@ -138,7 +138,6 @@ class Platform extends React.Component<Props> {
                   <img src="/static/png/platform/chatbotlist.jpg" />
                 </div>
                 <div className="platform__engineering-blog__detail">
-                  <div className="platform__engineering-blog__category">Business</div>
                   <div className="platform__engineering-blog__title">
                     Kata Platform 2.5 : Better Platform for Better Chatbots
                   </div>
@@ -157,7 +156,6 @@ class Platform extends React.Component<Props> {
                   <img src="/static/png/platform/chatbotlist.jpg" />
                 </div>
                 <div className="platform__engineering-blog__detail">
-                  <div className="platform__engineering-blog__category">Business</div>
                   <div className="platform__engineering-blog__title">
                     Kata Platform 2.5 : Better Platform for Better Chatbots
                   </div>
@@ -213,8 +211,8 @@ class Platform extends React.Component<Props> {
         </HeroCard>
         <HeroCard className="platform__try-platform">
           <div className="platform__try-platform__content">
-            <h1>Start free and scale as you grow</h1>
-            <ButtonLink modifier="light" href="https://kata-ai-partner.secure.force.com/portal/">
+            <h1>Start free  and scale as you grow</h1>
+            <ButtonLink modifier="light" href="https://platform.kata.ai/login">
               Try Kata Platform
             </ButtonLink>
           </div>

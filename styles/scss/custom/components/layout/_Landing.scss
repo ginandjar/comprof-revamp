@@ -6,8 +6,11 @@
   }
 
   &__modal{
-    padding-left: 70px !important;
+    padding-left: 70px;
     top:130px;
+    @media only screen and (max-width: 768px) {
+      padding-left: 0px;
+    }
   }
 
   &__hero{
@@ -19,12 +22,16 @@
       vertical-align: middle;
       @media only screen and (max-width: 768px) {
         width: 100%;
-      text-align: center!important;
-      margin-left: 0px;
+        text-align: center!important;
+        margin-left: 0px;
       }
   
       h1{
         margin: 0px;
+        @media only screen and (max-width: 768px) {
+          max-width: 95%;
+          margin: 10px auto;
+        }
       }
       vertical-align: middle;
       p{
@@ -33,6 +40,9 @@
         font-size: 22px;
         @media only screen and (max-width: 768px) {
           max-width: unset;
+          font-size: 16px;
+          max-width: 80%;
+          margin: 20px auto;
         }
       }
     }
@@ -106,12 +116,12 @@
         font-family: Museo Sans !important;
         color: white !important;
         @media only screen and (max-width: 425px) {
-          font-size: 32px;
+          font-size: 24px;
     max-width: 400px;
     margin: auto;
         }
 
-        @media only screen and (max-width: 320px) {
+        @media only screen and (max-width: 375px) {
 
           max-width: 300px;
 
@@ -133,7 +143,7 @@
         @media only screen and (max-width: 425px) {
           font-size: 16px
         }
-        @media only screen and (max-width: 320px) {
+        @media only screen and (max-width: 375px) {
           max-width: 300px !important;
         }
 
@@ -169,7 +179,15 @@
         }
         &--white{
           width: 100%;
-          top: -120px;
+          top: 70px;
+          position: absolute;
+          z-index: 20;
+        }
+      }
+      @media only screen and (max-width: 1440px) {
+        &--white{
+          width: 100%;
+          top: 420px;
           position: absolute;
           z-index: 20;
         }
@@ -193,7 +211,7 @@
           right: -70px;
         }
         &--white{
-          top: 180px;
+          top: 560px;
         }
       }
       @media only screen and (max-width: 768px) {
@@ -220,7 +238,7 @@
           top:350px
         }
         &--white{
-          top: 270px;
+          top: 540px;
         }
       }
 
@@ -248,19 +266,15 @@
           top:350px
         }
         &--white{
-          top:400px;
+          top:550px;
         }
       }
 
       @media only screen and (max-width: 320px) {
         &--white{
-          top:480px;
+          top:590px;
         }
-      }
-      
-      
-
-      
+      } 
     }
   }
 
@@ -275,6 +289,21 @@
         overflow-x: scroll;
         overflow-y: hidden;
         white-space: nowrap;
+        >div>p{
+          font-size: 16px;
+          max-width: 300px !important;
+          white-space: normal;
+        }
+        
+      }
+      @media only screen and (max-width: 1024px) {
+        >div>p{
+        max-width: 220px !important;
+        }
+      }
+      >div>p{
+      font-size: 16px;
+      max-width: 300px ;
       }
 
     }

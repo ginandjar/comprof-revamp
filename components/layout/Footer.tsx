@@ -67,12 +67,10 @@ export default class Footer extends React.Component<Props> {
                       <ul className="footer-menu--nav">
 
                         <li>
-                          <a>Chatbot Solutions</a>
+                          <Link href="/enterprise">
+                            <a>Chatbot Solutions</a>
+                          </Link>
                         </li>
-                        <li>
-                          <a>Success Story</a>
-                        </li>
-
                       </ul>
 
                     </div>
@@ -98,12 +96,10 @@ export default class Footer extends React.Component<Props> {
                       <ul className="footer-menu--nav">
 
                         <li>
-                          <a href="">Kata Partner</a>
+                          <Link href="/partnership">
+                            <a>Kata Partner</a>
+                          </Link>
                         </li>
-                        <li>
-                          <a href="">Become a Partner</a>
-                        </li>
-
                       </ul>
 
                     </div>
@@ -143,13 +139,19 @@ export default class Footer extends React.Component<Props> {
                       <ul className="footer-menu--nav">
 
                         <li>
-                          <a href="">About Us</a>
+                          <Link href="/company">
+                            <a>About Us</a>
+                          </Link>
                         </li>
                         <li>
-                          <a href="#">Careers</a>
+                          <Link href="/career">
+                            <a href="#">Careers</a>
+                          </Link>
                         </li>
                         <li>
-                          <a href="/research">Get in Touch</a>
+                          <Link href="/contact-us">
+                            <a>Get in Touch</a>
+                          </Link>
                         </li>
 
                       </ul>

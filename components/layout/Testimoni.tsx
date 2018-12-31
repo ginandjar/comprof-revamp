@@ -67,6 +67,54 @@ export default class Testimoni extends React.Component {
                   </Col>
                 </Media>
               </Carousel.Item>
+              <Carousel.Item>
+                <Media className="media-section testimoni__slider">
+
+                  <Col md={6}>
+                    <img src="/static/png/career/amanda.png" alt="" />
+                  </Col>
+                  <Col md={6}>
+                    <h6>
+                      Amanda - Associate Product Manager
+                    </h6>
+                    <p>
+                      “I’m really happy to be a part of Kata.ai’s team. The work environment in here is very flexible, and we always have an opportunity to learn something new.”
+                    </p>
+                  </Col>
+                </Media>
+              </Carousel.Item>
+              <Carousel.Item>
+                <Media className="media-section testimoni__slider">
+
+                  <Col md={6}>
+                    <img src="/static/png/career/titih.png" alt="" />
+                  </Col>
+                  <Col md={6}>
+                    <h6>
+                      Titih - Project Manager
+                    </h6>
+                    <p>
+                      “I feel very lucky to be a part of this cool team, working in a smart environment that helps me grow to become a valuable member of the team.”
+                    </p>
+                  </Col>
+                </Media>
+              </Carousel.Item>
+              <Carousel.Item>
+                <Media className="media-section testimoni__slider">
+
+                  <Col md={6}>
+                    <img src="/static/png/career/selly.png" alt="" />
+                  </Col>
+                  <Col md={6}>
+                    <h6>
+                      Selly - Finance Manager
+                    </h6>
+                    <p>
+                      “Of course, I’m so happy to work in here, I always have an opportunity to learn something new. Although, I am in Finance & Accounting division, but I am able to learn about business and product. Its helps my role and develop my skills further.”
+                    </p>
+                  </Col>
+                </Media>
+              </Carousel.Item>
 
             </Carousel>
           </Row>

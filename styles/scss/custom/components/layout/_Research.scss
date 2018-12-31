@@ -2,11 +2,21 @@
   font-family: 'Museo Sans' !important;
 
   &__intro{
+    &__content{
+      
+    }
     &__img{
       position:relative;
+      @media only screen and (max-width: 768px) {
+        position: absolute;
+        top:240px;
+      }
+      @media only screen and (max-width: 320px) {
+        left:20px;
+      }
 
       &__content{
-        height: auto;
+        height: auto !important;
         &--left{
           width:50%;
           display: inline-block;
@@ -39,10 +49,19 @@
       text-align:left;
       position: relative;
       top: -40px;
+      @media only screen and (max-width: 768px) {
+        text-align: center;
+        margin: 0px auto;
+        padding-bottom: 50px;
+        width: 300px;
+        margin-top: -400px;
+      }
+      @media only screen and (max-width: 425px) {
+        margin-top: -300px
+      }
 
       h1{
         font-weight: 500;
-        font-size: 32px;
         margin-bottom:30px;
       }
     }
@@ -51,6 +70,9 @@
   &__research-container{
     max-width: 1100px;
     margin: 80px auto;
+    @media only screen and (max-width: 320px) {
+      margin: 0 auto 60px;
+    }
   }
 
   &__input-search{
@@ -77,6 +99,12 @@
     border-radius: 10px;
     box-shadow: 0px 3px 6px rgba(0, 0, 0, 0.16);
     margin: 10px 30px;
+    @media only screen and (max-width: 768px) {
+      width: 94%;
+    }
+    @media only screen and (max-width: 432px) {
+      width: 84%;
+    }
 
     &__descr{
       padding:10px;

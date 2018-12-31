@@ -3,6 +3,14 @@
   margin: 0 auto;
   font-family: 'Museo Sans' !important;
   padding-top: 150px;
+
+  @media only screen and (max-width: 1024px) {
+    margin: 0 30px;
+  }
+  @media only screen and (max-width: 768px) {
+    padding-top: 120px;
+    margin: 0 20px;
+  }
   
   img{
     max-width: 100%;
@@ -16,6 +24,10 @@
     font-size: 32px;
     font-weight: 700;
     max-width: 80%;
+
+    @media only screen and (max-width: 768px) {
+      font-size: 24px;
+    }
   }
 
   &__descr{
@@ -27,6 +39,9 @@
     }
     p{
       font-size: 18px;
+      @media only screen and (max-width: 768px) {
+        font-size: 16px;
+      }
     }
   }
 
@@ -36,11 +51,18 @@
     border-bottom: 1px solid #FFFFFF;
     margin-bottom: 50px;
     margin-left:-20px !important;
+    @media only screen and (max-width: 425px) {
 
+      margin: 0 10px !important;
+
+    }
 
     &__detail{
       margin-bottom: 50px;
-      font-size: 18px
+      font-size: 18px;
+      @media only screen and (max-width: 768px) {
+        font-size: 16px;
+      }
     }
 
   }
@@ -63,6 +85,9 @@
     &__title{
       font-weight: 500;
       font-size: 32px;
+      @media only screen and (max-width: 768px) {
+        font-size: 24px;
+      }
     }
 
   }

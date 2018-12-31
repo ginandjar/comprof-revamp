@@ -57,13 +57,50 @@
     img{
       margin: 30px 30px;
     }
+    &--display{
+
+        display: block !important;
+
+    }
     >div>ul{
-      margin-top: 30px;
-      li{
+      margin: 80px auto;
+      list-style: none;
+      width: 80%;
+      padding: 0;
+      >li{
+        
+        padding: 10px;
         a{
-        color: white;
+          svg{
+            float: right;
+          }
+        }
+        
+        
+        ul{
+          list-style: none;
+          padding-left: 5px;
+          display: none;
+          li{
+            padding: 10px;
+
+          }
+           
         }
       }
+      a{
+        display: block;
+        width: 100%;
+        box-shadow: none;
+        font-size: 20px;
+        line-height: 21px;
+        color: rgb(255, 255, 255);
+        padding: 14px 0px;
+        background: transparent;
+        border-radius: 0px;
+        border-bottom: 1px solid rgba(255, 255, 255, 0.5);
+      }
+      
     }
     @media only screen and (min-width: 769px) {
       display: none;

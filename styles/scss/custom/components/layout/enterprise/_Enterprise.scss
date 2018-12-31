@@ -19,7 +19,7 @@
         margin-left: 0px;
         padding-bottom: 400px;
         h1{
-          font-size: 32px;
+          font-size: 24px;
           max-width: 400px;
           margin: auto;          
         }
@@ -205,6 +205,8 @@
       flex-direction: row;
       list-style: none;
       overflow-x: scroll;
+      overflow-y: hidden;
+      white-space: nowrap;
       li{
         will-change: transform, animation, opacity;
         text-align: center;
