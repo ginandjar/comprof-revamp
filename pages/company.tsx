@@ -347,8 +347,8 @@ class Company extends React.Component<Props> {
             <Panel.Heading className="landing__tab__accordion__panel__heading">
               <Panel.Title toggle className="landing__tab__accordion__panel__heading__title">VP Of Product & Engineering</Panel.Title>
             </Panel.Heading>
-            <Panel.Body collapsible>>
-                  <Hero className="hero__center-container">
+            <Panel.Body collapsible>
+              <Hero className="hero__center-container">
                 <div className="company__tab__image">
                   <img src="/static/png/company/management/pria.png" />
                 </div>
