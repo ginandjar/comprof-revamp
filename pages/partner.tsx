@@ -139,32 +139,18 @@ class Partner extends React.Component<Props> {
         </HeroCard>
 
 
-        <HeroCard title="Our Trusted Partner" className="partner__hero">
+        <HeroCard title="Our Trusted Partners" className="partner__hero">
           <div className="partner__list-image">
             <div className="partner__list-image__item--list-image-only">
-              <img src="/static/png/partner/trusted/medlink.png" />
+              <img src="/static/png/partner/trusted/accenture.png" />
             </div>
             <div className="partner__list-image__item--list-image-only">
-              <img src="/static/png/partner/trusted/nawatech.png" />
+              <img src="/static/png/partner/trusted/facebook.png" />
             </div>
             <div className="partner__list-image__item--list-image-only">
               <img src="/static/png/partner/trusted/halosis.png" />
             </div>
-            <div className="partner__list-image__item--list-image-only">
-              <img src="/static/png/partner/trusted/selindo.png" />
-            </div>
-            <div className="partner__list-image__item--list-image-only">
-              <img src="/static/png/partner/trusted/radyyalabs.png" />
-            </div>
-            <div className="partner__list-image__item--list-image-only">
-              <img src="/static/png/partner/trusted/qiscus.png" />
-            </div>
-            <div className="partner__list-image__item--list-image-only">
-              <img src="/static/png/partner/trusted/sprint.png" />
-            </div>
-            <div className="partner__list-image__item--list-image-only">
-              <img src="/static/png/partner/trusted/salt.png" />
-            </div>
+
             <div className="partner__list-image__item--list-image-only">
               <img src="/static/png/partner/trusted/infomedia.png" />
             </div>
@@ -172,7 +158,41 @@ class Partner extends React.Component<Props> {
               <img src="/static/png/partner/trusted/jatis.png" />
             </div>
             <div className="partner__list-image__item--list-image-only">
+              <img src="/static/png/partner/trusted/line.png" />
+            </div>
+
+            <div className="partner__list-image__item--list-image-only">
+              <img src="/static/png/partner/trusted/microsoft.png" />
+            </div>
+            <div className="partner__list-image__item--list-image-only">
+              <img src="/static/png/partner/trusted/medlink.png" />
+            </div>
+            <div className="partner__list-image__item--list-image-only">
               <img src="/static/png/partner/trusted/mitra.png" />
+            </div>
+
+            <div className="partner__list-image__item--list-image-only">
+              <img src="/static/png/partner/trusted/nawatech.png" />
+            </div>
+            <div className="partner__list-image__item--list-image-only">
+              <img src="/static/png/partner/trusted/qiscus.png" />
+            </div>
+            <div className="partner__list-image__item--list-image-only">
+              <img src="/static/png/partner/trusted/radyyalabs.png" />
+            </div>
+
+            <div className="partner__list-image__item--list-image-only">
+              <img src="/static/png/partner/trusted/selindo.png" />
+            </div>
+            <div className="partner__list-image__item--list-image-only">
+              <img src="/static/png/partner/trusted/sprint.png" />
+            </div>
+            <div className="partner__list-image__item--list-image-only">
+              <img src="/static/png/partner/trusted/salt.png" />
+            </div>
+
+            <div className="partner__list-image__item--list-image-only">
+              <img src="/static/png/partner/trusted/twitter.png" />
             </div>
 
           </div>
@@ -247,7 +267,7 @@ class Partner extends React.Component<Props> {
 
             <table>
               <tr>
-                <th>IncentiveBenefit</th>
+                <th>Incentive Benefit</th>
                 <th>Regular</th>
                 <th>Trusted Partner</th>
               </tr>
@@ -271,7 +291,7 @@ class Partner extends React.Component<Props> {
                 <th>Trusted Partner</th>
               </tr>
               <tr>
-                <td>Managed by SALES BD Team</td>
+                <td>Sales/BD</td>
                 <td>No</td>
                 <td>Eligible</td>
               </tr>
@@ -286,7 +306,7 @@ class Partner extends React.Component<Props> {
 
         </HeroCard>
 
-        <HeroCard title="Work with us to build the best chatbots for any industry" className="landing__hero">
+        <HeroCard title="The Application Process" className="landing__hero">
 
           <div className="landing__list-image landing__list-image--no-wrap">
             <Fade>
@@ -322,13 +342,16 @@ class Partner extends React.Component<Props> {
                 </p>
               </div>
             </Fade>
+            <div className="landing__list-image__item__line partner__line">
+              <img src="/static/png/landing/line.svg" />
+            </div>
           </div>
 
         </HeroCard>
 
         <HeroCard className="platform__try-platform">
           <div className="platform__try-platform__content">
-            <h1>Get Started<br /> Ready to join Kata.ai Partnership Program?</h1>
+            <h1>Ready to join Kata.ai Partnership Program?</h1>
             <h1></h1>
             <ButtonLink modifier="light" href="https://kata-ai-partner.secure.force.com/portal/">
               Apply Now

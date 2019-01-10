@@ -210,6 +210,9 @@
   &__tab{
     text-align: left;
     display: block;
+    @media only screen and (max-width: 768px) {
+      display: none;
+    }
     
     &__image{
       display: inline-block;
@@ -223,11 +226,11 @@
        
       }
 
-      @media only screen and (max-width: 432px) {
+      @media only screen and (max-width: 425px) {
         width: 100%;
         img{
           width: 70%;
-          margin: 0 60px
+          margin: 0 auto;
         }
        
       }
@@ -251,7 +254,7 @@
 
       @media only screen and (max-width: 425px) {
 
-        margin: 30px 60px;
+        margin: 30px auto;
        max-width: 300px;
       
       }

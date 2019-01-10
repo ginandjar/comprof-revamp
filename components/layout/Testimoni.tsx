@@ -116,6 +116,23 @@ export default class Testimoni extends React.Component {
                 </Media>
               </Carousel.Item>
 
+              <Carousel.Item>
+                <Media className="media-section testimoni__slider">
+
+                  <Col md={6}>
+                    <img src="/static/png/career/tri.png" alt="" />
+                  </Col>
+                  <Col md={6}>
+                    <h6>
+                      Tri - Senior UI/UX Designer
+                    </h6>
+                    <p>
+                      “Working in Kata.ai is really challenging for me, because we have to improve quickly in handling every problem. But the perk is I could work with amazing coworkers and great team, last but not least our hard work is always well appreciated.”
+                    </p>
+                  </Col>
+                </Media>
+              </Carousel.Item>
+
             </Carousel>
           </Row>
         </Grid>

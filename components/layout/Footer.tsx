@@ -76,7 +76,7 @@ export default class Footer extends React.Component<Props> {
                     </div>
                     <div className="footer-menu__item">
                       <h6 className="footer-menu--title">
-                        Technology
+                        Product
                       </h6>
 
                       <ul className="footer-menu--nav">

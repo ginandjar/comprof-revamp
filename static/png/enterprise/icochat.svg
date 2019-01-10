@@ -1,18 +1,30 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 91.18 91.18">
   <defs>
     <style>
+      .cls-1, .cls-4 {
+        fill: none;
+      }
+
       .cls-1 {
-        fill: #fff;
+        stroke: #fff;
+        stroke-width: 2px;
       }
 
       .cls-2 {
-        fill: #006ee5;
+        fill: #fff;
+      }
+
+      .cls-3 {
+        stroke: none;
       }
     </style>
   </defs>
-  <g id="Group_3016" data-name="Group 3016" transform="translate(22258 -4863)">
-    <circle id="Ellipse_3912" data-name="Ellipse 3912" class="cls-1" cx="45.59" cy="45.59" r="45.59" transform="translate(-22258 4863)"/>
-    <g id="chat" transform="translate(-22240.406 4835.364)">
+  <g id="Group_3024" data-name="Group 3024" transform="translate(22257 -4315)">
+    <g id="Ellipse_4004" data-name="Ellipse 4004" class="cls-1" transform="translate(-22257 4315)">
+      <circle class="cls-3" cx="45.59" cy="45.59" r="45.59"/>
+      <circle class="cls-4" cx="45.59" cy="45.59" r="44.59"/>
+    </g>
+    <g id="chat" transform="translate(-22239.406 4287.364)">
       <g id="Group_2295" data-name="Group 2295" transform="translate(0 50.758)">
         <g id="Group_2294" data-name="Group 2294" transform="translate(0)">
           <path id="Path_1855" data-name="Path 1855" class="cls-2" d="M41.095,50.758H3.182A3.186,3.186,0,0,0,0,53.94V76.686a3.186,3.186,0,0,0,3.182,3.182H5.641v8.468a1.333,1.333,0,0,0,2.276.943l9.41-9.41h1.888a1.333,1.333,0,0,0,0-2.667s-2.5,0-2.531,0a1.328,1.328,0,0,0-.852.386L8.307,85.117s0-6.666-.007-6.7A1.333,1.333,0,0,0,6.973,77.2H3.182a.516.516,0,0,1-.516-.516V53.94a.516.516,0,0,1,.516-.516H41.095a.516.516,0,0,1,.516.516v8.726a1.333,1.333,0,1,0,2.666,0V53.94A3.186,3.186,0,0,0,41.095,50.758Z" transform="translate(0 -50.758)"/>

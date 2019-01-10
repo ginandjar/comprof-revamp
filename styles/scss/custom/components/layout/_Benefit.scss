@@ -6,6 +6,11 @@
   }
   p{
     font-size: 22px;
+    @media only screen and (max-width: 768px) {
+      font-size: 16px !important;
+      max-width: 90%;
+      margin: auto;
+    }
   }
   &__nav-bar{
     margin: auto;
@@ -21,9 +26,12 @@
     }
     >ul{
       display: flex;
-      overflow-x: scroll;
-      overflow-y: hidden;
-      white-space: nowrap;
+      @media only screen and (max-width: 768px) {
+        
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+      }
       >li{
         a{
           background-color: transparent !important;
@@ -45,6 +53,10 @@
       font-size: 22px;
       max-width: 500px;
       margin:  20px auto;
+      @media only screen and (max-width: 768px) {
+        font-size: 16px !important;
+        max-width: 90%;
+      }
     }
 
   }

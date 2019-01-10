@@ -14,7 +14,7 @@ import Tab from '../components/layout/Tab';
 import FlexBox from '../components/layout/FlexBox';
 import ButtonLink from '../components/links/ButtonLink';
 import TabItem from '../components/layout/TabItem';
-import { Image } from 'react-bootstrap';
+import { Image, Panel, PanelGroup } from 'react-bootstrap';
 import Footer from '../components/layout/Footer';
 
 interface Props {
@@ -127,7 +127,7 @@ class Company extends React.Component<Props> {
                 The History
               </h1>
               <p className="company__hero__text__history__des " >
-                Established in 2015, we started our journey as YesBoss, offering virtual assistant service through SMS and a mobile app. Along the way, we learned that we wanted a business that was more impactful and scaleable. With the man-power heavy B2C service provided by, so in 2016 YesBoss is no longer active and we have to pivot our business into the B2B segment with the launch of Kata.ai <br /><br />Our goal in Kata.ai is to offers natural language dialogue engine that enables brands and enterprises to build their own chatbots to perform conversational activities ranged from product marketing, commerce, to behavioral data gathering via commonly-used social and chatp apps like LINE, Facebook, Twitter, Telegram, Slack, BBM, and WhatsApp. Helping business to understand the behavior of their customers and build better relationship. <br /><br />Our journey hasn’t always been easy, but we embrace it to learn and get better. Our team is aligned and working hard to make great product and solutions.
+                Established in 2015, we started our journey as YesBoss, offering virtual assistant service through SMS and a mobile app. Along the way, we learned that we wanted a business that was more impactful and scaleable. With the man-power heavy B2C service provided by, so in 2016 YesBoss was no longer active and wehad to pivot our business into the B2Bsegment with the launch of Kata.ai <br /><br />Our goal in Kata.ai is to offer natural language dialogue engine that enables brands and enterprises to build their own chatbots to perform conversational activities ranged from product marketing, commerce, to behavioral data gathering via commonly used social and chatp apps like LINE, Facebook, Twitter, Telegram, Slack, BBM, and WhatsApp. Helping business to understand the behavior of their customers and build better relationship. <br /><br />Our journey hasn’t always been easy, but we embrace it to learn and get better. Our team is aligned and working hard to make great product and solutions.
               </p>
               <img src="/static/png/company/dot.png" className="company__hero__text__history__dot" />
               <img src="/static/png/company/cover.png" className="company__hero__text__history__cover" />
@@ -161,7 +161,7 @@ class Company extends React.Component<Props> {
                             Irzan Raditya
                           </h6>
                           <p>
-                            Born in 1988, he is a young entrepreneur with a deep exposure and passion in the digital and technology sphere. He acquired his Bachelor of Science degree in Computer Science from Hochschule für Technik und Wirtschaft (HTW) Berlin in 2012. Prior to returning to his home country in Indonesia, he worked as Feature Engineer at Zolando (subsdiary of Rocket Internet) and TakeAway.com. After exploring valuable experience in Germany for years, Irzan decided to come home to Indonesia and exercised his passion to build his own business. He founded several startup such as Amplitweet, Cape&Fly, Rumah Diaspora, before finally building YesBoss a company that offers virtual assistant service, which became Kata.ai now after the company pivot into B2B business that offers AI technology for corporations.
+                            Born in 1988, he is a young entrepreneur with a deep exposure and passion in the digital and technology sphere. He acquired his Bachelor of Science degree in Computer Science from Hochschule für Technik und Wirtschaft (HTW) Berlin in 2012. <br /> <br />Prior to returning to his home country in Indonesia, he worked as Feature Engineer at Zolando (subsdiary of Rocket Internet) and TakeAway.com. After exploring valuable experience in Germany for years, Irzan decided to come home to Indonesia and exercised his passion to build his own business. He founded several startup such as Amplitweet, Cape&Fly, Rumah Diaspora, before finally building YesBoss<br /> <br /> a company that offers virtual assistant service, which became Kata.ai now after the company pivot into B2B business that offers AI technology for corporations.
                           </p>
                           <a href=" https://www.linkedin.com/in/irzanraditya/" target="_blank"><Image src="/static/png/company/linkedin.svg" /></a>
                         </div>
@@ -169,7 +169,7 @@ class Company extends React.Component<Props> {
                     </div>
                   </div>
                 </div>
-
+                {/* 
                 <div className="swiper-slide">
                   <div className="company__tab">
                     <div>
@@ -189,7 +189,7 @@ class Company extends React.Component<Props> {
                       </Hero>
                     </div>
                   </div>
-                </div>
+                </div> */}
 
                 <div className="swiper-slide">
                   <div className="company__tab">
@@ -269,13 +269,104 @@ class Company extends React.Component<Props> {
 
   renderTabMenu() {
     return (
-      <Tab>
-        <TabItem item="CEO" modifier={this.state.currentIndex == 0 ? "tab-item--selected" : undefined} onClick={this.tabSwipeClick(0)} />
-        <TabItem item="CTO" modifier={this.state.currentIndex == 1 ? "tab-item--selected" : undefined} onClick={this.tabSwipeClick(1)} />
-        <TabItem item="CFO" modifier={this.state.currentIndex == 2 ? "tab-item--selected" : undefined} onClick={this.tabSwipeClick(2)} />
-        <TabItem item="CMO" modifier={this.state.currentIndex == 3 ? "tab-item--selected" : undefined} onClick={this.tabSwipeClick(3)} />
-        <TabItem item="VP Of Product & Engineering" modifier={this.state.currentIndex == 4 ? "tab-item--selected" : undefined} onClick={this.tabSwipeClick(4)} />
-      </Tab>
+      <div>
+        <Tab>
+          <TabItem item="CEO" modifier={this.state.currentIndex == 0 ? "tab-item--selected" : undefined} onClick={this.tabSwipeClick(0)} />
+          {/* <TabItem item="CTO" modifier={this.state.currentIndex == 1 ? "tab-item--selected" : undefined} onClick={this.tabSwipeClick(1)} /> */}
+          <TabItem item="CFO" modifier={this.state.currentIndex == 1 ? "tab-item--selected" : undefined} onClick={this.tabSwipeClick(1)} />
+          <TabItem item="CMO" modifier={this.state.currentIndex == 2 ? "tab-item--selected" : undefined} onClick={this.tabSwipeClick(2)} />
+          <TabItem item="VP Of Product & Engineering" modifier={this.state.currentIndex == 3 ? "tab-item--selected" : undefined} onClick={this.tabSwipeClick(3)} />
+        </Tab>
+        <PanelGroup accordion id="accordion-example" className="landing__tab__accordion" defaultActiveKey="1">
+          <Panel eventKey="1" className="landing__tab__accordion__panel">
+            <Panel.Heading className="landing__tab__accordion__panel__heading">
+              <Panel.Title toggle className="landing__tab__accordion__panel__heading__title">CEO</Panel.Title>
+            </Panel.Heading>
+            <Panel.Body collapsible>
+
+              <Hero className="hero__center-container">
+                <div className="company__tab__image">
+                  <img src="/static/png/company/management/icn.png" />
+                </div>
+                <div className="company__tab__text">
+                  <h6>
+                    Irzan Raditya
+                          </h6>
+                  <p>
+                    Born in 1988, he is a young entrepreneur with a deep exposure and passion in the digital and technology sphere. He acquired his Bachelor of Science degree in Computer Science from Hochschule für Technik und Wirtschaft (HTW) Berlin in 2012. <br /> <br />Prior to returning to his home country in Indonesia, he worked as Feature Engineer at Zolando (subsdiary of Rocket Internet) and TakeAway.com. After exploring valuable experience in Germany for years, Irzan decided to come home to Indonesia and exercised his passion to build his own business. He founded several startup such as Amplitweet, Cape&Fly, Rumah Diaspora, before finally building YesBoss<br /> <br /> a company that offers virtual assistant service, which became Kata.ai now after the company pivot into B2B business that offers AI technology for corporations.
+                          </p>
+                  <a href=" https://www.linkedin.com/in/irzanraditya/" target="_blank"><Image src="/static/png/company/linkedin.svg" /></a>
+                </div>
+              </Hero>
+
+            </Panel.Body>
+          </Panel>
+          <Panel eventKey="2" className="landing__tab__accordion__panel">
+            <Panel.Heading className="landing__tab__accordion__panel__heading">
+              <Panel.Title toggle className="landing__tab__accordion__panel__heading__title">CFO</Panel.Title>
+            </Panel.Heading>
+            <Panel.Body collapsible>
+              <Hero className="hero__center-container">
+                <div className="company__tab__image">
+                  <img src="/static/png/company/management/wahyu.png" />
+                </div>
+                <div className="company__tab__text">
+                  <h6>
+                    Wahyu Wrehasnaya
+                          </h6>
+                  <p>
+                    Wahyu Wrehasnaya is the Co-Founder and Chief Financial Officer of Kata.ai, the pioneer of Artificial Intelligence in Indonesia that successfully built one of the first Natural Language Understanding of Bahasa Indonesia. Before pivoting to focus on the development of AI technology for B2B markets, the company offers a personal virtual assistant service under the name of YesBoss. At YesBoss, Wahyu help the role of Co-Founder and Chief Customer Officer, leading the service & operational team in Indonesia. Prior to that, Wahyu, Co-Founded Rumah Diaspora, an Air bnb like for Indonesian Diaspora overseas and was working at Nasdaq OMX Germany, focusing on corporate service departments. As an entrepreneur at heart, Wahyu believes that FAITH (Fast, Ask Why, Innovation, Though, Humble) are the key values that every entrepreneur should hold on to. Wahyu holds a B.Sc, in Business Economics from the University of Martin Luther.
+                          </p>
+                  <a href="https://www.linkedin.com/in/wahyu-wrehasnaya-0a5ba536/" target="_blank"><Image src="/static/png/company/linkedin.svg" /></a>
+                </div>
+              </Hero>
+            </Panel.Body>
+          </Panel>
+          <Panel eventKey="3" className="landing__tab__accordion__panel">
+            <Panel.Heading className="landing__tab__accordion__panel__heading">
+              <Panel.Title toggle className="landing__tab__accordion__panel__heading__title">CMO</Panel.Title>
+            </Panel.Heading>
+            <Panel.Body collapsible>
+              <Hero className="hero__center-container">
+                <div className="company__tab__image">
+                  <img src="/static/png/company/management/rey.png" />
+                </div>
+                <div className="company__tab__text">
+                  <h6>
+                    Reynir Fauzan
+                          </h6>
+                  <p>
+                    Reynir is the CMO and Co-Founder of Kata.ai, the leading B2B Artificial Intelligence solution in Indonesia, previously operated as YesBoss. Other than leading the marketing division, his main responsibility is to drive the growth of Kata’s sales and business development. Before he sells bots for a living, Reynir has worked in banking and financial services industry. He also holds a degree in Marketing from BINUS International University, and a degree in International Trade from Cologne Business School Germany. With his fellow co-founders and amazing team, Reynir is helping business to understand their customer better by humanizing digital interactions.
+                          </p>
+                  <a href="https://www.linkedin.com/in/rfauzan/" target="_blank"><Image src="/static/png/company/linkedin.svg" /></a>
+                </div>
+              </Hero>
+            </Panel.Body>
+          </Panel>
+          <Panel eventKey="4" className="landing__tab__accordion__panel">
+            <Panel.Heading className="landing__tab__accordion__panel__heading">
+              <Panel.Title toggle className="landing__tab__accordion__panel__heading__title">VP Of Product & Engineering</Panel.Title>
+            </Panel.Heading>
+            <Panel.Body collapsible>>
+                  <Hero className="hero__center-container">
+                <div className="company__tab__image">
+                  <img src="/static/png/company/management/pria.png" />
+                </div>
+                <div className="company__tab__text">
+                  <h6>
+                    Pria Purnama
+                          </h6>
+                  <p>
+                    Pria Purnama is the VP of Product & Engineering of Kata.ai. In Kata.ai, he is in charge of managing product and engineering team in delivering all of Kata.ai’s products. Prior to this role, he started out his career by developing websites for Water & Stone, Ogilvy Sydney. He then pivoted to building mobile applications at Ice House and Bridestory, where he discovered that he loves working with engineers and building product. Finally, before becoming a VP at Kata.ai, Pria served as VP of Product and Engineering C88 Financial Technologies (CekAja).
+                          </p>
+                  <a href="https://www.linkedin.com/in/priapurnama/" target="_blank"><Image src="/static/png/company/linkedin.svg" /></a>
+                </div>
+              </Hero>
+
+            </Panel.Body>
+          </Panel>
+        </PanelGroup>
+      </div>
     );
   }
 

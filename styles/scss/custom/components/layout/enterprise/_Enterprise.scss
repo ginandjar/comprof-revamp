@@ -117,6 +117,28 @@
   }
 
   &__success-story{
+
+    &__next{
+      transform: translate3d(-240px, 0px, -1256.89px) rotateX(0deg) rotateY(0deg) !important;
+    }
+
+    &__prev{
+      transform: translate3d(240px, 0px, -1256.89px) rotateX(0deg) rotateY(0deg) !important;
+
+    }
+
+    &--prev{
+      background-image: url('/static/png/enterprise/prev.svg') !important;
+      width: 100px !important;
+      height: 100px !important;
+      background-size: 100px 100px !important;
+    }
+    &--next{
+      background-image: url('/static/png/enterprise/next.svg') !important;
+      width: 100px !important;
+      height: 100px !important;
+      background-size: 100px 100px !important;
+    }
     
     &__item{
       display: inline-block;
@@ -171,6 +193,9 @@
 
     &__button{
       margin-top:200px;
+      @media only screen and (max-width: 768px) {
+        margin-top:60px;
+      }
       &--large{
         width: 310px;
         padding-bottom: 20px;
@@ -204,9 +229,13 @@
       display: flex;
       flex-direction: row;
       list-style: none;
-      overflow-x: scroll;
-      overflow-y: hidden;
-      white-space: nowrap;
+
+      @media only screen and (max-width: 1024px) {
+        overflow-x: scroll;
+        overflow-y: hidden;
+        white-space: nowrap;
+      }
+      
       li{
         will-change: transform, animation, opacity;
         text-align: center;

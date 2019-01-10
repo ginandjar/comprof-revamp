@@ -43,7 +43,7 @@ class DetailStory extends React.Component<Props> {
             <div className="detailstory__intro__text">
 
               <h1>
-                Jemma
+                Veronika
               </h1>
               <h2>
                 Intelligent customer support for Telco

@@ -1,18 +1,30 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 91.18 91.18">
   <defs>
     <style>
+      .cls-1, .cls-4 {
+        fill: none;
+      }
+
       .cls-1 {
-        fill: #fff;
+        stroke: #fff;
+        stroke-width: 2px;
       }
 
       .cls-2 {
-        fill: #006ee5;
+        fill: #fff;
+      }
+
+      .cls-3 {
+        stroke: none;
       }
     </style>
   </defs>
-  <g id="Group_3023" data-name="Group 3023" transform="translate(21214.18 -4863)">
-    <circle id="Ellipse_3911" data-name="Ellipse 3911" class="cls-1" cx="45.59" cy="45.59" r="45.59" transform="translate(-21214.18 4863)"/>
-    <g id="customer-support" transform="translate(-21189.238 4888.045)">
+  <g id="Group_3031" data-name="Group 3031" transform="translate(21213.18 -4315)">
+    <g id="Ellipse_3998" data-name="Ellipse 3998" class="cls-1" transform="translate(-21213.18 4315)">
+      <circle class="cls-3" cx="45.59" cy="45.59" r="45.59"/>
+      <circle class="cls-4" cx="45.59" cy="45.59" r="44.59"/>
+    </g>
+    <g id="customer-support" transform="translate(-21188.238 4340.045)">
       <path id="Path_1910" data-name="Path 1910" class="cls-2" d="M.4,3.915,3.2,8.8a.7.7,0,0,0,.436.331l2.605.651,8.936,8.936.987-.987L7.085,8.657a.7.7,0,0,0-.324-.184l-2.5-.628L1.88,3.682,3.919,1.643l4.165,2.38.628,2.5a.7.7,0,0,0,.184.325l9.076,9.076.987-.987L10.023,6,9.371,3.4a.7.7,0,0,0-.331-.437L4.153.17a.7.7,0,0,0-.838.112L.523,3.075A.7.7,0,0,0,.4,3.915Zm0,0" transform="translate(-0.038 -0.073)"/>
       <path id="Path_1911" data-name="Path 1911" class="cls-2" d="M190.327,174.706l-15.359,15.36-.987-.987,15.36-15.359Zm0,0" transform="translate(-160.935 -160.946)"/>
       <path id="Path_1912" data-name="Path 1912" class="cls-2" d="M55.333,399.175a.7.7,0,0,0-.6-.339H50.545a.7.7,0,0,0-.6.339l-2.095,3.491a.7.7,0,0,0,0,.719l2.095,3.491a.7.7,0,0,0,.6.339h4.189a.7.7,0,0,0,.6-.339l2.094-3.491a.7.7,0,0,0,0-.719Zm-.993,6.643h-3.4l-1.676-2.792,1.676-2.793h3.4l1.676,2.793Zm0,0" transform="translate(-43.989 -369.512)"/>

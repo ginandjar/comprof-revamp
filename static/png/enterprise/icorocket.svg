@@ -1,18 +1,30 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 91.18 91.18">
   <defs>
     <style>
+      .cls-1, .cls-4 {
+        fill: none;
+      }
+
       .cls-1 {
-        fill: #fff;
+        stroke: #fff;
+        stroke-width: 2px;
       }
 
       .cls-2 {
-        fill: #006ee5;
+        fill: #fff;
+      }
+
+      .cls-3 {
+        stroke: none;
       }
     </style>
   </defs>
-  <g id="Group_3022" data-name="Group 3022" transform="translate(21363.297 -4863)">
-    <circle id="Ellipse_3910" data-name="Ellipse 3910" class="cls-1" cx="45.59" cy="45.59" r="45.59" transform="translate(-21363.297 4863)"/>
-    <g id="startup" transform="translate(-21339.422 4883.718)">
+  <g id="Group_3030" data-name="Group 3030" transform="translate(21362.297 -4315)">
+    <g id="Ellipse_3999" data-name="Ellipse 3999" class="cls-1" transform="translate(-21362.297 4315)">
+      <circle class="cls-3" cx="45.59" cy="45.59" r="45.59"/>
+      <circle class="cls-4" cx="45.59" cy="45.59" r="44.59"/>
+    </g>
+    <g id="startup" transform="translate(-21338.422 4335.718)">
       <g id="Group_2318" data-name="Group 2318" transform="translate(0 42.401)">
         <g id="Group_2317" data-name="Group 2317">
           <circle id="Ellipse_3913" data-name="Ellipse 3913" class="cls-2" cx="0.842" cy="0.842" r="0.842"/>

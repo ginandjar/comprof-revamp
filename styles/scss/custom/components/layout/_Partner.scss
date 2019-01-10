@@ -1,6 +1,21 @@
 .partner{
   height: auto;
 
+  &__line{
+    img{
+    top:260px !important;
+    @media only screen and (max-width: 768px) {
+      top:250px !important;
+    }
+    @media only screen and (max-width: 425px) {
+    }
+    @media only screen and (max-width: 375px) {
+    }
+    @media only screen and (max-width: 320px) {
+    }
+    }
+  }
+
   &__hero{
     p{
       width: 100%;
@@ -165,7 +180,7 @@
        
       }
       @media only screen and (max-width: 320px) {
-      left: 15px;
+      left: 20px;
        
       }
        
@@ -190,11 +205,10 @@
         }
         @media only screen and (max-width: 425px) {
           width: 375px;
-          min-height: 245px;
+
         }
         @media only screen and (max-width: 375px) {
-          min-height: 150px;
-          width: 300px;
+          width: 90%;
         }
       }
       @media only screen and (max-width: 425px) {
@@ -244,12 +258,24 @@
       }
 
       &--list-image-only{
-        width: 300px;
-        height:120px;
+        width: 270px;
+        height: 120px;
         display: inline-block;
+        margin: 30px 20px;
+
+        @media only screen and (max-width:425px) {
+          width: 160px;
+          height: 70px;
+          margin: 0px 0px;
+        }
+
+        
         img{
-          max-width: 100%;
+          width: 100%;
           vertical-align: middle; 
+          @media only screen and (max-width:425px) {
+            width: 60%;
+          }
           
         }
       }

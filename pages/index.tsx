@@ -21,15 +21,20 @@ import { Image, Modal, Button, PanelGroup, Panel } from 'react-bootstrap';
 import TextLoop from 'react-text-loop';
 import SimpleForm from '../components/layout/Formly';
 import Footer from '../components/layout/Footer';
+import { WPPost } from 'interfaces/wpapi';
+import patchCategory from '../utils/patchCategory';
+import api from '../utils/api';
+import axios from 'axios';
 
 interface Props {
-
+  posts: WPPost[];
 }
 
 interface States {
   isShow: boolean;
   showModal: boolean;
   currentIndex: number;
+
 }
 
 let tabSwiper: any = null;
@@ -37,12 +42,23 @@ let tabSwiper: any = null;
 
 class Home extends React.Component<Props, States> {
   public static async getInitialProps(ctx: NextContext) {
+    const posts: WPPost[] = await api
+      .posts()
+      .param('lang', 'en')
+      .perPage(2)
+      .page(1)
+      .embed();
 
+    posts.forEach(post => {
+      patchCategory(post, 'en');
+    });
+    return { posts };
   }
   state = {
     isShow: true,
     showModal: false,
-    currentIndex: 0
+    currentIndex: 0,
+    posts: null,
   };
 
   componentDidMount() {
@@ -56,6 +72,14 @@ class Home extends React.Component<Props, States> {
       currentIndex: 0
     });
   }
+
+  fetchPosts = () => axios.get(`https://medium.com/kata-engineering/latest?format=json`)
+    .then((response) => {
+      // this.setState({ posts: response });
+      console.log(response);
+
+    })
+
 
 
 
@@ -152,7 +176,7 @@ class Home extends React.Component<Props, States> {
                   Interactive customer experience
               </h5>
                 <p>
-                  The chatbot can also offer an instant and interactive way for customers to interact with your brands. Offering transaction capability or even product recommendation.
+                  The chatbot can also offer an instant and interactive way for customers to interact with your brands. Offering (24/7) transaction capability or even product recommendation.
               </p>
 
 
@@ -242,7 +266,7 @@ class Home extends React.Component<Props, States> {
                                 Sabrina
                               </h1>
                               <p>
-                                Smart assistant for Banking
+                                Award Winning Banking Assistant (The AsianBanker)
                               </p>
 
                               <ButtonLink modifier="light" href="/story/sabrina">
@@ -283,7 +307,7 @@ class Home extends React.Component<Props, States> {
                                 Jemma
                               </h1>
                               <p>
-                                Virtual friend for personalized consumer engagement
+                                Virtual Friend and LINE's Most Interactive Chatbot
                               </p>
 
                               <ButtonLink modifier="light" href="/story/jemma">
@@ -367,10 +391,10 @@ class Home extends React.Component<Props, States> {
                 <img src="/static/png/landing/brain.svg" />
 
                 <h5>
-                  The Best NLP
+                  The Most Robust NLP/NLU
               </h5>
                 <p>
-                  Create chatbots that has the best understanding for what the users are saying in Bahasa Indonesia and English.
+                  Create chatbots that have the best understanding for what the users are saying in Bahasa Indonesia and English.
               </p>
               </div>
             </Fade>
@@ -382,7 +406,7 @@ class Home extends React.Component<Props, States> {
                   Bot Studio
               </h5>
                 <p>
-                  Visual Conversation Designer Easily design engaging conversation flows for your chatbots.
+                  Visual Conversation Designer. Easily design engaging conversation flows for your chatbots.
               </p>
               </div>
             </Fade>
@@ -404,10 +428,10 @@ class Home extends React.Component<Props, States> {
                 <img src="/static/png/landing/chat.svg" />
 
                 <h5>
-                  Omni Channel Management
+                  Omni-Channel
               </h5>
                 <p>
-                  Easily manage and install your chatbots in any Messaging Channels you choose.
+                  Easily manage and install your chatbots in any messaging channels you choose.
               </p>
               </div>
             </Fade>
@@ -416,7 +440,7 @@ class Home extends React.Component<Props, States> {
                 <img src="/static/png/landing/lock.svg" />
 
                 <h5>
-                  On Premise Solution
+                  On Premise
               </h5>
                 <p>
                   Need the security of your own IT infrastructure to run your chatbots? Just install it on your own system using our On-Premise solution.
@@ -480,6 +504,37 @@ class Home extends React.Component<Props, States> {
 
         </HeroCard>
 
+        <HeroCard title="Our Trusted Partners" className="partner__hero">
+          <div className="partner__list-image">
+            <div className="partner__list-image__item--list-image-only">
+              <img src="/static/png/partner/trusted/telkomsel.png" />
+            </div>
+            <div className="partner__list-image__item--list-image-only">
+              <img src="/static/png/partner/trusted/uni.png" />
+            </div>
+            <div className="partner__list-image__item--list-image-only">
+              <img src="/static/png/partner/trusted/bri.png" />
+            </div>
+            <div className="partner__list-image__item--list-image-only">
+              <img src="/static/png/partner/trusted/alfa.png" />
+            </div>
+            <div className="partner__list-image__item--list-image-only">
+              <img src="/static/png/partner/trusted/zurich.png" />
+            </div>
+            <div className="partner__list-image__item--list-image-only">
+              <img src="/static/png/partner/trusted/pegadaian.png" />
+            </div>
+            <div className="partner__list-image__item--list-image-only">
+              <img src="/static/png/partner/trusted/wallstreet.png" />
+            </div>
+            <div className="partner__list-image__item--list-image-only">
+              <img src="/static/png/partner/trusted/atma.png" />
+            </div>
+          </div>
+
+        </HeroCard>
+
+
 
         <HeroCard className="hero-card">
           <div className="landing__hero landing__hero--full-width">
@@ -490,7 +545,7 @@ class Home extends React.Component<Props, States> {
                   Kata Platform<br /> The Technology Behind The Chatbots
               </h1>
                 <p>
-                  An integrated platform to build the best chatbot for any chat / messaging apps (even inside your own apps/website!)
+                  An integrated platform to build the best chatbot for any chat or messaging apps (even inside your own apps or website!)
                         </p>
 
                 <ButtonLink modifier="light" href="/platform">
@@ -515,7 +570,31 @@ class Home extends React.Component<Props, States> {
               <Image src="/static/png/landing/blog.png" />
             </div>
             <div className="landing__engineering-blog__list">
-              <div className="landing__engineering-blog__item">
+              {posts &&
+                posts.map(post => (
+                  <div className="landing__engineering-blog__item">
+                    <div className="landing__engineering-blog__image">
+                      <img src={post.acf.featured_image.sizes.large} />
+                    </div>
+                    <div className="landing__engineering-blog__detail">
+
+                      <div className="landing__engineering-blog__title">
+                        {post.title.rendered}
+                      </div>
+                      <div className="landing__engineering-blog__descr" dangerouslySetInnerHTML={{ __html: post.excerpt.rendered }}>
+                      </div>
+                      <div className="landing__engineering-blog__read-more">Read more</div>
+                      <div className="landing__engineering-blog__written-by">
+                        <img src={post._embedded.author[0].avatar_urls['48']} />
+                        <p>{post._embedded.author[0].name}</p>
+                      </div>
+                    </div>
+                  </div>
+
+                ))}
+
+
+              {/* <div className="landing__engineering-blog__item landing__engineering-blog__item--hidden">
                 <div className="landing__engineering-blog__image">
                   <img src="/static/png/platform/chatbotlist.jpg" />
                 </div>
@@ -533,26 +612,7 @@ class Home extends React.Component<Props, States> {
                     <p>Aria Nurfikryon August 3, 2018</p>
                   </div>
                 </div>
-              </div>
-              <div className="landing__engineering-blog__item landing__engineering-blog__item--hidden">
-                <div className="landing__engineering-blog__image">
-                  <img src="/static/png/platform/chatbotlist.jpg" />
-                </div>
-                <div className="landing__engineering-blog__detail">
-
-                  <div className="landing__engineering-blog__title">
-                    Kata landing 2.5 : Better landing for Better Chatbots
-                  </div>
-                  <div className="landing__engineering-blog__descr">
-                    After releasing Kata Bot landing publicly in December 2017, we had agreat time working with the developer community by
-                  </div>
-                  <div className="landing__engineering-blog__read-more">Read more</div>
-                  <div className="landing__engineering-blog__written-by">
-                    <img src="" />
-                    <p>Aria Nurfikryon August 3, 2018</p>
-                  </div>
-                </div>
-              </div>
+              </div> */}
             </div>
 
           </div>
@@ -636,12 +696,12 @@ class Home extends React.Component<Props, States> {
           <TabItem key={3} item="Customer Loyalty" modifier={this.state.currentIndex == 3 ? "tab-item--selected" : undefined} onClick={this.tabSwipeClick(3)} />
         </Tab>
 
-        <PanelGroup accordion id="accordion-example" className="landing__tab__accordion">
+        <PanelGroup accordion id="accordion-example" className="landing__tab__accordion" defaultActiveKey="1">
           <Panel eventKey="1" className="landing__tab__accordion__panel">
             <Panel.Heading className="landing__tab__accordion__panel__heading">
               <Panel.Title toggle className="landing__tab__accordion__panel__heading__title">Customer Service</Panel.Title>
             </Panel.Heading>
-            <Panel.Body collapsible>
+            <Panel.Body collapsible defaultExpanded>
               <div>
                 <div className="">
                   <div className="landing__tab__chatbot">
@@ -690,7 +750,7 @@ class Home extends React.Component<Props, States> {
                       Sabrina
                               </h1>
                     <p>
-                      Smart assistant for Banking
+                      Award Winning Banking Assistant (The AsianBanker)
                               </p>
 
                     <ButtonLink modifier="light" href="/story/sabrina">
@@ -725,12 +785,12 @@ class Home extends React.Component<Props, States> {
               <div>
                 <div className="">
                   <div className="landing__tab__chatbot">
-                    <img className="landing__tab__logo" src="/static/png/landing/jemma/logo.png" />
+                    <img className="landing__tab__logo--square" src="/static/png/landing/jemma/logo.png" />
                     <h1>
                       Jemma
                               </h1>
                     <p>
-                      Virtual friend for personalized consumer engagement
+                      Virtual Friend and LINE's Most Interactive Chatbot
                               </p>
 
                     <ButtonLink modifier="light" href="/story/jemma">

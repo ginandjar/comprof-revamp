@@ -46,7 +46,7 @@ class DetailStory extends React.Component<Props> {
                 Jemma
               </h1>
               <h2>
-                Virtual friend for personalized consumer engagement
+                Virtual Friend and LINE's Most Interactive Chatbot
               </h2>
 
             </div>

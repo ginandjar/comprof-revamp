@@ -46,7 +46,7 @@ class DetailStory extends React.Component<Props> {
                 Sabrina
               </h1>
               <h2>
-                Smart assistant for Banking
+                Award Winning Banking Assistant (The Asian Banker)
 
               </h2>
 
@@ -109,7 +109,7 @@ class DetailStory extends React.Component<Props> {
           </div>
 
 
-          
+
         </div>
         <Footer localeService={this.props.localeService} />
       </div >

@@ -11,9 +11,15 @@
     font-weight: 300;
     margin-bottom: 30px;
     margin-top : 20px;
+    font-size: 20px;
+    @media only screen and (max-width: 1024px) {
+      margin-right: 110px;
+    }
     @media only screen and (max-width: 768px) {
       max-width: unset;
       text-align: center;
+      margin-right: unset;
+      font-size: 16px !important;
     }
     @media only screen and (max-width: 425px) {
     }
@@ -45,6 +51,22 @@
     &--bottom{
       top:435px;
 
+      
+    }
+    @media only screen and (max-width: 1024px) {
+
+      &--right{
+        left:190px;
+      }
+  
+      &--left{
+        left: -120px;
+      }
+  
+      &--bottom{
+        left: -20px;
+  
+      }
     }
     @media only screen and (max-width: 768px) {
 
@@ -88,16 +110,16 @@
         height: 150px;
       }
       &--right{
-        left:180px;
+        left:160px;
       }
   
       &--left{
-        left: 30px;
+        left: 10px;
       }
   
       &--bottom{
-        top: 285px;
-        left: 60px;
+        top: 255px;
+        left: 50px;
   
       }
     }

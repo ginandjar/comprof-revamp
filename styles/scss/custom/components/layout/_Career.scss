@@ -5,14 +5,21 @@
     margin-top: 50px;
     margin-bottom: 50px;
     p{
-    font-size: 24px;
-    margin: 50px 0;
+      font-size: 24px;
+      margin: 50px 0;
+      @media only screen and (max-width: 768px) {
+        font-size: 16px;
+        width: 90%;
+        margin: 25px auto;
+      }
     }
 
   }
   background-image: url('/static/jpg/career.jpg');
   height: 870px;
   position: relative;
+  background-repeat: no-repeat;
+  background-position: center;
 
   h3{
     width:100%;
@@ -23,6 +30,10 @@
     -ms-transform: translate(-50%, -50%);
     transform: translate(-50%, -50%);
     font-weight: normal;
+    @media only screen and (max-width: 768px) {
+      font-size: 16px;
+      max-width: 80%;
+    }
     
   }
   h1{

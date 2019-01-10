@@ -49,16 +49,13 @@ class Research extends React.Component<Props> {
 
           </div>
           <div className="flex-item__right research__intro__img">
-            <div className="research__intro__img__content--left">
-              <img src="/static/jpg/research/researchone.jpeg" alt="" />
-            </div>
             <div className="research__intro__img__content--right">
-              <img src="/static/jpg/research/researchtwo.jpeg" alt="" />
+              <img src="/static/jpg/research/research.png" alt="" />
             </div>
           </div>
         </Intro>
         <div className="research__research-container">
-          <HeroCard title="Recent Publication">
+          <HeroCard title="Recent Publications">
 
           </HeroCard>
 

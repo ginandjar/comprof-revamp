@@ -1,18 +1,30 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 91.18 91.18">
   <defs>
     <style>
+      .cls-1, .cls-4 {
+        fill: none;
+      }
+
       .cls-1 {
-        fill: #fff;
+        stroke: #fff;
+        stroke-width: 2px;
       }
 
       .cls-2 {
-        fill: #006ee5;
+        fill: #fff;
+      }
+
+      .cls-3 {
+        stroke: none;
       }
     </style>
   </defs>
-  <g id="Group_3021" data-name="Group 3021" transform="translate(21512.414 -4863)">
-    <circle id="Ellipse_3909" data-name="Ellipse 3909" class="cls-1" cx="45.59" cy="45.59" r="45.59" transform="translate(-21512.414 4863)"/>
-    <g id="smartphone" transform="translate(-21492.473 4885.225)">
+  <g id="Group_3029" data-name="Group 3029" transform="translate(21511.414 -4315)">
+    <g id="Ellipse_4000" data-name="Ellipse 4000" class="cls-1" transform="translate(-21511.414 4315)">
+      <circle class="cls-3" cx="45.59" cy="45.59" r="45.59"/>
+      <circle class="cls-4" cx="45.59" cy="45.59" r="44.59"/>
+    </g>
+    <g id="smartphone" transform="translate(-21491.473 4337.225)">
       <path id="Path_1872" data-name="Path 1872" class="cls-2" d="M36.454,0H16.491A3.5,3.5,0,0,0,13,3.491V44.059a3.5,3.5,0,0,0,3.491,3.492H36.454a3.5,3.5,0,0,0,3.492-3.491V3.491A3.5,3.5,0,0,0,36.454,0ZM14.585,6.34H38.36V36.455H14.585Zm1.906-4.755H36.454A1.908,1.908,0,0,1,38.36,3.491V4.755H14.585V3.491A1.908,1.908,0,0,1,16.491,1.585ZM36.454,45.966H16.491a1.908,1.908,0,0,1-1.906-1.906V38.04H38.36V44.06A1.908,1.908,0,0,1,36.454,45.966Z" transform="translate(0 0)"/>
       <path id="Path_1873" data-name="Path 1873" class="cls-2" d="M29.17,49a3.17,3.17,0,1,0,3.17,3.17A3.173,3.173,0,0,0,29.17,49Zm0,4.755a1.585,1.585,0,1,1,1.585-1.585A1.587,1.587,0,0,1,29.17,53.755Z" transform="translate(-2.697 -10.167)"/>
       <path id="Path_1874" data-name="Path 1874" class="cls-2" d="M25.793,4.585h3.17a.793.793,0,0,0,0-1.585h-3.17a.793.793,0,1,0,0,1.585Z" transform="translate(-2.49 -0.622)"/>

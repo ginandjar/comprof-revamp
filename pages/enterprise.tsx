@@ -74,6 +74,7 @@ class Enterprise extends React.Component<Props, States> {
     chatBotSwiper = new Swiper('#chatbot-swiper', {
       speed: 400,
       spaceBetween: 100,
+      allowTouchMove:true,
     });
 
     storySwiper = new Swiper('#story-swiper', {
@@ -83,6 +84,9 @@ class Enterprise extends React.Component<Props, States> {
       spaceBetween: -200,
       freeMode: false,
       loop: true,
+      allowTouchMove:true,
+      slideNextClass: 'swiper-slide-next enterprise__success-story__next',
+      slidePrevClass: 'swiper-slide-prev enterprise__success-story__prev',
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
@@ -627,7 +631,6 @@ class Enterprise extends React.Component<Props, States> {
               <div className="swiper-wrapper">
                 <div className="swiper-slide enterprise__success-story">
                   <div className="enterprise__success-story__item">
-                    <img src="/static/png/enterprise/telkomsel.png" className="enterprise__success-story__item__icon" />
                     <div className="enterprise__success-story__item__img">
                       <img src="/static/png/enterprise/veronika.png"></img>
                     </div>
@@ -640,8 +643,7 @@ class Enterprise extends React.Component<Props, States> {
                 </div>
                 <div className="swiper-slide">
                   <div className="enterprise__success-story__item">
-                    <img src="/static/png/enterprise/uni.png" className="enterprise__success-story__item__icon" />
-                    <div>
+                  <div className="enterprise__success-story__item__img">
                       <img src="/static/png/enterprise/jemma.png"></img>
                     </div>
                     <ButtonLink modifier="light" href="/story/jemma">
@@ -651,8 +653,7 @@ class Enterprise extends React.Component<Props, States> {
                 </div>
                 <div className="swiper-slide">
                   <div className="enterprise__success-story__item">
-                    <img src="/static/png/enterprise/alfa.png" className="enterprise__success-story__item__icon" />
-                    <div>
+                  <div className="enterprise__success-story__item__img">
                       <img src="/static/png/enterprise/shalma.png"></img>
                     </div>
                     <ButtonLink modifier="light" href="/story/shalma">
@@ -662,8 +663,7 @@ class Enterprise extends React.Component<Props, States> {
                 </div>
                 <div className="swiper-slide">
                   <div className="enterprise__success-story__item">
-                    <img src="/static/png/enterprise/bri.png" className="enterprise__success-story__item__icon" />
-                    <div>
+                  <div className="enterprise__success-story__item__img">
                       <img src="/static/png/enterprise/sabrina.png"></img>
                     </div>
                     <ButtonLink modifier="light" href="/story/sabrina">
@@ -675,8 +675,8 @@ class Enterprise extends React.Component<Props, States> {
 
               <div className="swiper-pagination"></div>
 
-              <div className="swiper-button-next"></div>
-              <div className="swiper-button-prev"></div>
+              <div className="swiper-button-next enterprise__success-story--next"></div>
+              <div className="swiper-button-prev enterprise__success-story--prev"></div>
 
             </div>
           </div>
@@ -788,7 +788,7 @@ class Enterprise extends React.Component<Props, States> {
                 Design your smart assistant today. Grow your business more further
             </h5>
               <ButtonLink modifier="light" href="/contact-us">
-                Get in touch
+                Get in Touch
           </ButtonLink>
             </Col>
             <Col md={6} className="enterprise__get-in-touch__col enterprise__get-in-touch__background-dark-blue">
@@ -797,7 +797,7 @@ class Enterprise extends React.Component<Props, States> {
                 Expand your offering. Create the best AI solutions for your clients
             </h5>
               <ButtonLink modifier="light" href="/partnership">
-                Become a partner
+                Become a Partner
           </ButtonLink>
             </Col>
           </Row>
@@ -820,7 +820,7 @@ class Enterprise extends React.Component<Props, States> {
           <TabItem item="Educational" modifier={this.state.currentIndexGrowth == 5 ? "tab-item--selected" : undefined} onClick={this.tabSwipeClick(5)} />
         </Tab>
 
-        <PanelGroup accordion id="accordion-example" className="landing__tab__accordion">
+        <PanelGroup accordion id="accordion-example" className="landing__tab__accordion" defaultActiveKey="1">
           <Panel eventKey="1" className="landing__tab__accordion__panel">
             <Panel.Heading className="landing__tab__accordion__panel__heading">
               <Panel.Title toggle className="landing__tab__accordion__panel__heading__title">Consumer Engagement</Panel.Title>
@@ -874,7 +874,7 @@ class Enterprise extends React.Component<Props, States> {
                           <Fade bottom collapse when={this.state.showBeneCE}>
                             <ul>
                               <li>
-                                Create campaigns that aligns with your goals
+                                Create campaigns that align with your goals
                                 </li>
                               <li>
                                 Achieve relevant messages for personalization at scale
@@ -883,7 +883,7 @@ class Enterprise extends React.Component<Props, States> {
                                 Outperform your campaign revenue targets
                                 </li>
                               <li>
-                                Increase customer experience & loyalty
+                                Improve customer experience & loyalty
                                 </li>
                               <li>
                                 Reactivate customers in your database
@@ -912,7 +912,7 @@ class Enterprise extends React.Component<Props, States> {
 
               <Grid className="enterprise__tab">
                 <Fade>
-                  <h5>Whether your business line is banking, financial services, or FinTech, bots are a great strategy to sustain profitability and win over customers. It offers real-time financial services / data at the engagement point, supply 24 hour self-service, and transform ordinary transactions, policy updates, payments, and more into simple text through the channel of customers choice.</h5>
+                  <h5>Whether your business line is banking, financial services, or FinTech, bots are a great strategy to sustain profitability and win over customers. It offers real-time financial services or data at the engagement point, supply 24 hour self-service, and transform ordinary transactions, policy updates, payments, and more into simple text through the channel of customers choice.</h5>
                 </Fade>
                 <Row>
                   <Col md={6}>
@@ -934,7 +934,7 @@ class Enterprise extends React.Component<Props, States> {
                                 Branch and ATM locator
                                 </li>
                               <li>
-                                Spending analysiss
+                                Spending analysis
                                 </li>
                               <li>
                                 Apply for new services and request checkbook
@@ -943,7 +943,7 @@ class Enterprise extends React.Component<Props, States> {
                                 Report lost or stolen card
                                 </li>
                               <li>
-                                Transfer money to own account / third party
+                                Transfer money to own account or third party
                                 </li>
                               <li>
                                 Bill payment
@@ -967,7 +967,7 @@ class Enterprise extends React.Component<Props, States> {
                                 Provide personal banking and investment advice
                                 </li>
                               <li>
-                                Uncover right-time / right-fit loyalty program promotions
+                                Uncover right-time or right-fit loyalty program promotions
                                 </li>
                               <li>
                                 Deliver actionable response options to urgent activity notifications
@@ -1019,10 +1019,10 @@ class Enterprise extends React.Component<Props, States> {
                                 Sourcing & recruitment
                                 </li>
                               <li>
-                                On boarding process
+                                Onboarding process
                                 </li>
                               <li>
-                                FAQ & Company policy
+                                FAQ & company policy
                                 </li>
                               <li>
                                 Schedule meetings and send a notification
@@ -1031,7 +1031,7 @@ class Enterprise extends React.Component<Props, States> {
                                 Benefits enrollment
                                 </li>
                               <li>
-                                Centralize documentation
+                                Centralized documentation
                                 </li>
                             </ul>
                           </Fade>
@@ -1077,75 +1077,75 @@ class Enterprise extends React.Component<Props, States> {
             </Panel.Heading>
             <Panel.Body collapsible>
               <Grid className="enterprise__tab">
+                <Fade>
+                  <h5>Today’s digital-savvy customer expect answers at the click of a button. They desire a personalized, proactive conversation with a brand that they love. Customer service bots interact with the customer on behalf of your business, enabling customer to self-service online by drawing on specific business rules to answer common questions and requests. </h5>
+                </Fade>
+                <Row>
+                  <Col md={6}>
                     <Fade>
-                      <h5>Today’s digital-savvy customer expect answers at the click of a button. They desire a personalized, proactive conversation with a brand that they love. Customer service bots interact with the customer on behalf of your business, enabling customer to self-service online by drawing on specific business rules to answer common questions and requests. </h5>
+                      <img src="/static/png/enterprise/csphone.png" />
                     </Fade>
-                    <Row>
-                      <Col md={6}>
-                        <Fade>
-                          <img src="/static/png/enterprise/csphone.png" />
-                        </Fade>
-                      </Col>
-                      <Col md={6}>
-                        <div className="enterprise__tab__button">
-                          <Fade bottom>
-                            <div className="enterprise__tab__button--large">
-                              <a className="button button__light button__block" onClick={this.stateFeatCs()}>Features you can offer</a>
-                              <Fade bottom collapse when={this.state.showFeatCS}>
-                                <ul>
-                                  <li>
-                                    Always on, 24/7 availability
+                  </Col>
+                  <Col md={6}>
+                    <div className="enterprise__tab__button">
+                      <Fade bottom>
+                        <div className="enterprise__tab__button--large">
+                          <a className="button button__light button__block" onClick={this.stateFeatCs()}>Features you can offer</a>
+                          <Fade bottom collapse when={this.state.showFeatCS}>
+                            <ul>
+                              <li>
+                                Always on, 24/7 availability
                                 </li>
-                                  <li>
-                                    Simpler & personalized interactions
+                              <li>
+                                Simpler & personalized interactions
                                 </li>
-                                  <li>
-                                    Easier problem resolution with self-service
+                              <li>
+                                Easier problem resolution with self-service
                                 </li>
-                                  <li>
-                                    Increase customer engagement
+                              <li>
+                                Increase customer engagement
                                 </li>
-                                  <li>
-                                    Provide news or information updates
+                              <li>
+                                Provide news or information updates
                                 </li>
-                                  <li>
-                                    Provide products / services recommendations
+                              <li>
+                                Provide products or services recommendations
                                 </li>
-                                  <li>
-                                    Ease online transactions and facilitate sales
+                              <li>
+                                Ease online transactions and facilitate sales
                                 </li>
-                                </ul>
-                              </Fade>
-                            </div>
-                          </Fade>
-                          <Fade bottom>
-                            <div className="enterprise__tab__button--large">
-                              <a className="button button__light button__block" onClick={this.stateBeneCs()}>Benefits</a>
-                              <Fade bottom collapse when={this.state.showBeneCS}>
-                                <ul>
-                                  <li>
-                                    Customers can always get assistance when and where they need it
-                                </li>
-                                  <li>
-                                    Get real insight into what your customers prefer
-                                </li>
-                                  <li>
-                                    Customer service improvement through analytics and data collections
-                                </li>
-                                  <li>
-                                    Enables business to save operational costs on Call Center
-                                </li>
-                                  <li>
-                                    Help business save time in responding to customers’ FAQ
-                                </li>
-                                </ul>
-                              </Fade>
-                            </div>
+                            </ul>
                           </Fade>
                         </div>
-                      </Col>
-                    </Row>
-                  </Grid>
+                      </Fade>
+                      <Fade bottom>
+                        <div className="enterprise__tab__button--large">
+                          <a className="button button__light button__block" onClick={this.stateBeneCs()}>Benefits</a>
+                          <Fade bottom collapse when={this.state.showBeneCS}>
+                            <ul>
+                              <li>
+                                Customers can always get assistance when and where they need it
+                                </li>
+                              <li>
+                                Get real insight into what your customers prefer
+                                </li>
+                              <li>
+                                Customer service improvement through analytics and data collections
+                                </li>
+                              <li>
+                                Enables business to save operational costs on call center
+                                </li>
+                              <li>
+                                Help business save time in responding to customers’ FAQ
+                                </li>
+                            </ul>
+                          </Fade>
+                        </div>
+                      </Fade>
+                    </div>
+                  </Col>
+                </Row>
+              </Grid>
             </Panel.Body>
           </Panel>
 
@@ -1155,76 +1155,76 @@ class Enterprise extends React.Component<Props, States> {
             </Panel.Heading>
             <Panel.Body collapsible>
 
-            <Grid className="enterprise__tab">
+              <Grid className="enterprise__tab">
+                <Fade>
+                  <h5>Bots offer a way to change the shopping experience through ‘conversational commerce’ that is a two-way interaction between customers and business that feels more like an interaction between a seller and buyer.  </h5>
+                </Fade>
+                <Row>
+                  <Col md={6}>
                     <Fade>
-                      <h5>Bots offer a way to change the shopping experience through ‘conversational commerce’ that is a two-way interaction between customers and business that feels more like an interaction between a seller and buyer.  </h5>
+                      <img src="/static/png/enterprise/ecphone.png" />
                     </Fade>
-                    <Row>
-                      <Col md={6}>
-                        <Fade>
-                          <img src="/static/png/enterprise/ecphone.png" />
-                        </Fade>
-                      </Col>
-                      <Col md={6}>
-                        <div className="enterprise__tab__button">
-                          <Fade bottom>
-                            <div className="enterprise__tab__button--large">
-                              <a className="button button__light button__block" onClick={this.stateFeatEc()}>Features you can offer</a>
-                              <Fade bottom collapse when={this.state.showFeatEC}>
-                                <ul>
-                                  <li>
-                                    Greeting and help
+                  </Col>
+                  <Col md={6}>
+                    <div className="enterprise__tab__button">
+                      <Fade bottom>
+                        <div className="enterprise__tab__button--large">
+                          <a className="button button__light button__block" onClick={this.stateFeatEc()}>Features you can offer</a>
+                          <Fade bottom collapse when={this.state.showFeatEC}>
+                            <ul>
+                              <li>
+                                Greeting and help
                                 </li>
-                                  <li>
-                                    Search for products by price, color, and more
+                              <li>
+                                Search for products by price, color, and more
                                 </li>
-                                  <li>
-                                    Purchase product (checkout)
+                              <li>
+                                Purchase product (checkout)
                                 </li>
-                                  <li>
-                                    Track order status and shipping
+                              <li>
+                                Track order status and shipping
                                 </li>
-                                  <li>
-                                    View order history
+                              <li>
+                                View order history
                                 </li>
-                                  <li>
-                                    Personalized offers & advertise special promotions
+                              <li>
+                                Personalized offers & advertise special promotions
                                 </li>
-                                  <li>
-                                    Ask questions (FAQs)
+                              <li>
+                                Ask questions (FAQs)
                                 </li>
-                                </ul>
-                              </Fade>
-                            </div>
-                          </Fade>
-                          <Fade bottom>
-                            <div className="enterprise__tab__button--large">
-                              <a className="button button__light button__block" onClick={this.stateBeneEc()}>Benefits</a>
-                              <Fade bottom collapse when={this.state.showBeneEC}>
-                                <ul>
-                                  <li>
-                                    Offer instant, real-time shopping experience across multiple channels
-                                </li>
-                                  <li>
-                                    Allows simple and convenient purchases via message-based interactions
-                                </li>
-                                  <li>
-                                    Provide relevant, actionable offers in real time, and personalized to a customer’s trends
-                                </li>
-                                  <li>
-                                    Able to deliver alerts and updates regarding available inventory
-                                </li>
-                                  <li>
-                                    Provide real-time, relevant offers and advice from a virtual ‘personal shopper’
-                                </li>
-                                </ul>
-                              </Fade>
-                            </div>
+                            </ul>
                           </Fade>
                         </div>
-                      </Col>
-                    </Row>
-                  </Grid>
+                      </Fade>
+                      <Fade bottom>
+                        <div className="enterprise__tab__button--large">
+                          <a className="button button__light button__block" onClick={this.stateBeneEc()}>Benefits</a>
+                          <Fade bottom collapse when={this.state.showBeneEC}>
+                            <ul>
+                              <li>
+                                Offer instant, real-time shopping experience across multiple channels
+                                </li>
+                              <li>
+                                Allows simple and convenient purchases via message-based interactions
+                                </li>
+                              <li>
+                                Provide relevant, actionable offers in real time, and personalized to a customer’s trends
+                                </li>
+                              <li>
+                                Able to deliver alerts and updates regarding available inventory
+                                </li>
+                              <li>
+                                Provide real-time, relevant offers and advice from a virtual ‘personal shopper’
+                                </li>
+                            </ul>
+                          </Fade>
+                        </div>
+                      </Fade>
+                    </div>
+                  </Col>
+                </Row>
+              </Grid>
 
             </Panel.Body>
           </Panel>
@@ -1235,65 +1235,65 @@ class Enterprise extends React.Component<Props, States> {
             </Panel.Heading>
             <Panel.Body collapsible>
 
-            <Grid className="enterprise__tab">
+              <Grid className="enterprise__tab">
+                <Fade>
+                  <h5>As chatbot technology advances, more use cases are surfacing across nearly every sector imaginable. Recently, bots have begun being implemented in education to assist in a variety of automated tasks, and the foreseeable advantages are far-reaching.</h5>
+                </Fade>
+                <Row>
+                  <Col md={6}>
                     <Fade>
-                      <h5>As chatbot technology advances, more use cases are surfacing across nearly every sector imaginable. Recently, bots have begun being implemented in education to assist in a variety of automates tasks, and the foreseeable advantages are far-reaching.</h5>
+                      <img src="/static/png/enterprise/eduphone.png" />
                     </Fade>
-                    <Row>
-                      <Col md={6}>
-                        <Fade>
-                          <img src="/static/png/enterprise/eduphone.png" />
-                        </Fade>
-                      </Col>
-                      <Col md={6}>
-                        <div className="enterprise__tab__button">
-                          <Fade bottom>
-                            <div className="enterprise__tab__button--large">
-                              <a className="button button__light button__block" onClick={this.stateFeatEd()}>Features you can offer</a>
-                              <Fade bottom collapse when={this.state.showFeatED}>
-                                <ul>
-                                  <li>
-                                    Assist with the filling of applications
+                  </Col>
+                  <Col md={6}>
+                    <div className="enterprise__tab__button">
+                      <Fade bottom>
+                        <div className="enterprise__tab__button--large">
+                          <a className="button button__light button__block" onClick={this.stateFeatEd()}>Features you can offer</a>
+                          <Fade bottom collapse when={this.state.showFeatED}>
+                            <ul>
+                              <li>
+                                Assist with the filling of applications
                                 </li>
-                                  <li>
-                                    Accept tuition payments
+                              <li>
+                                Accept tuition payments
                                 </li>
-                                  <li>
-                                    Assign course schedules
+                              <li>
+                                Assign course schedules
                                 </li>
-                                  <li>
-                                    Provide answer to commonly-asked questions
+                              <li>
+                                Provide answer to commonly-asked questions
                                 </li>
-                                  <li>
-                                    Schedule meetings or phone calls
+                              <li>
+                                Schedule meetings or phone calls
                                 </li>
-                                </ul>
-                              </Fade>
-                            </div>
-                          </Fade>
-                          <Fade bottom>
-                            <div className="enterprise__tab__button--large">
-                              <a className="button button__light button__block" onClick={this.stateBeneEd()}>Benefits</a>
-                              <Fade bottom collapse when={this.state.showBeneED}>
-                                <ul>
-                                  <li>
-                                    Provide information about deadlines, lesson plans, and curriculum
-
-                                </li>
-                                  <li>
-                                    Able to issue educator evaluations and streamline the data analysis process
-                                </li>
-                                  <li>
-                                    Help student understand difficult concepts in a way that feels as if they are being taught by another person
-                                </li>
-                                </ul>
-                              </Fade>
-                            </div>
+                            </ul>
                           </Fade>
                         </div>
-                      </Col>
-                    </Row>
-                  </Grid>
+                      </Fade>
+                      <Fade bottom>
+                        <div className="enterprise__tab__button--large">
+                          <a className="button button__light button__block" onClick={this.stateBeneEd()}>Benefits</a>
+                          <Fade bottom collapse when={this.state.showBeneED}>
+                            <ul>
+                              <li>
+                                Provide information about deadlines, lesson plans, and curriculum
+
+                                </li>
+                              <li>
+                                Able to issue educator evaluations and streamline the data analysis process
+                                </li>
+                              <li>
+                                Help student understand difficult concepts in a way that feels as if they are being taught by another person
+                                </li>
+                            </ul>
+                          </Fade>
+                        </div>
+                      </Fade>
+                    </div>
+                  </Col>
+                </Row>
+              </Grid>
 
             </Panel.Body>
           </Panel>
@@ -1307,28 +1307,28 @@ class Enterprise extends React.Component<Props, States> {
     return (
       <ul>
         <li className={this.state.currentIndexHowto == 0 ? "enterprise__how-to__list-selected" : undefined} onClick={this.botSwipeClick(0)}>
-          <img src="/static/png/enterprise/icochat.svg" width="90px" />
+          <img src={this.state.currentIndexHowto == 0 ? "/static/png/enterprise/icochat_selected.svg" : "/static/png/enterprise/icochat.svg"} width="90px" />
         </li>
         <li className={this.state.currentIndexHowto == 1 ? "enterprise__how-to__list-selected" : undefined} onClick={this.botSwipeClick(1)}>
-          <img src="/static/png/enterprise/icoconn.svg" width="90px" />
+          <img src={this.state.currentIndexHowto == 1 ? "/static/png/enterprise/icoconn_selected.svg" : "/static/png/enterprise/icoconn.svg"} width="90px" />
         </li>
         <li className={this.state.currentIndexHowto == 2 ? "enterprise__how-to__list-selected" : undefined} onClick={this.botSwipeClick(2)}>
-          <img src="/static/png/enterprise/icocode.svg" width="90px" />
+          <img src={this.state.currentIndexHowto == 2 ? "/static/png/enterprise/icocode_selected.svg" : "/static/png/enterprise/icocode.svg"} width="90px" />
         </li>
         <li className={this.state.currentIndexHowto == 3 ? "enterprise__how-to__list-selected" : undefined} onClick={this.botSwipeClick(3)}>
-          <img src="/static/png/enterprise/icohand.svg" width="90px" />
+          <img src={this.state.currentIndexHowto == 3 ? "/static/png/enterprise/icohand_selected.svg" : "/static/png/enterprise/icohand.svg"} width="90px" />
         </li>
         <li className={this.state.currentIndexHowto == 4 ? "enterprise__how-to__list-selected" : undefined} onClick={this.botSwipeClick(4)}>
-          <img src="/static/png/enterprise/icobrain.svg" width="90px" />
+          <img src={this.state.currentIndexHowto == 4 ? "/static/png/enterprise/icobrain_selected.svg" : "/static/png/enterprise/icobrain.svg"} width="90px" />
         </li>
         <li className={this.state.currentIndexHowto == 5 ? "enterprise__how-to__list-selected" : undefined} onClick={this.botSwipeClick(5)}>
-          <img src="/static/png/enterprise/icophone.svg" width="90px" />
+          <img src={this.state.currentIndexHowto == 5 ? "/static/png/enterprise/icophone_selected.svg" : "/static/png/enterprise/icophone.svg"} width="90px" />
         </li>
         <li className={this.state.currentIndexHowto == 6 ? "enterprise__how-to__list-selected" : undefined} onClick={this.botSwipeClick(6)}>
-          <img src="/static/png/enterprise/icorocket.svg" width="90px" />
+          <img src={this.state.currentIndexHowto == 6 ? "/static/png/enterprise/icorocket_selected.svg" : "/static/png/enterprise/icorocket.svg"} width="90px" />
         </li>
         <li className={this.state.currentIndexHowto == 7 ? "enterprise__how-to__list-selected" : undefined} onClick={this.botSwipeClick(7)}>
-          <img src="/static/png/enterprise/icotools.svg" width="90px" />
+          <img src={this.state.currentIndexHowto == 7 ? "/static/png/enterprise/icotools_selected.svg" : "/static/png/enterprise/icotools.svg"} width="90px" />
         </li>
       </ul>
     );

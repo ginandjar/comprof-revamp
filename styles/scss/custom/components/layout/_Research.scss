@@ -3,7 +3,16 @@
 
   &__intro{
     &__content{
-      
+      height: 540px !important;
+      @media only screen and (max-width: 1024px) {
+        height: 480px !important;
+      }
+      @media only screen and (max-width: 768px) {
+        height: 670px !important;
+      }
+      @media only screen and (max-width: 425px) {
+        height: 500px !important;
+      }
     }
     &__img{
       position:relative;
@@ -31,16 +40,11 @@
         }
 
         &--right{
-          width:50%;
-          display: inline-block;
-          position:relative;
-          
-          img{
-            position:relative;
-            top:80px;
-            max-width: 100%;
+          @media only screen and (max-width: 1024px) {
+            img{
+              width: 80%;
+            }
           }
-          
         }
       }
 
@@ -54,10 +58,10 @@
         margin: 0px auto;
         padding-bottom: 50px;
         width: 300px;
-        margin-top: -400px;
+        margin-top: -350px;
       }
       @media only screen and (max-width: 425px) {
-        margin-top: -300px
+        margin-top: -170px
       }
 
       h1{
@@ -69,7 +73,7 @@
 
   &__research-container{
     max-width: 1100px;
-    margin: 80px auto;
+    margin: 0px auto;
     @media only screen and (max-width: 320px) {
       margin: 0 auto 60px;
     }

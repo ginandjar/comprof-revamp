@@ -86,12 +86,12 @@ class Platform extends React.Component<Props> {
             <div className="platform__features__item">
               <div className="platform__features__image"><img src="/static/png/platform/group2107.svg" /></div>
               <div className="platform__features__title">Bot Studio</div>
-              <div className="platform__features__descr">Develop chatbot using visual interface or YAML-based Markup Language. You can also embed javascript code for more powerful scripting capability.</div>
+              <div className="platform__features__descr">Develop chatbot using visual interface or YAML-based Markup Language. You can also embed JavaScript code for more powerful scripting capability.</div>
             </div>
             <div className="platform__features__item">
               <div className="platform__features__image"><img src="/static/png/platform/group2109.svg" /></div>
               <div className="platform__features__title">CMS Studio</div>
-              <div className="platform__features__descr"> Build custom CMS for your chatbot to allow easier content updates for non developers.</div>
+              <div className="platform__features__descr"> Build custom CMS for your chatbot to allow easier content updates for non-developers.</div>
             </div>
             <div className="platform__features__item">
               <div className="platform__features__image"><img src="/static/png/platform/group2114.svg" /></div>
@@ -106,7 +106,7 @@ class Platform extends React.Component<Props> {
             <div className="platform__features__item">
               <div className="platform__features__image"><img src="/static/png/platform/group3359.svg" /></div>
               <div className="platform__features__title">Deployment Manager</div>
-              <div className="platform__features__descr">Set up multiple environments for different purpose. Rollback when you need to. Create one, chat anywhere.</div>
+              <div className="platform__features__descr">Set up multiple environments for different purpose. Rollback when you need to. Create once, chat anywhere.</div>
             </div>
             <div className="platform__features__item">
               <div className="platform__features__image"><img src="/static/png/platform/group3360.svg" /></div>
