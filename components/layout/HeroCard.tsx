@@ -33,11 +33,11 @@ export default class HeroCard extends React.Component<HeroCardProps> {
             </Fade>
           </div>
 
-
-          <div className="hero-card__content">
-            {this.props.children}
-          </div>
-
+          <Fade>
+            <div className="hero-card__content">
+              {this.props.children}
+            </div>
+          </Fade>
 
 
         </Hero>
