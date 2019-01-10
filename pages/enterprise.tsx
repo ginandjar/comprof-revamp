@@ -74,7 +74,7 @@ class Enterprise extends React.Component<Props, States> {
     chatBotSwiper = new Swiper('#chatbot-swiper', {
       speed: 400,
       spaceBetween: 100,
-      allowTouchMove:true,
+      allowTouchMove: true,
     });
 
     storySwiper = new Swiper('#story-swiper', {
@@ -84,7 +84,7 @@ class Enterprise extends React.Component<Props, States> {
       spaceBetween: -200,
       freeMode: false,
       loop: true,
-      allowTouchMove:true,
+      allowTouchMove: true,
       slideNextClass: 'swiper-slide-next enterprise__success-story__next',
       slidePrevClass: 'swiper-slide-prev enterprise__success-story__prev',
       pagination: {
@@ -119,7 +119,7 @@ class Enterprise extends React.Component<Props, States> {
       width: '100%;'
     };
     var buttonStyle = {
-      'margin-top': '-25px;'
+      'marginTop': '-25px;'
     }
 
     return (
@@ -643,7 +643,7 @@ class Enterprise extends React.Component<Props, States> {
                 </div>
                 <div className="swiper-slide">
                   <div className="enterprise__success-story__item">
-                  <div className="enterprise__success-story__item__img">
+                    <div className="enterprise__success-story__item__img">
                       <img src="/static/png/enterprise/jemma.png"></img>
                     </div>
                     <ButtonLink modifier="light" href="/story/jemma">
@@ -653,7 +653,7 @@ class Enterprise extends React.Component<Props, States> {
                 </div>
                 <div className="swiper-slide">
                   <div className="enterprise__success-story__item">
-                  <div className="enterprise__success-story__item__img">
+                    <div className="enterprise__success-story__item__img">
                       <img src="/static/png/enterprise/shalma.png"></img>
                     </div>
                     <ButtonLink modifier="light" href="/story/shalma">
@@ -663,7 +663,7 @@ class Enterprise extends React.Component<Props, States> {
                 </div>
                 <div className="swiper-slide">
                   <div className="enterprise__success-story__item">
-                  <div className="enterprise__success-story__item__img">
+                    <div className="enterprise__success-story__item__img">
                       <img src="/static/png/enterprise/sabrina.png"></img>
                     </div>
                     <ButtonLink modifier="light" href="/story/sabrina">
