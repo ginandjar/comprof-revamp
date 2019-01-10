@@ -104,6 +104,18 @@
       }
     }
     @media only screen and (max-width: 375px) {
+      min-height: 445px;
+      img{
+        height: 170px;
+      }
+      &--right{
+        left:190px;
+      }
+  
+      &--left{
+        left: 10px;
+      }
+  
     }
     @media only screen and (max-width: 320px) {
       img{

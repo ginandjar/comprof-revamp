@@ -6,6 +6,9 @@
       font-size: 16px !important;
       font-weight: 300;
       margin: 0 70px;
+      @media only screen and (max-width: 768px) {
+        margin: 0 20px;
+      }
     }
     &__text{
       display: inline-block;
@@ -173,8 +176,10 @@
     &__item{
       width: 360px;
       display: inline-block;
-      margin: 0 20px;
       vertical-align: top;
+      @media only screen and (max-width: 768px) {
+        width: 300px;
+      }
 
       img{
         width: 300px;
@@ -198,6 +203,8 @@
         img{
         width: 200px;
         }
+       
+        
       }
 
     }
