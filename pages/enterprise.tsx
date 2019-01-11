@@ -40,8 +40,8 @@ interface States {
   showBeneED: boolean;
 }
 
-let tabSwiper: any = null;
-// let chatBotSwiper: any = null;
+// let tabSwiper: any = null;
+let chatBotSwiper: any = null;
 // let storySwiper: any = null;
 
 
@@ -66,16 +66,16 @@ class Enterprise extends React.Component<Props, States> {
     showBeneED: false,
   };
   componentDidMount() {
-    tabSwiper = new Swiper('#tab-swiper', {
-      speed: 400,
-      spaceBetween: 100
-    });
-
-    // chatBotSwiper = new Swiper('#chatbot-swiper', {
+    // tabSwiper = new Swiper('#tab-swiper', {
     //   speed: 400,
-    //   spaceBetween: 100,
-    //   allowTouchMove: true,
+    //   spaceBetween: 100
     // });
+
+    chatBotSwiper = new Swiper('#chatbot-swiper', {
+      speed: 400,
+      spaceBetween: 100,
+      allowTouchMove: true,
+    });
 
     // storySwiper = new Swiper('#story-swiper', {
     //   slidesPerView: 1,
@@ -163,10 +163,10 @@ class Enterprise extends React.Component<Props, States> {
           title="Our AI & chatbot solution enables you to design an intelligent assistant for your business in an accelerated path to business growth and revenue.">
 
           <div>
-            {this.renderTabMenu()}
+            {/* {this.renderTabMenu()} */}
           </div>
           <div className="enterprise__tab--desktop">
-            <div className="swiper-container" id="tab-swiper">
+            {/* <div className="swiper-container" id="tab-swiper">
               <div className="swiper-wrapper">
 
                 <div className="swiper-slide">
@@ -618,7 +618,7 @@ class Enterprise extends React.Component<Props, States> {
                 </div>
 
               </div>
-            </div>
+            </div> */}
 
           </div>
 
@@ -687,7 +687,7 @@ class Enterprise extends React.Component<Props, States> {
             {this.renderTabChatBot()}
           </div>
           <div className="enterprise__how-to__content">
-            {/* <div className="swiper-container" id="chatbot-swiper">
+            <div className="swiper-container" id="chatbot-swiper">
               <div className="swiper-wrapper">
                 <div className="swiper-slide">
                   <h6>
@@ -761,7 +761,7 @@ class Enterprise extends React.Component<Props, States> {
                   </h6>
                 </div>
               </div>
-            </div> */}
+            </div>
           </div>
         </HeroCard>
 
@@ -1334,15 +1334,15 @@ class Enterprise extends React.Component<Props, States> {
     );
   }
 
-  tabSwipeClick = (e: number) => () => {
-    tabSwiper.slideTo(e, 400);
-    this.setState({ currentIndexGrowth: e });
-  }
+  // tabSwipeClick = (e: number) => () => {
+  //   tabSwiper.slideTo(e, 400);
+  //   this.setState({ currentIndexGrowth: e });
+  // }
 
-  // botSwipeClick = (e: number) => () => {
-  //   chatBotSwiper.slideTo(e, 400);
-  //   this.setState({ currentIndexHowto: e });
-  // };
+  botSwipeClick = (e: number) => () => {
+    chatBotSwiper.slideTo(e, 400);
+    this.setState({ currentIndexHowto: e });
+  };
 
   // storySwiper = (e: number) => () => {
   //   storySwiper.slideTo(e, 400)
