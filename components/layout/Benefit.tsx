@@ -87,7 +87,7 @@ export default class Benefit extends React.Component {
                 </p>
 
               </Carousel.Item>
-              <Carousel.Item>
+              <Carousel.Item className="benefit__nav__content__slider">
                 <p>
                   Flexible work life
                 </p>
@@ -95,7 +95,7 @@ export default class Benefit extends React.Component {
                   We trust you to know your schedule and work when you feel most productive.
                 </p>
               </Carousel.Item>
-              <Carousel.Item>
+              <Carousel.Item className="benefit__nav__content__slider">
                 <p>
                   Competitive salary & share options
                 </p>
@@ -103,7 +103,7 @@ export default class Benefit extends React.Component {
                   We value our people. We give competitive salary and provide stock options so that when we win, we’ll win together.
                 </p>
               </Carousel.Item>
-              <Carousel.Item>
+              <Carousel.Item className="benefit__nav__content__slider">
                 <p>
                   Free lunch, coffee, and foods
                 </p>
@@ -111,7 +111,7 @@ export default class Benefit extends React.Component {
                   Great coffee, snacks, and catered lunches make it easy to stay energized at work. Help yourself to treats throughout the day.
                 </p>
               </Carousel.Item>
-              <Carousel.Item>
+              <Carousel.Item className="benefit__nav__content__slider">
                 <p>
                   Health Insurance
                 </p>
@@ -119,7 +119,7 @@ export default class Benefit extends React.Component {
                   Our team’s health and wellness comes first. That’s why we provide great health insurances for all members of our team.
                 </p>
               </Carousel.Item>
-              <Carousel.Item>
+              <Carousel.Item className="benefit__nav__content__slider">
                 <p>
                   Courses to grow your capabilities and skills
                 </p>
@@ -127,7 +127,7 @@ export default class Benefit extends React.Component {
                   Attend talks, conferences, and professional development events that interest you, and benefit your career growth.
                 </p>
               </Carousel.Item>
-              <Carousel.Item>
+              <Carousel.Item className="benefit__nav__content__slider">
                 <p>
                   Time for personal development
                 </p>

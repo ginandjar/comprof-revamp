@@ -152,7 +152,7 @@ class Home extends React.Component<Props, States> {
           </div>
         </Intro>
         <img src="/static/png/landing/white.png" className="landing__intro__image--white" alt="" />
-        <HeroCard title="See what chatbots can do for your business" className="landing__hero">
+        <HeroCard title="See what chatbots can do <br /> for your business" className="landing__hero">
           <div className="landing__list-image">
             <Fade>
               <div className="landing__list-image__item">
@@ -266,7 +266,7 @@ class Home extends React.Component<Props, States> {
                                 Sabrina
                               </h1>
                               <p>
-                                Award Winning Banking Assistant (The AsianBanker)
+                                Award Winning Banking Assistant (The Asian Banker)
                               </p>
 
                               <ButtonLink modifier="light" href="/story/sabrina">
@@ -406,7 +406,7 @@ class Home extends React.Component<Props, States> {
                   Bot Studio
               </h5>
                 <p>
-                  Visual Conversation Designer. Easily design engaging conversation flows for your chatbots.
+                  Conversation Designer easily design engaging conversation flows for your chatbots.
               </p>
               </div>
             </Fade>
@@ -440,7 +440,7 @@ class Home extends React.Component<Props, States> {
                 <img src="/static/png/landing/lock.svg" />
 
                 <h5>
-                  On Premise
+                  On-Premise
               </h5>
                 <p>
                   Need the security of your own IT infrastructure to run your chatbots? Just install it on your own system using our On-Premise solution.
@@ -504,7 +504,7 @@ class Home extends React.Component<Props, States> {
 
         </HeroCard>
 
-        <HeroCard title="Our Trusted Partners" className="partner__hero">
+        <HeroCard title="Our Clients" className="partner__hero">
           <div className="partner__list-image">
             <div className="partner__list-image__item--list-image-only">
               <img src="/static/png/partner/trusted/telkomsel.png" />
@@ -573,8 +573,8 @@ class Home extends React.Component<Props, States> {
               {posts &&
                 posts.map(post => (
                   <div className="landing__engineering-blog__item">
-                    <div className="landing__engineering-blog__image">
-                      <img src={post.acf.featured_image.sizes.large} />
+                    <div className="landing__engineering-blog__image" style={{ backgroundImage: `url(${post.acf.featured_image.sizes.large})` }}>
+
                     </div>
                     <div className="landing__engineering-blog__detail">
 
@@ -750,7 +750,7 @@ class Home extends React.Component<Props, States> {
                       Sabrina
                               </h1>
                     <p>
-                      Award Winning Banking Assistant (The AsianBanker)
+                      Award Winning Banking Assistant (The Asian Banker)
                               </p>
 
                     <ButtonLink modifier="light" href="/story/sabrina">
@@ -886,4 +886,6 @@ class Home extends React.Component<Props, States> {
 
 }
 export default withLocaleService(Home);
+
+
 

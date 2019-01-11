@@ -211,7 +211,7 @@ class Platform extends React.Component<Props> {
         </HeroCard>
         <HeroCard className="platform__try-platform">
           <div className="platform__try-platform__content">
-            <h1>Start free  and scale as you grow</h1>
+            <h1>Start free and scale <br /> as you grow</h1>
             <ButtonLink modifier="light" href="https://platform.kata.ai/login">
               Try Kata Platform
             </ButtonLink>

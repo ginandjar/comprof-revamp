@@ -194,6 +194,9 @@ class Partner extends React.Component<Props> {
             <div className="partner__list-image__item--list-image-only">
               <img src="/static/png/partner/trusted/twitter.png" />
             </div>
+            <div className="partner__list-image__item--list-image-only">
+              <img src="/static/png/partner/trusted/whatsapp.png" />
+            </div>
 
           </div>
 

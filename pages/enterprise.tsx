@@ -41,8 +41,8 @@ interface States {
 }
 
 let tabSwiper: any = null;
-let chatBotSwiper: any = null;
-let storySwiper: any = null;
+// let chatBotSwiper: any = null;
+// let storySwiper: any = null;
 
 
 class Enterprise extends React.Component<Props, States> {
@@ -71,38 +71,38 @@ class Enterprise extends React.Component<Props, States> {
       spaceBetween: 100
     });
 
-    chatBotSwiper = new Swiper('#chatbot-swiper', {
-      speed: 400,
-      spaceBetween: 100,
-      allowTouchMove: true,
-    });
+    // chatBotSwiper = new Swiper('#chatbot-swiper', {
+    //   speed: 400,
+    //   spaceBetween: 100,
+    //   allowTouchMove: true,
+    // });
 
-    storySwiper = new Swiper('#story-swiper', {
-      slidesPerView: 1,
-      effect: 'coverflow',
-      centeredSlides: true,
-      spaceBetween: -200,
-      freeMode: false,
-      loop: true,
-      allowTouchMove: true,
-      slideNextClass: 'swiper-slide-next enterprise__success-story__next',
-      slidePrevClass: 'swiper-slide-prev enterprise__success-story__prev',
-      pagination: {
-        el: '.swiper-pagination',
-        clickable: true,
-      },
-      coverflowEffect: {
-        rotate: 0,
-        stretch: 0,
-        depth: 1500,
-        modifier: 1,
-        slideShadows: false,
-      },
-      navigation: {
-        nextEl: '.swiper-button-next',
-        prevEl: '.swiper-button-prev',
-      },
-    });
+    // storySwiper = new Swiper('#story-swiper', {
+    //   slidesPerView: 1,
+    //   effect: 'coverflow',
+    //   centeredSlides: true,
+    //   spaceBetween: -200,
+    //   freeMode: false,
+    //   loop: true,
+    //   allowTouchMove: true,
+    //   slideNextClass: 'swiper-slide-next enterprise__success-story__next',
+    //   slidePrevClass: 'swiper-slide-prev enterprise__success-story__prev',
+    //   pagination: {
+    //     el: '.swiper-pagination',
+    //     clickable: true,
+    //   },
+    //   coverflowEffect: {
+    //     rotate: 0,
+    //     stretch: 0,
+    //     depth: 1500,
+    //     modifier: 1,
+    //     slideShadows: false,
+    //   },
+    //   navigation: {
+    //     nextEl: '.swiper-button-next',
+    //     prevEl: '.swiper-button-prev',
+    //   },
+    // });
 
     this.setState({
       currentIndexGrowth: 0,
@@ -219,7 +219,7 @@ class Enterprise extends React.Component<Props, States> {
                               <Fade bottom collapse when={this.state.showBeneCE}>
                                 <ul>
                                   <li>
-                                    Create campaigns that aligns with your goals
+                                    Create campaigns that align with your goals
                                 </li>
                                   <li>
                                     Achieve relevant messages for personalization at scale
@@ -228,7 +228,7 @@ class Enterprise extends React.Component<Props, States> {
                                     Outperform your campaign revenue targets
                                 </li>
                                   <li>
-                                    Increase customer experience & loyalty
+                                    Improve customer experience & loyalty
                                 </li>
                                   <li>
                                     Reactivate customers in your database
@@ -253,7 +253,7 @@ class Enterprise extends React.Component<Props, States> {
 
                   <Grid className="enterprise__tab">
                     <Fade>
-                      <h5>Whether your business line is banking, financial services, or FinTech, bots are a great strategy to sustain profitability and win over customers. It offers real-time financial services / data at the engagement point, supply 24 hour self-service, and transform ordinary transactions, policy updates, payments, and more into simple text through the channel of customers choice.</h5>
+                      <h5>Whether your business line is banking, financial services, or FinTech, bots are a great strategy to sustain profitability and win over customers. It offers real-time financial services or data at the engagement point, supply 24 hour self-service, and transform ordinary transactions, policy updates, payments, and more into simple text through the channel of customers choice.</h5>
                     </Fade>
                     <Row>
                       <Col md={6}>
@@ -275,7 +275,7 @@ class Enterprise extends React.Component<Props, States> {
                                     Branch and ATM locator
                                 </li>
                                   <li>
-                                    Spending analysiss
+                                    Spending analysis
                                 </li>
                                   <li>
                                     Apply for new services and request checkbook
@@ -284,7 +284,7 @@ class Enterprise extends React.Component<Props, States> {
                                     Report lost or stolen card
                                 </li>
                                   <li>
-                                    Transfer money to own account / third party
+                                    Transfer money to own account or third party
                                 </li>
                                   <li>
                                     Bill payment
@@ -308,7 +308,7 @@ class Enterprise extends React.Component<Props, States> {
                                     Provide personal banking and investment advice
                                 </li>
                                   <li>
-                                    Uncover right-time / right-fit loyalty program promotions
+                                    Uncover right-time or right-fit loyalty program promotions
                                 </li>
                                   <li>
                                     Deliver actionable response options to urgent activity notifications
@@ -354,10 +354,10 @@ class Enterprise extends React.Component<Props, States> {
                                     Sourcing & recruitment
                                 </li>
                                   <li>
-                                    On boarding process
+                                    Onboarding process
                                 </li>
                                   <li>
-                                    FAQ & Company policy
+                                    FAQ & company policy
                                 </li>
                                   <li>
                                     Schedule meetings and send a notification
@@ -366,7 +366,7 @@ class Enterprise extends React.Component<Props, States> {
                                     Benefits enrollment
                                 </li>
                                   <li>
-                                    Centralize documentation
+                                    Centralized documentation
                                 </li>
                                 </ul>
                               </Fade>
@@ -439,7 +439,7 @@ class Enterprise extends React.Component<Props, States> {
                                     Provide news or information updates
                                 </li>
                                   <li>
-                                    Provide products / services recommendations
+                                    Provide products or services recommendations
                                 </li>
                                   <li>
                                     Ease online transactions and facilitate sales
@@ -463,7 +463,7 @@ class Enterprise extends React.Component<Props, States> {
                                     Customer service improvement through analytics and data collections
                                 </li>
                                   <li>
-                                    Enables business to save operational costs on Call Center
+                                    Enables business to save operational costs on call center
                                 </li>
                                   <li>
                                     Help business save time in responding to customers’ FAQ
@@ -557,7 +557,7 @@ class Enterprise extends React.Component<Props, States> {
                 <div className="swiper-slide">
                   <Grid className="enterprise__tab">
                     <Fade>
-                      <h5>As chatbot technology advances, more use cases are surfacing across nearly every sector imaginable. Recently, bots have begun being implemented in education to assist in a variety of automates tasks, and the foreseeable advantages are far-reaching.</h5>
+                      <h5>As chatbot technology advances, more use cases are surfacing across nearly every sector imaginable. Recently, bots have begun being implemented in education to assist in a variety of automated tasks, and the foreseeable advantages are far-reaching.</h5>
                     </Fade>
                     <Row>
                       <Col md={6}>
@@ -624,7 +624,7 @@ class Enterprise extends React.Component<Props, States> {
 
         </TabbedHero>
 
-        <HeroCard title="Success Story">
+        {/* <HeroCard title="Success Story">
           <div style={divStyle}>
             <div className="swiper-container" id="story-swiper">
 
@@ -680,14 +680,14 @@ class Enterprise extends React.Component<Props, States> {
 
             </div>
           </div>
-        </HeroCard>
+        </HeroCard> */}
 
         <HeroCard className="hero-card--blue enterprise__how-to" title="How to Get Your Chatbot">
           <div>
             {this.renderTabChatBot()}
           </div>
           <div className="enterprise__how-to__content">
-            <div className="swiper-container" id="chatbot-swiper">
+            {/* <div className="swiper-container" id="chatbot-swiper">
               <div className="swiper-wrapper">
                 <div className="swiper-slide">
                   <h6>
@@ -761,7 +761,7 @@ class Enterprise extends React.Component<Props, States> {
                   </h6>
                 </div>
               </div>
-            </div>
+            </div> */}
           </div>
         </HeroCard>
 
@@ -1339,14 +1339,14 @@ class Enterprise extends React.Component<Props, States> {
     this.setState({ currentIndexGrowth: e });
   }
 
-  botSwipeClick = (e: number) => () => {
-    chatBotSwiper.slideTo(e, 400);
-    this.setState({ currentIndexHowto: e });
-  };
+  // botSwipeClick = (e: number) => () => {
+  //   chatBotSwiper.slideTo(e, 400);
+  //   this.setState({ currentIndexHowto: e });
+  // };
 
-  storySwiper = (e: number) => () => {
-    storySwiper.slideTo(e, 400)
-  }
+  // storySwiper = (e: number) => () => {
+  //   storySwiper.slideTo(e, 400)
+  // }
   stateFeatCe = () => () => {
     this.setState({ showFeatCE: !this.state.showFeatCE });
   }

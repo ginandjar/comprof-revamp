@@ -18,6 +18,9 @@ export default class Footer extends React.Component<Props> {
             <Row>
               <Col>
                 <div className="footer__company">
+                  <div className="footer__company__logo">
+                    <img src="/static/png/footer/logo.png" alt="" />
+                  </div>
                   <div className="company-info--name">PT. YesBoss Group Indonesia</div>
                   <address className="company-info--address">
                     Graha Tirtadi<br />
@@ -38,19 +41,22 @@ export default class Footer extends React.Component<Props> {
                   </div>
                   <div className="company-info--socials">
                     <a href="https://www.facebook.com/katadotai/" target="_blank">
-                      <img src="/static/images/icons/facebook.svg" alt="" />
+                      <img src="/static/png/footer/facebook.png" alt="" />
                     </a>
                     <a href="https://twitter.com/katadotai" target="_blank">
-                      <img src="/static/images/icons/twitter.svg" alt="" />
+                      <img src="/static/png/footer/twitter.png" alt="" />
                     </a>
                     <a href="https://www.instagram.com/katadotai/" target="_blank">
-                      <img src="/static/images/icons/instagram.svg" alt="" />
+                      <img src="/static/png/footer/instagram.png" alt="" />
                     </a>
                     <a href="https://medium.com/kata-engineering" target="_blank">
-                      <img src="/static/images/icons/medium.svg" alt="" />
+                      <img src="/static/png/footer/medium.png" alt="" />
                     </a>
                     <a href="https://www.linkedin.com/company/yesboss/" target="_blank">
-                      <img src="/static/images/icons/linkedin.svg" alt="" />
+                      <img src="/static/png/footer/linkedin.png" alt="" />
+                    </a>
+                    <a href="https://www.youtube.com/channel/UCrud2GevnuhBNM7C7RjakVg" target="_blank">
+                      <img src="/static/png/footer/youtube.png" alt="" />
                     </a>
                   </div>
 

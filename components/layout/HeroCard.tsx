@@ -22,8 +22,8 @@ export default class HeroCard extends React.Component<HeroCardProps> {
         <Hero className="hero__center-container">
           <div className="hero-card__title">
             <Fade>
-              <h1>
-                {this.props.title}
+              <h1 dangerouslySetInnerHTML={{ __html: this.props.title }}>
+
               </h1>
             </Fade>
             <Fade>

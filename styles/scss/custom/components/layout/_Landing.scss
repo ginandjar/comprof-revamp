@@ -811,6 +811,7 @@
 
     &__blog-image{
       text-align: left;
+      
       img{
       width: 10%;
       @media only screen and (max-width: 1440px) {
@@ -867,6 +868,14 @@
       padding: 0 5px;
       position: relative;
       top: 100px;
+      width: auto;
+    height: 200px;
+    background-size: cover;
+    background-position-x: center;
+    vertical-align: middle;
+    max-width: 95%;
+    border-radius: 10px;
+    margin: auto;
       
       img{
         max-width: 95%;

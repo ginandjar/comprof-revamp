@@ -46,16 +46,20 @@
   &__nav__content{
 
     &__slider{
+      min-height: 130px;
+      @media only screen and (max-width: 375px) {
+        min-height: 170px
+      }
 
     }
 
     p{
       font-size: 22px;
-      max-width: 500px;
       margin:  20px auto;
+      max-width: 85%;
       @media only screen and (max-width: 768px) {
         font-size: 16px !important;
-        max-width: 90%;
+        
       }
     }
 
