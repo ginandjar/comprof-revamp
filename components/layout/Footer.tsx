@@ -88,7 +88,7 @@ export default class Footer extends React.Component<Props> {
                       <ul className="footer-menu--nav">
 
                         <li>
-                          <a href="https://platform.kata.ai">Kata Platform</a>
+                          <a href="/platform">Kata Platform</a>
                         </li>
 
                       </ul>

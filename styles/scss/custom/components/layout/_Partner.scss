@@ -38,6 +38,23 @@
       &__history{
         position: relative;
 
+        hr{
+          width: 8%;
+          border-top: 4px solid #00cce9;
+          height: 2px;
+          float: left;
+          top: 15px;
+          left: -40px;
+          position: absolute;
+          z-index: 1;
+          @media only screen and (max-width: 1024px) {
+            left: -60px;
+          }
+          @media only screen and (max-width: 768px) {
+            display: none;
+          }
+        }
+
         height: 647px;
         &__title{
           position: absolute;
@@ -258,7 +275,7 @@
       }
 
       &--list-image-only{
-        width: 270px;
+        width: 260px;
         height: 120px;
         display: inline-block;
         margin: 30px 20px;

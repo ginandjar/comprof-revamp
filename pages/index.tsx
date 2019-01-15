@@ -103,31 +103,30 @@ class Home extends React.Component<Props, States> {
 
         <NavigationBar localeService={this.props.localeService} />
         <Intro className="intro--blue landing">
-          <div className="flex-item__left">
+          <div className="flex-item__left landing__intro">
             <div className="landing__intro__text">
               <h1>
-                AI & Chatbot solution for smarter&nbsp;
+                Conversational AI solution for smarter&nbsp;
                 <TextLoop speed={1000}>
                   <span>customer support</span>
                   <span>CRM</span>
                   <span>marketing</span>
                   <span>commerce</span>
-
-
+                  <span>internal helpdesk</span>
                 </TextLoop>
               </h1>
 
               <p>
                 Create an intelligent assistant to serve your customer better
                 </p>
-              <a className="button button__light landing__intro__button" onClick={this.handleShow()}>Build Your Chatbot Now</a>
+              <a className="button button__light landing__intro__button" onClick={this.handleShow()}>Talk to Sales</a>
               <Modal bsSize="large" className="landing__modal" show={this.state.showModal} onHide={this.handleClose()}>
 
                 <Modal.Body>
                   <div dangerouslySetInnerHTML={this.renderFormly()}></div>
                 </Modal.Body>
                 <Modal.Footer>
-                  <Button onClick={this.handleClose}>Close</Button>
+                  <Button onClick={this.handleClose()}>Close</Button>
                 </Modal.Footer>
 
               </Modal>
@@ -531,6 +530,11 @@ class Home extends React.Component<Props, States> {
               <img src="/static/png/partner/trusted/atma.png" />
             </div>
           </div>
+          <div>
+
+            <h2>and many more</h2>
+          </div>
+
 
         </HeroCard>
 

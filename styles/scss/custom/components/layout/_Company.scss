@@ -21,6 +21,16 @@
       vertical-align: middle;
       &__history{
         position: relative;
+        hr{
+          width: 6%;
+          border-top: 4px solid #00cce9;
+          height: 2px;
+          float: left;
+          top: 75px;
+          left: 80px;
+          position: absolute;
+          z-index: 999;
+        }
 
         height: 647px;
         @media only screen and (max-width: 768px) {

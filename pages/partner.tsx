@@ -5,7 +5,6 @@ import NavigationBar from '../components/layout/NavigationBar';
 import LocaleSolver, { withLocaleService } from '../components/locale/LocaleSolver';
 import 'styles/scss/App.scss';
 import Link from 'next/link';
-import Swiper from 'swiper';
 import Intro from '../components/layout/Intro';
 import HeroCard from '../components/layout/HeroCard';
 import TabbedHero from '../components/layout/TabbedHero';
@@ -21,8 +20,6 @@ interface Props {
 
 }
 
-let tabSwiper: any = null;
-
 
 class Partner extends React.Component<Props> {
   public static async getInitialProps(ctx: NextContext) {
@@ -30,13 +27,7 @@ class Partner extends React.Component<Props> {
   }
 
   componentDidMount() {
-    tabSwiper = new Swiper('#tab-swiper', {
-      speed: 400,
-      spaceBetween: 100,
-      pagination: {
-        el: '.swiper-pagination',
-      },
-    });
+
   }
 
 
@@ -82,6 +73,7 @@ class Partner extends React.Component<Props> {
               <h1 className="partner__hero__text__history__title">
                 What is Kata Partnership
               </h1>
+              <hr />
               <p className="partner__hero__text__history__des __testimonials" >
                 Whether you want to build chatbots or offer integrated tech solutions for your client, Kata.ai offers flexible technology or ecosystem partnerships to align with your business model. As Kata.ai partner, you will have access to technical resources, and will benefit from sales lead coming from enterprises that want to develop chatbot with Kata Platform technology.<br /><br />With Kata.ai partnership program your business will get training, materials, and best practices so you can get to know our chatbot development platform. Besides user-friendly interface, strong NLP, a variety of integration channels and language, we have much more integrated solution to offer to your clients.
               </p>
@@ -150,47 +142,52 @@ class Partner extends React.Component<Props> {
             <div className="partner__list-image__item--list-image-only">
               <img src="/static/png/partner/trusted/halosis.png" />
             </div>
-
             <div className="partner__list-image__item--list-image-only">
               <img src="/static/png/partner/trusted/infomedia.png" />
             </div>
+
             <div className="partner__list-image__item--list-image-only">
               <img src="/static/png/partner/trusted/jatis.png" />
             </div>
             <div className="partner__list-image__item--list-image-only">
               <img src="/static/png/partner/trusted/line.png" />
             </div>
-
             <div className="partner__list-image__item--list-image-only">
               <img src="/static/png/partner/trusted/microsoft.png" />
             </div>
             <div className="partner__list-image__item--list-image-only">
               <img src="/static/png/partner/trusted/medlink.png" />
             </div>
+
             <div className="partner__list-image__item--list-image-only">
               <img src="/static/png/partner/trusted/mitra.png" />
             </div>
-
+            <div className="partner__list-image__item--list-image-only">
+              <img src="/static/png/partner/trusted/mindshare.png" />
+            </div>
+            <div className="partner__list-image__item--list-image-only">
+              <img src="/static/png/partner/trusted/mdmedia.png" />
+            </div>
             <div className="partner__list-image__item--list-image-only">
               <img src="/static/png/partner/trusted/nawatech.png" />
             </div>
+
             <div className="partner__list-image__item--list-image-only">
               <img src="/static/png/partner/trusted/qiscus.png" />
             </div>
             <div className="partner__list-image__item--list-image-only">
               <img src="/static/png/partner/trusted/radyyalabs.png" />
             </div>
-
             <div className="partner__list-image__item--list-image-only">
               <img src="/static/png/partner/trusted/selindo.png" />
             </div>
             <div className="partner__list-image__item--list-image-only">
               <img src="/static/png/partner/trusted/sprint.png" />
             </div>
+
             <div className="partner__list-image__item--list-image-only">
               <img src="/static/png/partner/trusted/salt.png" />
             </div>
-
             <div className="partner__list-image__item--list-image-only">
               <img src="/static/png/partner/trusted/twitter.png" />
             </div>
@@ -368,24 +365,6 @@ class Partner extends React.Component<Props> {
 
     );
   }
-
-  renderTabMenu() {
-    return (
-      <Tab>
-        <TabItem item="CEO" modifier="tab-item--selected" onClick={this.tabSwipeClick(0)} />
-        <TabItem item="CTO" onClick={this.tabSwipeClick(1)} />
-        <TabItem item="CFO" onClick={this.tabSwipeClick(2)} />
-        <TabItem item="CMO" onClick={this.tabSwipeClick(3)} />
-        <TabItem item="VP Of Product & Engineering" onClick={this.tabSwipeClick(4)} />
-      </Tab>
-    );
-  }
-
-
-  tabSwipeClick = (e: number) => () => {
-    tabSwiper.slideTo(e, 400);
-  }
-
 
 }
 export default withLocaleService(Partner);

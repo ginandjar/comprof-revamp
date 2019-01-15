@@ -1,5 +1,16 @@
 .lifekata{
 
+  hr{
+    width: 10%;
+    border-top: 4px solid #00cce9;
+    height: 2px;
+    float: left;
+    top: -10px;
+    left: 0;
+    position: absolute;
+    z-index: 1;
+  }
+
   h1{
     @media only screen and (max-width: 768px) {
       text-align: center;

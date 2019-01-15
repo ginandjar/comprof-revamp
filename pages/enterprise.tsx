@@ -40,9 +40,9 @@ interface States {
   showBeneED: boolean;
 }
 
-// let tabSwiper: any = null;
+let tabSwiper: any = null;
 let chatBotSwiper: any = null;
-// let storySwiper: any = null;
+let storySwiper: any = null;
 
 
 class Enterprise extends React.Component<Props, States> {
@@ -66,10 +66,10 @@ class Enterprise extends React.Component<Props, States> {
     showBeneED: false,
   };
   componentDidMount() {
-    // tabSwiper = new Swiper('#tab-swiper', {
-    //   speed: 400,
-    //   spaceBetween: 100
-    // });
+    tabSwiper = new Swiper('#tab-swiper', {
+      speed: 400,
+      spaceBetween: 100
+    });
 
     chatBotSwiper = new Swiper('#chatbot-swiper', {
       speed: 400,
@@ -77,32 +77,53 @@ class Enterprise extends React.Component<Props, States> {
       allowTouchMove: true,
     });
 
-    // storySwiper = new Swiper('#story-swiper', {
-    //   slidesPerView: 1,
-    //   effect: 'coverflow',
-    //   centeredSlides: true,
-    //   spaceBetween: -200,
-    //   freeMode: false,
-    //   loop: true,
-    //   allowTouchMove: true,
-    //   slideNextClass: 'swiper-slide-next enterprise__success-story__next',
-    //   slidePrevClass: 'swiper-slide-prev enterprise__success-story__prev',
-    //   pagination: {
-    //     el: '.swiper-pagination',
-    //     clickable: true,
-    //   },
-    //   coverflowEffect: {
-    //     rotate: 0,
-    //     stretch: 0,
-    //     depth: 1500,
-    //     modifier: 1,
-    //     slideShadows: false,
-    //   },
-    //   navigation: {
-    //     nextEl: '.swiper-button-next',
-    //     prevEl: '.swiper-button-prev',
-    //   },
-    // });
+    storySwiper = new Swiper('#story-swiper', {
+      slidesPerView: 1,
+      effect: 'coverflow',
+      centeredSlides: true,
+      spaceBetween: -200,
+      freeMode: false,
+      loop: true,
+      allowTouchMove: true,
+      slideNextClass: 'swiper-slide-next enterprise__success-story__next',
+      slidePrevClass: 'swiper-slide-prev enterprise__success-story__prev',
+      pagination: {
+        el: '.swiper-pagination',
+        clickable: true,
+      },
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 1500,
+        modifier: 1,
+        slideShadows: false,
+      },
+      navigation: {
+        nextEl: '.swiper-button-next',
+        prevEl: '.swiper-button-prev',
+      },
+      breakpoints: {
+        // when window width is <= 320px
+        320: {
+          slidesPerView: 1,
+          spaceBetween: 10
+        },
+        // when window width is <= 480px
+        840: {
+          slidesPerView: 1,
+          spaceBetween: 20,
+          effect: 'slide',
+          coverflowEffect: {
+            rotate: 100,
+            stretch: 0,
+            depth: 100,
+            modifier: 0,
+            slideShadows: false,
+          },
+        },
+
+      }
+    });
 
     this.setState({
       currentIndexGrowth: 0,
@@ -116,7 +137,7 @@ class Enterprise extends React.Component<Props, States> {
     const { localeService, posts } = this.props;
 
     var divStyle = {
-      width: '100%;'
+      width: '100%'
     };
     var buttonStyle = {
       'marginTop': '-25px;'
@@ -139,7 +160,7 @@ class Enterprise extends React.Component<Props, States> {
         <NavigationBar localeService={this.props.localeService} />
 
         <Intro className="enterprise">
-          <div className="flex-item__left">
+          <div className="flex-item__left enterprise__intro">
             <Fade>
               <div className="enterprise__intro__text">
                 <h1>
@@ -160,13 +181,13 @@ class Enterprise extends React.Component<Props, States> {
         </Intro>
         <TabbedHero
           className="enterprise"
-          title="Our AI & chatbot solution enables you to design an intelligent assistant for your business in an accelerated path to business growth and revenue.">
+          title="Conversational AI solution enables you to design an intelligent assistant for your business in an accelerated path to business growth and revenue.">
 
           <div>
-            {/* {this.renderTabMenu()} */}
+            {this.renderTabMenu()}
           </div>
           <div className="enterprise__tab--desktop">
-            {/* <div className="swiper-container" id="tab-swiper">
+            <div className="swiper-container" id="tab-swiper">
               <div className="swiper-wrapper">
 
                 <div className="swiper-slide">
@@ -618,13 +639,13 @@ class Enterprise extends React.Component<Props, States> {
                 </div>
 
               </div>
-            </div> */}
+            </div>
 
           </div>
 
         </TabbedHero>
 
-        {/* <HeroCard title="Success Story">
+        <HeroCard title="Success Story">
           <div style={divStyle}>
             <div className="swiper-container" id="story-swiper">
 
@@ -680,7 +701,7 @@ class Enterprise extends React.Component<Props, States> {
 
             </div>
           </div>
-        </HeroCard> */}
+        </HeroCard>
 
         <HeroCard className="hero-card--blue enterprise__how-to" title="How to Get Your Chatbot">
           <div>
@@ -785,7 +806,7 @@ class Enterprise extends React.Component<Props, States> {
             <Col md={6} className="enterprise__get-in-touch__col enterprise__get-in-touch__background-blue" >
               <Image src="/static/png/enterprise/star.svg" />
               <h5>
-                Design your smart assistant today. Grow your business more further
+                Design your smart assistant today. Grow your business further
             </h5>
               <ButtonLink modifier="light" href="/contact-us">
                 Get in Touch
@@ -1334,19 +1355,19 @@ class Enterprise extends React.Component<Props, States> {
     );
   }
 
-  // tabSwipeClick = (e: number) => () => {
-  //   tabSwiper.slideTo(e, 400);
-  //   this.setState({ currentIndexGrowth: e });
-  // }
+  tabSwipeClick = (e: number) => () => {
+    tabSwiper.slideTo(e, 400);
+    this.setState({ currentIndexGrowth: e });
+  }
 
   botSwipeClick = (e: number) => () => {
     chatBotSwiper.slideTo(e, 400);
     this.setState({ currentIndexHowto: e });
   };
 
-  // storySwiper = (e: number) => () => {
-  //   storySwiper.slideTo(e, 400)
-  // }
+  storySwiper = (e: number) => () => {
+    storySwiper.slideTo(e, 400)
+  }
   stateFeatCe = () => () => {
     this.setState({ showFeatCE: !this.state.showFeatCE });
   }

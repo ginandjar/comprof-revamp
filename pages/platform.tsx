@@ -42,9 +42,9 @@ class Platform extends React.Component<Props> {
         </Head>
         <NavigationBar localeService={this.props.localeService} />
         <Intro>
-          <HeroCard title="The Ultimate Chatbot Platform" caption="" className="platform__intro">
+          <HeroCard title="The Ultimate Conversational AI Platform" caption="" className="platform__intro">
             <h2>
-              An integrated platform to create, launch, and manage enterprise-grade chatbot without compromise
+              An integrated platform to create, launch, and manage enterprise-grade chatbots without compromise
             </h2>
             <div className="platform__intro-image">
               <Fade left>
@@ -96,7 +96,7 @@ class Platform extends React.Component<Props> {
             <div className="platform__features__item">
               <div className="platform__features__image"><img src="/static/png/platform/group2114.svg" /></div>
               <div className="platform__features__title">Module</div>
-              <div className="platform__features__descr">Integrate our prebuilt module to your existing project for faster & better bot development.</div>
+              <div className="platform__features__descr">Integrate our prebuilt module to your existing project for faster & better bot development. coming soon</div>
             </div>
             <div className="platform__features__item">
               <div className="platform__features__image"><img src="/static/png/platform/group2778.svg" /></div>

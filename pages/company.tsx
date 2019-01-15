@@ -126,12 +126,13 @@ class Company extends React.Component<Props> {
               <h1 className="company__hero__text__history__title">
                 The History
               </h1>
+
               <p className="company__hero__text__history__des " >
                 Established in 2015, we started our journey as YesBoss, offering virtual assistant service through SMS and a mobile app. Along the way, we learned that we wanted a business that was more impactful and scaleable. With the man-power heavy B2C service provided by, so in 2016 YesBoss was no longer active and wehad to pivot our business into the B2Bsegment with the launch of Kata.ai <br /><br />Our goal in Kata.ai is to offer natural language dialogue engine that enables brands and enterprises to build their own chatbots to perform conversational activities ranged from product marketing, commerce, to behavioral data gathering via commonly used social and chat apps like LINE, Facebook, Twitter, Telegram, Slack, BBM, and WhatsApp. Helping business to understand the behavior of their customers and build better relationship. <br /><br />Our journey hasn’t always been easy, but we embrace it to learn and get better. Our team is aligned and working hard to make great product and solutions.
               </p>
               <img src="/static/png/company/dot.png" className="company__hero__text__history__dot" />
               <img src="/static/png/company/cover.png" className="company__hero__text__history__cover" />
-
+              <hr />
             </div>
           </div>
 
@@ -161,7 +162,7 @@ class Company extends React.Component<Props> {
                             Irzan Raditya
                           </h6>
                           <p>
-                            Born in 1988, he is a young entrepreneur with a deep exposure and passion in the digital and technology sphere. He acquired his Bachelor of Science degree in Computer Science from Hochschule für Technik und Wirtschaft (HTW) Berlin in 2012. <br /> <br />Prior to returning to his home country in Indonesia, he worked as Feature Engineer at Zolando (subsdiary of Rocket Internet) and TakeAway.com. After exploring valuable experience in Germany for years, Irzan decided to come home to Indonesia and exercised his passion to build his own business. He founded several startup such as Amplitweet, Cape&Fly, Rumah Diaspora, before finally building YesBoss<br /> <br /> a company that offers virtual assistant service, which became Kata.ai now after the company pivot into B2B business that offers AI technology for corporations.
+                            Born in 1988, he is a young entrepreneur with a deep exposure and passion in the digital and technology sphere. He acquired his Bachelor of Science degree in Computer Science from Hochschule für Technik und Wirtschaft (HTW) Berlin in 2012. <br /> <br />Prior to returning to his home country in Indonesia, he worked as Feature Engineer at Zalando (subsdiary of Rocket Internet) and TakeAway.com. After exploring valuable experience in Germany for years, Irzan decided to come home to Indonesia and exercised his passion to build his own business. He founded several startup such as Amplitweet, Cape&Fly, Rumah Diaspora, before finally building YesBoss<br /> <br /> a company that offers virtual assistant service, which became Kata.ai now after the company pivot into B2B business that offers AI technology for corporations.
                           </p>
                           <a href=" https://www.linkedin.com/in/irzanraditya/" target="_blank"><Image src="/static/png/company/linkedin.svg" /></a>
                         </div>
@@ -293,7 +294,7 @@ class Company extends React.Component<Props> {
                     Irzan Raditya
                           </h6>
                   <p>
-                    Born in 1988, he is a young entrepreneur with a deep exposure and passion in the digital and technology sphere. He acquired his Bachelor of Science degree in Computer Science from Hochschule für Technik und Wirtschaft (HTW) Berlin in 2012. <br /> <br />Prior to returning to his home country in Indonesia, he worked as Feature Engineer at Zolando (subsdiary of Rocket Internet) and TakeAway.com. After exploring valuable experience in Germany for years, Irzan decided to come home to Indonesia and exercised his passion to build his own business. He founded several startup such as Amplitweet, Cape&Fly, Rumah Diaspora, before finally building YesBoss<br /> <br /> a company that offers virtual assistant service, which became Kata.ai now after the company pivot into B2B business that offers AI technology for corporations.
+                    Born in 1988, he is a young entrepreneur with a deep exposure and passion in the digital and technology sphere. He acquired his Bachelor of Science degree in Computer Science from Hochschule für Technik und Wirtschaft (HTW) Berlin in 2012. <br /> <br />Prior to returning to his home country in Indonesia, he worked as Feature Engineer at Zalando (subsdiary of Rocket Internet) and TakeAway.com. After exploring valuable experience in Germany for years, Irzan decided to come home to Indonesia and exercised his passion to build his own business. He founded several startup such as Amplitweet, Cape&Fly, Rumah Diaspora, before finally building YesBoss<br /> <br /> a company that offers virtual assistant service, which became Kata.ai now after the company pivot into B2B business that offers AI technology for corporations.
                           </p>
                   <a href=" https://www.linkedin.com/in/irzanraditya/" target="_blank"><Image src="/static/png/company/linkedin.svg" /></a>
                 </div>

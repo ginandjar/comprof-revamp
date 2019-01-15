@@ -13,7 +13,7 @@ export default class BuildChatbot extends React.Component {
       <Section className="site-container--white build-chat-bot">
 
         <h1>
-          Ready to build your chatbot
+          Ready to build your chatbot?
         </h1>
         <ButtonLink modifier="light" href="/contact-us">
           Get Started

@@ -41,7 +41,7 @@ class DetailStory extends React.Component<Props> {
 
           <div className="flex-item__left detailstory__intro__content ">
             <div className="detailstory__intro__text">
-
+              <img className="landing__tab__logo" src="/static/png/landing/shalma/logo.png" />
               <h1>
                 Shalma
               </h1>

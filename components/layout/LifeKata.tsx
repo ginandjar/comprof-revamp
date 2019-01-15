@@ -24,6 +24,7 @@ export default class LifeKata extends React.Component {
         <Media
           className="media-section" >
           <Col md={6} sm={12}>
+            <hr />
             <h1>
               Life at Kata.AI
                 </h1>
