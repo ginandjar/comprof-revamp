@@ -66,7 +66,7 @@ class DetailStory extends React.Component<Props> {
             </div>
             <div className="detailstory__thestory__text">
               <p>Today’s customers want more than the traditional one-sided transaction, they want a two-way interaction. And enterprises that are doing this effectively are already discovering the merits of a personal, actionable conversation through higher profit margins and increase rate of loyalty. Therefore, Telkomsel as Indonesia’s largest cellular operator with more than 170 million subscribers are seeking for digital channels that can enrich their engagement and service delivery to the consumers, and these new digital channel need to be able to fulfill two main goals : improving customer service and driving revenue from more transactions.</p>
-              <p>Telkomsel collaborates with Kata.ai and Accenture to revive Telkomsel’s Legendary Brand Persona as an AI - powered intelligent assistant. These chatbot can reduce overhead, increase workflow, and most important of all, automate the customer service experience in a way that is less expensive and is less expensive more than before.  </p>
+              <p>Telkomsel collaborates with Kata.ai and Accenture to revive Telkomsel’s Legendary Brand Persona as an AI - powered intelligent assistant. These chatbot can reduce overhead, increase workflow, and most important of all, automate the customer service experience in a way that is less expensive more than before.  </p>
             </div>
           </div>
           <div className="detailstory__result">
@@ -79,7 +79,7 @@ class DetailStory extends React.Component<Props> {
               <Fade>
                 <h1>Our Approach</h1>
                 <ul>
-                  <li>IThe number of phone credits and data package purchases through Veronika always grow with an average increase of 49.06% month-over-month. </li>
+                  <li>The number of phone credits and data package purchases through Veronika always grow with an average increase of 49.06% month-over-month. </li>
                   <li>The customer inquiries can actually be handled by the chatbot with minimal human interaction, offering a more efficient and quicker solution and resolution for the customer needs.</li>
                   <li>The chatbot also provides an easier way to update the customers with important information.</li>
                   <li>The strategy can be leveraged as a long term project where more improvements and enhancement can be explored to improve customer engagement for Telkomsel.</li>

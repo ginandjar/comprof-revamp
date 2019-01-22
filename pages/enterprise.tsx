@@ -79,50 +79,17 @@ class Enterprise extends React.Component<Props, States> {
 
     storySwiper = new Swiper('#story-swiper', {
       slidesPerView: 1,
-      effect: 'coverflow',
-      centeredSlides: true,
-      spaceBetween: -200,
-      freeMode: false,
+      spaceBetween: 100,
       loop: true,
-      allowTouchMove: true,
-      slideNextClass: 'swiper-slide-next enterprise__success-story__next',
-      slidePrevClass: 'swiper-slide-prev enterprise__success-story__prev',
+
       pagination: {
         el: '.swiper-pagination',
         clickable: true,
-      },
-      coverflowEffect: {
-        rotate: 0,
-        stretch: 0,
-        depth: 1500,
-        modifier: 1,
-        slideShadows: false,
       },
       navigation: {
         nextEl: '.swiper-button-next',
         prevEl: '.swiper-button-prev',
       },
-      breakpoints: {
-        // when window width is <= 320px
-        320: {
-          slidesPerView: 1,
-          spaceBetween: 10
-        },
-        // when window width is <= 480px
-        840: {
-          slidesPerView: 1,
-          spaceBetween: 20,
-          effect: 'slide',
-          coverflowEffect: {
-            rotate: 100,
-            stretch: 0,
-            depth: 100,
-            modifier: 0,
-            slideShadows: false,
-          },
-        },
-
-      }
     });
 
     this.setState({
@@ -644,62 +611,67 @@ class Enterprise extends React.Component<Props, States> {
           </div>
 
         </TabbedHero>
-
         <HeroCard title="Success Story">
           <div style={divStyle}>
             <div className="swiper-container" id="story-swiper">
-
               <div className="swiper-wrapper">
                 <div className="swiper-slide enterprise__success-story">
                   <div className="enterprise__success-story__item">
                     <div className="enterprise__success-story__item__img">
                       <img src="/static/png/enterprise/veronika.png"></img>
                     </div>
-                    <div style={buttonStyle}>
+                    <div className="enterprise__success-story__item__button">
                       <ButtonLink modifier="light" href="/story/veronika">
                         Read About Veronika
                     </ButtonLink>
                     </div>
                   </div>
                 </div>
-                <div className="swiper-slide">
+                <div className="swiper-slide enterprise__success-story">
                   <div className="enterprise__success-story__item">
                     <div className="enterprise__success-story__item__img">
                       <img src="/static/png/enterprise/jemma.png"></img>
                     </div>
-                    <ButtonLink modifier="light" href="/story/jemma">
-                      Read About Jemma
-                    </ButtonLink>
+                    <div className="enterprise__success-story__item__button">
+                      <ButtonLink modifier="light" href="/story/jemma">
+                        Read About Jemma
+                      </ButtonLink>
+                    </div>
                   </div>
                 </div>
-                <div className="swiper-slide">
+                <div className="swiper-slide enterprise__success-story">
                   <div className="enterprise__success-story__item">
                     <div className="enterprise__success-story__item__img">
                       <img src="/static/png/enterprise/shalma.png"></img>
                     </div>
-                    <ButtonLink modifier="light" href="/story/shalma">
-                      Read About Shalma
+                    <div className="enterprise__success-story__item__button">
+                      <ButtonLink modifier="light" href="/story/shalma">
+                        Read About Shalma
                     </ButtonLink>
+                    </div>
                   </div>
                 </div>
-                <div className="swiper-slide">
+                <div className="swiper-slide enterprise__success-story">
                   <div className="enterprise__success-story__item">
                     <div className="enterprise__success-story__item__img">
                       <img src="/static/png/enterprise/sabrina.png"></img>
                     </div>
-                    <ButtonLink modifier="light" href="/story/sabrina">
-                      Read About Sabrina
+                    <div className="enterprise__success-story__item__button">
+                      <ButtonLink modifier="light" href="/story/sabrina">
+                        Read About Sabrina
                     </ButtonLink>
+                    </div>
                   </div>
                 </div>
               </div>
 
-              <div className="swiper-pagination"></div>
+
 
               <div className="swiper-button-next enterprise__success-story--next"></div>
               <div className="swiper-button-prev enterprise__success-story--prev"></div>
-
+              <div className="swiper-pagination"></div>
             </div>
+
           </div>
         </HeroCard>
 
@@ -1365,9 +1337,7 @@ class Enterprise extends React.Component<Props, States> {
     this.setState({ currentIndexHowto: e });
   };
 
-  storySwiper = (e: number) => () => {
-    storySwiper.slideTo(e, 400)
-  }
+
   stateFeatCe = () => () => {
     this.setState({ showFeatCE: !this.state.showFeatCE });
   }

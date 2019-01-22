@@ -582,8 +582,8 @@ class Home extends React.Component<Props, States> {
                     </div>
                     <div className="landing__engineering-blog__detail">
 
-                      <div className="landing__engineering-blog__title">
-                        {post.title.rendered}
+                      <div className="landing__engineering-blog__title" dangerouslySetInnerHTML={{ __html: post.title.rendered }}>
+
                       </div>
                       <div className="landing__engineering-blog__descr" dangerouslySetInnerHTML={{ __html: post.excerpt.rendered }}>
                       </div>

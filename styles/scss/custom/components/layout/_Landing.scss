@@ -189,6 +189,7 @@
     position: absolute;
     z-index: 20;
     height: 800px;
+    pointer-events:none;
         }
       }
       @media only screen and (max-width: 1440px) {
@@ -469,6 +470,7 @@
         &--veronika{
           &--phone{
             left: 50px !important;
+
           }
           &--avatar{
             left: 20px !important;
@@ -483,6 +485,7 @@
         &--shalma{
           &--phone{
             left: 70px !important;
+
           }
           &--avatar{
             left: -20px;
@@ -497,6 +500,7 @@
         &--jemma{
           &--phone{
             left: 70px !important;
+            
           }
           &--avatar{
             left: -20px !important;
@@ -519,7 +523,8 @@
           &--phone{
             top: 15px !important;
             left: 10px !important;
-            max-height: 400px !important
+            max-height: 400px !important;
+            width:unset !important;
           }
           &--avatar{
             top : 80px !important;
@@ -540,7 +545,8 @@
         &--shalma{
           &--phone{
             left: 10px !important;
-            max-height: 400px !important
+            max-height: 400px !important;
+            width:unset !important;
           }
           &--avatar{
             left: -40px!important;
@@ -561,7 +567,8 @@
         &--jemma{
           &--phone{
             left: 0px !important;
-            max-height: 400px !important
+            max-height: 400px !important;
+            width:unset !important;
           }
           &--avatar{
             top: 200px!important;
@@ -901,13 +908,17 @@
     &__title{
       font-weight: 700;
       font-size:24px;
+      min-height: 136px;
+
+      @media only screen and (max-width: 1024px) {
+        min-height: 140px;
+      }
     }
 
     &__descr{
       font-size:16px;
       min-height: 90px;
     }
-
     &__read-more{
       color:#006EE5;
       font-size:16px;

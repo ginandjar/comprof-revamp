@@ -108,7 +108,7 @@ class Research extends React.Component<Props> {
             <div className="research__research-content__descr">
               <div className="research__research-content__title">
                 <div className="research__research-content__title">
-                  <h3>LToward a Standardized and More Accurate Indonesian Part-of-Speech Tagging</h3>
+                  <h3>Toward a Standardized and More Accurate Indonesian Part-of-Speech Tagging</h3>
                 </div>
                 <div className="research__research-content__writen-by">
                   <h5>Writen by : Kemal Kurniawan & Samuel Louvan</h5>

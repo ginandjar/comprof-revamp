@@ -5,6 +5,17 @@
     padding-top: 130px;
     height: 650px;
 
+    @media only screen and (max-width: 768px){
+      padding-top: 0px;
+      height: 700px;
+    }
+    @media only screen and (max-width: 425px){
+      height: 650px;
+    }
+    @media only screen and (max-width: 320px){
+      height: 600px;
+    }
+
     &__text{
       padding-bottom: 190px;
       width: 450px;
@@ -13,12 +24,12 @@
       @media only screen and (max-width: 768px){
         text-align: center;
         margin-left: 160px;
-        padding-bottom: 400px;
+        padding-bottom: 550px;
       }
       @media only screen and (max-width: 425px){
         text-align: center;
         margin-left: 0px;
-        padding-bottom: 400px;
+
         h1{
           font-size: 24px;
           max-width: 400px;
@@ -133,12 +144,23 @@
       width: 100px !important;
       height: 100px !important;
       background-size: 100px 100px !important;
+      @media only screen and (max-width: 425px) {
+        width: 50px !important;
+        height: 50px !important;
+        background-size: 50px 50px !important;
+      }
     }
     &--next{
       background-image: url('/static/png/enterprise/next.svg') !important;
       width: 100px !important;
       height: 100px !important;
       background-size: 100px 100px !important;
+      @media only screen and (max-width: 425px) {
+        width: 50px !important;
+        height: 50px !important;
+        background-size: 50px 50px !important;
+      }
+
     }
     
     &__item{
@@ -146,7 +168,7 @@
       &__img{
         @media only screen and (max-width: 425px) {
           img{
-            width: 130px;
+            width: 300px;
           }
         }
       }
@@ -157,6 +179,9 @@
         @media only screen and (max-width: 425px) {
           left : 0px;
         }
+      }
+      &__button{
+        margin-bottom: 35px;
       }
     }
   }
@@ -253,20 +278,6 @@
         }
       }
       &__list-selected{
-
-          &:after{
-            content: '';
-            width: 0; 
-            height: 0; 
-            position: absolute;
-            border-top: 10px solid transparent;
-            border-bottom: 10px solid transparent;
-            top: 40%;
-            right: 5%;
-            border-left: 10px solid white;
-  
-
-      }
       &:last-child {
         &:after{
           display: none;

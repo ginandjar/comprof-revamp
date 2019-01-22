@@ -96,7 +96,7 @@ class Platform extends React.Component<Props> {
             <div className="platform__features__item">
               <div className="platform__features__image"><img src="/static/png/platform/group2114.svg" /></div>
               <div className="platform__features__title">Module</div>
-              <div className="platform__features__descr">Integrate our prebuilt module to your existing project for faster & better bot development. coming soon</div>
+              <div className="platform__features__descr">Integrate our prebuilt module to your existing project for faster & better bot development. (coming soon)</div>
             </div>
             <div className="platform__features__item">
               <div className="platform__features__image"><img src="/static/png/platform/group2778.svg" /></div>
