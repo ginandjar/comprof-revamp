@@ -18,6 +18,7 @@ import { Grid, Row, Col, Image, Panel, PanelGroup } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
 import Footer from '../components/layout/Footer';
 import GetChatbot from '../components/layout/GetChatbot';
+import SuccessStory from '../components/layout/SuccessStory';
 
 
 interface Props {
@@ -74,11 +75,6 @@ class Enterprise extends React.Component<Props, States> {
       spaceBetween: 100
     });
 
-    this.chatBotSwiper = new Swiper('#chatbot-swiper', {
-      speed: 400,
-      spaceBetween: 100,
-
-    });
 
     storySwiper = new Swiper('#story-swiper', {
       slidesPerView: 1,
@@ -614,7 +610,9 @@ class Enterprise extends React.Component<Props, States> {
           </div>
 
         </TabbedHero>
-        <HeroCard title="Success Story">
+
+        <SuccessStory />
+        {/* <HeroCard title="Success Story">
           <div style={divStyle}>
             <div className="swiper-container" id="story-swiper">
               <div className="swiper-wrapper">
@@ -676,7 +674,7 @@ class Enterprise extends React.Component<Props, States> {
             </div>
 
           </div>
-        </HeroCard>
+        </HeroCard> */}
 
         <GetChatbot />
 
@@ -1301,47 +1299,10 @@ class Enterprise extends React.Component<Props, States> {
     );
   }
 
-  renderTabChatBot() {
-    return (
-      <ul>
-        <li className={this.state.currentIndexHowto == 0 ? "enterprise__how-to__list-selected" : undefined} onClick={this.botSwipeClick(0)}>
-          <img src={this.state.currentIndexHowto == 0 ? "/static/png/enterprise/icochat_selected.svg" : "/static/png/enterprise/icochat.svg"} width="90px" />
-        </li>
-        <li className={this.state.currentIndexHowto == 1 ? "enterprise__how-to__list-selected" : undefined} onClick={this.botSwipeClick(1)}>
-          <img src={this.state.currentIndexHowto == 1 ? "/static/png/enterprise/icoconn_selected.svg" : "/static/png/enterprise/icoconn.svg"} width="90px" />
-        </li>
-        <li className={this.state.currentIndexHowto == 2 ? "enterprise__how-to__list-selected" : undefined} onClick={this.botSwipeClick(2)}>
-          <img src={this.state.currentIndexHowto == 2 ? "/static/png/enterprise/icocode_selected.svg" : "/static/png/enterprise/icocode.svg"} width="90px" />
-        </li>
-        <li className={this.state.currentIndexHowto == 3 ? "enterprise__how-to__list-selected" : undefined} onClick={this.botSwipeClick(3)}>
-          <img src={this.state.currentIndexHowto == 3 ? "/static/png/enterprise/icohand_selected.svg" : "/static/png/enterprise/icohand.svg"} width="90px" />
-        </li>
-        <li className={this.state.currentIndexHowto == 4 ? "enterprise__how-to__list-selected" : undefined} onClick={this.botSwipeClick(4)}>
-          <img src={this.state.currentIndexHowto == 4 ? "/static/png/enterprise/icobrain_selected.svg" : "/static/png/enterprise/icobrain.svg"} width="90px" />
-        </li>
-        <li className={this.state.currentIndexHowto == 5 ? "enterprise__how-to__list-selected" : undefined} onClick={this.botSwipeClick(5)}>
-          <img src={this.state.currentIndexHowto == 5 ? "/static/png/enterprise/icophone_selected.svg" : "/static/png/enterprise/icophone.svg"} width="90px" />
-        </li>
-        <li className={this.state.currentIndexHowto == 6 ? "enterprise__how-to__list-selected" : undefined} onClick={this.botSwipeClick(6)}>
-          <img src={this.state.currentIndexHowto == 6 ? "/static/png/enterprise/icorocket_selected.svg" : "/static/png/enterprise/icorocket.svg"} width="90px" />
-        </li>
-        <li className={this.state.currentIndexHowto == 7 ? "enterprise__how-to__list-selected" : undefined} onClick={this.botSwipeClick(7)}>
-          <img src={this.state.currentIndexHowto == 7 ? "/static/png/enterprise/icotools_selected.svg" : "/static/png/enterprise/icotools.svg"} width="90px" />
-        </li>
-      </ul>
-    );
-  }
-
   tabSwipeClick = (e: number) => () => {
     tabSwiper.slideTo(e, 400);
     this.setState({ currentIndexGrowth: e });
   }
-
-  botSwipeClick = (e: number) => () => {
-    this.chatBotSwiper.slideTo(e, 400);
-    this.setState({ currentIndexHowto: e });
-  };
-
 
   stateFeatCe = () => () => {
     this.setState({ showFeatCE: !this.state.showFeatCE });
