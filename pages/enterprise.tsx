@@ -49,6 +49,8 @@ class Enterprise extends React.Component<Props, States> {
   public static async getInitialProps(ctx: NextContext) {
 
   }
+  chatBotSwiper: any = null;
+  storySwiper: any = null;
   state = {
     currentIndexGrowth: 0,
     currentIndexHowto: 0,
@@ -71,10 +73,10 @@ class Enterprise extends React.Component<Props, States> {
       spaceBetween: 100
     });
 
-    chatBotSwiper = new Swiper('#chatbot-swiper', {
+    this.chatBotSwiper = new Swiper('#chatbot-swiper', {
       speed: 400,
       spaceBetween: 100,
-      allowTouchMove: true,
+
     });
 
     storySwiper = new Swiper('#story-swiper', {
@@ -1333,7 +1335,7 @@ class Enterprise extends React.Component<Props, States> {
   }
 
   botSwipeClick = (e: number) => () => {
-    chatBotSwiper.slideTo(e, 400);
+    this.chatBotSwiper.slideTo(e, 400);
     this.setState({ currentIndexHowto: e });
   };
 
