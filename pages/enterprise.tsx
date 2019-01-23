@@ -17,6 +17,7 @@ import HeroCard from '../components/layout/HeroCard';
 import { Grid, Row, Col, Image, Panel, PanelGroup } from 'react-bootstrap';
 import Fade from 'react-reveal/Fade';
 import Footer from '../components/layout/Footer';
+import GetChatbot from '../components/layout/GetChatbot';
 
 
 interface Props {
@@ -677,7 +678,9 @@ class Enterprise extends React.Component<Props, States> {
           </div>
         </HeroCard>
 
-        <HeroCard className="hero-card--blue enterprise__how-to" title="How to Get Your Chatbot">
+        <GetChatbot />
+
+        {/* <HeroCard className="hero-card--blue enterprise__how-to" title="How to Get Your Chatbot">
           <div>
             {this.renderTabChatBot()}
           </div>
@@ -758,7 +761,7 @@ class Enterprise extends React.Component<Props, States> {
               </div>
             </div>
           </div>
-        </HeroCard>
+        </HeroCard> */}
 
         <HeroCard className="hero-card enterprise__platform" title="Technology Behind Our Solutions">
           <div>

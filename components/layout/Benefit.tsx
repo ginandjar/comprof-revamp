@@ -44,7 +44,7 @@ export default class Benefit extends React.Component {
             <h1>Perks & benefits for our team</h1>
             <p>Our perks and benefits are part of the culture that inspires our team to work better, wherever they are.</p>
           </Row>
-          <Row className="benefit__nav-bar">
+          <Row className="benefit__nav-bar benefit__nav-bar--career">
             <Nav bsStyle="pills" activeKey={0} onSelect={this.handleSelect}>
               <NavItem eventKey={0}>
                 <img src={index == 0 ? "/static/png/career/benefit/aktif/group2157.svg" : "/static/png/career/benefit/non-aktif/group2150.svg"} />
